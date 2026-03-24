@@ -4,4 +4,6 @@
 ## Features:
     PJSK ws servers: Haruki, Sakura, 烤森
     customized parts: AstrBot, KoishiBot
+## About clean_llone.sh:
+    crontab -e then add '30 3 * * * /path/to/clean_llone.sh (>> /path/to/clean_log.txt)'
     
