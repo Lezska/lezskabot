@@ -1,0 +1,30 @@
+{
+    "host": "127.0.0.1",
+    "port": 8000,
+    "botId": 94894812,
+    "credential": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib3RfaWQiOiI5NDg5NDgxMiIsImNyZWRlbnRpYWwiOiIzNDdjOGJjYi01ZDliLTQ3ZTctYmRlYy1jNGVhMGZhZjdjZGYifQ.KiaT3ach5I_VDXW7FVEMEL-8ZYP5Ds2phbQWEqI66_A",
+    "enableHelp": true,
+    "helpContent": "欢迎您使用HarukiBot\n使用帮助: https://docs.haruki.seiunx.com",
+    "controlApiAccessToken": null,
+    "enableModules": [
+        "all"
+    ],
+    "runMode": "blacklist",
+    "blacklists": {
+        "all": [],
+        "pjsk": []
+    },
+    "whitelists": {
+        "all": [],
+        "pjsk": []
+    },
+    "additionalFuncWhitelists": [],
+    "botAdmins": [
+        29053789
+    ],
+    "userBlacklists": [],
+    "enableGroupCommandLimit": false,
+    "globalCommandHourlyLimit": null,
+    "globalCommandDailyLimit": null,
+    "enableCN": true
+}

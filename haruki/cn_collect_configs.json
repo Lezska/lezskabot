@@ -1,0 +1,6 @@
+{
+    "enableRoomCollect": false,
+    "endpoint": "https://api-pjsekai-zhcn.mid.red/station/api",
+    "token": "",
+    "groupWhitelist": []
+}

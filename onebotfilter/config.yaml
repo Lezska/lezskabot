@@ -1,0 +1,98 @@
+server:
+  host: "127.0.0.1"  #本程序主机地址，一般不用改
+  port: 3939         #本程序的ws端口
+  suffix: "/ws"      #ws的路径，如果没有修改过的话就是ws://127.0.0.1:3939/ws
+  bot-id: 3678233304  #LezskaBot
+  #bot-id: 3675867653 #小小Lezska
+  #bot-id: 3962272821 #Doppelganger 1
+  #bot-id: 3829649357 #Doppelganger 2
+  user-agent: "OneBotFilter"  #用户代理，只是一个标记，给下面的bot应用看的
+
+  default:    #默认的private和group配置，当下面的bot应用的对应项目配置为defualt时，使用此配置
+    # 账号黑白名单
+    user-id: # 对用户（QQ）设置，不论是私聊还是群聊都有效
+      mode: "blacklist" # 只能为blacklist或whitelist
+      ids: [ ] # 如果为blacklist，不会接受其中的qq账号的消息，如果为whitelist，只接受其中的qq账号的消息
+    group-id: # 对群组（群号）设置
+      mode: "whitelist" # 只能为blacklist或whitelist
+      ids: [ ] # 如果为blacklist，不会接受其中的群号的消息，如果为whitelist，只接受其中的群号的消息
+  buffer-size: 4096 # 缓冲区大小
+  sleep-time: 5  #当连接bot应用端失败时，等待多久之后重新连接
+  debug: false   #debug模式，一般为false，当你需要显示所有从onebot客户端发来的消息时，给它改为true
+
+bot-apps:
+  - name: "烤森bot"
+    uri: "wss://nonebot2-8823.resona.cn/onebot/v11/ws" 
+    access-token:
+    user-id: 
+      mode: "blacklist"
+      ids: []
+    group-id: 
+      mode: "blacklist" 
+      ids: []
+    message:
+      mode: "blacklist"
+      filters: [ "逮捕", "help" , "速" , "cf" , "msm", "^个人信息","^cn个人信息","^tw个人信息"]
+      prefix: [ "#" ]
+      prefix-replace: ""
+
+  - name: "hrk"
+    uri: "ws://127.0.0.1:8000/ws" 
+    access-token:
+    user-id: 
+      mode: "blacklist"
+      ids: []
+    group-id: 
+      mode: "blacklist" 
+      ids: []
+    message:
+      mode: "blacklist"
+      filters: [ "detail", "help" , "sk", "状态", "逮捕","^#song"]
+      prefix: [ "#" ]
+      prefix-replace:
+
+  - name: "skr"
+    uri: "ws://101.34.19.31:13888/onebot/v11/ws" 
+    access-token:
+    user-id: 
+      mode: "blacklist"
+      ids: []
+    group-id: 
+      mode: "blacklist" 
+      ids: []
+    message:
+      mode: "blacklist"
+      filters: [ "^/", "^sk","cnsk", "个人信息", "help" , "^card" , "^倍率" ,"速" ,"cf","谱面预览","song","查卡", "查活动","msm" ]
+      prefix: [ "#" ]
+      prefix-replace:
+
+  - name: "astr"
+    uri: "ws://127.0.0.1:6199/ws" 
+    access-token:
+    user-id: 
+      mode: "blacklist"
+      ids: []
+    group-id: 
+      mode: "blacklist" 
+      ids: []
+    message:
+      mode: "blacklist"
+      filters: []
+      prefix: [ "#" ]
+      prefix-replace:
+      
+  - name: "koishi"
+    uri: "ws://127.0.0.1:5140/onebot" 
+    access-token:
+    user-id: 
+      mode: "blacklist"
+      ids: []
+    group-id: 
+      mode: "blacklist" 
+      ids: []
+    message:
+      mode: "blacklist"
+      filters: []
+      prefix: [ "#" ]
+      prefix-replace:
+      
