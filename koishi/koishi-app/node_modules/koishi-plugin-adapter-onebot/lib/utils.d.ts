@@ -1,0 +1,13 @@
+import { Universal } from 'koishi';
+import { BaseBot } from './bot';
+import * as OneBot from './types';
+export * from './types';
+export declare const decodeUser: (user: OneBot.AccountInfo) => Universal.User;
+export declare const decodeGuildMember: (user: OneBot.SenderInfo) => Universal.GuildMember;
+export declare const adaptQQGuildMemberInfo: (user: OneBot.GuildMemberInfo) => Universal.GuildMember;
+export declare const adaptQQGuildMemberProfile: (user: OneBot.GuildMemberProfile) => Universal.GuildMember;
+export declare function adaptMessage(bot: BaseBot, data: OneBot.Message, message?: Universal.Message, payload?: Universal.MessageLike): Promise<Universal.Message>;
+export declare const adaptGuild: (info: OneBot.GroupInfo | OneBot.GuildBaseInfo) => Universal.Guild;
+export declare const adaptChannel: (info: OneBot.GroupInfo | OneBot.ChannelInfo) => Universal.Channel;
+export declare function dispatchSession(bot: BaseBot, data: OneBot.Payload): Promise<void>;
+export declare function adaptSession(bot: BaseBot, data: OneBot.Payload): Promise<import("koishi").Session<never, never, import("koishi").Context>>;

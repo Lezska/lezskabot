@@ -1,0 +1,80 @@
+{"id":461069,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为8，触发自动回复","timestamp":1773460434875}
+{"id":461172,"type":"info","level":2,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"用户2875529979绑定了cnid：7486496946652240680","timestamp":1773460553821}
+{"id":461389,"type":"info","level":2,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"用户2875529979绑定了cnid：7486496946652240680","timestamp":1773460730418}
+{"id":461548,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"3663735613完成了一次签到！","timestamp":1773461407893}
+{"id":466359,"type":"info","level":2,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"用户2580745900绑定了cnid：7497627065185966888","timestamp":1773467809763}
+{"id":468718,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为7，触发自动回复","timestamp":1773470894690}
+{"id":468757,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为10，触发自动回复","timestamp":1773470928017}
+{"id":472043,"type":"warn","level":2,"name":"command","meta":{},"content":"绑定 \nTypeError: Cannot read properties of undefined (reading 'indexOf')\n    at _Command.eval (eval at <anonymous> (/www/wwwroot/default/koishi/koishi-app/node_modules/koishi-plugin-blockly-null/lib/index.js:1:1), <anonymous>:148:14)\n    at Array.<anonymous> (/www/wwwroot/default/koishi/koishi-app/node_modules/@koishijs/core/lib/index.cjs:1079:27)\n    at argv.next (/www/wwwroot/default/koishi/koishi-app/node_modules/@koishijs/core/lib/index.cjs:1090:30)\n    at _Command.execute (/www/wwwroot/default/koishi/koishi-app/node_modules/@koishijs/core/lib/index.cjs:1093:33)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async /www/wwwroot/default/koishi/koishi-app/node_modules/@koishijs/core/lib/index.cjs:2049:22\n    at async Proxy.withScope (/www/wwwroot/default/koishi/koishi-app/node_modules/@koishijs/core/lib/index.cjs:1958:22)\n    at async next (/www/wwwroot/default/koishi/koishi-app/node_modules/@koishijs/core/lib/index.cjs:827:16)\n    at async next (/www/wwwroot/default/koishi/koishi-app/node_modules/@koishijs/core/lib/index.cjs:827:16)\n    at async next (/www/wwwroot/default/koishi/koishi-app/node_modules/@koishijs/core/lib/index.cjs:827:16)","timestamp":1773475648153}
+{"id":472466,"type":"info","level":2,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"用户860499899绑定了id：550771681621110795","timestamp":1773475874456}
+{"id":472642,"type":"info","level":2,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"用户2284324667绑定了cnid：7486068176271383332","timestamp":1773476131570}
+{"id":474334,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为8，触发自动回复","timestamp":1773477422304}
+{"id":475051,"type":"info","level":2,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"用户1225719920绑定了cnid：7488316140406643483","timestamp":1773478522638}
+{"id":475162,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为5，触发自动回复","timestamp":1773478586841}
+{"id":475442,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为9，触发自动回复","timestamp":1773478761699}
+{"id":475553,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为6，触发自动回复","timestamp":1773478815768}
+{"id":475587,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为1，触发自动回复","timestamp":1773478839741}
+{"id":477353,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为2，触发自动回复","timestamp":1773480484806}
+{"id":483388,"type":"info","level":2,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"用户255273445绑定了cnid：7489065441818762034","timestamp":1773488442457}
+{"id":483620,"type":"info","level":2,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"用户255273445绑定了cnid：7489065441818762034","timestamp":1773488559910}
+{"id":483853,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"771353605完成了一次签到！","timestamp":1773488672685}
+{"id":485953,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为9，触发自动回复","timestamp":1773490262176}
+{"id":485999,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为3，触发自动回复","timestamp":1773490324012}
+{"id":486138,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为4，触发自动回复","timestamp":1773490434060}
+{"id":486174,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为1，触发自动回复","timestamp":1773490450695}
+{"id":486478,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为8，触发自动回复","timestamp":1773490823425}
+{"id":486581,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为2，触发自动回复","timestamp":1773490946912}
+{"id":487147,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为1，触发自动回复","timestamp":1773492636453}
+{"id":488186,"type":"error","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"1617842882抽卡失败，积分不足","timestamp":1773495230231}
+{"id":488213,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"3669154852完成了一次签到！","timestamp":1773495235176}
+{"id":488252,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"1617842882完成了一次签到！","timestamp":1773495240572}
+{"id":488273,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2535081283完成了一次签到！","timestamp":1773495242369}
+{"id":488276,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"3669154852抽到了一张❀三星☄卡，剩余492P点","timestamp":1773495246156}
+{"id":488295,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"3669154852抽到了一张☆二星★卡，剩余92P点","timestamp":1773495248930}
+{"id":488322,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"1617842882抽到了一张☆二星★卡，剩余24P点","timestamp":1773495260789}
+{"id":488702,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为10，触发自动回复","timestamp":1773495973143}
+{"id":490465,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为2，触发自动回复","timestamp":1773497653271}
+{"id":490548,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为10，触发自动回复","timestamp":1773497693086}
+{"id":491243,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为9，触发自动回复","timestamp":1773498051040}
+{"id":492184,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为2，触发自动回复","timestamp":1773498518693}
+{"id":492316,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为4，触发自动回复","timestamp":1773498552188}
+{"id":492692,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为3，触发自动回复","timestamp":1773498656435}
+{"id":493021,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为10，触发自动回复","timestamp":1773498784500}
+{"id":493854,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为6，触发自动回复","timestamp":1773499212878}
+{"id":494331,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为9，触发自动回复","timestamp":1773499426143}
+{"id":495305,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为2，触发自动回复","timestamp":1773499780876}
+{"id":495472,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为2，触发自动回复","timestamp":1773499820532}
+{"id":495686,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为4，触发自动回复","timestamp":1773499896821}
+{"id":495705,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为5，触发自动回复","timestamp":1773499905592}
+{"id":497619,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为1，触发自动回复","timestamp":1773501096604}
+{"id":499274,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为4，触发自动回复","timestamp":1773501775748}
+{"id":499407,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为7，触发自动回复","timestamp":1773501828082}
+{"id":499648,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为7，触发自动回复","timestamp":1773501900290}
+{"id":500243,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为10，触发自动回复","timestamp":1773502160108}
+{"id":501143,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为1，触发自动回复","timestamp":1773502432918}
+{"id":502056,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为3，触发自动回复","timestamp":1773502715460}
+{"id":502415,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loading 4 plugin(s)","timestamp":1773502821241}
+{"id":502416,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loaded 4 plugin(s)","timestamp":1773502821305}
+{"id":502500,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loading 3 plugin(s)","timestamp":1773502830835}
+{"id":502501,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loaded 3 plugin(s)","timestamp":1773502830884}
+{"id":502686,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loading 3 plugin(s)","timestamp":1773502888936}
+{"id":502687,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loaded 3 plugin(s)","timestamp":1773502888992}
+{"id":502747,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loading 4 plugin(s)","timestamp":1773502890867}
+{"id":502748,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loaded 4 plugin(s)","timestamp":1773502890919}
+{"id":502927,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为4，触发自动回复","timestamp":1773502939864}
+{"id":503357,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为1，触发自动回复","timestamp":1773503051957}
+{"id":503508,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为2，触发自动回复","timestamp":1773503106158}
+{"id":503546,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为1，触发自动回复","timestamp":1773503126917}
+{"id":504650,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为1，触发自动回复","timestamp":1773503484460}
+{"id":505013,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为10，触发自动回复","timestamp":1773503620840}
+{"id":505512,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为4，触发自动回复","timestamp":1773503823279}
+{"id":505867,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为9，触发自动回复","timestamp":1773503930216}
+{"id":506379,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2250804603完成了一次签到！","timestamp":1773504061381}
+{"id":506426,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"1030603201完成了一次签到！","timestamp":1773504085232}
+{"id":506568,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为8，触发自动回复","timestamp":1773504145081}
+{"id":506622,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为7，触发自动回复","timestamp":1773504159103}
+{"id":506666,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"3479543026完成了一次签到！","timestamp":1773504165069}
+{"id":507804,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为5，触发自动回复","timestamp":1773504810442}
+{"id":508360,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为10，触发自动回复","timestamp":1773505183429}
+{"id":509384,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为4，触发自动回复","timestamp":1773506031228}
+{"id":509425,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为1，触发自动回复","timestamp":1773506080584}

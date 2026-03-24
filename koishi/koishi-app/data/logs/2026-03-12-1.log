@@ -1,0 +1,42 @@
+{"id":350489,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为7，触发自动回复","timestamp":1773280849308}
+{"id":351305,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为7，触发自动回复","timestamp":1773282422798}
+{"id":351369,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为7，触发自动回复","timestamp":1773282886261}
+{"id":352274,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为2，触发自动回复","timestamp":1773285895638}
+{"id":352552,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为2，触发自动回复","timestamp":1773286287505}
+{"id":352969,"type":"warn","level":2,"name":"re-driftbottle","meta":{},"content":"97号漂流瓶发送失败（已重试0/5次，将在500ms后重新抽一个瓶子重试）：Error: Error with request send_group_forward_msg, args: {\"group_id\":682255155,\"messages\":[{\"type\":\"node\",\"data\":{\"uin\":\"3678233304\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"你捞到了97号漂流瓶，来自“”！\\n标题：\\n日期：2026年2月15日\"}}],\"time\":\"1773286663\"}},{\"type\":\"node\",\"data\":{\"uin\":\"3186254539\",\"content\":[{\"type\":\"at\",\"data\":{\"qq\":\"3678233304\",\"name\":\"LezskaBot\"}}],\"time\":\"1773286663\"}}]}, retcode: 1200","timestamp":1773286664030}
+{"id":353122,"type":"warn","level":2,"name":"re-driftbottle","meta":{},"content":"42号漂流瓶发送失败（已重试0/5次，将在500ms后重新抽一个瓶子重试）：Error: Error with request send_group_forward_msg, args: {\"group_id\":682255155,\"messages\":[{\"type\":\"node\",\"data\":{\"uin\":\"3678233304\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"你捞到了42号漂流瓶，来自“キラキラ✨魔法zc目录（肉鸽糕首)”！\\n标题：\\n日期：2026年1月28日\"}}],\"time\":\"1773286797\"}},{\"type\":\"node\",\"data\":{\"name\":\"キラキラ✨魔法zc目录（肉鸽糕首)\",\"uin\":\"2992606656\",\"content\":[{\"type\":\"at\",\"data\":{\"qq\":\"3186254539\",\"name\":\"ket\"}},{\"type\":\"text\",\"data\":{\"text\":\" 即把\"}}],\"time\":\"1773286797\"}}]}, retcode: 1200","timestamp":1773286797332}
+{"id":353127,"type":"warn","level":2,"name":"re-driftbottle","meta":{},"content":"42号漂流瓶发送失败（已重试1/5次，将在500ms后重新抽一个瓶子重试）：Error: Error with request send_group_forward_msg, args: {\"group_id\":682255155,\"messages\":[{\"type\":\"node\",\"data\":{\"uin\":\"3678233304\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"你捞到了42号漂流瓶，来自“キラキラ✨魔法zc目录（肉鸽糕首)”！\\n标题：\\n日期：2026年1月28日\"}}],\"time\":\"1773286797\"}},{\"type\":\"node\",\"data\":{\"name\":\"キラキラ✨魔法zc目录（肉鸽糕首)\",\"uin\":\"2992606656\",\"content\":[{\"type\":\"at\",\"data\":{\"qq\":\"3186254539\",\"name\":\"ket\"}},{\"type\":\"text\",\"data\":{\"text\":\" 即把\"}}],\"time\":\"1773286797\"}}]}, retcode: 1200","timestamp":1773286798133}
+{"id":353209,"type":"warn","level":2,"name":"re-driftbottle","meta":{},"content":"52号漂流瓶发送失败（已重试0/5次，将在500ms后重新抽一个瓶子重试）：Error: Error with request send_group_forward_msg, args: {\"group_id\":682255155,\"messages\":[{\"type\":\"node\",\"data\":{\"uin\":\"3678233304\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"你捞到了52号漂流瓶，来自“大水”！\\n标题：\\n日期：2026年1月30日\"}}],\"time\":\"1773286880\"}},{\"type\":\"node\",\"data\":{\"name\":\"大水\",\"uin\":\"2768272453\",\"content\":[{\"type\":\"at\",\"data\":{\"qq\":\"2919529476\",\"name\":\"摸白\"}},{\"type\":\"text\",\"data\":{\"text\":\" 今日老婆\"}}],\"time\":\"1773286880\"}}]}, retcode: 1200","timestamp":1773286880769}
+{"id":353943,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为2，触发自动回复","timestamp":1773287415696}
+{"id":354087,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为10，触发自动回复","timestamp":1773287477821}
+{"id":354604,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为9，触发自动回复","timestamp":1773287901165}
+{"id":355710,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为1，触发自动回复","timestamp":1773288758631}
+{"id":356324,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为1，触发自动回复","timestamp":1773289215060}
+{"id":357019,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为8，触发自动回复","timestamp":1773289681954}
+{"id":357041,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为1，触发自动回复","timestamp":1773289687741}
+{"id":357210,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为3，触发自动回复","timestamp":1773289959167}
+{"id":358018,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"1559901047完成了一次签到！","timestamp":1773290934348}
+{"id":361834,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为9，触发自动回复","timestamp":1773297272423}
+{"id":361896,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为9，触发自动回复","timestamp":1773297319762}
+{"id":362199,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为9，触发自动回复","timestamp":1773297575620}
+{"id":362388,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为10，触发自动回复","timestamp":1773297738018}
+{"id":362868,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为4，触发自动回复","timestamp":1773298175965}
+{"id":363028,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为8，触发自动回复","timestamp":1773298365643}
+{"id":364012,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为8，触发自动回复","timestamp":1773299964207}
+{"id":365860,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为8，触发自动回复","timestamp":1773302101447}
+{"id":367808,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为2，触发自动回复","timestamp":1773304050170}
+{"id":369192,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为5，触发自动回复","timestamp":1773305213989}
+{"id":369377,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为3，触发自动回复","timestamp":1773305544238}
+{"id":372124,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为10，触发自动回复","timestamp":1773308794844}
+{"id":374942,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为7，触发自动回复","timestamp":1773312265844}
+{"id":375118,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为7，触发自动回复","timestamp":1773312533817}
+{"id":378386,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为1，触发自动回复","timestamp":1773315618021}
+{"id":380043,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为2，触发自动回复","timestamp":1773317018473}
+{"id":380362,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为1，触发自动回复","timestamp":1773317405857}
+{"id":382126,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"771353605完成了一次签到！","timestamp":1773319279605}
+{"id":382258,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"1723814703完成了一次签到！","timestamp":1773319453970}
+{"id":383454,"type":"error","level":1,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"3153466289输入错误id：+你id，id过短","timestamp":1773321014483}
+{"id":383537,"type":"info","level":2,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"用户3564540579绑定了cnid：7527004666447043343","timestamp":1773321081337}
+{"id":391224,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2250804603完成了一次签到！","timestamp":1773331295507}
+{"id":392459,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"3663735613完成了一次签到！","timestamp":1773332506731}
+{"id":397267,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"3479543026完成了一次签到！","timestamp":1773342077150}

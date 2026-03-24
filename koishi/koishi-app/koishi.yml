@@ -1,0 +1,263 @@
+plugins:
+  group:server:
+    $collapsed: true
+    server:iyvqw3:
+      host: 0.0.0.0
+      port: 5140
+      maxPort: 5149
+    ~server-satori:cvga7b: {}
+    ~server-temp:58nw63: {}
+  group:basic:
+    $collapsed: true
+    admin:yfr8w8: {}
+    ~bind:3bsk9d: {}
+    commands:liuq4c:
+      clear:
+        config:
+          hidden: true
+      cn绑定:
+        config:
+          hidden: true
+      command:
+        config:
+          hidden: true
+      help:
+        config:
+          hidden: true
+      plugin:
+        config:
+          hidden: true
+      status:
+        config:
+          hidden: true
+      timer:
+        config:
+          hidden: true
+      tw绑定:
+        config:
+          hidden: true
+      usage:
+        config:
+          hidden: true
+      十倍抢p点:
+        aliases:
+          超级抢: null
+        config:
+          hidden: true
+      我的p点:
+        config:
+          hidden: true
+      抢p点:
+        aliases:
+          抢: null
+        config:
+          hidden: true
+      查id:
+        config:
+          hidden: true
+      查号:
+        config:
+          hidden: true
+      查看p点:
+        aliases:
+          查看: null
+        config:
+          hidden: true
+      测试:
+        config:
+          hidden: true
+      签到:
+        config:
+          hidden: true
+      绑定:
+        config:
+          hidden: true
+      设置p点:
+        config:
+          hidden: true
+      送p点:
+        config:
+          hidden: true
+      重置抢:
+        config:
+          hidden: true
+      sayo-roll:
+        name: /roll
+        aliases:
+          roll: null
+          问: null
+      reactle:
+        aliases:
+          wordle: null
+      漂流瓶.本地储存化静态资源:
+        config:
+          hidden: true
+      漂流瓶.b64化静态资源:
+        config:
+          hidden: true
+      channel:
+        config:
+          hidden: true
+      user:
+        config:
+          hidden: true
+      keyword-blocker:
+        name: /blocker
+        aliases:
+          blocker: null
+      交换位置:
+        aliases:
+          交换: null
+        config:
+          hidden: true
+      加入:
+        aliases:
+          加入卡组: null
+        config:
+          hidden: true
+      卡组:
+        aliases:
+          我的卡组: null
+        config:
+          hidden: true
+      快速抽卡:
+        config:
+          hidden: true
+      我有几抽:
+        config:
+          hidden: true
+      献祭:
+        config:
+          hidden: true
+      进行抽卡:
+        aliases:
+          抽卡: null
+        config:
+          hidden: true
+      连续抽卡:
+        aliases:
+          连抽: null
+        config:
+          hidden: true
+      rgl.song:
+        aliases:
+          猜: null
+      teach:
+        config:
+          hidden: true
+      rgl.guess:
+        aliases:
+          开:
+            filter: false
+          开字母: null
+      漂流瓶.捞漂流瓶:
+        aliases:
+          捡漂流瓶: null
+    help:fakvkp: {}
+    http:7ka2ck: {}
+    ~inspect:vwlv3j: {}
+    locales:dhqsqe: {}
+    proxy-agent:594rku: {}
+    rate-limit:jeszun: {}
+    telemetry:eob9t0: {}
+  group:console:
+    $collapsed: true
+    actions:2y6lej: {}
+    analytics:wynivs: {}
+    android:g1st3h:
+      $if: env.KOISHI_AGENT?.includes('Android')
+    auth:c9brgm:
+      admin:
+        password: sunkeer928919
+    config:ez1tt3: {}
+    console:y6kw4v:
+      open: true
+    dataview:kh0qqb: {}
+    desktop:wprtow:
+      $if: env.KOISHI_AGENT?.includes('Desktop')
+    ~explorer:h18767: {}
+    logger:3oafoi: {}
+    ~insight:cozctt: {}
+    market:rb9ss1:
+      search:
+        endpoint: https://registry.koishi.chat/index.json
+    notifier:hqhrom: {}
+    oobe:gedmxh: {}
+    ~sandbox:0uguqu: {}
+    status:rjhdf0: {}
+    theme-vanilla:xph3ej: {}
+  group:storage:
+    $collapsed: true
+    ~database-mongo:kviend:
+      database: koishi
+    ~database-mysql:gqbf8g:
+      database: koishi
+    ~database-postgres:4jatgb:
+      database: koishi
+    database-sqlite:trh0pf:
+      path: data/koishi.db
+    assets-local:ffai0c: {}
+  group:adapter:
+    $collapsed: true
+    ~adapter-dingtalk:4tszkt: {}
+    ~adapter-discord:tjx0oi: {}
+    ~adapter-kook:bax44q: {}
+    ~adapter-lark:uaxo48: {}
+    ~adapter-line:2f6b56: {}
+    ~adapter-mail:mruw39: {}
+    ~adapter-matrix:4lc0dv: {}
+    ~adapter-qq:79uyia: {}
+    ~adapter-satori:upo6qz: {}
+    ~adapter-slack:1n29wt: {}
+    ~adapter-telegram:4j7rys: {}
+    ~adapter-wechat-official:s10rwe: {}
+    ~adapter-wecom:pbht0t: {}
+    ~adapter-whatsapp:z7re11: {}
+    ~adapter-zulip:7vvsnh: {}
+  group:develop:
+    $if: env.NODE_ENV === 'development'
+    hmr:l8kw2p:
+      root: .
+  anti-space:fk2qty:
+    commandslist:
+      绑定: /.*/
+      cn绑定: /.*/
+      tw绑定: /.*/
+      查id: /.*/
+      问: /.*/
+      开字母: /.*/
+    nocommandlist: {}
+  blockly-null:lp0hx8: {}
+  puppeteer:noenkr: {}
+  adapter-onebot:wqmw9x:
+    selfId: '3678233304'
+  menu:mulwf1: {}
+  rizgame-guess-letters:2xa68a:
+    test: 1
+    randSongMode: range
+    startValue: 3
+    endValue: 7
+  sayo-roll:oibvy4: {}
+  re-driftbottle:ptodv9:
+    manager:
+      - '29053789'
+    path: data/driftbottle-data
+    indexToImage: true
+    maxLength: 50000
+    saveMode: file
+    allowDropOthers: true
+    preview: false
+    alwaysShowInst: false
+  ~koishi:ten6xx: {}
+  keyword-blocker:1b1278:
+    command_authority: 1
+  ~dialogue:u9x67h: {}
+  lunatic:22bd3m: {}
+  awa-mc-ament:rwr33m: {}
+  ~minecraft-skin:v9rewx: {}
+  mc-tools:h22llh:
+    updInterval: 5
+    noticeTargets:
+      - platform: onebot
+        channelId: '682255155'
+    statusEnabled: false

@@ -1,0 +1,16 @@
+import { Adapter, Context, Schema } from '@satorijs/core';
+import { TelegramBot } from './bot';
+import * as Telegram from './types';
+export { Telegram };
+export declare class HttpServer<C extends Context = Context> extends Adapter<C, TelegramBot<C>> {
+    static inject: string[];
+    connect(bot: TelegramBot<C, TelegramBot.BaseConfig & HttpServer.Options>): Promise<void>;
+}
+export declare namespace HttpServer {
+    interface Options {
+        protocol: 'server';
+        path?: string;
+        selfUrl?: string;
+    }
+    const Options: Schema<Options>;
+}
