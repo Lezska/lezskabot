@@ -1,0 +1,42 @@
+{
+  "lezskabot:GroupMessage:682255155": {
+    "3669154852": {
+      "daily": {
+        "morning_time": "",
+        "night_time": "2026-03-23 23:50:17"
+      }
+    },
+    "2992606656": {
+      "daily": {
+        "morning_time": "",
+        "night_time": "2026-03-24 02:06:44"
+      }
+    },
+    "1550318633": {
+      "daily": {
+        "morning_time": "",
+        "night_time": "2026-03-24 01:53:38"
+      }
+    },
+    "2301519821": {
+      "daily": {
+        "morning_time": "",
+        "night_time": "2026-03-24 02:05:50"
+      }
+    },
+    "3186254539": {
+      "daily": {
+        "morning_time": "2026-03-24 10:32:49",
+        "night_time": "2026-03-24 02:06:39"
+      }
+    }
+  },
+  "lezskabot:GroupMessage:1056859232": {
+    "2857259533": {
+      "daily": {
+        "morning_time": "2026-03-24 07:47:26",
+        "night_time": ""
+      }
+    }
+  }
+}

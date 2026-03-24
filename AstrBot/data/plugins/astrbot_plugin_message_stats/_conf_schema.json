@@ -1,0 +1,92 @@
+{
+  "theme": {
+    "type": "string",
+    "description": "排行榜主题风格",
+    "hint": "图片显示排行榜的主题风格",
+    "default": "default",
+    "options": [
+      "default",
+      "liquid_glass",
+      "liquid_glass_dark"
+    ]
+  },
+  "detailed_logging_enabled": {
+    "type": "bool",
+    "description": "是否开启详细日志记录",
+    "hint": "关闭后将隐藏'记录消息统计'等详细日志，只保留重要的系统日志和错误日志",
+    "default": true,
+    "obvious_hint": true
+  },
+  "rand": {
+    "type": "int",
+    "description": "排行榜显示人数",
+    "hint": "排行榜中显示的用户数量，建议5-50人",
+    "default": 20,
+    "slider": {
+      "min": 1,
+      "max": 100,
+      "step": 1
+    }
+  },
+  "if_send_pic": {
+    "type": "string",
+    "description": "排行榜输出模式",
+    "hint": "选择排行榜的展示方式，图片模式更美观但消耗更多资源",
+    "default": "图片",
+    "options": [
+      "文字",
+      "图片"
+    ],
+    "obvious_hint": true
+  },
+  "timer_enabled": {
+    "type": "bool",
+    "description": "是否启用定时推送排行榜功能",
+    "hint": "开启后将在指定时间自动向指定群组推送排行榜",
+    "default": false,
+    "obvious_hint": false
+  },
+  "timer_push_time": {
+    "type": "string",
+    "description": "定时推送时间",
+    "hint": "推送时间，支持HH:MM格式（每日指定时间）或cron格式（复杂定时表达式，如'0 9 * * *'表示每天9点）",
+    "default": "09:00",
+    "invisible": false
+  },
+  "timer_target_groups": {
+    "type": "list",
+    "description": "定时推送目标群组",
+    "hint": "需要接收定时推送的群组ID列表，留空则推送到所有群组",
+    "default": [],
+    "invisible": false
+  },
+  "timer_rank_type": {
+    "type": "string",
+    "description": "定时推送排行榜类型",
+    "hint": "选择定时推送的排行榜统计范围",
+    "default": "daily",
+    "options": [
+      "daily",
+      "total",
+      "weekly",
+      "monthly",
+      "yearly",
+      "lastyear"
+    ],
+    "invisible": false
+  },
+  "blocked_users": {
+    "type": "list",
+    "description": "屏蔽用户列表",
+    "hint": "屏蔽指定用户，使其不显示在发言榜上且不统计其发言数据。请输入完整的QQ号码。",
+    "default": [],
+    "obvious_hint": true
+  },
+  "blocked_groups": {
+    "type": "list",
+    "description": "屏蔽群聊列表",
+    "hint": "屏蔽指定群聊，使其不统计发言数据且无法使用排行榜指令。请输入完整的群号码。",
+    "default": [],
+    "obvious_hint": true
+  }
+}

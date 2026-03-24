@@ -1,0 +1,14 @@
+﻿{
+  "theme": "default",
+  "detailed_logging_enabled": true,
+  "rand": 25,
+  "if_send_pic": "图片",
+  "timer_enabled": true,
+  "timer_push_time": "22:00",
+  "timer_target_groups": [
+    "682255155"
+  ],
+  "timer_rank_type": "daily",
+  "blocked_users": [],
+  "blocked_groups": []
+}

@@ -1,0 +1,43 @@
+﻿{
+    "img_width": 1080,
+    "img_height": 1920,
+    "font_name": "千图马克手写体.ttf",
+    "avatar_cache_expiration": 86400,
+    "avater_size": [
+        150,
+        150
+    ],
+    "avater_position": [
+        60,
+        1350
+    ],
+    "date_y_position": 1300,
+    "summary_y_position": 1400,
+    "lucky_star_y_position": 1500,
+    "sign_text_y_position": 1600,
+    "unsign_text_y_position": 1700,
+    "warning_text_y_position": 1850,
+    "jrys_keyword_enabled": true,
+    "pre_cache_background_images": false,
+    "pre_cache_concurrency": 3,
+    "cleanup_background_downloads": true,
+    "holiday_rates_enabled": true,
+    "fixed_daily_fortune": true,
+    "holidays": [
+        "01-01",
+        "02-14",
+        "05-01",
+        "10-01",
+        "12-25"
+    ],
+    "normal_rates": {
+        "good": 40,
+        "normal": 40,
+        "bad": 20
+    },
+    "holiday_rates": {
+        "good": 85,
+        "normal": 15,
+        "bad": 0
+    }
+}

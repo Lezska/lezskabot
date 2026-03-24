@@ -1,0 +1,2 @@
+[console_scripts]
+markitdown = markitdown_no_magika.__main__:main

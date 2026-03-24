@@ -1,0 +1,748 @@
+{
+  "title": "AstrBot 指令菜单",
+  "mode": "command",
+  "prefixes": [
+    "/"
+  ],
+  "fonts": [
+    "Sarasa Gothic SC",
+    "Noto Color Emoji"
+  ],
+  "plugin_count": 12,
+  "giants": [],
+  "columns": [
+    [
+      {
+        "name": "astrbot_plugin_message_stats",
+        "display_name": null,
+        "version": "1.7.7",
+        "desc": "QQ群消息统计插件，支持消息数量统计和排行榜生成",
+        "nodes": [
+          {
+            "name": "今日发言榜",
+            "desc": "显示今日排行榜，别名：今日水群榜/今日发言排行/今日B话榜",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "删除发言榜定时群组",
+            "desc": "删除定时推送目标群组",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "刷新发言榜群成员缓存",
+            "desc": "刷新群成员列表缓存",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "去年发言榜",
+            "desc": "显示去年排行榜，别名：去年水群榜/去年发言排行/去年B话榜",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "发言榜",
+            "desc": "显示总排行榜，别名：水群榜/B话榜/发言排行/发言统计",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "发言榜定时状态",
+            "desc": "查看定时任务状态",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "发言榜缓存状态",
+            "desc": "显示缓存状态",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "启用发言榜定时",
+            "desc": "启用定时推送功能",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "手动推送发言榜",
+            "desc": "手动推送排行榜",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "本周发言榜",
+            "desc": "显示本周排行榜，别名：本周水群榜/本周发言排行/本周B话榜",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "本年发言榜",
+            "desc": "显示本年排行榜，别名：本年水群榜/本年发言排行/本年B话榜/年榜",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "本月发言榜",
+            "desc": "显示本月排行榜，别名：本月水群榜/本月发言排行/本月B话榜",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "清除发言榜单",
+            "desc": "清除发言榜单",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "禁用发言榜定时",
+            "desc": "禁用定时推送功能",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "设置发言榜图片",
+            "desc": "设置排行榜的显示模式（图片或文字）",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "设置发言榜定时时间",
+            "desc": "设置定时推送时间",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "设置发言榜定时类型",
+            "desc": "设置定时推送的排行榜类型",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "设置发言榜定时群组",
+            "desc": "设置定时推送目标群组",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "设置发言榜数量",
+            "desc": "设置排行榜显示人数",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "astrbot_plugin_broadcast",
+        "display_name": "广播助手",
+        "version": "v1.1.1",
+        "desc": "[仅aiocqhttp] 一键群广播，所有适配器支持的格式都能发",
+        "nodes": [
+          {
+            "name": "关闭广播",
+            "desc": "关闭广播 <留空|群聊|私聊> <序号>",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "取消广播",
+            "desc": "取消当前正在进行的广播任务",
+            "is_group": false,
+            "tag": "admin",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "广播",
+            "desc": "(引用消息)广播 <群聊|私聊|全部>",
+            "is_group": false,
+            "tag": "admin",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "广播列表",
+            "desc": "广播列表 <留空|群聊|私聊>",
+            "is_group": false,
+            "tag": "admin",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "开启广播",
+            "desc": "开启广播 <留空|群聊|私聊> <序号>",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "astrbot_plugin_meting",
+        "display_name": "初叶🍂MetingAPI 点歌",
+        "version": "v1.0.8",
+        "desc": "基于 MetingAPI 的点歌插件，自定义API地址，支持QQ音乐、网易云、酷狗、酷我音源",
+        "nodes": [
+          {
+            "name": "切换QQ音乐",
+            "desc": "切换当前会话的音源为QQ音乐",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "切换网易云",
+            "desc": "切换当前会话的音源为网易云",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "切换酷我",
+            "desc": "切换当前会话的音源为酷我",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "切换酷狗",
+            "desc": "切换当前会话的音源为酷狗",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "搜歌",
+            "desc": "搜索歌曲（搜歌 xxx格式）",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "点歌",
+            "desc": "点歌指令，支持序号或歌名",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "点歌指令",
+            "desc": "",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "网易点歌",
+            "desc": "网易云点歌",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "腾讯点歌",
+            "desc": "QQ音乐点歌",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "酷我点歌",
+            "desc": "酷我点歌",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "酷狗点歌",
+            "desc": "酷狗点歌",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "astrbot_plugin_blacklist_tools",
+        "display_name": null,
+        "version": "v1.6",
+        "desc": "允许管理员和 LLM 将用户添加到黑名单中，阻止他们的消息，自动拉黑！",
+        "nodes": [
+          {
+            "name": "blacklist",
+            "desc": "指令组",
+            "is_group": true,
+            "tag": "normal",
+            "priority": null,
+            "children": [
+              {
+                "name": "add",
+                "desc": "添加用户到黑名单",
+                "is_group": false,
+                "tag": "admin",
+                "priority": null,
+                "children": []
+              },
+              {
+                "name": "clear",
+                "desc": "清空黑名单",
+                "is_group": false,
+                "tag": "admin",
+                "priority": null,
+                "children": []
+              },
+              {
+                "name": "info",
+                "desc": "查看特定用户的黑名单信息",
+                "is_group": false,
+                "tag": "admin",
+                "priority": null,
+                "children": []
+              },
+              {
+                "name": "ls",
+                "desc": "列出黑名单中的所有用户（支持分页）",
+                "is_group": false,
+                "tag": "admin",
+                "priority": null,
+                "children": []
+              },
+              {
+                "name": "rm",
+                "desc": "从黑名单中移除用户",
+                "is_group": false,
+                "tag": "admin",
+                "priority": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "astrbot_plugin_qqprofile",
+        "display_name": "QQ资料管理",
+        "version": "v1.1.3",
+        "desc": "[仅aiocqhttp]配置bot的头像、昵称、签名、状态等QQ资料, 同时可绑定于不同人格",
+        "nodes": [
+          {
+            "name": "人格列表",
+            "desc": "查看人格列表",
+            "is_group": false,
+            "tag": "admin",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "切换人格",
+            "desc": "",
+            "is_group": false,
+            "tag": "admin",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "设置头像",
+            "desc": "将引用的图片设置为头像",
+            "is_group": false,
+            "tag": "admin",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "设置昵称",
+            "desc": "设置Bot的昵称",
+            "is_group": false,
+            "tag": "admin",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "设置状态",
+            "desc": "设置Bot的在线状态",
+            "is_group": false,
+            "tag": "admin",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "设置签名",
+            "desc": "设置Bot的签名，并同步空间（可在QQ里关掉）",
+            "is_group": false,
+            "tag": "admin",
+            "priority": null,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "群成员查询",
+        "display_name": null,
+        "version": "v0.1.0",
+        "desc": "[仅aiocqhttp]群成员查询工具，用于获取群成员的群昵称、QQ名称、QQ号、群内身份，返回给LLM的工具",
+        "nodes": [
+          {
+            "name": "测试群成员",
+            "desc": "测试指令：手动触发群成员查询并显示格式化结果（限制显示前300个成员）",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "群成员帮助",
+            "desc": "显示插件帮助信息",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "astrbot_plugin_bilibili",
+        "display_name": null,
+        "version": "v1.5.7",
+        "desc": "哔哩哔哩动态推送、视频信息、直播间信息查询、自然语言番剧推荐插件",
+        "nodes": [
+          {
+            "name": "bili_card_style",
+            "desc": "切换动态卡片样式。不带参数可以查看可用的卡片样式列表。",
+            "is_group": false,
+            "tag": "admin",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "bili_global_del",
+            "desc": "管理员指令。通过 UMO 删除某一个群聊或者私聊的所有订阅。",
+            "is_group": false,
+            "tag": "admin",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "bili_global_list",
+            "desc": "管理员指令。查看所有订阅者",
+            "is_group": false,
+            "tag": "admin",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "bili_global_sub",
+            "desc": "管理员指令。通过 UID 添加某一个用户的所有订阅。",
+            "is_group": false,
+            "tag": "admin",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "bili_login",
+            "desc": "扫码登录 Bilibili。",
+            "is_group": false,
+            "tag": "admin",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "bili_logout",
+            "desc": "登出 Bilibili，清除凭据。",
+            "is_group": false,
+            "tag": "admin",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "bili_sub",
+            "desc": "",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "bili_sub_del",
+            "desc": "删除 bilibili 动态监控",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "bili_sub_list",
+            "desc": "查看 bilibili 动态监控列表",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "bili_sub_test",
+            "desc": "测试订阅功能。仅测试获取动态与渲染图片功能，不保存订阅信息。",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "astrbot_plugin_essential",
+        "display_name": null,
+        "version": "v1.1.0",
+        "desc": "支持多个娱乐功能！！随机动漫图片、以图搜番（适配手机QQ和微信）、MC服务器、一言、今天吃什么、群早晚安记录、EPIC喜加一。帮助：https://github.com/Soulter/astrbot_plugin_essential",
+        "nodes": [
+          {
+            "name": "mcs",
+            "desc": "查mc服务器",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "moe",
+            "desc": "随机动漫图片",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "一言",
+            "desc": "来一条一言",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "今天吃什么",
+            "desc": "今天吃什么",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "喜加一",
+            "desc": "EPIC 喜加一",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "喜报",
+            "desc": "喜报生成器",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "悲报",
+            "desc": "悲报生成器",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "搜番",
+            "desc": "以图搜番",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "astrbot_quotes_plugin",
+        "display_name": null,
+        "version": "v1.5.0",
+        "desc": "qq群聊记录群友说过的话，语录插件",
+        "nodes": [
+          {
+            "name": "上传",
+            "desc": "",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "删除",
+            "desc": "删除语录：请『回复机器人发送的语录』并发送“删除”来删除该语录。",
+            "is_group": false,
+            "tag": "admin",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "语录",
+            "desc": "随机发送一条语录：",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "语录帮助",
+            "desc": "显示语录相关指令的使用说明。",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "astrbot_plugin_jrysprpr",
+        "display_name": null,
+        "version": "v1.0.4",
+        "desc": "今日运势查询，会生成一张图片，包含今日运势、宜忌、吉时等信息。",
+        "nodes": [
+          {
+            "name": "jrys",
+            "desc": "处理 /jrys, /今日运势, /运势 等指令",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "jrys_last",
+            "desc": "处理 /jrys_last 指令，发送上一次生成的原图",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          }
+        ]
+      }
+    ]
+  ],
+  "singles": [
+    {
+      "name": "astrbot_plugin_pig",
+      "display_name": "猪猪表情包",
+      "version": "v0.1.0",
+      "desc": "随机发送一张猪猪表情包",
+      "nodes": [
+        {
+          "name": "pig",
+          "desc": "兼容性签名 (self, event)。子命令解析使用简洁布尔表达式：",
+          "is_group": false,
+          "tag": "normal",
+          "priority": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "nachoneko",
+      "display_name": null,
+      "version": "v1.0.2",
+      "desc": "获取甘城猫猫图片。",
+      "nodes": [
+        {
+          "name": "neko",
+          "desc": "",
+          "is_group": false,
+          "tag": "normal",
+          "priority": null,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "colors": {
+    "page_fill": "#f0f2f5",
+    "c_plugin_name": "#0d47a1",
+    "c_plugin_id": "#546e7a",
+    "c_group_title": "#6a1b9a",
+    "c_bullet": "#d81b60",
+    "c_event_icon": "#ffc72c",
+    "c_leaf_text": "#37474f",
+    "c_desc_text": "#757575",
+    "c_group_bg": "#f3e5f5",
+    "c_rich_bg": "#fcfcfc",
+    "c_box_bg": "#f5f5f5",
+    "c_box_stroke": "#e0e0e0",
+    "c_text_primary": "#1a1a1a",
+    "c_regex_bg": "#fff3e0",
+    "c_regex_text": "#e65100",
+    "c_regex_icon": "#f57c00",
+    "c_tag_admin": "#c62828",
+    "c_tag_event": "#f57c00",
+    "c_tag_mcp": "#00695c",
+    "c_tag_id": "#283593",
+    "c_ver_bg": "#e3f2fd",
+    "c_ver_text": "#1565c0",
+    "c_prio_bg": "#e8eaf6",
+    "c_prio_text": "#283593",
+    "c_highlight_bg": "#ffeb3b",
+    "c_highlight_text": "#000000"
+  }
+}

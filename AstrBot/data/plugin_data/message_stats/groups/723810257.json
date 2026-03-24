@@ -1,0 +1,52 @@
+{
+  "group_id": "723810257",
+  "last_updated": "2026-02-22T11:43:27.955268",
+  "users": [
+    {
+      "user_id": "3023076908",
+      "nickname": "lkhw",
+      "message_count": 2,
+      "history": [
+        "2026-01-04",
+        "2026-01-04"
+      ],
+      "last_date": "2026-01-04",
+      "first_message_time": 1767535918,
+      "last_message_time": 1767535933
+    },
+    {
+      "user_id": "29053789",
+      "nickname": "Astronaut_37",
+      "message_count": 2,
+      "history": [
+        "2026-01-04",
+        "2026-02-22"
+      ],
+      "last_date": "2026-02-22",
+      "first_message_time": 1767535955,
+      "last_message_time": 1771760534
+    },
+    {
+      "user_id": "2402560438",
+      "nickname": "Priventa",
+      "message_count": 1,
+      "history": [
+        "2026-02-22"
+      ],
+      "last_date": "2026-02-22",
+      "first_message_time": 1771755271,
+      "last_message_time": 1771755271
+    },
+    {
+      "user_id": "3437568157",
+      "nickname": "摩欧卡",
+      "message_count": 1,
+      "history": [
+        "2026-02-22"
+      ],
+      "last_date": "2026-02-22",
+      "first_message_time": 1771760607,
+      "last_message_time": 1771760607
+    }
+  ]
+}

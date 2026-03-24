@@ -1,0 +1,74 @@
+﻿{
+  "is_auto_pack": false,
+  "trigger_settings": {
+    "is_auto_parse": true,
+    "trigger_keywords": [
+      "视频解析",
+      "解析视频"
+    ]
+  },
+  "permissions": {
+    "admin_id": "",
+    "whitelist": {
+      "enable": false,
+      "user": [],
+      "group": []
+    },
+    "blacklist": {
+      "enable": false,
+      "user": [],
+      "group": []
+    }
+  },
+  "text_settings": {
+    "enable_opening_msg": false,
+    "opening_msg_content": "流媒体解析bot为您服务 ٩( 'ω' )و",
+    "enable_text_metadata": false,
+    "hot_comment_settings": {
+      "hot_comment_count": 0,
+      "enable_bilibili": true,
+      "enable_weibo": true,
+      "enable_xiaohongshu": true
+    }
+  },
+  "video_size_settings": {
+    "max_video_size_mb": 100.0,
+    "large_video_threshold_mb": 100.0
+  },
+  "download_settings": {
+    "cache_dir": "/app/sharedFolder/video_parser/cache",
+    "pre_download_all_media": false,
+    "max_concurrent_downloads": 5
+  },
+  "parser_enable_settings": {
+    "enable_bilibili": true,
+    "enable_douyin": true,
+    "enable_kuaishou": true,
+    "enable_weibo": true,
+    "enable_xiaohongshu": true,
+    "enable_xiaoheihe": true,
+    "enable_twitter": false
+  },
+  "proxy_settings": {
+    "proxy_addr": "",
+    "xiaoheihe": {
+      "video": true
+    },
+    "twitter": {
+      "parse": false,
+      "image": true,
+      "video": true
+    }
+  },
+  "cookie_settings": {
+    "bilibili": {
+      "use_cookie_for_parsing": false,
+      "cookie": "",
+      "enable_admin_assist_on_expire": false,
+      "admin_reply_timeout_minutes": 1440,
+      "admin_request_cooldown_minutes": 1440,
+      "max_quality": "不限制"
+    }
+  },
+  "debug": false
+}

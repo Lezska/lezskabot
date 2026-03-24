@@ -1,0 +1,6 @@
+﻿{
+  "broadcast_max_delay": 1.1,
+  "skip_source": false,
+  "disable_gids": [],
+  "disable_uids": []
+}

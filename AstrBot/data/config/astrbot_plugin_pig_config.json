@@ -1,0 +1,23 @@
+﻿{
+    "cooldown_period": 5,
+    "load_to_local": false,
+    "update_cycle": 0,
+    "is_match_all_msg": true,
+    "is_exact_match": false,
+    "match_keywords": [
+        "猪",
+        "祝",
+        "🐷",
+        "🐖",
+        "🐽",
+        "㊗",
+        "㊗️"
+    ],
+    "exclude_prefixes": [
+        "/",
+        "!",
+        "！",
+        "#",
+        "ww"
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "broadcast_max_delay": {
+        "description": "广播消息的最大延迟秒数",
+        "hint": "群发消息有风险，插件内采用随机延迟策略，降低风控的风险。此处设置随机延迟的最大值，单位为秒",
+        "type": "float",
+        "slider": {
+            "min": 0.01,
+            "max": 3.0,
+            "step": 0.01
+        },
+        "default": 1.1
+    },
+    "skip_source": {
+        "description": "是否跳过广播源头",
+        "type": "bool",
+        "hint": "发送广播命令时，是否跳过当前群聊/私聊，避免在源头会话重复发送广播消息",
+        "default": true
+    },
+    "disable_gids": {
+        "description": "关闭广播的群聊",
+        "type": "list",
+        "hint": "关闭广播的群聊将不再接收广播消息",
+        "default": []
+    },
+    "disable_uids": {
+        "description": "关闭私聊广播的好友",
+        "type": "list",
+        "hint": "被禁用的好友将不会收到私聊广播",
+        "default": []
+    }
+}

@@ -1,0 +1,10 @@
+﻿{
+  "group_whitelist": [],
+  "user_blacklist": [],
+  "day_start_time": "00:00",
+  "auto_delete_last_month_data": true,
+  "daily_max_checkins": 0,
+  "monthly_max_checkins": 0,
+  "enable_female_calendar": true,
+  "ranking_display_count": 10
+}

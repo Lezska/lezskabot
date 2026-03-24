@@ -1,0 +1,8 @@
+﻿{
+  "max_blacklist_duration": 86400,
+  "allow_permanent_blacklist": true,
+  "allow_blacklist_admin": false,
+  "show_blacklist_status": true,
+  "blacklist_message": "你已被拉黑哈哈哈哈",
+  "auto_delete_expired_after": 86400
+}

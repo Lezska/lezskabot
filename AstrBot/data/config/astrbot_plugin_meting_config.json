@@ -1,0 +1,18 @@
+﻿{
+  "api_config": {
+    "api_url": "https://musicapi.chuyel.top/meting/",
+    "api_type": 1,
+    "custom_api_url": "",
+    "custom_api_template": ""
+  },
+  "default_source": "netease",
+  "use_music_card": false,
+  "api_sign_url": "https://oiapi.net/api/QQMusicJSONArk/",
+  "search_result_expiration_time": 120,
+  "search_results_withdrawn_after_timeout": 60,
+  "search_result_restrictions": false,
+  "search_result_count": 7,
+  "segment_duration": 300,
+  "send_interval": 1.0,
+  "max_file_size": 50
+}
