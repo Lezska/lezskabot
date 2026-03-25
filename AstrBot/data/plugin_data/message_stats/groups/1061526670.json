@@ -1,17 +1,33 @@
 {
   "group_id": "1061526670",
-  "last_updated": "2026-03-24T03:24:39.658115",
+  "last_updated": "2026-03-25T11:25:12.745092",
   "users": [
     {
       "user_id": "1785854859",
       "nickname": "清",
+      "message_count": 6,
+      "history": [
+        "2026-03-24",
+        "2026-03-25",
+        "2026-03-25",
+        "2026-03-25",
+        "2026-03-25",
+        "2026-03-25"
+      ],
+      "last_date": "2026-03-25",
+      "first_message_time": 1774293879,
+      "last_message_time": 1774409112
+    },
+    {
+      "user_id": "3130224867",
+      "nickname": "キラキラ✨苹果鲷鱼烧baka笨蛋",
       "message_count": 1,
       "history": [
-        "2026-03-24"
+        "2026-03-25"
       ],
-      "last_date": "2026-03-24",
-      "first_message_time": 1774293879,
-      "last_message_time": 1774293879
+      "last_date": "2026-03-25",
+      "first_message_time": 1774409112,
+      "last_message_time": 1774409112
     }
   ]
 }

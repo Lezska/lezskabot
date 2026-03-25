@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme 表情包插件 - 表情状态</title>
+    <link rel="stylesheet" href="../css/meme_info.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Meme 表情状态</h1>
+            <div class="subtitle">插件运行状态与配置信息</div>
+            <div class="created-by">🌟 astrbot_plugin_meme_generator {{ version }} by {{ author }}</div>
+        </div>
+
+        <div class="content">
+            <div class="status-section">
+                <h2 class="section-title">🔧 运行状态</h2>
+                <div class="status-grid">
+                    <div class="status-card {{ 'enabled' if plugin_enabled else 'disabled' }}">
+                        <div class="status-icon">
+                            {{ '✅' if plugin_enabled else '🔒' }}
+                        </div>
+                        <div class="status-info">
+                            <div class="status-label">插件状态</div>
+                            <div class="status-value">{{ '启用' if plugin_enabled else '禁用' }}</div>
+                        </div>
+                    </div>
+
+                    <div class="status-card {{ 'enabled' if avatar_cache_enabled else 'disabled' }}">
+                        <div class="status-icon">
+                            {{ '✅' if avatar_cache_enabled else '❌' }}
+                        </div>
+                        <div class="status-info">
+                            <div class="status-label">头像缓存</div>
+                            <div class="status-value">{{ '开启' if avatar_cache_enabled else '关闭' }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="config-section">
+                <h2 class="section-title">⚙️ 配置参数</h2>
+                <div class="config-grid">
+                    <div class="config-item">
+                        <div class="config-label">⏱️ 冷却时间</div>
+                        <div class="config-value">{{ cooldown_seconds }}秒</div>
+                    </div>
+                    <div class="config-item">
+                        <div class="config-label">⏰ 生成超时</div>
+                        <div class="config-value">{{ generation_timeout }}秒</div>
+                    </div>
+                    <div class="config-item">
+                        <div class="config-label">🗂️ 缓存过期</div>
+                        <div class="config-value">{{ cache_expire_hours }}小时</div>
+                    </div>
+                    <div class="config-item">
+                        <div class="config-label">🚫 禁用模板</div>
+                        <div class="config-value">{{ disabled_templates_count }}个</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <h2 class="section-title">📈 统计信息</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">{{ total_templates }}</div>
+                        <div class="stat-label">可用模板</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">{{ total_keywords }}</div>
+                        <div class="stat-label">关键词数</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

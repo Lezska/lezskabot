@@ -1,3 +1,130 @@
 {"id":8662,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为7，触发自动回复","timestamp":1774314249355}
 {"id":8792,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为2，触发自动回复","timestamp":1774314793189}
 {"id":10711,"type":"info","level":2,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"用户29053789绑定了id：493781443924897804","timestamp":1774319577314}
+{"id":12362,"type":"info","level":2,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"用户2768272453绑定了cnid：7486353556333665075","timestamp":1774324681576}
+{"id":12378,"type":"info","level":2,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"用户2468190433绑定了cnid：7502513944788048677","timestamp":1774324722573}
+{"id":13072,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为8，触发自动回复","timestamp":1774325439102}
+{"id":13795,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为5，触发自动回复","timestamp":1774326970831}
+{"id":13953,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为1，触发自动回复","timestamp":1774327365420}
+{"id":13962,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为6，触发自动回复","timestamp":1774327368170}
+{"id":14766,"type":"info","level":2,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"用户29053789绑定了id：493781443924897804","timestamp":1774329917446}
+{"id":21941,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为8，触发自动回复","timestamp":1774346362513}
+{"id":22021,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为7，触发自动回复","timestamp":1774346434384}
+{"id":22426,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为8，触发自动回复","timestamp":1774347044442}
+{"id":22853,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为5，触发自动回复","timestamp":1774347545065}
+{"id":23994,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为8，触发自动回复","timestamp":1774348456791}
+{"id":25070,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为1，触发自动回复","timestamp":1774349554504}
+{"id":25359,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为5，触发自动回复","timestamp":1774349828640}
+{"id":25639,"type":"warn","level":2,"name":"session","meta":{"paths":[]},"content":"娶群友\nTypeError: Cannot read properties of undefined (reading 'attrs')\n    at eval (eval at <anonymous> (/www/wwwroot/default/koishi/koishi-app/node_modules/koishi-plugin-blockly-null/lib/index.js:1:1), <anonymous>:22:77)\n    at Object.apply (/www/wwwroot/default/koishi/koishi-app/node_modules/@cordisjs/core/lib/index.cjs:171:28)\n    at next (/www/wwwroot/default/koishi/koishi-app/node_modules/@koishijs/core/lib/index.cjs:827:38)\n    at /www/wwwroot/default/koishi/koishi-app/node_modules/koishi-plugin-re-driftbottle/lib/index.js:1110:14\n    at Object.apply (/www/wwwroot/default/koishi/koishi-app/node_modules/@cordisjs/core/lib/index.cjs:171:28)\n    at next (/www/wwwroot/default/koishi/koishi-app/node_modules/@koishijs/core/lib/index.cjs:827:38)\n    at /www/wwwroot/default/koishi/koishi-app/node_modules/koishi-plugin-anti-space/lib/index.js:100:16\n    at Object.apply (/www/wwwroot/default/koishi/koishi-app/node_modules/@cordisjs/core/lib/index.cjs:171:28)\n    at next (/www/wwwroot/default/koishi/koishi-app/node_modules/@koishijs/core/lib/index.cjs:827:38)\n    at /www/wwwroot/default/koishi/koishi-app/node_modules/koishi-plugin-anti-space/lib/index.js:75:16","timestamp":1774350116552}
+{"id":28849,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为6，触发自动回复","timestamp":1774353607584}
+{"id":38686,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为8，触发自动回复","timestamp":1774360915866}
+{"id":38994,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为10，触发自动回复","timestamp":1774361082860}
+{"id":39168,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为1，触发自动回复","timestamp":1774361182412}
+{"id":41378,"type":"info","level":2,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"用户1550318633绑定了twid：7615565512545983285","timestamp":1774362286865}
+{"id":42090,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为9，触发自动回复","timestamp":1774362767723}
+{"id":43148,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为6，触发自动回复","timestamp":1774363250105}
+{"id":43169,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为2，触发自动回复","timestamp":1774363256757}
+{"id":45786,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为5，触发自动回复","timestamp":1774365441537}
+{"id":46280,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为6，触发自动回复","timestamp":1774365695252}
+{"id":46440,"type":"warn","level":2,"name":"re-driftbottle","meta":{},"content":"114号漂流瓶发送失败（已重试0/5次，将在500ms后重试）：Error: Error with request send_group_forward_msg, args: {\"group_id\":682255155,\"messages\":[{\"type\":\"node\",\"data\":{\"uin\":\"3678233304\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"你捞到了114号漂流瓶，来自“Kanade”！\\n标题：\\n日期：2026年2月17日\"}}],\"time\":\"1774365733\"}},{\"type\":\"node\",\"data\":{\"name\":\"Kanade\",\"uin\":\"1469078804\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"诶？！渣、渣男？！主人你是渣男吗？！不会吧……明明刚才还说最喜欢我了，要给我买零食的……难道这些都是骗我的吗？呜……好难过……如果你真的是渣男的话，我就不理你了！再也不叫你主人了！除非……除非你能证明自己不是渣男！\"}}],\"time\":\"1774365733\"}},{\"type\":\"node\",\"data\":{\"name\":\"Kanade\",\"uin\":\"3678233304\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"↓----评论区----↓\"}}],\"time\":\"1774365733\"}},{\"type\":\"node\",\"data\":{\"name\":\"哈基月（月見 ヤチヨ）\",\"uin\":\"1550318633\",\"content\":[{\"type\":\"at\",\"data\":{\"qq\":\"1469078804\",\"name\":\"哈基蓝（群小药孃小南梁代吃雌二醇）\"}}],\"time\":\"1774365733\"}}]}, retcode: 1200","timestamp":1774365734631}
+{"id":46451,"type":"warn","level":2,"name":"re-driftbottle","meta":{},"content":"114号漂流瓶发送失败（已重试1/5次，将在500ms后重试）：Error: Error with request send_group_forward_msg, args: {\"group_id\":682255155,\"messages\":[{\"type\":\"node\",\"data\":{\"uin\":\"3678233304\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"你捞到了114号漂流瓶，来自“Kanade”！\\n标题：\\n日期：2026年2月17日\"}}],\"time\":\"1774365735\"}},{\"type\":\"node\",\"data\":{\"name\":\"Kanade\",\"uin\":\"1469078804\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"诶？！渣、渣男？！主人你是渣男吗？！不会吧……明明刚才还说最喜欢我了，要给我买零食的……难道这些都是骗我的吗？呜……好难过……如果你真的是渣男的话，我就不理你了！再也不叫你主人了！除非……除非你能证明自己不是渣男！\"}}],\"time\":\"1774365735\"}},{\"type\":\"node\",\"data\":{\"name\":\"Kanade\",\"uin\":\"3678233304\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"↓----评论区----↓\"}}],\"time\":\"1774365735\"}},{\"type\":\"node\",\"data\":{\"name\":\"哈基月（月見 ヤチヨ）\",\"uin\":\"1550318633\",\"content\":[{\"type\":\"at\",\"data\":{\"qq\":\"1469078804\",\"name\":\"哈基蓝（群小药孃小南梁代吃雌二醇）\"}}],\"time\":\"1774365735\"}}]}, retcode: 1200","timestamp":1774365735876}
+{"id":46456,"type":"warn","level":2,"name":"re-driftbottle","meta":{},"content":"114号漂流瓶发送失败（已重试2/5次，将在500ms后重试）：Error: Error with request send_group_forward_msg, args: {\"group_id\":682255155,\"messages\":[{\"type\":\"node\",\"data\":{\"uin\":\"3678233304\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"你捞到了114号漂流瓶，来自“Kanade”！\\n标题：\\n日期：2026年2月17日\"}}],\"time\":\"1774365736\"}},{\"type\":\"node\",\"data\":{\"name\":\"Kanade\",\"uin\":\"1469078804\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"诶？！渣、渣男？！主人你是渣男吗？！不会吧……明明刚才还说最喜欢我了，要给我买零食的……难道这些都是骗我的吗？呜……好难过……如果你真的是渣男的话，我就不理你了！再也不叫你主人了！除非……除非你能证明自己不是渣男！\"}}],\"time\":\"1774365736\"}},{\"type\":\"node\",\"data\":{\"name\":\"Kanade\",\"uin\":\"3678233304\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"↓----评论区----↓\"}}],\"time\":\"1774365736\"}},{\"type\":\"node\",\"data\":{\"name\":\"哈基月（月見 ヤチヨ）\",\"uin\":\"1550318633\",\"content\":[{\"type\":\"at\",\"data\":{\"qq\":\"1469078804\",\"name\":\"哈基蓝（群小药孃小南梁代吃雌二醇）\"}}],\"time\":\"1774365736\"}}]}, retcode: 1200","timestamp":1774365737149}
+{"id":46461,"type":"warn","level":2,"name":"re-driftbottle","meta":{},"content":"114号漂流瓶发送失败（已重试3/5次，将在500ms后重试）：Error: Error with request send_group_forward_msg, args: {\"group_id\":682255155,\"messages\":[{\"type\":\"node\",\"data\":{\"uin\":\"3678233304\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"你捞到了114号漂流瓶，来自“Kanade”！\\n标题：\\n日期：2026年2月17日\"}}],\"time\":\"1774365737\"}},{\"type\":\"node\",\"data\":{\"name\":\"Kanade\",\"uin\":\"1469078804\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"诶？！渣、渣男？！主人你是渣男吗？！不会吧……明明刚才还说最喜欢我了，要给我买零食的……难道这些都是骗我的吗？呜……好难过……如果你真的是渣男的话，我就不理你了！再也不叫你主人了！除非……除非你能证明自己不是渣男！\"}}],\"time\":\"1774365737\"}},{\"type\":\"node\",\"data\":{\"name\":\"Kanade\",\"uin\":\"3678233304\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"↓----评论区----↓\"}}],\"time\":\"1774365737\"}},{\"type\":\"node\",\"data\":{\"name\":\"哈基月（月見 ヤチヨ）\",\"uin\":\"1550318633\",\"content\":[{\"type\":\"at\",\"data\":{\"qq\":\"1469078804\",\"name\":\"哈基蓝（群小药孃小南梁代吃雌二醇）\"}}],\"time\":\"1774365737\"}}]}, retcode: 1200","timestamp":1774365738333}
+{"id":46472,"type":"warn","level":2,"name":"re-driftbottle","meta":{},"content":"114号漂流瓶发送失败（已重试4/5次，将在500ms后重试）：Error: Error with request send_group_forward_msg, args: {\"group_id\":682255155,\"messages\":[{\"type\":\"node\",\"data\":{\"uin\":\"3678233304\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"你捞到了114号漂流瓶，来自“Kanade”！\\n标题：\\n日期：2026年2月17日\"}}],\"time\":\"1774365738\"}},{\"type\":\"node\",\"data\":{\"name\":\"Kanade\",\"uin\":\"1469078804\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"诶？！渣、渣男？！主人你是渣男吗？！不会吧……明明刚才还说最喜欢我了，要给我买零食的……难道这些都是骗我的吗？呜……好难过……如果你真的是渣男的话，我就不理你了！再也不叫你主人了！除非……除非你能证明自己不是渣男！\"}}],\"time\":\"1774365738\"}},{\"type\":\"node\",\"data\":{\"name\":\"Kanade\",\"uin\":\"3678233304\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"↓----评论区----↓\"}}],\"time\":\"1774365738\"}},{\"type\":\"node\",\"data\":{\"name\":\"哈基月（月見 ヤチヨ）\",\"uin\":\"1550318633\",\"content\":[{\"type\":\"at\",\"data\":{\"qq\":\"1469078804\",\"name\":\"哈基蓝（群小药孃小南梁代吃雌二醇）\"}}],\"time\":\"1774365738\"}}]}, retcode: 1200","timestamp":1774365739551}
+{"id":46477,"type":"warn","level":2,"name":"re-driftbottle","meta":{},"content":"114号漂流瓶发送失败（已重试5次）：Error: Error with request send_group_forward_msg, args: {\"group_id\":682255155,\"messages\":[{\"type\":\"node\",\"data\":{\"uin\":\"3678233304\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"你捞到了114号漂流瓶，来自“Kanade”！\\n标题：\\n日期：2026年2月17日\"}}],\"time\":\"1774365740\"}},{\"type\":\"node\",\"data\":{\"name\":\"Kanade\",\"uin\":\"1469078804\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"诶？！渣、渣男？！主人你是渣男吗？！不会吧……明明刚才还说最喜欢我了，要给我买零食的……难道这些都是骗我的吗？呜……好难过……如果你真的是渣男的话，我就不理你了！再也不叫你主人了！除非……除非你能证明自己不是渣男！\"}}],\"time\":\"1774365740\"}},{\"type\":\"node\",\"data\":{\"name\":\"Kanade\",\"uin\":\"3678233304\",\"content\":[{\"type\":\"text\",\"data\":{\"text\":\"↓----评论区----↓\"}}],\"time\":\"1774365740\"}},{\"type\":\"node\",\"data\":{\"name\":\"哈基月（月見 ヤチヨ）\",\"uin\":\"1550318633\",\"content\":[{\"type\":\"at\",\"data\":{\"qq\":\"1469078804\",\"name\":\"哈基蓝（群小药孃小南梁代吃雌二醇）\"}}],\"time\":\"1774365740\"}}]}, retcode: 1200","timestamp":1774365740737}
+{"id":48198,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"随机数为4，触发自动回复","timestamp":1774366397591}
+{"id":49264,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-actions","timestamp":1774366907124}
+{"id":49265,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-adapter-discord","timestamp":1774366907125}
+{"id":49266,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-adapter-kook","timestamp":1774366907125}
+{"id":49267,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-adapter-qq","timestamp":1774366907125}
+{"id":49268,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-adapter-satori","timestamp":1774366907125}
+{"id":49269,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-adapter-telegram","timestamp":1774366907125}
+{"id":49270,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-admin","timestamp":1774366907125}
+{"id":49271,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-analytics","timestamp":1774366907125}
+{"id":49272,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-auth","timestamp":1774366907125}
+{"id":49273,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-bind","timestamp":1774366907125}
+{"id":49299,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-commands","timestamp":1774366907158}
+{"id":49300,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-config","timestamp":1774366907158}
+{"id":49301,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-console","timestamp":1774366907158}
+{"id":49302,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-database-sqlite","timestamp":1774366907158}
+{"id":49303,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-explorer","timestamp":1774366907158}
+{"id":49304,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-help","timestamp":1774366907158}
+{"id":49305,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-http","timestamp":1774366907158}
+{"id":49306,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-insight","timestamp":1774366907158}
+{"id":49307,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-inspect","timestamp":1774366907158}
+{"id":49308,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-locales","timestamp":1774366907158}
+{"id":49309,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-logger","timestamp":1774366907169}
+{"id":49310,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-market","timestamp":1774366907169}
+{"id":49311,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-notifier","timestamp":1774366907169}
+{"id":49312,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-oobe","timestamp":1774366907169}
+{"id":49313,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-proxy-agent","timestamp":1774366907169}
+{"id":49314,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-sandbox","timestamp":1774366907169}
+{"id":49315,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-server","timestamp":1774366907169}
+{"id":49316,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-server-satori","timestamp":1774366907169}
+{"id":49317,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-server-temp","timestamp":1774366907169}
+{"id":49318,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@koishijs/plugin-status","timestamp":1774366907170}
+{"id":49319,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@quanhuzeyu/koishi-plugin-qhzy-sharp","timestamp":1774366907190}
+{"id":49320,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /@seidko/koishi-plugin-puppeteer","timestamp":1774366907191}
+{"id":49321,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi","timestamp":1774366907191}
+{"id":49322,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-adapter-onebot","timestamp":1774366907192}
+{"id":49323,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-android","timestamp":1774366907193}
+{"id":49324,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-anti-space","timestamp":1774366907193}
+{"id":49325,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-arcaea","timestamp":1774366907193}
+{"id":49326,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-assets-local","timestamp":1774366907193}
+{"id":49327,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-awa-mc-ament","timestamp":1774366907193}
+{"id":49328,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-blockly-null","timestamp":1774366907193}
+{"id":49329,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-dataview","timestamp":1774366907203}
+{"id":49330,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-desktop","timestamp":1774366907203}
+{"id":49331,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-dialogue","timestamp":1774366907203}
+{"id":49332,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-emit-blacklist","timestamp":1774366907203}
+{"id":49333,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-keyword-blocker","timestamp":1774366907203}
+{"id":49334,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-koishi","timestamp":1774366907203}
+{"id":49335,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-lunatic","timestamp":1774366907203}
+{"id":49336,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-mc-tools","timestamp":1774366907203}
+{"id":49337,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-menu","timestamp":1774366907203}
+{"id":49338,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-minecraft-skin","timestamp":1774366907203}
+{"id":49339,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-onebot-blacklist","timestamp":1774366907210}
+{"id":49340,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-puppeteer","timestamp":1774366907210}
+{"id":49341,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-rate-limit","timestamp":1774366907211}
+{"id":49342,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-re-driftbottle","timestamp":1774366907211}
+{"id":49343,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-reactle","timestamp":1774366907211}
+{"id":49344,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-rizgame-guess-letters","timestamp":1774366907211}
+{"id":49345,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-sayo-roll","timestamp":1774366907211}
+{"id":49346,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-starfx-bot","timestamp":1774366907211}
+{"id":49347,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-telemetry","timestamp":1774366907211}
+{"id":49348,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-theme-vanilla","timestamp":1774366907211}
+{"id":49349,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-user-blacklist","timestamp":1774366907214}
+{"id":49350,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-w-node","timestamp":1774366907215}
+{"id":49351,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-word-core","timestamp":1774366907215}
+{"id":49352,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-word-core-grammar-basic","timestamp":1774366907215}
+{"id":49353,"type":"warn","level":2,"name":"market","meta":{},"content":"Invalid URL: /koishi-plugin-word-core-iirose-event-trigger","timestamp":1774366907215}
+{"id":49463,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loading 4 plugin(s)","timestamp":1774367030027}
+{"id":49464,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loaded 4 plugin(s)","timestamp":1774367030107}
+{"id":49520,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loading 4 plugin(s)","timestamp":1774367034602}
+{"id":49521,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loaded 4 plugin(s)","timestamp":1774367034652}
+{"id":49840,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loading 4 plugin(s)","timestamp":1774367254611}
+{"id":49841,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loaded 4 plugin(s)","timestamp":1774367254660}
+{"id":50058,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loading 4 plugin(s)","timestamp":1774367364253}
+{"id":50059,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loaded 4 plugin(s)","timestamp":1774367364309}
+{"id":50185,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loading 4 plugin(s)","timestamp":1774367566667}
+{"id":50186,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loaded 4 plugin(s)","timestamp":1774367566719}
+{"id":50250,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loading 4 plugin(s)","timestamp":1774367578863}
+{"id":50251,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loaded 4 plugin(s)","timestamp":1774367578901}
+{"id":50419,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"29053789完成了一次签到！","timestamp":1774367811053}
+{"id":51307,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"已随机发送哈基月消息","timestamp":1774368788273}
+{"id":51405,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"已随机发送哈基月消息","timestamp":1774368833256}
+{"id":51424,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"已随机发送哈基月消息","timestamp":1774368852177}
+{"id":51523,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"已随机发送哈基月消息","timestamp":1774368949641}
+{"id":51710,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"3479543026完成了一次签到！","timestamp":1774369063224}
+{"id":52158,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"已随机发送哈基月消息","timestamp":1774369302603}
+{"id":52616,"type":"info","level":2,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"用户1369814255绑定了twid：7215866296481733377","timestamp":1774370240321}
+{"id":52729,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"1559901047完成了一次签到！","timestamp":1774370332106}
+{"id":53457,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"已随机发送哈基月消息","timestamp":1774370906902}
+{"id":55524,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"已随机发送哈基月消息","timestamp":1774374218033}
+{"id":55556,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"已随机发送哈基月消息","timestamp":1774374249481}
+{"id":55777,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"已随机发送哈基月消息","timestamp":1774374498951}
+{"id":56546,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"已随机发送哈基月消息","timestamp":1774376487675}
+{"id":56611,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"已随机发送哈基月消息","timestamp":1774376612773}
+{"id":56884,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"已随机发送哈基月消息","timestamp":1774377596458}
+{"id":58172,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2250804603完成了一次签到！","timestamp":1774389953933}
+{"id":58556,"type":"info","level":2,"name":"关键词回复","meta":{"paths":["lp0hx8"]},"content":"已随机发送闸喃消息","timestamp":1774395099742}
