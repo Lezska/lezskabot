@@ -75,8 +75,7 @@ else
     screen -S "llone" bash -c "
         cd '${cwd}/llone' && \
         echo '=== Running start.sh ===' && \
-        ./start.sh && \
-        echo '=== start.sh finished, shell remains ===' && \
+        ./start.sh \
         exec bash
     "
 fi

@@ -628,11 +628,11 @@
     ],
     "_user_last_images": {
         "3045377152": {
-            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/9a5b5cb088ee4651ac24ba624bf45187.jpg",
+            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/759ac45af5f0454cae3688d23adcfed5.png",
             "should_cleanup": true
         },
         "2992606656": {
-            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/9e909f3fd1414ecd93e58bab9aea94d7.jpg",
+            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/1591240445c244a8be31719c41c53f6c.png",
             "should_cleanup": true
         },
         "285950548": {
@@ -648,15 +648,15 @@
             "should_cleanup": true
         },
         "1525775676": {
-            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/ff84b4f9eaa24aa1adbca9195cc0f833.jpg",
+            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/85a369c725f34c1c94dffb26acaf143a.jpg",
             "should_cleanup": true
         },
         "2114001086": {
-            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/ff611e1fccc2401e8607e2ef398640dc.jpg",
+            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/5291288990fb4b6b9a722daae196acc5.jpg",
             "should_cleanup": true
         },
         "1469078804": {
-            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/25dbd470632147f7af5b4d9531ecce6a.jpg",
+            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/dfd69bb6d79d479b8430f4d9d3cb2791.jpg",
             "should_cleanup": true
         },
         "1322078270": {
@@ -664,7 +664,7 @@
             "should_cleanup": true
         },
         "249076553": {
-            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/534f3ff0285843879f7d277138c9b3ce.jpg",
+            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/f65f03383a974039a481b74cbb7f69cc.jpg",
             "should_cleanup": true
         },
         "3406417701": {
@@ -673,6 +673,42 @@
         },
         "1374790170": {
             "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/ba3e77faeab64e20a37cccd5bb4566b0.jpg",
+            "should_cleanup": true
+        },
+        "1741422363": {
+            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/13d5b1228a6548cbabe0aae570debeb9.jpg",
+            "should_cleanup": true
+        },
+        "3479543026": {
+            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/af9c71f4741247c08e82497331024bb5.jpg",
+            "should_cleanup": true
+        },
+        "971217490": {
+            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/41486f5d44bd48e4821b277a23d5d13e.jpg",
+            "should_cleanup": true
+        },
+        "2855478095": {
+            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/7dfc7345cc0143008be811d60ab6cbe1.jpg",
+            "should_cleanup": true
+        },
+        "1154398128": {
+            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/5dd9de43d32644e1a9316d4cebce3714.png",
+            "should_cleanup": true
+        },
+        "29053789": {
+            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/a137f95c7f8946ce805980f8516b56cf.jpg",
+            "should_cleanup": true
+        },
+        "483039626": {
+            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/fb1e4b0c6f624b2ca48bca0d9bff3c0c.jpg",
+            "should_cleanup": true
+        },
+        "1745815583": {
+            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/b6d0264192714c97ad9223a897f7b33e.jpg",
+            "should_cleanup": true
+        },
+        "3944761794": {
+            "path": "/www/wwwroot/default/AstrBot/data/plugin_data/unknown/cache/background_images_tmp/618d68f2f461414bb5b372ae965c958c.jpg",
             "should_cleanup": true
         }
     }

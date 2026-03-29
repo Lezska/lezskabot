@@ -101,6 +101,7 @@ img1/崩坏系列!雷电芽衣.jpg
 img1/崩坏系列!灵砂.jpg
 img1/崩坏系列!流萤.jpg
 img1/崩坏系列!琪亚娜·卡斯兰娜.png
+img1/崩坏系列!阮梅.jpg
 img1/崩坏系列!三月七.jpg
 img1/崩坏系列!缇里西庇俄丝.jpg
 img1/崩坏系列!托帕.jpg
@@ -236,7 +237,7 @@ img1/超次元游戏海王星!天王星涡芽.png
 img1/超次元游戏海王星!优妮.png
 img1/超时空辉夜姬!辉夜.jpg
 img1/超时空辉夜姬!谏山真实.webp
-img1/超时空辉夜姬!酒寄彩叶.png
+img1/超时空辉夜姬!酒寄彩叶.jpg
 img1/超时空辉夜姬!驹泽乃依.webp
 img1/超时空辉夜姬!绫䌷芦花.webp
 img1/超时空辉夜姬!月见八千代.jpg
@@ -377,7 +378,7 @@ img1/电锯人!蕾塞.png
 img1/电锯人!玛奇玛.jpg
 img1/电锯人!玛奇玛.png
 img1/电锯人!帕瓦.jpg
-img1/电锯人!三鹰朝.png
+img1/电锯人!三鹰朝.jpg
 img1/电锯人!夜.jpg
 img1/吊带袜天使!Kneesocks.jpg
 img1/吊带袜天使!panty.jpg
@@ -1036,7 +1037,7 @@ img1/鸣潮!珂莱塔.jpg
 img1/鸣潮!琳奈.jpg
 img1/鸣潮!露帕.jpg
 img1/鸣潮!洛可可.jpg
-img1/鸣潮!莫宁.png
+img1/鸣潮!莫宁.jpg
 img1/鸣潮!千咲.jpg
 img1/鸣潮!守岸人.jpg
 img1/鸣潮!西格莉卡.png
@@ -1357,6 +1358,8 @@ img1/三月的狮子!川本明里.png
 img1/三月的狮子!川本日向.png
 img1/三月的狮子!幸田香子.png
 img1/散华礼弥!散华礼弥.jpg
+img1/杀戮尖塔!储君.jpg
+img1/杀戮尖塔!静默猎手.png
 img1/沙耶之歌!沙耶.jpg
 img1/擅长捉弄的高木同学!高木.png
 img1/少女歌剧!爱城华恋.jpg
@@ -1533,9 +1536,6 @@ img1/忘川の泉眼!忘川川.jpg
 img1/薇薇-萤石眼之歌-!薇薇.jpg
 img1/为美好的世界献上祝福!阿库娅.jpeg
 img1/为美好的世界献上祝福!阿库娅.jpg
-img1/为美好的世界献上祝福!贝尔泽古·斯黛莉休·索德·爱丽丝.jpg
-img1/为美好的世界献上祝福!达克妮丝.jpg
-img1/为美好的世界献上祝福!达克尼斯.jpg
 img1/伪恋!鸫诚士郎.jpg
 img1/伪恋!橘万里花.jpg
 img1/伪恋!桐崎千棘.png
@@ -1998,6 +1998,9 @@ img1/Vtuber!まいたけCh.jpg
 img1/お徳用!Ringo-chan.jpg
 img1/ナナブンノニジュウニ!泷川美羽.jpg
 img1/ひなビタ♪!芽兔咩呜.jpg
+img2/为美好的世界献上祝福!贝尔泽古·斯黛莉休·索德·爱丽丝.jpg
+img2/为美好的世界献上祝福!达克妮丝.jpg
+img2/为美好的世界献上祝福!达克尼斯.jpg
 img2/为美好的世界献上祝福!惠惠.jpg
 img2/为美好的世界献上祝福!惠惠.png
 img2/为美好的世界献上祝福!克莉丝.jpg
@@ -2434,6 +2437,7 @@ img2/原神!刻晴.png
 img2/原神!雷电将军.jpeg
 img2/原神!雷电将军.jpg
 img2/原神!丽莎.jpeg
+img2/原神!莉奈娅.png
 img2/原神!琳妮特.jpg
 img2/原神!玛拉妮.jpg
 img2/原神!玛薇卡.jpg

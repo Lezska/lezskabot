@@ -4,5 +4,9 @@
   "generation_timeout": 30,
   "enable_avatar_cache": false,
   "cache_expire_hours": 24,
-  "disabled_templates": []
+  "disabled_templates": [
+    "喜报",
+    "悲报",
+    "ph"
+  ]
 }

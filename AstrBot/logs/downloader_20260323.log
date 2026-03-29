@@ -1,0 +1,21 @@
+2026-03-25 21:51:19,861 - ImageDownloader - ERROR - 网络请求异常：525 Server Error: Origin SSL Handshake Error for url: https://api.suyanw.cn/api/mao
+Traceback (most recent call last):
+  File "/www/wwwroot/default/AstrBot/data/plugins/nachoneko/main.py", line 61, in fetch_image
+    response.raise_for_status()
+  File "/www/wwwroot/default/AstrBot/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 525 Server Error: Origin SSL Handshake Error for url: https://api.suyanw.cn/api/mao
+2026-03-25 21:51:28,039 - ImageDownloader - ERROR - 网络请求异常：522 Server Error: Origin Connection Time-out for url: https://api.suyanw.cn/api/mao
+Traceback (most recent call last):
+  File "/www/wwwroot/default/AstrBot/data/plugins/nachoneko/main.py", line 61, in fetch_image
+    response.raise_for_status()
+  File "/www/wwwroot/default/AstrBot/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 522 Server Error: Origin Connection Time-out for url: https://api.suyanw.cn/api/mao
+2026-03-25 22:13:17,329 - ImageDownloader - ERROR - 网络请求异常：522 Server Error: Origin Connection Time-out for url: https://api.suyanw.cn/api/mao
+Traceback (most recent call last):
+  File "/www/wwwroot/default/AstrBot/data/plugins/nachoneko/main.py", line 61, in fetch_image
+    response.raise_for_status()
+  File "/www/wwwroot/default/AstrBot/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 522 Server Error: Origin Connection Time-out for url: https://api.suyanw.cn/api/mao

@@ -1,0 +1,95 @@
+[info] | 2026-03-29 16:56:29 | WebQQ: 设置消息事件监听
+
+[info] | 2026-03-29 16:56:29 | LLBot 7.4.0
+
+[info] | 2026-03-29 16:56:29 | Webui 服务器已启动 127.0.0.1:3080
+
+[info] | 2026-03-29 16:56:46 | Trying to connect to the websocket server: ws://127.0.0.1:3939/ws
+
+[info] | 2026-03-29 16:56:46 | Connected to the websocket server: ws://127.0.0.1:3939/ws
+
+[info] | 2026-03-29 16:56:46 | WebSocket 事件上报 ws://127.0.0.1:3939/ws meta_event
+
+[info] | 2026-03-29 16:56:59 | WebSocket 事件上报 ws://127.0.0.1:3939/ws notice.group_recall
+
+[info] | 2026-03-29 16:56:59 | WebSocket 事件上报 ws://127.0.0.1:3939/ws notice.group_recall
+
+[info] | 2026-03-29 16:56:59 | 收到反向 Websocket 消息 { action: 'get_group_info', params: { group_id: 682255155 }, echo: { seq: 1 } }
+
+[info] | 2026-03-29 16:56:59 | 收到反向 Websocket 消息 { action: 'get_group_member_list', params: { group_id: '682255155' }, echo: { seq: 2 } }
+
+[info] | 2026-03-29 16:56:59 | 收到反向 Websocket 消息 { action: 'get_group_member_list', params: { group_id: '682255155' }, echo: { seq: 3 } }
+
+[info] | 2026-03-29 16:56:59 | 发包获取rkey成功, private:&rkey=CAISMKc7spT9cDhVSGPJKGBnegaFY_9YCXstaHoES-FbiuMz-PLyXukTwYMwUHzwDUNsnA, group:&rkey=CAQSMOBQVgbqZ424Tny0kzhVlbC-LI5KC958td0SuvLVUgQUtoU-E7PMq_VnKrh3xoVUZQ
+
+[info] | 2026-03-29 16:56:59 | 发包获取rkey成功, private:&rkey=CAISMKc7spT9cDhVSGPJKGBnegaFY_9YCXstaMnwv-qWUkS-rcLy6lymdHhIXobyRGcdng, group:&rkey=CAESMHSEqordM5r39Yu3rjuMVEixDHO06ZCqaKTycB6yno3oGA96kyWN6ITfOupJQwdjBw
+
+[info] | 2026-03-29 16:56:59 | 发包获取rkey成功, private:&rkey=CAISMKc7spT9cDhVSGPJKGBnegaFY_9YCXstaOzrxMvCzCoTU77sErjUQFDWrfe8ToAgNQ, group:&rkey=CAESMHSEqordM5r39Yu3rjuMVEixDHO06ZCqaOcvcgyIOpGo0prSp9TMfFHUaC3CTT_AZQ
+
+[info] | 2026-03-29 16:56:59 | 发包获取rkey成功, private:&rkey=CAMSMHGzKlAvWyfd4B9Oy3r5Na7bpCOCuVpaq0chHl-qDuDGiXyH-fJx2MAtGYIbctB5vA, group:&rkey=CAISMKc7spT9cDhVSGPJKGBnegaFY_9YCXstaA3_hCRzpSQTqfQ1DAk84RoCNVtb9S-CuQ
+
+[info] | 2026-03-29 16:56:59 | 发包获取rkey成功, private:&rkey=CAMSMHGzKlAvWyfd4B9Oy3r5Na7bpCOCuVpaq8pp1D3PxBgTaLfvpKqnFvOPeZpPglgafA, group:&rkey=CAISMKc7spT9cDhVSGPJKGBnegaFY_9YCXstaD9dAPfo9P2Razh6PueqBxHHUZw1RTXDlA
+
+[info] | 2026-03-29 16:56:59 | 发包获取rkey成功, private:&rkey=CAISMKc7spT9cDhVSGPJKGBnegaFY_9YCXstaCzNGNz4WULCcmL0IfORHXHfjvxQg-NCxg, group:&rkey=CAISMKc7spT9cDhVSGPJKGBnegaFY_9YCXstaJaIew9fAHADtuVOB-Mmm2ie6MTL7dYMxg
+
+[info] | 2026-03-29 16:56:59 | 发包获取rkey成功, private:&rkey=CAISMKc7spT9cDhVSGPJKGBnegaFY_9YCXstaDSwvTfrDNluooX8b9TwZ_TvdU-DvzqlHQ, group:&rkey=CAQSMOBQVgbqZ424Tny0kzhVlbC-LI5KC958tbjyEmQ7pmOsyYJMqnrPJgxHREaxpLG0jg
+
+[info] | 2026-03-29 16:56:59 | 发包获取rkey成功, private:&rkey=CAMSMHGzKlAvWyfd4B9Oy3r5Na7bpCOCuVpaqzpa_GYm-ddhRMQmyy-BA_BUzVx_2LsLAQ, group:&rkey=CAISMKc7spT9cDhVSGPJKGBnegaFY_9YCXstaP669ueVa9b_emhIej3TK4jVu-xgTY9WGw
+
+[info] | 2026-03-29 16:56:59 | 发包获取rkey成功, private:&rkey=CAESMHSEqordM5r39Yu3rjuMVEixDHO06ZCqaA4M3bUnFCnE8f1cmdNiofuThL1GgK0v6w, group:&rkey=CAISMKc7spT9cDhVSGPJKGBnegaFY_9YCXstaFdL31OOaItkSb6URcbHQX9XxX1RBPFzSA
+
+[info] | 2026-03-29 16:57:13 | [收-群] 自己的小群(1020588915) Astronaut_37(29053789)：
+1
+
+[info] | 2026-03-29 16:57:13 | WebSocket 事件上报 ws://127.0.0.1:3939/ws message.group
+
+[info] | 2026-03-29 16:57:13 | 收到反向 Websocket 消息 { action: 'get_group_info', params: { group_id: 1020588915 }, echo: { seq: 4 } }
+
+[info] | 2026-03-29 16:57:13 | 收到反向 Websocket 消息 { action: 'get_group_member_list', params: { group_id: '1020588915' }, echo: { seq: 5 } }
+
+[info] | 2026-03-29 16:57:14 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 1020588915, user_id: 3678233304 }, echo: '9872' }
+
+[warn] | 2026-03-29 16:57:14 | 发包获取rkey失败 Error: pmhq ws send: wait result timeout，开始获取远程rkey
+
+[warn] | 2026-03-29 16:57:14 | 发包获取rkey失败 Error: pmhq ws send: wait result timeout，开始获取远程rkey
+
+[warn] | 2026-03-29 16:57:14 | 发包获取rkey失败 Error: pmhq ws send: wait result timeout，开始获取远程rkey
+
+[warn] | 2026-03-29 16:57:14 | 发包获取rkey失败 Error: pmhq ws send: wait result timeout，开始获取远程rkey
+
+[warn] | 2026-03-29 16:57:14 | 发包获取rkey失败 Error: pmhq ws send: wait result timeout，开始获取远程rkey
+
+[warn] | 2026-03-29 16:57:14 | 发包获取rkey失败 Error: pmhq ws send: wait result timeout，开始获取远程rkey
+
+[warn] | 2026-03-29 16:57:14 | 发包获取rkey失败 Error: pmhq ws send: wait result timeout，开始获取远程rkey
+
+[warn] | 2026-03-29 16:57:14 | 发包获取rkey失败 Error: pmhq ws send: wait result timeout，开始获取远程rkey
+
+[info] | 2026-03-29 16:57:34 | [收-群] 自己的小群(1020588915) Astronaut_37(29053789)：
+/今天吃什么
+
+[info] | 2026-03-29 16:57:34 | WebSocket 事件上报 ws://127.0.0.1:3939/ws message.group
+
+[info] | 2026-03-29 16:57:34 | 收到反向 Websocket 消息 { action: 'send_group_msg', params: { group_id: 1020588915, message: [ { type: 'reply', data: { id: '399327597', chain: [], sender_id: 0, sender_nickname: '', time: 0, message_str: '', text: '', qq: 0, seq: 0 } }, { type: 'text', data: { text: '今天吃 米线！' } } ] }, echo: { seq: 6 } }
+
+[info] | 2026-03-29 16:57:34 | [发-群] 自己的小群(1020588915) Enanananana(3678233304)：
+今天吃 米线！
+
+[info] | 2026-03-29 16:57:34 | WebQQ: 收到 nt/message-sent 事件, sseClients: 0
+
+[info] | 2026-03-29 16:57:34 | 消息发送 { chatType: 2, peerUid: '1020588915', guildId: '' }
+
+[info] | 2026-03-29 16:57:46 | WebSocket 事件上报 ws://127.0.0.1:3939/ws meta_event
+
+[info] | 2026-03-29 16:58:36 | 收到反向 Websocket 消息 { action: 'send_group_msg', params: { group_id: 682255155, message: [ { type: 'image', data: { file: 'base64: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'... 766937 more characters } }, { type: 'text', data: { text: '\nhttps://t.bilibili.com/1185101173470789672' } } ] }, e...
+
+[info] | 2026-03-29 16:58:46 | WebSocket 事件上报 ws://127.0.0.1:3939/ws meta_event
+
+[error] | 2026-03-29 16:58:51 | 发生错误 Error: invoke timeout, wrapperSession.getMsgService().getRichMediaFilePathForGuild, [ { md5HexStr: '24ea15b154448568a7a38ac08d888ad2', fileName: '199f4d0b-2dfe-4526-9d47-f590bf68215e.jpg', elementType: 2, elementSubType: 0, thumbSize: 0, needCreate: true, downloadType: 1, file_uuid: '' } ] at Timeout._onTimeout (/www/wwwroot/default/llone/src/ntqqapi/ntcall.ts:164:16) at listOnTimeout (node:internal/timers:605:17) at process.processTimers (node:internal/timers:541:7)
+
+[info] | 2026-03-29 16:59:46 | WebSocket 事件上报 ws://127.0.0.1:3939/ws meta_event
+
+[info] | 2026-03-29 17:00:46 | WebSocket 事件上报 ws://127.0.0.1:3939/ws meta_event
+
+[info] | 2026-03-29 17:01:46 | WebSocket 事件上报 ws://127.0.0.1:3939/ws meta_event
+

@@ -1,0 +1,7 @@
+{"id":273510,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"3414834251完成了一次签到！","timestamp":1774760812477}
+{"id":273693,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"1617842882完成了一次签到！","timestamp":1774761032092}
+{"id":273736,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"771353605抽到了一张☆二星★卡，剩余8232P点","timestamp":1774761057388}
+{"id":273805,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"3395512519完成了一次签到！","timestamp":1774761092565}
+{"id":273876,"type":"error","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"3669154852签到失败！原因：该用户已经签到","timestamp":1774761193566}
+{"id":274200,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"29053789完成了一次签到！","timestamp":1774769695984}
+{"id":274213,"type":"info","level":2,"name":"app","meta":{"paths":[]},"content":"terminated by SIGTERM","timestamp":1774774225401}

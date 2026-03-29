@@ -8,7 +8,7 @@
     "Sarasa Gothic SC",
     "Noto Color Emoji"
   ],
-  "plugin_count": 12,
+  "plugin_count": 13,
   "giants": [],
   "columns": [
     [
@@ -173,46 +173,95 @@
         ]
       },
       {
-        "name": "astrbot_plugin_broadcast",
-        "display_name": "广播助手",
-        "version": "v1.1.1",
-        "desc": "[仅aiocqhttp] 一键群广播，所有适配器支持的格式都能发",
+        "name": "astrbot_plugin_blacklist_tools",
+        "display_name": null,
+        "version": "v1.6",
+        "desc": "允许管理员和 LLM 将用户添加到黑名单中，阻止他们的消息，自动拉黑！",
         "nodes": [
           {
-            "name": "关闭广播",
-            "desc": "关闭广播 <留空|群聊|私聊> <序号>",
+            "name": "blacklist",
+            "desc": "指令组",
+            "is_group": true,
+            "tag": "normal",
+            "priority": null,
+            "children": [
+              {
+                "name": "add",
+                "desc": "添加用户到黑名单",
+                "is_group": false,
+                "tag": "admin",
+                "priority": null,
+                "children": []
+              },
+              {
+                "name": "clear",
+                "desc": "清空黑名单",
+                "is_group": false,
+                "tag": "admin",
+                "priority": null,
+                "children": []
+              },
+              {
+                "name": "info",
+                "desc": "查看特定用户的黑名单信息",
+                "is_group": false,
+                "tag": "admin",
+                "priority": null,
+                "children": []
+              },
+              {
+                "name": "ls",
+                "desc": "列出黑名单中的所有用户（支持分页）",
+                "is_group": false,
+                "tag": "admin",
+                "priority": null,
+                "children": []
+              },
+              {
+                "name": "rm",
+                "desc": "从黑名单中移除用户",
+                "is_group": false,
+                "tag": "admin",
+                "priority": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "astrbot_quotes_plugin",
+        "display_name": null,
+        "version": "v1.5.0",
+        "desc": "qq群聊记录群友说过的话，语录插件",
+        "nodes": [
+          {
+            "name": "上传",
+            "desc": "",
             "is_group": false,
             "tag": "normal",
             "priority": null,
             "children": []
           },
           {
-            "name": "取消广播",
-            "desc": "取消当前正在进行的广播任务",
+            "name": "删除",
+            "desc": "删除语录：请『回复机器人发送的语录』并发送“删除”来删除该语录。",
             "is_group": false,
             "tag": "admin",
             "priority": null,
             "children": []
           },
           {
-            "name": "广播",
-            "desc": "(引用消息)广播 <群聊|私聊|全部>",
+            "name": "语录",
+            "desc": "随机发送一条语录：",
             "is_group": false,
-            "tag": "admin",
+            "tag": "normal",
             "priority": null,
             "children": []
           },
           {
-            "name": "广播列表",
-            "desc": "广播列表 <留空|群聊|私聊>",
-            "is_group": false,
-            "tag": "admin",
-            "priority": null,
-            "children": []
-          },
-          {
-            "name": "开启广播",
-            "desc": "开启广播 <留空|群聊|私聊> <序号>",
+            "name": "语录帮助",
+            "desc": "显示语录相关指令的使用说明。",
             "is_group": false,
             "tag": "normal",
             "priority": null,
@@ -319,59 +368,74 @@
         ]
       },
       {
-        "name": "astrbot_plugin_blacklist_tools",
+        "name": "astrbot_plugin_essential",
         "display_name": null,
-        "version": "v1.6",
-        "desc": "允许管理员和 LLM 将用户添加到黑名单中，阻止他们的消息，自动拉黑！",
+        "version": "v1.1.0",
+        "desc": "支持多个娱乐功能！！随机动漫图片、以图搜番（适配手机QQ和微信）、MC服务器、一言、今天吃什么、群早晚安记录、EPIC喜加一。帮助：https://github.com/Soulter/astrbot_plugin_essential",
         "nodes": [
           {
-            "name": "blacklist",
-            "desc": "指令组",
-            "is_group": true,
+            "name": "mcs",
+            "desc": "查mc服务器",
+            "is_group": false,
             "tag": "normal",
             "priority": null,
-            "children": [
-              {
-                "name": "add",
-                "desc": "添加用户到黑名单",
-                "is_group": false,
-                "tag": "admin",
-                "priority": null,
-                "children": []
-              },
-              {
-                "name": "clear",
-                "desc": "清空黑名单",
-                "is_group": false,
-                "tag": "admin",
-                "priority": null,
-                "children": []
-              },
-              {
-                "name": "info",
-                "desc": "查看特定用户的黑名单信息",
-                "is_group": false,
-                "tag": "admin",
-                "priority": null,
-                "children": []
-              },
-              {
-                "name": "ls",
-                "desc": "列出黑名单中的所有用户（支持分页）",
-                "is_group": false,
-                "tag": "admin",
-                "priority": null,
-                "children": []
-              },
-              {
-                "name": "rm",
-                "desc": "从黑名单中移除用户",
-                "is_group": false,
-                "tag": "admin",
-                "priority": null,
-                "children": []
-              }
-            ]
+            "children": []
+          },
+          {
+            "name": "moe",
+            "desc": "随机动漫图片",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "一言",
+            "desc": "来一条一言",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "今天吃什么",
+            "desc": "今天吃什么",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "喜加一",
+            "desc": "EPIC 喜加一",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "喜报",
+            "desc": "喜报生成器",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "悲报",
+            "desc": "悲报生成器",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "搜番",
+            "desc": "以图搜番",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
           }
         ]
       },
@@ -546,70 +610,78 @@
         ]
       },
       {
-        "name": "astrbot_plugin_essential",
+        "name": "astrbot_plugin_meme_generator",
         "display_name": null,
-        "version": "v1.1.0",
-        "desc": "支持多个娱乐功能！！随机动漫图片、以图搜番（适配手机QQ和微信）、MC服务器、一言、今天吃什么、群早晚安记录、EPIC喜加一。帮助：https://github.com/Soulter/astrbot_plugin_essential",
+        "version": "v1.0.0",
+        "desc": "高性能表情包生成器 - 支持多种模板和智能参数识别，具备头像缓存、用户冷却、超时控制等高级功能",
         "nodes": [
           {
-            "name": "mcs",
-            "desc": "查mc服务器",
+            "name": "单表情启用",
+            "desc": "启用指定的表情包模板（仅限Bot管理员）",
             "is_group": false,
             "tag": "normal",
             "priority": null,
             "children": []
           },
           {
-            "name": "moe",
-            "desc": "随机动漫图片",
+            "name": "单表情禁用",
+            "desc": "禁用指定的表情包模板（仅限Bot管理员）",
             "is_group": false,
             "tag": "normal",
             "priority": null,
             "children": []
           },
           {
-            "name": "一言",
-            "desc": "来一条一言",
+            "name": "禁用列表",
+            "desc": "查看被禁用的模板列表（仅限Bot管理员）",
             "is_group": false,
             "tag": "normal",
             "priority": null,
             "children": []
           },
           {
-            "name": "今天吃什么",
-            "desc": "今天吃什么",
+            "name": "表情信息",
+            "desc": "查看指定表情包模板的详细信息",
             "is_group": false,
             "tag": "normal",
             "priority": null,
             "children": []
           },
           {
-            "name": "喜加一",
-            "desc": "EPIC 喜加一",
+            "name": "表情列表",
+            "desc": "查看所有可用的表情包模板",
             "is_group": false,
             "tag": "normal",
             "priority": null,
             "children": []
           },
           {
-            "name": "喜报",
-            "desc": "喜报生成器",
+            "name": "表情启用",
+            "desc": "启用表情包生成功能（仅限Bot管理员）",
             "is_group": false,
             "tag": "normal",
             "priority": null,
             "children": []
           },
           {
-            "name": "悲报",
-            "desc": "悲报生成器",
+            "name": "表情帮助",
+            "desc": "查看meme插件帮助菜单",
             "is_group": false,
             "tag": "normal",
             "priority": null,
             "children": []
           },
           {
-            "name": "搜番",
-            "desc": "以图搜番",
+            "name": "表情状态",
+            "desc": "查看表情状态（仅限Bot管理员）",
+            "is_group": false,
+            "tag": "normal",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "表情禁用",
+            "desc": "禁用表情包生成功能（仅限Bot管理员）",
             "is_group": false,
             "tag": "normal",
             "priority": null,
@@ -618,38 +690,46 @@
         ]
       },
       {
-        "name": "astrbot_quotes_plugin",
-        "display_name": null,
-        "version": "v1.5.0",
-        "desc": "qq群聊记录群友说过的话，语录插件",
+        "name": "astrbot_plugin_broadcast",
+        "display_name": "广播助手",
+        "version": "v1.1.1",
+        "desc": "[仅aiocqhttp] 一键群广播，所有适配器支持的格式都能发",
         "nodes": [
           {
-            "name": "上传",
-            "desc": "",
+            "name": "关闭广播",
+            "desc": "关闭广播 <留空|群聊|私聊> <序号>",
             "is_group": false,
             "tag": "normal",
             "priority": null,
             "children": []
           },
           {
-            "name": "删除",
-            "desc": "删除语录：请『回复机器人发送的语录』并发送“删除”来删除该语录。",
+            "name": "取消广播",
+            "desc": "取消当前正在进行的广播任务",
             "is_group": false,
             "tag": "admin",
             "priority": null,
             "children": []
           },
           {
-            "name": "语录",
-            "desc": "随机发送一条语录：",
+            "name": "广播",
+            "desc": "(引用消息)广播 <群聊|私聊|全部>",
             "is_group": false,
-            "tag": "normal",
+            "tag": "admin",
             "priority": null,
             "children": []
           },
           {
-            "name": "语录帮助",
-            "desc": "显示语录相关指令的使用说明。",
+            "name": "广播列表",
+            "desc": "广播列表 <留空|群聊|私聊>",
+            "is_group": false,
+            "tag": "admin",
+            "priority": null,
+            "children": []
+          },
+          {
+            "name": "开启广播",
+            "desc": "开启广播 <留空|群聊|私聊> <序号>",
             "is_group": false,
             "tag": "normal",
             "priority": null,
