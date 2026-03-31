@@ -302,6 +302,7 @@ else
         mkdir llone && \
         mv LLBot-CLI-linux-x64.zip llone && \
         unzip llone/LLBot-CLI-linux-x64.zip && \
+        chmod +x llone/start.sh && \
         echo '=== Running start.sh ===' && \
         cd '${cwd}' && ./llone/start.sh && exec bash
     "
