@@ -5,52 +5,81 @@ cwd="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # ========== 清理 llone/data 下的 logs 和 temp 文件夹 ==========
 echo "Cleaning llone/data logs and temp directories..."
 
-# ========== 检查并安装 Chrome/Chromium ==========
-echo "Checking Chrome/Chromium availability..."
+# ========== 检查并安装 Google Chrome ==========
+echo "Checking Google Chrome availability..."
 
-# 定义可能的 Chrome 命令名称
-CHROME_NAMES=("google-chrome" "google-chrome-stable" "chromium" "chromium-browser" "chrome")
 CHROME_CMD=""
 
-for name in "${CHROME_NAMES[@]}"; do
-    if command -v "$name" &> /dev/null; then
-        CHROME_CMD="$name"
-        break
-    fi
-done
+# 检查是否已安装
+if command -v google-chrome &> /dev/null; then
+    CHROME_CMD="google-chrome"
+elif command -v google-chrome-stable &> /dev/null; then
+    CHROME_CMD="google-chrome-stable"
+fi
 
 if [ -z "$CHROME_CMD" ]; then
-    echo "Chrome/Chromium not found. Attempting to install..."
-    
-    # 检测 Linux 发行版并安装
+    echo "Google Chrome not found. Attempting to install..."
+
     if command -v apt-get &> /dev/null; then
-        echo "Detected Debian/Ubuntu system. Installing chromium..."
+        echo "Detected Debian/Ubuntu system. Installing google-chrome-stable..."
+
         sudo apt-get update
-        sudo apt-get install -y chromium-browser || sudo apt-get install -y chromium
+        sudo apt-get install -y wget gnupg
+
+        # 添加 Google 官方 key
+        wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | \
+        sudo gpg --dearmor -o /usr/share/keyrings/google-chrome.gpg
+
+        # 添加 Chrome 仓库
+        echo "deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome.gpg] http://dl.google.com/linux/chrome/deb/ stable main" | \
+        sudo tee /etc/apt/sources.list.d/google-chrome.list > /dev/null
+
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable
+
+    elif command -v yum &> /dev/null; then
+        echo "Detected CentOS/RHEL system. Installing google-chrome-stable..."
+
+        sudo tee /etc/yum.repos.d/google-chrome.repo <<EOF
+[google-chrome]
+name=google-chrome
+baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
+enabled=1
+gpgcheck=1
+gpgkey=https://dl.google.com/linux/linux_signing_key.pub
+EOF
+
+        sudo yum install -y google-chrome-stable
+
+    elif command -v dnf &> /dev/null; then
+        echo "Detected Fedora system. Installing google-chrome-stable..."
+
+        sudo dnf install -y google-chrome-stable
+
     else
-        echo "Error: Unsupported package manager. Please install Chrome/Chromium manually."
+        echo "Error: Unsupported package manager. Please install Chrome manually."
         exit 1
     fi
-    
-    # 再次检查是否安装成功
-    for name in "${CHROME_NAMES[@]}"; do
-        if command -v "$name" &> /dev/null; then
-            CHROME_CMD="$name"
-            break
-        fi
-    done
-    
+
+    # 再次检查
+    if command -v google-chrome &> /dev/null; then
+        CHROME_CMD="google-chrome"
+    elif command -v google-chrome-stable &> /dev/null; then
+        CHROME_CMD="google-chrome-stable"
+    fi
+
     if [ -n "$CHROME_CMD" ]; then
-        echo "Chrome/Chromium installed successfully as '$CHROME_CMD'."
+        echo "Google Chrome installed successfully: $($CHROME_CMD --version)"
     else
-        echo "Failed to install Chrome/Chromium. Please install manually and rerun this script."
+        echo "Failed to install Google Chrome."
         exit 1
     fi
+
 else
-    echo "Chrome/Chromium is already available: $CHROME_CMD"
-    # 尝试获取版本号
-    $CHROME_CMD --version 2>/dev/null || echo "  (version info not available)"
+    echo "Google Chrome already available: $($CHROME_CMD --version)"
 fi
+
+export CHROME_BIN=$(command -v google-chrome || command -v google-chrome-stable)
 
 echo ""
 
