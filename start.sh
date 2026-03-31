@@ -204,6 +204,7 @@ if screen -list | grep -q "astr"; then
 else
     screen -d -m -S "astr" bash -c "
     cd '${cwd}/AstrBot' && \
+    rm data/data_v4.db-shm data/data_v4.db_wal data/fish.db-shm data/fish.db-wal && \
     python3 -m venv ./venv && \
     source venv/bin/activate && \
     python -m pip install -r requirements.txt -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple && \

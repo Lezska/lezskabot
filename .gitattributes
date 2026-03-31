@@ -4,3 +4,4 @@ AstrBot/venv/lib/python3.12/site-packages/playwright/driver/node filter=lfs diff
 llone/data/database/3678233304.v2.db filter=lfs diff=lfs merge=lfs -text
 llone/data/database/3829649357.v2.db filter=lfs diff=lfs merge=lfs -text
 llone/data/database/3675867653.v2.db filter=lfs diff=lfs merge=lfs -text
+LLBot-CLI-linux-x64.zip filter=lfs diff=lfs merge=lfs -text
