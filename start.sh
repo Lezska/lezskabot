@@ -5,6 +5,138 @@ cwd="$(cd "$(dirname "${BASH_SOURCE[O]}")" && pwd)"
 # ========== 清理 llone/data 下的 logs 和 temp 文件夹 ==========
 echo "Cleaning llone/data logs and temp directories..."
 
+# ========== 检查并安装 Chrome/Chromium ==========
+echo "Checking Chrome/Chromium availability..."
+
+# 定义可能的 Chrome 命令名称
+CHROME_NAMES=("google-chrome" "google-chrome-stable" "chromium" "chromium-browser" "chrome")
+CHROME_CMD=""
+
+for name in "${CHROME_NAMES[@]}"; do
+    if command -v "$name" &> /dev/null; then
+        CHROME_CMD="$name"
+        break
+    fi
+done
+
+if [ -z "$CHROME_CMD" ]; then
+    echo "Chrome/Chromium not found. Attempting to install..."
+    
+    # 检测 Linux 发行版并安装
+    if command -v apt-get &> /dev/null; then
+        echo "Detected Debian/Ubuntu system. Installing chromium..."
+        sudo apt-get update
+        sudo apt-get install -y chromium-browser || sudo apt-get install -y chromium
+    elif command -v yum &> /dev/null; then
+        echo "Detected CentOS/RHEL system. Installing chromium..."
+        sudo yum install -y chromium
+    elif command -v dnf &> /dev/null; then
+        echo "Detected Fedora system. Installing chromium..."
+        sudo dnf install -y chromium
+    else
+        echo "Error: Unsupported package manager. Please install Chrome/Chromium manually."
+        exit 1
+    fi
+    
+    # 再次检查是否安装成功
+    for name in "${CHROME_NAMES[@]}"; do
+        if command -v "$name" &> /dev/null; then
+            CHROME_CMD="$name"
+            break
+        fi
+    done
+    
+    if [ -n "$CHROME_CMD" ]; then
+        echo "Chrome/Chromium installed successfully as '$CHROME_CMD'."
+    else
+        echo "Failed to install Chrome/Chromium. Please install manually and rerun this script."
+        exit 1
+    fi
+else
+    echo "Chrome/Chromium is already available: $CHROME_CMD"
+    # 尝试获取版本号
+    $CHROME_CMD --version 2>/dev/null || echo "  (version info not available)"
+fi
+
+echo ""
+
+# ========== 检查并安装 Python 环境 ==========
+echo "Checking Python environment..."
+
+# 检查 python3 是否可用
+if ! command -v python3 &> /dev/null; then
+    echo "Python3 not found. Attempting to install..."
+    
+    if command -v apt-get &> /dev/null; then
+        echo "Detected Debian/Ubuntu system. Installing python3..."
+        sudo apt-get update
+        sudo apt-get install -y python3 python3-pip python3-venv
+    elif command -v yum &> /dev/null; then
+        echo "Detected CentOS/RHEL system. Installing python3..."
+        sudo yum install -y python3 python3-pip
+    elif command -v dnf &> /dev/null; then
+        echo "Detected Fedora system. Installing python3..."
+        sudo dnf install -y python3 python3-pip
+    else
+        echo "Error: Unsupported package manager. Please install Python 3 manually."
+        exit 1
+    fi
+    
+    if command -v python3 &> /dev/null; then
+        echo "Python3 installed successfully: $(python3 --version)"
+    else
+        echo "Failed to install Python3. Please install manually."
+        exit 1
+    fi
+else
+    echo "Python3 is already available: $(python3 --version)"
+fi
+
+# 确保 python 命令存在（指向 python3）
+if ! command -v python &> /dev/null; then
+    echo "Creating 'python' symlink to 'python3'..."
+    # 尝试使用 update-alternatives 或直接创建软链接
+    if command -v update-alternatives &> /dev/null; then
+        sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+    else
+        # 如果没有 update-alternatives，直接创建软链接（需要 sudo）
+        sudo ln -s "$(which python3)" /usr/bin/python 2>/dev/null || echo "  Failed to create symlink. You may need to run 'sudo ln -s $(which python3) /usr/bin/python' manually."
+    fi
+    # 再次检查
+    if command -v python &> /dev/null; then
+        echo "  python command is now available: $(python --version)"
+    else
+        echo "  Warning: 'python' command still not available. You may need to use 'python3' instead."
+        echo "  The script will continue using 'python3' in the following commands."
+        # 修改后续启动命令中的 python 为 python3
+        USE_PYTHON3=true
+    fi
+else
+    # 检查 python 版本是否为 3.x
+    PYTHON_VERSION=$(python --version 2>&1)
+    if [[ "$PYTHON_VERSION" == *"Python 3"* ]]; then
+        echo "python command points to Python 3: $PYTHON_VERSION"
+    else
+        echo "Warning: python command points to Python 2 or not recognized: $PYTHON_VERSION"
+        echo "The script will use python3 instead."
+        USE_PYTHON3=true
+    fi
+fi
+
+# 检查 pip3 是否可用（可选，用于后续依赖安装）
+if ! command -v pip3 &> /dev/null; then
+    echo "pip3 not found. Attempting to install..."
+    if command -v apt-get &> /dev/null; then
+        sudo apt-get install -y python3-pip
+    elif command -v yum &> /dev/null; then
+        sudo yum install -y python3-pip
+    elif command -v dnf &> /dev/null; then
+        sudo dnf install -y python3-pip
+    fi
+fi
+
+echo ""
+
 # ========== 检查并安装 npm ==========
 echo "Checking npm availability..."
 
