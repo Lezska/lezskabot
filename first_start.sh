@@ -73,6 +73,9 @@ fi
 
 echo ""
 
+echo "Installing Playwright"
+playwright install 
+
 # ========== 检查并安装 unzip ==========
 echo "Checking unzip availability..."
 
