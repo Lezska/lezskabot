@@ -1,6 +1,6 @@
 #!/bin/bash
 #获取脚本所在目录的绝对路径
-cwd="$(cd "$(dirname "${BASH_SOURCE[O]}")" && pwd)"
+cwd="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # ========== 清理 llone/data 下的 logs 和 temp 文件夹 ==========
 echo "Cleaning llone/data logs and temp directories..."
@@ -60,79 +60,134 @@ fi
 
 echo ""
 
-# ========== 检查并安装 Python 环境 ==========
-echo "Checking Python environment..."
+# ========== 检查并安装 Python 3.12 及 python3.12-venv ==========
+echo "Checking Python 3.12 and python3.12-venv..."
 
-# 检查 python3 是否可用
-if ! command -v python3 &> /dev/null; then
-    echo "Python3 not found. Attempting to install..."
+USE_PYTHON3=false
+PYTHON_CMD="python3.12"  # 目标使用 python3.12
+
+# 1. 检查 python3.12 是否可用
+if ! command -v python3.12 &> /dev/null; then
+    echo "python3.12 not found. Attempting to install Python 3.12 and python3.12-venv..."
     
     if command -v apt-get &> /dev/null; then
-        echo "Detected Debian/Ubuntu system. Installing python3..."
+        # Debian/Ubuntu 系统
+        echo "Detected Debian/Ubuntu system."
+        # 添加 deadsnakes PPA 以获取 Python 3.12（针对旧版 Ubuntu）
         sudo apt-get update
-        sudo apt-get install -y python3 python3-pip python3-venv
+        if ! grep -q "deadsnakes" /etc/apt/sources.list /etc/apt/sources.list.d/* 2>/dev/null; then
+            echo "Adding deadsnakes PPA for Python 3.12..."
+            sudo apt-get install -y software-properties-common
+            sudo add-apt-repository -y ppa:deadsnakes/ppa
+            sudo apt-get update
+        fi
+        sudo apt-get install -y python3.12 python3.12-venv python3.12-dev
     elif command -v yum &> /dev/null; then
-        echo "Detected CentOS/RHEL system. Installing python3..."
-        sudo yum install -y python3 python3-pip
+        # CentOS/RHEL 可能需要 EPEL 或 SCL
+        echo "Detected CentOS/RHEL system."
+        sudo yum install -y python3.12 python3.12-venv || {
+            echo "Python 3.12 not available via default repos. Trying EPEL..."
+            sudo yum install -y epel-release
+            sudo yum install -y python3.12 python3.12-venv
+        }
     elif command -v dnf &> /dev/null; then
-        echo "Detected Fedora system. Installing python3..."
-        sudo dnf install -y python3 python3-pip
+        # Fedora
+        echo "Detected Fedora system."
+        sudo dnf install -y python3.12 python3.12-venv
     else
-        echo "Error: Unsupported package manager. Please install Python 3 manually."
+        echo "Error: Unsupported package manager. Please install Python 3.12 and python3.12-venv manually."
         exit 1
     fi
     
-    if command -v python3 &> /dev/null; then
-        echo "Python3 installed successfully: $(python3 --version)"
+    # 再次检查
+    if command -v python3.12 &> /dev/null; then
+        echo "python3.12 installed successfully: $(python3.12 --version)"
     else
-        echo "Failed to install Python3. Please install manually."
+        echo "Failed to install python3.12. Please install manually."
         exit 1
     fi
 else
-    echo "Python3 is already available: $(python3 --version)"
+    echo "python3.12 is already available: $(python3.12 --version)"
 fi
 
-# 确保 python 命令存在（指向 python3）
-if ! command -v python &> /dev/null; then
-    echo "Creating 'python' symlink to 'python3'..."
-    # 尝试使用 update-alternatives 或直接创建软链接
-    if command -v update-alternatives &> /dev/null; then
-        sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+# 2. 检查 python3.12-venv 包是否有效（能否创建 venv）
+echo "Checking python3.12-venv functionality..."
+if ! python3.12 -m venv --help &> /dev/null; then
+    echo "python3.12-venv module not working. Attempting to install..."
+    if command -v apt-get &> /dev/null; then
+        sudo apt-get install -y python3.12-venv
+    elif command -v yum &> /dev/null; then
+        sudo yum install -y python3.12-venv
+    elif command -v dnf &> /dev/null; then
+        sudo dnf install -y python3.12-venv
     else
-        # 如果没有 update-alternatives，直接创建软链接（需要 sudo）
-        sudo ln -s "$(which python3)" /usr/bin/python 2>/dev/null || echo "  Failed to create symlink. You may need to run 'sudo ln -s $(which python3) /usr/bin/python' manually."
+        echo "Error: Cannot install python3.12-venv. Please install manually."
+        exit 1
     fi
-    # 再次检查
-    if command -v python &> /dev/null; then
-        echo "  python command is now available: $(python --version)"
+    # 再次验证
+    if ! python3.12 -m venv --help &> /dev/null; then
+        echo "python3.12-venv still not functional. Please check installation."
+        exit 1
     else
-        echo "  Warning: 'python' command still not available. You may need to use 'python3' instead."
-        echo "  The script will continue using 'python3' in the following commands."
-        # 修改后续启动命令中的 python 为 python3
-        USE_PYTHON3=true
+        echo "python3.12-venv installed successfully."
     fi
 else
-    # 检查 python 版本是否为 3.x
-    PYTHON_VERSION=$(python --version 2>&1)
-    if [[ "$PYTHON_VERSION" == *"Python 3"* ]]; then
-        echo "python command points to Python 3: $PYTHON_VERSION"
-    else
-        echo "Warning: python command points to Python 2 or not recognized: $PYTHON_VERSION"
-        echo "The script will use python3 instead."
-        USE_PYTHON3=true
+    echo "python3.12-venv is functional."
+fi
+
+# 3. 确保 python3 和 python 命令指向 python3.12（可选，保持兼容性）
+# 不强制修改系统默认 python3，但提供提示
+if command -v python3 &> /dev/null; then
+    PY3_VERSION=$(python3 --version 2>&1 | grep -oE '[0-9]+\.[0-9]+')
+    if [[ "$PY3_VERSION" != "3.12" ]]; then
+        echo "Note: System python3 is version $PY3_VERSION, but we will use python3.12 explicitly."
     fi
 fi
 
-# 检查 pip3 是否可用（可选，用于后续依赖安装）
-if ! command -v pip3 &> /dev/null; then
-    echo "pip3 not found. Attempting to install..."
+# 设置最终使用的 Python 命令
+PYTHON_CMD="python3.12"
+echo "Will use '$PYTHON_CMD' for running Python scripts."
+
+# 可选：确保 pip3.12 可用
+if ! command -v pip3.12 &> /dev/null; then
+    echo "pip3.12 not found. Attempting to install..."
+    python3.12 -m ensurepip --upgrade 2>/dev/null || {
+        echo "Could not install pip. You may need to install python3.12-pip manually."
+    }
+fi
+
+echo ""
+
+# ========== 检查并安装 unzip ==========
+echo "Checking unzip availability..."
+
+if ! command -v unzip &> /dev/null; then
+    echo "unzip not found. Attempting to install..."
+
     if command -v apt-get &> /dev/null; then
-        sudo apt-get install -y python3-pip
+        echo "Detected Debian/Ubuntu system. Installing unzip..."
+        sudo apt-get update
+        sudo apt-get install -y unzip
     elif command -v yum &> /dev/null; then
-        sudo yum install -y python3-pip
+        echo "Detected CentOS/RHEL system. Installing unzip..."
+        sudo yum install -y unzip
     elif command -v dnf &> /dev/null; then
-        sudo dnf install -y python3-pip
+        echo "Detected Fedora system. Installing unzip..."
+        sudo dnf install -y unzip
+    else
+        echo "Error: Unsupported package manager. Please install unzip manually."
+        exit 1
     fi
+
+    # 再次检查
+    if command -v unzip &> /dev/null; then
+        echo "unzip installed successfully."
+    else
+        echo "Failed to install unzip. Please install manually."
+        exit 1
+    fi
+else
+    echo "unzip is already available: $(unzip -v | head -n 1)"
 fi
 
 echo ""

@@ -1,6 +1,6 @@
 #!/bin/bash
 #获取脚本所在目录的绝对路径
-cwd="$(cd "$(dirname "${BASH_SOURCE[O]}")" && pwd)"
+cwd="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # ========== 清理 llone/data 下的 logs 和 temp 文件夹 ==========
 echo "Cleaning llone/data logs and temp directories..."
