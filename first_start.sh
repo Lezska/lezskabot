@@ -27,12 +27,6 @@ if [ -z "$CHROME_CMD" ]; then
         echo "Detected Debian/Ubuntu system. Installing chromium..."
         sudo apt-get update
         sudo apt-get install -y chromium-browser || sudo apt-get install -y chromium
-    elif command -v yum &> /dev/null; then
-        echo "Detected CentOS/RHEL system. Installing chromium..."
-        sudo yum install -y chromium
-    elif command -v dnf &> /dev/null; then
-        echo "Detected Fedora system. Installing chromium..."
-        sudo dnf install -y chromium
     else
         echo "Error: Unsupported package manager. Please install Chrome/Chromium manually."
         exit 1
@@ -63,43 +57,10 @@ echo ""
 # ========== 检查并安装 Python 3.12 及 python3.12-venv ==========
 echo "Checking Python 3.12 and python3.12-venv..."
 
-USE_PYTHON3=false
-PYTHON_CMD="python3.12"  # 目标使用 python3.12
-
-# 1. 检查 python3.12 是否可用
 if ! command -v python3.12 &> /dev/null; then
     echo "python3.12 not found. Attempting to install Python 3.12 and python3.12-venv..."
+    sudo apt-get install -y python3.12 python3.12-venv python3.12-dev
     
-    if command -v apt-get &> /dev/null; then
-        # Debian/Ubuntu 系统
-        echo "Detected Debian/Ubuntu system."
-        # 添加 deadsnakes PPA 以获取 Python 3.12（针对旧版 Ubuntu）
-        sudo apt-get update
-        if ! grep -q "deadsnakes" /etc/apt/sources.list /etc/apt/sources.list.d/* 2>/dev/null; then
-            echo "Adding deadsnakes PPA for Python 3.12..."
-            sudo apt-get install -y software-properties-common
-            sudo add-apt-repository -y ppa:deadsnakes/ppa
-            sudo apt-get update
-        fi
-        sudo apt-get install -y python3.12 python3.12-venv python3.12-dev
-    elif command -v yum &> /dev/null; then
-        # CentOS/RHEL 可能需要 EPEL 或 SCL
-        echo "Detected CentOS/RHEL system."
-        sudo yum install -y python3.12 python3.12-venv || {
-            echo "Python 3.12 not available via default repos. Trying EPEL..."
-            sudo yum install -y epel-release
-            sudo yum install -y python3.12 python3.12-venv
-        }
-    elif command -v dnf &> /dev/null; then
-        # Fedora
-        echo "Detected Fedora system."
-        sudo dnf install -y python3.12 python3.12-venv
-    else
-        echo "Error: Unsupported package manager. Please install Python 3.12 and python3.12-venv manually."
-        exit 1
-    fi
-    
-    # 再次检查
     if command -v python3.12 &> /dev/null; then
         echo "python3.12 installed successfully: $(python3.12 --version)"
     else
@@ -108,31 +69,6 @@ if ! command -v python3.12 &> /dev/null; then
     fi
 else
     echo "python3.12 is already available: $(python3.12 --version)"
-fi
-
-# 2. 检查 python3.12-venv 包是否有效（能否创建 venv）
-echo "Checking python3.12-venv functionality..."
-if ! python3.12 -m venv --help &> /dev/null; then
-    echo "python3.12-venv module not working. Attempting to install..."
-    if command -v apt-get &> /dev/null; then
-        sudo apt-get install -y python3.12-venv
-    elif command -v yum &> /dev/null; then
-        sudo yum install -y python3.12-venv
-    elif command -v dnf &> /dev/null; then
-        sudo dnf install -y python3.12-venv
-    else
-        echo "Error: Cannot install python3.12-venv. Please install manually."
-        exit 1
-    fi
-    # 再次验证
-    if ! python3.12 -m venv --help &> /dev/null; then
-        echo "python3.12-venv still not functional. Please check installation."
-        exit 1
-    else
-        echo "python3.12-venv installed successfully."
-    fi
-else
-    echo "python3.12-venv is functional."
 fi
 
 echo ""
@@ -147,18 +83,11 @@ if ! command -v unzip &> /dev/null; then
         echo "Detected Debian/Ubuntu system. Installing unzip..."
         sudo apt-get update
         sudo apt-get install -y unzip
-    elif command -v yum &> /dev/null; then
-        echo "Detected CentOS/RHEL system. Installing unzip..."
-        sudo yum install -y unzip
-    elif command -v dnf &> /dev/null; then
-        echo "Detected Fedora system. Installing unzip..."
-        sudo dnf install -y unzip
     else
         echo "Error: Unsupported package manager. Please install unzip manually."
         exit 1
     fi
 
-    # 再次检查
     if command -v unzip &> /dev/null; then
         echo "unzip installed successfully."
     else
@@ -177,23 +106,15 @@ echo "Checking npm availability..."
 if ! command -v npm &> /dev/null; then
     echo "npm not found. Attempting to install..."
     
-    # 检测 Linux 发行版并安装
     if command -v apt-get &> /dev/null; then
         echo "Detected Debian/Ubuntu system. Installing npm..."
         sudo apt-get update
         sudo apt-get install -y npm
-    elif command -v yum &> /dev/null; then
-        echo "Detected CentOS/RHEL system. Installing npm..."
-        sudo yum install -y npm
-    elif command -v dnf &> /dev/null; then
-        echo "Detected Fedora system. Installing npm..."
-        sudo dnf install -y npm
     else
         echo "Error: Unsupported package manager. Please install npm manually."
         exit 1
     fi
     
-    # 再次检查是否安装成功
     if command -v npm &> /dev/null; then
         echo "npm installed successfully."
     else
