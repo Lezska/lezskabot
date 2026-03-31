@@ -153,3 +153,95 @@
 
 [info] | 2026-03-31 15:26:37 | WebSocket 事件上报 ws://localhost:3939/ws message.group
 
+[info] | 2026-03-31 15:26:57 | [收-群] PJSK世界计划(682255155) 哈基蓝（群ln全员厨代吃雌二醇）(1469078804)：
+[图片]044F109E70A4506531157E7C081B1E0A.jpg
+
+
+[info] | 2026-03-31 15:26:57 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 15:27:07 | WebSocket 事件上报 ws://localhost:3939/ws notice.notify
+
+[info] | 2026-03-31 15:27:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 15:27:48 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+tms不爱吃青椒
+
+[info] | 2026-03-31 15:27:48 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 15:27:51 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+怕虫子（
+
+[info] | 2026-03-31 15:27:51 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 15:28:01 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+笑死我了
+
+[info] | 2026-03-31 15:28:01 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 15:28:10 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+这和那个挂件
+
+[info] | 2026-03-31 15:28:10 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 15:28:14 | WebSocket 事件上报 ws://localhost:3939/ws notice.notify
+
+[info] | 2026-03-31 15:28:15 | 群表情回应 { target: { sequence: 106766 }, info: { code: '424', count: 1, operatorUid: 'u_j_t_PE0xscP_p3oCqTGokw', type: 1 } }
+
+[info] | 2026-03-31 15:28:15 | WebSocket 事件上报 ws://localhost:3939/ws notice.group_msg_emoji_like
+
+[info] | 2026-03-31 15:28:17 | 群表情回应 { target: { sequence: 2771731 }, info: { code: '12951', count: 1, operatorUid: 'u_9gLXmojpsk0VvnJ3pBhLag', type: 1 } }
+
+[info] | 2026-03-31 15:28:18 | WebSocket 事件上报 ws://localhost:3939/ws notice.group_msg_emoji_like
+
+[info] | 2026-03-31 15:28:20 | [收-群] 25点，worldlink2见！(1056859232) 奈白(2220163251)：
+@小和 那很坏了
+
+[info] | 2026-03-31 15:28:20 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 15:28:20 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: 2104733714 }, echo: 160 }
+
+[info] | 2026-03-31 15:28:20 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: 2104733714 }, echo: { seq: 2957 } }
+
+[info] | 2026-03-31 15:28:20 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 1056859232, user_id: 1945398301, no_cache: false }, echo: { seq: 2958 } }
+
+[info] | 2026-03-31 15:28:20 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: 2104733714 }, echo: '491' }
+
+[info] | 2026-03-31 15:28:23 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+小豆头上是番茄有异曲同工之妙（
+
+[info] | 2026-03-31 15:28:23 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 15:28:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 15:28:43 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+白石杏不喜欢番茄吧
+
+[info] | 2026-03-31 15:28:43 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 15:28:48 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+小豆也不喜欢吗
+
+[info] | 2026-03-31 15:28:48 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 15:29:03 | [收-群] PJSK世界计划(682255155) 25时，滚去睡觉-Zelova(1415785556)：
+@NeneRobo /ycm 
+
+[info] | 2026-03-31 15:29:03 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 15:29:03 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 682255155, user_id: 3889630528, no_cache: false }, echo: { seq: 2959 } }
+
+[info] | 2026-03-31 15:29:04 | 收到反向 Websocket 消息 { action: 'get_stranger_info', params: { user_id: 3889630528, no_cache: false }, echo: { seq: 2960 } }
+
+[info] | 2026-03-31 15:29:06 | [收-群] PJSK世界计划(682255155) NeneRobo(3889630528)：
+[图片]c342d733e520d844f0746edd6b8f7bd9.png
+@25时，滚去睡觉-Zelova  
+
+[info] | 2026-03-31 15:29:06 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 15:29:06 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 682255155, user_id: 1415785556, no_cache: false }, echo: { seq: 2961 } }
+
+[info] | 2026-03-31 15:29:18 | [收-群] 重生归来六子护我不吃井(789037781) 天马司智商高(2098916995)：
+豆没有
+
+[info] | 2026-03-31 15:29:18 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
