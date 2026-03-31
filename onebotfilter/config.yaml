@@ -2,8 +2,8 @@ server:
   host: "127.0.0.1"  #本程序主机地址，一般不用改
   port: 3939         #本程序的ws端口
   suffix: "/ws"      #ws的路径，如果没有修改过的话就是ws://127.0.0.1:3939/ws
-  bot-id: 3678233304  #LezskaBot
-  #bot-id: 3675867653 #小小Lezska
+  #bot-id: 3678233304  #LezskaBot
+  bot-id: 3675867653 #小小Lezska
   #bot-id: 3962272821 #Doppelganger 1
   #bot-id: 3829649357 #Doppelganger 2
   user-agent: "OneBotFilter"  #用户代理，只是一个标记，给下面的bot应用看的

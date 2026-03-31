@@ -1024,10 +1024,12 @@ img1/明日酱的水手服!木崎江利花.jpg
 img1/明日酱的水手服!平岩萤.jpg
 img1/明日酱的水手服!蛇森生静.jpg
 img1/明日酱的水手服!兔原透子.jpg
+img1/鸣潮!爱弥斯.jpg
 img1/鸣潮!奥古斯塔.jpg
 img1/鸣潮!长离.jpg
 img1/鸣潮!椿.jpg
 img1/鸣潮!达妮娅.jpg
+img1/鸣潮!绯雪.jpg
 img1/鸣潮!菲比.jpg
 img1/鸣潮!弗洛洛.jpg
 img1/鸣潮!今汐.jpg
@@ -1534,8 +1536,6 @@ img1/突然＊恋人!小鸟游亚子.png
 img1/突然＊恋人!月野真白.png
 img1/忘川の泉眼!忘川川.jpg
 img1/薇薇-萤石眼之歌-!薇薇.jpg
-img1/为美好的世界献上祝福!阿库娅.jpeg
-img1/为美好的世界献上祝福!阿库娅.jpg
 img1/伪恋!鸫诚士郎.jpg
 img1/伪恋!橘万里花.jpg
 img1/伪恋!桐崎千棘.png
@@ -1998,6 +1998,8 @@ img1/Vtuber!まいたけCh.jpg
 img1/お徳用!Ringo-chan.jpg
 img1/ナナブンノニジュウニ!泷川美羽.jpg
 img1/ひなビタ♪!芽兔咩呜.jpg
+img2/为美好的世界献上祝福!阿库娅.jpeg
+img2/为美好的世界献上祝福!阿库娅.jpg
 img2/为美好的世界献上祝福!贝尔泽古·斯黛莉休·索德·爱丽丝.jpg
 img2/为美好的世界献上祝福!达克妮丝.jpg
 img2/为美好的世界献上祝福!达克尼斯.jpg
