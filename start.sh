@@ -37,7 +37,7 @@ if screen -list | grep -q "astr"; then
 else
     screen -d -m -S "astr" bash -c "
     cd '${cwd}/AstrBot' && \
-    rm data/data_v4.db-shm data/data_v4.db_wal data/fish.db-shm data/fish.db-wal && \
+    rm -f data/data_v4.db-shm data/data_v4.db_wal data/fish.db-shm data/fish.db-wal && \
     source venv/bin/activate && \
     python main.py
     "
