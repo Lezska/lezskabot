@@ -6265,3 +6265,992 @@ B服：干杯共庆世界周年<牌子一个>
 
 [info] | 2026-03-31 13:20:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
 
+[info] | 2026-03-31 13:21:07 | 群表情回应 { target: { sequence: 106693 }, info: { code: '424', count: 1, operatorUid: 'u_BqN7HYN3BJv_wd_IIWVJfg', type: 1 } }
+
+[info] | 2026-03-31 13:21:07 | WebSocket 事件上报 ws://localhost:3939/ws notice.group_msg_emoji_like
+
+[info] | 2026-03-31 13:21:11 | [收-群] 25点，worldlink2见！(1056859232) 最爱mzk宝宝(要头衔敲我)(1594341178)：
+我不行了
+
+[info] | 2026-03-31 13:21:11 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:21:13 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+@花里实乃理智商低 你人呢（
+
+[info] | 2026-03-31 13:21:13 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:21:13 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: 2132567992 }, echo: { seq: 2839 } }
+
+[info] | 2026-03-31 13:21:13 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: 2132567992 }, echo: 18 }
+
+[info] | 2026-03-31 13:21:13 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 789037781, user_id: 449326080, no_cache: false }, echo: { seq: 2840 } }
+
+[info] | 2026-03-31 13:21:13 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: 2132567992 }, echo: '284' }
+
+[info] | 2026-03-31 13:21:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:21:59 | [收-群] 25点，worldlink2见！(1056859232) 奈白(2220163251)：
+@白星 这是下了多少火进去
+
+[info] | 2026-03-31 13:21:59 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:21:59 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: 428174153 }, echo: 20 }
+
+[info] | 2026-03-31 13:21:59 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: 428174153 }, echo: { seq: 2841 } }
+
+[info] | 2026-03-31 13:21:59 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 1056859232, user_id: 749528056, no_cache: false }, echo: { seq: 2842 } }
+
+[info] | 2026-03-31 13:21:59 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: 428174153 }, echo: '287' }
+
+[info] | 2026-03-31 13:22:02 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+[图片]477F590E186CB203E975423C173693BC.png
+
+
+[info] | 2026-03-31 13:22:02 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:22:04 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+看哭了
+
+[info] | 2026-03-31 13:22:04 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:22:06 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+@等待wl2&1小冬回家中 马上
+
+[info] | 2026-03-31 13:22:06 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:22:06 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: 770727008 }, echo: { seq: 2843 } }
+
+[info] | 2026-03-31 13:22:06 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: 770727008 }, echo: 22 }
+
+[info] | 2026-03-31 13:22:07 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 789037781, user_id: 449326080, no_cache: false }, echo: { seq: 2844 } }
+
+[info] | 2026-03-31 13:22:07 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: 2132567992 }, echo: 24 }
+
+[info] | 2026-03-31 13:22:07 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: 770727008 }, echo: '288' }
+
+[info] | 2026-03-31 13:22:07 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 789037781, user_id: 1716526752, no_cache: false }, echo: { seq: 2845 } }
+
+[info] | 2026-03-31 13:22:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:23:23 | [收-群] 25点，worldlink2见！(1056859232) 白星(749528056)：
+用了6个大火，升了两次级
+
+[info] | 2026-03-31 13:23:23 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:23:24 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+你先打两把，我挖个烤森
+
+[info] | 2026-03-31 13:23:24 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:23:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:24:14 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+好哦
+
+[info] | 2026-03-31 13:24:14 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:24:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:24:29 | [收-群] 25点，worldlink2见！(1056859232) 白星(749528056)：
+打龙打得我腰酸背痛
+
+[info] | 2026-03-31 13:24:29 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:24:37 | [收-群] 25点，worldlink2见！(1056859232) 白星(749528056)：
+干嘛
+
+[info] | 2026-03-31 13:24:37 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:24:53 | [收-群] 25点，worldlink2见！(1056859232) 奈白(2220163251)：
+[图片]4E20D27381ED54C47BB96A0B44A56DB4.jpg
+
+
+[info] | 2026-03-31 13:24:53 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:25:24 | [收-群] 25点，worldlink2见！(1056859232) 白星(749528056)：
+我卡掉了
+
+[info] | 2026-03-31 13:25:24 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:25:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:26:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:27:27 | [收-群] PJSK世界计划(682255155) 宵崎奏(3123162988)：
+/挑战组卡 knd
+
+[info] | 2026-03-31 13:27:27 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:27:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:28:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:29:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:30:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:31:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:32:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:32:36 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+我小号一上午挖矿爆了三个钻
+
+[info] | 2026-03-31 13:32:36 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:32:38 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+？？
+
+[info] | 2026-03-31 13:32:38 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:33:21 | [收-群] PJSK世界计划(682255155) キラキラ✨Lezska（音游残障人士(29053789)：
+[图片]A2F98FBC445F96970BFC2152026EEB19.png
+
+
+[info] | 2026-03-31 13:33:21 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:33:24 | [收-群] PJSK世界计划(682255155) キラキラ✨Lezska（音游残障人士(29053789)：
+购买新服务器
+
+[info] | 2026-03-31 13:33:24 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:33:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:33:32 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+@等待wl2&1小冬回家中 来
+
+[info] | 2026-03-31 13:33:32 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:33:32 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 789037781, user_id: 1716526752, no_cache: false }, echo: { seq: 2846 } }
+
+[info] | 2026-03-31 13:33:40 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+来！
+
+[info] | 2026-03-31 13:33:40 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:33:58 | [收-群] PJSK世界计划(682255155) 天音彼方Official(249076553)：
+富哥
+
+[info] | 2026-03-31 13:33:58 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:34:04 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+33633
+
+[info] | 2026-03-31 13:34:04 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:34:14 | [收-群] PJSK世界计划(682255155) キラキラ✨Lezska（音游残障人士(29053789)：
+扣群友@天音彼方Official 
+
+[info] | 2026-03-31 13:34:14 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:34:14 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 682255155, user_id: 249076553, no_cache: false }, echo: { seq: 2847 } }
+
+[info] | 2026-03-31 13:34:16 | [收-群] PJSK世界计划(682255155) キラキラ✨苹果鲷鱼烧baka笨蛋(3130224867)：
+@キラキラ✨Lezska（音游残障人士 恭喜你扣到了群友！
+你的扣扣对象是：【天音彼方Official】[图片]91920AFDB5C981E314DEBF44C423A30B.jpg
+
+
+[info] | 2026-03-31 13:34:16 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:34:16 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 682255155, user_id: 29053789, no_cache: false }, echo: { seq: 2848 } }
+
+[info] | 2026-03-31 13:34:24 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+我帮猫糕清火
+
+[info] | 2026-03-31 13:34:24 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:34:25 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+d一串吗（
+
+[info] | 2026-03-31 13:34:25 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:34:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:34:27 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+开吧
+
+[info] | 2026-03-31 13:34:27 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:34:31 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+行
+
+[info] | 2026-03-31 13:34:31 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:34:36 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+四楼你眼
+
+[info] | 2026-03-31 13:34:36 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:34:38 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+一眼
+
+[info] | 2026-03-31 13:34:38 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:34:41 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+？
+
+[info] | 2026-03-31 13:34:41 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:34:49 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+666666
+
+[info] | 2026-03-31 13:34:49 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:35:05 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+笑死了
+
+[info] | 2026-03-31 13:35:05 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:35:06 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+yue
+
+[info] | 2026-03-31 13:35:06 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:35:18 | [收-群] 重生归来六子护我不吃井(789037781) 神代类身高(2627616675)：
+[图片]B56BEDF3F522EF261486190881A10CA8.jpg
+
+
+[info] | 2026-03-31 13:35:18 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:35:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:36:17 | [收-群] PJSK世界计划(682255155) 10亿少女的初恋(2977354510)：
+大家注意，4月1日是愚人节，公司肯定会叫你们去上班，大家千万别相信。互相告知，谨防受骗
+
+[info] | 2026-03-31 13:36:17 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:36:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:37:16 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+赢！
+
+[info] | 2026-03-31 13:37:16 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:37:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:37:52 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+这是尸体吗
+
+[info] | 2026-03-31 13:37:52 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:38:09 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+。。。
+
+[info] | 2026-03-31 13:38:09 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:38:13 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+看啥啊看那么久
+
+[info] | 2026-03-31 13:38:13 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:38:14 | [收-群] PJSK世界计划(682255155) 10亿少女的初恋(2977354510)：
+@一只小湫子 
+
+[info] | 2026-03-31 13:38:14 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:38:14 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 682255155, user_id: 2820287911, no_cache: false }, echo: { seq: 2849 } }
+
+[info] | 2026-03-31 13:38:27 | [收-群] 重生归来六子护我不吃井(789037781) 神代类身高(2627616675)：
+[图片]A4023E3B8A52DC69CBBBD9ADF32137BD.png
+
+
+[info] | 2026-03-31 13:38:27 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:38:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:38:29 | [收-群] PJSK世界计划(682255155) 一只小湫子(2820287911)：
+?
+
+[info] | 2026-03-31 13:38:29 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:38:31 | [收-群] PJSK世界计划(682255155) 一只小湫子(2820287911)：
+何以味
+
+[info] | 2026-03-31 13:38:31 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:38:31 | 群表情回应 { target: { sequence: 106697 }, info: { code: '424', count: 1, operatorUid: 'u_BqN7HYN3BJv_wd_IIWVJfg', type: 1 } }
+
+[info] | 2026-03-31 13:38:31 | WebSocket 事件上报 ws://localhost:3939/ws notice.group_msg_emoji_like
+
+[info] | 2026-03-31 13:38:35 | [收-群] 25点，worldlink2见！(1056859232) 最爱mzk宝宝(要头衔敲我)(1594341178)：
+吓哭了
+
+[info] | 2026-03-31 13:38:35 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:38:42 | [收-群] PJSK世界计划(682255155) 一只小湫子(2820287911)：
+扣一天工资怎么办。
+
+[info] | 2026-03-31 13:38:42 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:38:44 | [收-群] PJSK世界计划(682255155) 一只小湫子(2820287911)：
+[图片]B1CD7B8326F33067490A64DEFAD05AC4.jpg
+
+
+[info] | 2026-03-31 13:38:44 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:39:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:40:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:41:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:41:36 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+@神代类身高 笑死了（
+
+[info] | 2026-03-31 13:41:36 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:41:36 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: -722596867 }, echo: 26 }
+
+[info] | 2026-03-31 13:41:36 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: -722596867 }, echo: { seq: 2850 } }
+
+[info] | 2026-03-31 13:41:36 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 789037781, user_id: 2627616675, no_cache: false }, echo: { seq: 2851 } }
+
+[info] | 2026-03-31 13:41:36 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: -722596867 }, echo: '299' }
+
+[info] | 2026-03-31 13:41:46 | [收-群] PJSK世界计划(682255155) 10亿少女的初恋(2977354510)：
+那也是骗你的
+
+[info] | 2026-03-31 13:41:46 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:42:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:43:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:44:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:45:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:46:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:47:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:47:51 | [收-群] PJSK世界计划(682255155) bot(2837463674)：
+[图片]2BC9E5E2EB1756AD3FED81E300B0F344.jpg
+
+
+[info] | 2026-03-31 13:47:51 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:48:05 | [收-群] PJSK世界计划(682255155) かなで(1550318633)：
+[图片]FBB423BEABF18AABACCAC026F11048AF.jpg
+
+
+[info] | 2026-03-31 13:48:05 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:48:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:49:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:49:30 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+@等待wl2&1小冬回家中 我先不打了
+
+[info] | 2026-03-31 13:49:30 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:49:30 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 789037781, user_id: 1716526752, no_cache: false }, echo: { seq: 2852 } }
+
+[info] | 2026-03-31 13:49:32 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+呦
+
+[info] | 2026-03-31 13:49:32 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:49:32 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+上课
+
+[info] | 2026-03-31 13:49:32 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:49:34 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+好哦
+
+[info] | 2026-03-31 13:49:34 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:49:41 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+？
+
+[info] | 2026-03-31 13:49:41 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:49:43 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+俩zdj
+
+[info] | 2026-03-31 13:49:43 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:49:49 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+来看我名片吧
+
+[info] | 2026-03-31 13:49:49 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:49:52 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+创死你们
+
+[info] | 2026-03-31 13:49:52 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:50:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:51:17 | [收-群] 25点，worldlink2见！(1056859232) 网恋瑞希奔现后被榨干(3442741909)：
+[图片]055D489034D1147D98111294951CB95B.jpg
+
+
+[info] | 2026-03-31 13:51:17 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:51:24 | [收-群] 25点，worldlink2见！(1056859232) 网恋瑞希奔现后被榨干(3442741909)：
+？
+
+[info] | 2026-03-31 13:51:24 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:51:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:52:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:53:11 | [收-群] 25点，worldlink2见！(1056859232) 失眠夜(3153466289)：
+？
+
+[info] | 2026-03-31 13:53:11 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:53:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:53:43 | [收-群] PJSK世界计划(682255155) キラキラ✨Lezska（音游残障人士(29053789)：
+一天工资换一天自由
+
+[info] | 2026-03-31 13:53:43 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:53:43 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: -1588776277 }, echo: { seq: 2853 } }
+
+[info] | 2026-03-31 13:53:43 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: -1588776277 }, echo: 28 }
+
+[info] | 2026-03-31 13:53:43 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: -1588776277 }, echo: '303' }
+
+[info] | 2026-03-31 13:54:24 | [收-群] PJSK世界计划(682255155) 开车缺人请艾特我 (国烤倍率226 id:bfes小咸鱼)(2841902212)：
+耗家伙
+
+[info] | 2026-03-31 13:54:24 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:54:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:55:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:56:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:57:12 | [收-群] 25点，worldlink2见！(1056859232) 奈白(2220163251)：
+？
+
+[info] | 2026-03-31 13:57:12 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:57:16 | 群表情回应 { target: { sequence: 106702 }, info: { code: '424', count: 1, operatorUid: 'u_j_t_PE0xscP_p3oCqTGokw', type: 1 } }
+
+[info] | 2026-03-31 13:57:16 | WebSocket 事件上报 ws://localhost:3939/ws notice.group_msg_emoji_like
+
+[info] | 2026-03-31 13:57:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:57:35 | 群表情回应 { target: { sequence: 106702 }, info: { code: '10068', count: 1, operatorUid: 'u_j_t_PE0xscP_p3oCqTGokw', type: 1 } }
+
+[info] | 2026-03-31 13:57:35 | WebSocket 事件上报 ws://localhost:3939/ws notice.group_msg_emoji_like
+
+[info] | 2026-03-31 13:58:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:58:33 | [收-群] 25点，worldlink2见！(1056859232) 最爱mzk宝宝(要头衔敲我)(1594341178)：
+？
+
+[info] | 2026-03-31 13:58:33 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:58:34 | 群表情回应 { target: { sequence: 106702 }, info: { code: '424', count: 2, operatorUid: 'u_BqN7HYN3BJv_wd_IIWVJfg', type: 1 } }
+
+[info] | 2026-03-31 13:58:34 | WebSocket 事件上报 ws://localhost:3939/ws notice.group_msg_emoji_like
+
+[info] | 2026-03-31 13:59:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 13:59:49 | [收-群] 25点，worldlink2见！(1056859232) 失眠夜(3153466289)：
+主包来练交互
+
+[info] | 2026-03-31 13:59:49 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 13:59:53 | [收-群] PJSK世界计划(682255155) 𝓜𝓾𝓼残雪冷❄️(3874133087)：
+学校现在停电了，没有网了
+
+[info] | 2026-03-31 13:59:53 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:00:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:01:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:02:22 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+你棘背龙形态开了？
+
+[info] | 2026-03-31 14:02:22 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:02:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:03:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:04:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:04:27 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+我不是天天这样吗
+
+[info] | 2026-03-31 14:04:27 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:04:30 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+（
+
+[info] | 2026-03-31 14:04:30 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:04:35 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+（
+
+[info] | 2026-03-31 14:04:35 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:04:38 | [收-群] 重生归来六子护我不吃井(789037781) 花里实乃理智商低(449326080)：
+好像很有道理
+
+[info] | 2026-03-31 14:04:38 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:05:24 | [收-群] 重生归来六子护我不吃井(789037781) 等待wl2&1小冬回家中(1716526752)：
+[图片]136A243893609E3633A6F31883014E02.png
+
+
+[info] | 2026-03-31 14:05:24 | 发包获取rkey成功, private:&rkey=CAESMEdMh_Oeq4d1GDsTaLQ6sFEGZWGZGzL-8MV64pgNorPsp1UljtXRRa2lrbvmm0boeQ, group:&rkey=CAQSMH1ScB4wdXuE1SI8PscxbYjQxwcCzywOs6WDihmEiOWIhkb8mwMv2pH-UU7sDb3FJA
+
+[info] | 2026-03-31 14:05:24 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:05:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:06:23 | [收-群] PJSK世界计划(682255155) 不可萌nene✨(3479543026)：
+@バカ✨豚ちゃんです～ 
+
+[info] | 2026-03-31 14:06:23 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:06:23 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 682255155, user_id: 3113544196, no_cache: false }, echo: { seq: 2854 } }
+
+[info] | 2026-03-31 14:06:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:06:28 | [收-群] PJSK世界计划(682255155) 不可萌nene✨(3479543026)：
+@バカ✨豚ちゃんです～ 
+
+[info] | 2026-03-31 14:06:28 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:06:28 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 682255155, user_id: 3113544196, no_cache: false }, echo: { seq: 2855 } }
+
+[info] | 2026-03-31 14:06:35 | [收-群] 自己的小群(1020588915) Astronaut_37(29053789)：
+/状态
+
+[info] | 2026-03-31 14:06:35 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:06:36 | 收到反向 Websocket 消息 { action: 'send_group_msg', params: { group_id: 1020588915, message: [ { type: 'reply', data: { id: '-1014221489', chain: [], sender_id: 0, sender_nickname: '', time: 0, message_str: '', text: '', qq: 0, seq: 0 } }, { type: 'image', data: { file: 'base64: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...
+
+[info] | 2026-03-31 14:06:36 | 图片信息 { md5HexStr: 'eda04f0ee92b8ae614bd054cb06e1f2a', fileSize: '88990', picWidth: 620, picHeight: 540, fileName: 'c5c0f13a-703a-4213-91b4-0e160c2b161c.png', sourcePath: '/root/.config/QQ/nt_qq_505a546ecce5344b0f4c7adbc521a9bd/nt_data/Pic/2026-03/Ori/eda04f0ee92b8ae614bd054cb06e1f2a.png', original: true, picType: 1000, picSubType: 0, fileUuid: '', fileSubId: '', thumbFileSize: 0, summary: '', isFlashPic: false }
+
+[info] | 2026-03-31 14:06:37 | [发-群] 自己的小群(1020588915) nene女仆(3675867653)：
+[图片]EDA04F0EE92B8AE614BD054CB06E1F2A.png
+
+
+[info] | 2026-03-31 14:06:37 | WebQQ: 收到 nt/message-sent 事件, sseClients: 0
+
+[info] | 2026-03-31 14:06:37 | 消息发送 { chatType: 2, peerUid: '1020588915', guildId: '' }
+
+[info] | 2026-03-31 14:06:39 | [收-群] PJSK世界计划(682255155) 不可萌nene✨(3479543026)：
+我学了新歌，要不要听
+
+[info] | 2026-03-31 14:06:39 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:06:41 | [收-群] PJSK世界计划(682255155) 不可萌nene✨(3479543026)：
+[图片]BE529967A95DA7EE14F23807DD1F9849.jpg
+
+
+[info] | 2026-03-31 14:06:41 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:07:01 | [收-群] 自己的小群(1020588915) Astronaut_37(29053789)：
+/商店 3
+
+[info] | 2026-03-31 14:07:01 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:07:01 | 收到反向 Websocket 消息 { action: 'send_group_forward_msg', params: { messages: [ { type: 'node', data: { user_id: '3675867653', nickname: 'AstrBot', content: [ { type: 'text', data: { text: '【🛒 Lezskaの道具和装备商店】(ID: 3)\n' + '📖 以物换物\n' + '\n' + '🛍️ 【在售商品】\n' + '══════════════════════════════════════════════════\n' + '┌─ ⏳ 时运沙漏 ⭐⭐⭐⭐\n' + '├─ 价格: 💎 1 高级货币 + (🐟 时运沙漏 ✨高品质 x1 OR 🐟 时运沙漏 x2)\n' + '├─ 库存: 无限\n' + '├─ ID: 18\n' + '└─ 一个能窥见未来片刻的奇妙沙漏。\n' + '──────────────────────────────\n' + '┌─ 🎣 星辰钓者 ⭐⭐⭐⭐\n' + '├─ 价格: 🎣 碳素纤维竿 x1 + 🐟 星辉碎片 ✨高品质 x1 + 💰 400000 金币 + 💎 3 高级货币\n' + '├─ 库存: 无限\n' + '├─ ID: 19\n' + '└─ 蕴含星光力量的神秘鱼竿\n' + '──────────────────────────────\n' + '┌─ 🎣 海神之赐 ⭐⭐⭐⭐⭐\n' + '├─ 价格: 🎣 星辰钓者 x1 + 🐟 时运沙漏 x1 + 🐟 星辉碎片 ✨高品质 x5 + 💰 1000000 金币 + 💎 5 高级货币 + 🐟 海神三叉戟 ✨高品质 x1\n' + '├─ 库存: 无限\n' + '├─ ID: 20\n' + '└─ 传说中海神波塞冬使用过的鱼竿\n' + '──────────────────────────────\n' + '┌─ 🎁 闸喃之心 ⭐⭐⭐\n' + '├─ 价格: 🐟 闸喃 ✨高品质 x1 + 💰 2500 金币\n' + '├─ 库存: 无限\n' + '├─ ID: 21\n' + '├─ 包含物品:\n' + '│   • 🪱 闸喃之心\n' + '│   • 🪱 闸喃の皮肤碎片 x50\n' + '│   • 🪱 闸喃の头皮屑 x100\n' + '└─ 真·掏心窝子\n' + '──────────────────────────────\n' + '┌─ 🪱 闸喃葬身鱼腹小套餐 ⭐⭐⭐\n' + '├─ 价格: (🐟 闸喃 x1 OR 🐟 闸喃（哈气版） x1 OR 🐟 闸喃（破防版） x1 OR 🐟 沉没的宝箱 x1) + 💰 250 金币\n' + '├─ 库存: 无限\n' + '├─ ID: 22\n' + '├─ 包含物品:\n' + '│   • 🪱 闸喃の皮肤碎片 x10\n' + '│   • 🪱 闸喃の头皮屑 x25\n' + '└─ 对鱼类有特殊的吸引效果\n' + '──────────────────────────────\n' + '┌─ 📦 海神三叉戟（高品质） ⭐\n' + '├─ 价格: 💎 1 高级货币 + 💰 150000 金币 + 🐟 海神三叉戟 x5 + 🐟 许德拉之鳞 x1 + 🐟 克拉肯之触 x1 + 🐟 尘世巨蟒之环 x1\n' + '├─ 库存: 无限\n' + '├─ ID: 23\n' + '└─ 遗落在某处的神器(的一部分)。\n' + '──────────────────────────────\n' + '┌─ 🪱 彩虹闸喃饵 ⭐⭐⭐⭐\n' + '├─ 价格: 🐟 闸喃 x1 + 🐟 闸喃（哈气版） x1 + 🐟 闸喃（破防版） x1 + 🐟 闸喃（发情版） x1\n' + '├─ 库存: 无限\n' + '├─ ID: 32\n' + '└─ 集齐了各种闸素的高级鱼饵\n' + '──────────────────────────────\n' + '┌─ 💰 神秘钱袋 ⭐⭐⭐\n' + '├─ 价格: 🐟 沉没的宝箱 x1\n' + '├─ 库存: 无限\n' + '├─ ID: 33\n' + '└─ 一个会变换重量的神秘钱袋，谁也不知道里面有多少钱。\n' + '──────────────────────────────\n' + '┌─ 🎣 高压线竿 ⭐⭐⭐\n' + '├─ 价格: 💰 50000 金币 + 🐟 天鸟那由他 x1 + 🐟 亚津子 x1 + 🎣 竹制鱼竿 x1\n' + '├─ 库存: 无限\n' + '├─ ID: 55\n' + '└─ 使用高压线作为鱼线，鱼的前列腺也要电！\n' + '──────────────────────────────\n' + '┌─ 💍 海洋之心 ⭐⭐⭐⭐⭐\n' + '├─ 价格: 💰 600000 金币 + 💎 2 高级货币 + 🐟 星河龙鱼 x1\n' + '├─ 库存: 无限\n' + '├─ ID: 67\n' + '└─ 新手的第一条星河龙鱼去商店2兑换\n' + '══════════════════════════════════════════════════\n' + '💡 购买：商店购买 商店ID 商品ID [数量]\n' + '示例：商店购买 1 2 5' } } ] } } ], group_id: '1020588915' }, echo: { seq: 2857 } }
+
+[info] | 2026-03-31 14:07:02 | [发-群] 自己的小群(1020588915) nene女仆(3675867653)：
+[卡片]
+
+
+[info] | 2026-03-31 14:07:02 | WebQQ: 收到 nt/message-sent 事件, sseClients: 0
+
+[info] | 2026-03-31 14:07:02 | 消息发送 { chatType: 2, peerUid: '1020588915', guildId: '' }
+
+[info] | 2026-03-31 14:07:14 | [收-群] 自己的小群(1020588915) Astronaut_37(29053789)：
+/商店 4
+
+[info] | 2026-03-31 14:07:14 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:07:14 | 收到反向 Websocket 消息 { action: 'send_group_msg', params: { group_id: 1020588915, message: [ { type: 'reply', data: { id: '965315258', chain: [], sender_id: 0, sender_nickname: '', time: 0, message_str: '', text: '', qq: 0, seq: 0 } }, { type: 'text', data: { text: '❌ 商店已关闭' } } ] }, echo: { seq: 2858 } }
+
+[info] | 2026-03-31 14:07:14 | [发-群] 自己的小群(1020588915) nene女仆(3675867653)：
+❌ 商店已关闭
+
+[info] | 2026-03-31 14:07:14 | WebQQ: 收到 nt/message-sent 事件, sseClients: 0
+
+[info] | 2026-03-31 14:07:14 | 消息发送 { chatType: 2, peerUid: '1020588915', guildId: '' }
+
+[info] | 2026-03-31 14:07:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:07:29 | [收-群] PJSK世界计划(682255155) 不可萌水水（接代吃饭）(2768272453)：
+要
+
+[info] | 2026-03-31 14:07:29 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:07:33 | [收-群] 25点，worldlink2见！(1056859232) 白星(749528056)：
+打完之后已经2000名了
+
+[info] | 2026-03-31 14:07:33 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:07:41 | [收-群] 自己的小群(1020588915) Astronaut_37(29053789)：
+/鱼塘
+
+[info] | 2026-03-31 14:07:41 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:07:41 | 收到反向 Websocket 消息 { action: 'send_group_forward_msg', params: { messages: [ { type: 'node', data: { user_id: '3675867653', nickname: 'AstrBot', content: [ { type: 'text', data: { text: '【🐠 鱼塘】：\n' + '\n' + ' ⭐⭐⭐⭐⭐⭐⭐⭐⭐：\n' + '  - 次元裂缝 x  72 （1500000金币 / 个） ID: F129\n' + '  - 次元裂缝 ✨高品质 x  20 （3000000金币 / 个） ID: F129H\n' + '  - 奇点 x  105 （2000000金币 / 个） ID: F130\n' + '  - 奇点 ✨高品质 x  35 （4000000金币 / 个） ID: F130H\n' + '\n' + ' ⭐⭐⭐⭐⭐⭐⭐⭐：\n' + '  - 世界之鱼 x  62 （500000金币 / 个） ID: F111\n' + '  - 世界之鱼 ✨高品质 x  23 （1000000金币 / 个） ID: F111H\n' + '  - 创世神鳞 x  139 （1000000金币 / 个） ID: F112\n' + '  - 创世神鳞 ✨高品质 x  40 （2000000金币 / 个） ID: F112H\n' + '\n' + ' ⭐⭐⭐⭐⭐⭐⭐：\n' + '  - 深渊之眼 x  63 （120000金币 / 个） ID: F108\n' + '  - 深渊之眼 ✨高品质 x  16 （240000金币 / 个） ID: F108H\n' + '  - 原始之母 x  82 （100000金币 / 个） ID: F109\n' + '  - 原始之母 ✨高品质 x  15 （200000金币 / 个） ID: F109H\n' + '  - 混沌游鱼 x  39 （90000金币 / 个） ID: F110\n' + '  - 混沌游鱼 ✨高品质 x  13 （180000金币 / 个） ID: F110H\n' + '\n' + ' ⭐⭐⭐⭐⭐⭐：\n' + '  - 苍穹裂隙守护者 x  44 （50000金币 / 个） ID: F104\n' + '  - 苍穹裂隙守护者 ✨高品质 x  8 （100000金币 / 个） ID: F104H\n' + '  - 时间系蝠鲼 x  67 （75000金币 / 个） ID: F105\n' + '  - 时间系蝠鲼 ✨高品质 x  24 （150000金币 / 个） ID: F105H\n' + '  - 虚空鲸 x  55 （60000金币 / 个） ID: F106\n' + '  - 虚空鲸 ✨高品质 x  6 （120000金币 / 个） ID: F106H\n' + '  - 星河龙鱼 x  21 （45000金币 / 个） ID: F107\n' + '  - 星河龙鱼 ✨高品质 x  12 （90000金币 / 个） ID: F107H\n' + '\n' + ' ⭐⭐⭐⭐⭐：\n' + '  - 锦鲤 x  46 （1000金币 / 个） ID: F89\n' + '  - 锦鲤 ✨高品质 x  10 （2000金币 / 个） ID: F89H\n' + '  - 龙王 x  142 （5000金币 / 个） ID: F90\n' + '  - 龙王 ✨高品质 x  68 （10000金币 / 个） ID: F90H\n' + '  - 美人鱼 x  264 （8000金币 / 个） ID: F91\n' + '  - 美人鱼 ✨高品质 x  137 （16000金币 / 个） ID: F91H\n' + '  - 深海巨妖 x  367 （10000金币 / 个） ID: F92\n' + '  - 深海巨妖 ✨高品质 x  162 （20000金币 / 个） ID: F92H\n' + '  - 海神三叉戟 x  509 （15000金币 / 个） ID: F93\n' + '  - 海神三叉戟 ✨高品质 x  280 （30000金币 / 个） ID: F93H\n' + '  - 时运沙漏 x  618 （20000金币 / 个） ID: F94\n' + '  - 时运沙漏 ✨高品质 x  329 （40000金币 / 个） ID: F94H\n' + '  - 克拉肯之触 x  380 （11000金币 / 个） ID: F95\n' + '  - 克拉肯之触 ✨高品质 x  161 （22000金币 / 个） ID: F95H\n' + '  - 许德拉之鳞 x  441 （13000金币 / 个） ID: F96\n' + '  - 许德拉之鳞 ✨高品质 x  220 （26000金币 / 个） ID: F96H\n' + '  - 尘世巨蟒之环 x  750 （22000金币 / 个） ID: F97\n' + '  - 尘世巨蟒之环 ✨高品质 x  404 （44000金币 / 个） ID: F97H\n' + '  - 神马 x  229 （7000金币 / 个） ID: F98\n' + '  - 神马 ✨高品质 x  129 （14000金币 / 个） ID: F98H\n' + '  - 狮子鱼 x  293 （8000金币 / 个） ID: F99\n' + '  - 狮子鱼 ✨高品质 x  148 （16000金币 / 个） ID: F99H\n' + '  - 幽灵鲨 x  177 （6500金币 / 个） ID: F100\n' + '  - 幽灵鲨 ✨高品质 x  120 （13000金币 / 个） ID: F100H\n' + '  - 吸血鬼乌贼 x  278 （7500金币 / 个） ID: F101\n' + '  - 吸血鬼乌贼 ✨高品质 x  129 （15000金币 / 个） ID: F101H\n' + '  - 阿斯皮多凯隆幼龟 x  534 （16000金币 / 个） ID: F102\n' + '  - 阿斯皮多凯隆幼龟 ✨高品质 x  282 （32000金币 / 个） ID: F102H\n' + '  - 最深之鱼 x  1056 （30000金币 / 个） ID: F103\n' + '  - 最深之鱼 ✨高品质 x  460 （60000金币 / 个） ID: F103H\n' + '  - 超超超超超级无敌离猫大王 x  802 （25000金币 / 个） ID: F120\n' + '  - 超超超超超级无敌离猫大王 ✨高品质 x  444 （50000金币 / 个） ID: F120H\n' + '  - 亚特兰蒂斯の福禄鱼 x  358 （15000金币 / 个） ID: F132\n' + '  - 亚特兰蒂斯の福禄鱼 ✨高品质 x  238 （30000金币 / 个） ID: F132H\n' + '\n' + ' ⭐⭐⭐⭐：\n' + '  - 金龙鱼 x  292 （500金币 / 个） ID: F67\n' + '  - 金龙鱼 ✨高品质 x  116 （1000金币 / 个） ID: F67H\n' + '  - 清道夫 x  231 （450金币 / 个） ID: F68\n' + '  - 清道夫 ✨高品质 x  121 （900金币 / 个） ID: F68H\n' + '  - 娃娃鱼 x  477 （800金币 / 个） ID: F69\n' + '  - 娃娃鱼 ✨高品质 x  242 （1600金币 / 个） ID: F69H\n' + '  - 蓝鳍金枪鱼 x  535 （1000金币 / 个） ID: F70\n' + '  - 蓝鳍金枪鱼 ✨高品质 x  272 （2000金币 / 个） ID: F70H\n' + '  - 剑鱼 x  670 （1200金币 / 个） ID: F71\n' + '  - 剑鱼 ✨高品质 x  303 （2400金币 / 个） ID: F71H\n' + '  - 海豚 x  502 （900金币 / 个） ID: F72\n' + '  - 海豚 ✨高品质 x  213 （1800金币 / 个） ID: F72H\n' + '  - 鲸鱼 x  848 （1500金币 / 个） ID: F73\n' + '  - 鲸鱼 ✨高品质 x  389 （3000金币 / 个） ID: F73H\n' + '  - 电鳗 x  343 （600金币 / 个） ID: F74\n' + '  - 电鳗 ✨高品质 x  187 （1200金币 / 个） ID: F74H\n' + '  - 海龟 x  378 （750金币 / 个） ID: F75\n' + '  - 海龟 ✨高品质 x  231 （1500金币 / 个） ID: F75H\n' + '  - 深海鮟鱇 x  403 （700金币 / 个） ID: F76\n' + '  - 深海鮟鱇 ✨高品质 x  185 （1400金币 / 个） ID: F76H\n' + '  - 沉没的宝箱 x  47 （100金币 / 个） ID: F77\n' + '  - 沉没的宝箱 ✨高品质 x  24 （200金币 / 个） ID: F77H\n' + '  - 腔棘鱼 x  614 （1100金币 / 个） ID: F78\n' + '  - 腔棘鱼 ✨高品质 x  282 （2200金币 / 个） ID: F78H\n' + '  - 桔连鳍鲑 x  454 （850金币 / 个） ID: F79\n' + '  - 桔连鳍鲑 ✨高品质 x  241 （1700金币 / 个） ID: F79H\n' + '  - 皇带鱼 x  705 （1300金币 / 个） ID: F80\n' + '  - 皇带鱼 ✨高品质 x  351 （2600金币 / 个） ID: F80H\n' + '  - 尖牙鱼 x  379 （680金币 / 个） ID: F81\n' + '  - 尖牙鱼 ✨高品质 x  181 （1360金币 / 个） ID: F81H\n' + '  - 水滴鱼 x  200 （400金币 / 个） ID: F82\n' + '  - 水滴鱼 ✨高品质 x  107 （800金币 / 个） ID: F82H\n' + '  - 光颌鱼 x  556 （950金币 / 个） ID: F83\n' + '  - 光颌鱼 ✨高品质 x  263 （1900金币 / 个） ID: F83H\n' + '  - 角鮟鱇 x  445 （820金币 / 个） ID: F84\n' + '  - 角鮟鱇 ✨高品质 x  271 （1640金币 / 个） ID: F84H\n' + '  - 黑魔鬼鱼 x  453 （880金币 / 个） ID: F85\n' + '  - 黑魔鬼鱼 ✨高品质 x  232 （1760金币 / 个） ID: F85H\n' + '  - 鳕鲈 x  434 （720金币 / 个） ID: F86\n' + '  - 鳕鲈 ✨高品质 x  169 （1440金币 / 个） ID: F86H\n' + '  - 大比目鱼 x  564 （980金币 / 个） ID: F87\n' + '  - 大比目鱼 ✨高品质 x  242 （1960金币 / 个） ID: F87H\n' + '  - 旗鱼 x  746 （1400金币 / 个） ID: F88\n' + '  - 旗鱼 ✨高品质 x  377 （2800金币 / 个） ID: F88H\n' + '  - 闸喃 x  174 （250金币 / 个） ID: F113\n' + '  - 闸喃 ✨高品质 x  70 （500金币 / 个） ID: F113H\n' + '  - 大水 x  551 （1000金币 / 个） ID: F114\n' + '  - 大水 ✨高品质 x  310 （2000金币 / 个） ID: F114H\n' + '  - 小雨 x  566 （1000金币 / 个） ID: F115\n' + '  - 小雨 ✨高品质 x  225 （2000金币 / 个） ID: F115H\n' + '  - 摸白 x  823 （1500金币 / 个） ID: F116\n' + '  - 摸白 ✨高品质 x  407 （3000金币 / 个） ID: F116H\n' + '  - 星辉碎片 x  1316 （3000金币 / 个） ID: F117\n' + '  - 星辉碎片 ✨高品质 x  785 （6000金币 / 个） ID: F117H\n' + '  - 豚酱 x  572 （1000金币 / 个） ID: F118\n' + '  - 豚酱 ✨高品质 x  233 （2000金币 / 个） ID: F118H\n' + '  - 超级无敌离猫大王 x  1087 （2000金币 / 个） ID: F119\n' + '  - 超级无敌离猫大王 ✨高品质 x  573 （4000金币 / 个） ID: F119H\n' + '  - 老年白bai x  813 （1500金币 / 个） ID: F121\n' + '  - 老年白bai ✨高品质 x  433 （3000金币 / 个） ID: F121H\n' + '  - 葡萄柚 x  571 （1000金币 / 个） ID: F122\n' + '  - 葡萄柚 ✨高品质 x  293 （2000金币 / 个） ID: F122H\n' + '  - 鲷鱼烧 x  556 （1000金币 / 个） ID: F123\n' + '  - 鲷鱼烧 ✨高品质 x  278 （2000金币 / 个） ID: F123H\n' + '  - ket x  800 （1500金币 / 个） ID: F124\n' + '  - ket ✨高品质 x  445 （3000金币 / 个） ID: F124H\n' + '  - 迪拉熊 x  825 （1500金币 / 个） ID: F125\n' + '  - 迪拉熊 ✨高品质 x  452 （3000金币 / 个） ID: F125H\n' + '  - 闸喃（哈气版） x  126 （250金币 / 个） ID: F126\n' + '  - 闸喃（哈气版） ✨高品质 x  58 （500金币 / 个） ID: F126H\n' + '  - 闸喃（破防版） x  132 （250金币 / 个） ID: F127\n' + '  - 闸喃（破防版） ✨高品质 x  61 （500金币 / 个） ID: F127H\n' + '  - 闸喃（发情版） x  152 （250金币 / 个） ID: F128\n' + '  - 闸喃（发情版） ✨高品质 x  52 （500金币 / 个） ID: F128H\n' + '  - 新年福袋 x  329 （1000金币 / 个） ID: F131\n' + '  - 新年福袋 ✨高品质 x  157 （2000金币 / 个） ID: F131H\n' + '  - 亚津子 x  810 （1500金币 / 个） ID: F133\n' + '  - 亚津子 ✨高品质 x  388 （3000金币 / 个） ID: F133H\n' + '  - 天鸟那由他 x  877 （1500金币 / 个） ID: F134\n' + '  - 天鸟那由他 ✨高品质 x  452 （3000金币 / 个） ID: F134H\n' + '\n' + ' ⭐⭐⭐：\n' + '  - 鲈鱼 x  176 （100金币 / 个） ID: F44\n' + '  - 鲈鱼 ✨高品质 x  113 （200金币 / 个） ID: F44H\n' + '  - 黑鱼 x  255 （150金币 / 个） ID: F45\n' + '  - 黑鱼 ✨高品质 x  134 （300金币 / 个） ID: F45H\n' + '  - 鳜鱼 x  239 （120金币 / 个） ID: F46\n' + '  - 鳜鱼 ✨高品质 x  155 （240金币 / 个） ID: F46H\n' + '  - 胭脂鱼 x  352 （180金币 / 个） ID: F47\n' + '  - 胭脂鱼 ✨高品质 x  197 （360金币 / 个） ID: F47H\n' + '  - 鲨鱼 x  386 （200金币 / 个） ID: F48\n' + '  - 鲨鱼 ✨高品质 x  185 （400金币 / 个） ID: F48H\n' + '  - 金枪鱼 x  495 （250金币 / 个） ID: F49\n' + '  - 金枪鱼 ✨高品质 x  257 （500金币 / 个） ID: F49H\n' + '  - 石斑鱼 x  565 （300金币 / 个） ID: F50\n' + '  - 石斑鱼 ✨高品质 x  297 （600金币 / 个） ID: F50H\n' + '  - 鲷鱼 x  675 （350金币 / 个） ID: F51\n' + '  - 鲷鱼 ✨高品质 x  341 （700金币 / 个） ID: F51H\n' + '  - 食人鱼 x  202 （110金币 / 个） ID: F52\n' + '  - 食人鱼 ✨高品质 x  115 （220金币 / 个） ID: F52H\n' + '  - 章鱼 x  254 （140金币 / 个） ID: F53\n' + '  - 章鱼 ✨高品质 x  138 （280金币 / 个） ID: F53H\n' + '  - 狗鱼 x  254 （130金币 / 个） ID: F54\n' + '  - 狗鱼 ✨高品质 x  126 （260金币 / 个） ID: F54H\n' + '  - 大口黑鲈 x  268 （145金币 / 个） ID: F55\n' + '  - 大口黑鲈 ✨高品质 x  124 （290金币 / 个） ID: F55H\n' + '  - 鳟鱼 x  353 （165金币 / 个） ID: F56\n' + '  - 鳟鱼 ✨高品质 x  175 （330金币 / 个） ID: F56H\n' + '  - 鲑鱼 x  298 （175金币 / 个） ID: F57\n' + '  - 鲑鱼 ✨高品质 x  162 （350金币 / 个） ID: F57H\n' + '  - 鲟鱼 x  550 （280金币 / 个） ID: F58\n' + '  - 鲟鱼 ✨高品质 x  299 （560金币 / 个） ID: F58H\n' + '  - 匙吻鲟 x  482 （260金币 / 个） ID: F59\n' + '  - 匙吻鲟 ✨高品质 x  268 （520金币 / 个） ID: F59H\n' + '  - 鲶鱼 x  211 （115金币 / 个） ID: F60\n' + '  - 鲶鱼 ✨高品质 x  102 （230金币 / 个） ID: F60H\n' + '  - 鲯鳅 x  549 （290金币 / 个） ID: F61\n' + '  - 鲯鳅 ✨高品质 x  277 （580金币 / 个） ID: F61H\n' + '  - 军曹鱼 x  480 （240金币 / 个） ID: F62\n' + '  - 军曹鱼 ✨高品质 x  237 （480金币 / 个） ID: F62H\n' + '  - 梭鱼 x  390 （210金币 / 个） ID: F63\n' + '  - 梭鱼 ✨高品质 x  209 （420金币 / 个） ID: F63H\n' + '  - 鮟鱇鱼 x  324 （190金币 / 个） ID: F64\n' + '  - 鮟鱇鱼 ✨高品质 x  170 （380金币 / 个） ID: F64H\n' + '  - 灯笼鱼 x  196 （95金币 / 个） ID: F65\n' + '  - 灯笼鱼 ✨高品质 x  95 （190金币 / 个） ID: F65H\n' + '  - 蝰鱼 x  405 （230金币 / 个） ID: F66\n' + '  - 蝰鱼 ✨高品质 x  213 （460金币 / 个） ID: F66H\n' + '\n' + ' ⭐⭐：\n' + '  - 草鱼 x  163 （50金币 / 个） ID: F20\n' + '  - 草鱼 ✨高品质 x  65 （100金币 / 个） ID: F20H\n' + '  - 鲤鱼 x  160 （60金币 / 个） ID: F21\n' + '  - 鲤鱼 ✨高品质 x  76 （120金币 / 个） ID: F21H\n' + '  - 鲢鱼 x  130 （55金币 / 个） ID: F22\n' + '  - 鲢鱼 ✨高品质 x  72 （110金币 / 个） ID: F22H\n' + '  - 鳊鱼 x  164 （65金币 / 个） ID: F23\n' + '  - 鳊鱼 ✨高品质 x  75 （130金币 / 个） ID: F23H\n' + '  - 鲅鱼 x  185 （70金币 / 个） ID: F24\n' + '  - 鲅鱼 ✨高品质 x  94 （140金币 / 个） ID: F24H\n' + '  - 带鱼 x  174 （75金币 / 个） ID: F25\n' + '  - 带鱼 ✨高品质 x  116 （150金币 / 个） ID: F25H\n' + '  - 黄花鱼 x  204 （80金币 / 个） ID: F26\n' + '  - 黄花鱼 ✨高品质 x  109 （160金币 / 个） ID: F26H\n' + '  - 鲳鱼 x  241 （85金币 / 个） ID: F27\n' + '  - 鲳鱼 ✨高品质 x  132 （170金币 / 个） ID: F27H\n' + '  - 河豚 x  122 （40金币 / 个） ID: F28\n' + '  - 河豚 ✨高品质 x  46 （80金币 / 个） ID: F28H\n' + '  - 小丑鱼 x  94 （45金币 / 个） ID: F29\n' + '  - 小丑鱼 ✨高品质 x  54 （90金币 / 个） ID: F29H\n' + '  - 螃蟹 x  89 （35金币 / 个） ID: F30\n' + '  - 螃蟹 ✨高品质 x  36 （70金币 / 个） ID: F30H\n' + '  - 河鲈 x  122 （48金币 / 个） ID: F31\n' + '  - 河鲈 ✨高品质 x  75 （96金币 / 个） ID: F31H\n' + '  - 蓝鳃太阳鱼 x  104 （42金币 / 个） ID: F32\n' + '  - 蓝鳃太阳鱼 ✨高品质 x  32 （84金币 / 个） ID: F32H\n' + '  - 莓鲈 x  117 （44金币 / 个） ID: F33\n' + '  - 莓鲈 ✨高品质 x  69 （88金币 / 个） ID: F33H\n' + '  - 玻璃梭鲈 x  196 （68金币 / 个） ID: F34\n' + '  - 玻璃梭鲈 ✨高品质 x  95 （136金币 / 个） ID: F34H\n' + '  - 牛头鱼 x  74 （38金币 / 个） ID: F35\n' + '  - 牛头鱼 ✨高品质 x  56 （76金币 / 个） ID: F35H\n' + '  - 羊头鱼 x  180 （72金币 / 个） ID: F36\n' + '  - 羊头鱼 ✨高品质 x  92 （144金币 / 个） ID: F36H\n' + '  - 比目鱼 x  172 （62金币 / 个） ID: F37\n' + '  - 比目鱼 ✨高品质 x  100 （124金币 / 个） ID: F37H\n' + '  - 黑线鳕 x  15...
+
+[info] | 2026-03-31 14:07:42 | [发-群] 自己的小群(1020588915) nene女仆(3675867653)：
+[卡片]
+
+
+[info] | 2026-03-31 14:07:42 | WebQQ: 收到 nt/message-sent 事件, sseClients: 0
+
+[info] | 2026-03-31 14:07:42 | 消息发送 { chatType: 2, peerUid: '1020588915', guildId: '' }
+
+[info] | 2026-03-31 14:07:42 | [收-群] 25点，worldlink2见！(1056859232) 白星(749528056)：
+是大部分人还没有打的缘故吗？怎么这么好上
+
+[info] | 2026-03-31 14:07:42 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:08:16 | [收-群] 自己的小群(1020588915) Astronaut_37(29053789)：
+/背包
+
+[info] | 2026-03-31 14:08:16 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:08:17 | 收到反向 Websocket 消息 { action: 'send_group_msg', params: { group_id: 1020588915, message: [ { type: 'reply', data: { id: '-108942798', chain: [], sender_id: 0, sender_nickname: '', time: 0, message_str: '', text: '', qq: 0, seq: 0 } }, { type: 'image', data: { file: 'base64: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...
+
+[info] | 2026-03-31 14:08:17 | 图片信息 { md5HexStr: '3d81d52f05735f134ddfa65038d73043', fileSize: '544342', picWidth: 800, picHeight: 4475, fileName: '24077f98-4d53-4033-b0cc-2db04f4d1385.png', sourcePath: '/root/.config/QQ/nt_qq_505a546ecce5344b0f4c7adbc521a9bd/nt_data/Pic/2026-03/Ori/3d81d52f05735f134ddfa65038d73043.png', original: true, picType: 1000, picSubType: 0, fileUuid: '', fileSubId: '', thumbFileSize: 0, summary: '', isFlashPic: false }
+
+[info] | 2026-03-31 14:08:20 | [发-群] 自己的小群(1020588915) nene女仆(3675867653)：
+[图片]3D81D52F05735F134DDFA65038D73043.png
+
+
+[info] | 2026-03-31 14:08:20 | WebQQ: 收到 nt/message-sent 事件, sseClients: 0
+
+[info] | 2026-03-31 14:08:20 | 消息发送 { chatType: 2, peerUid: '1020588915', guildId: '' }
+
+[info] | 2026-03-31 14:08:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:08:38 | [收-群] PJSK世界计划(682255155) 不可萌nene✨(3479543026)：
+我还没录音
+
+[info] | 2026-03-31 14:08:38 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:08:40 | [收-群] 自己的小群(1020588915) Astronaut_37(29053789)：
+/装备 B8
+
+[info] | 2026-03-31 14:08:40 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:08:40 | 收到反向 Websocket 消息 { action: 'send_group_msg', params: { group_id: 1020588915, message: [ { type: 'reply', data: { id: '-564222093', chain: [], sender_id: 0, sender_nickname: '', time: 0, message_str: '', text: '', qq: 0, seq: 0 } }, { type: 'text', data: { text: '💫 成功使用鱼饵【活虾】' } } ] }, echo: { seq: 2861 } }
+
+[info] | 2026-03-31 14:08:41 | [发-群] 自己的小群(1020588915) nene女仆(3675867653)：
+💫 成功使用鱼饵【活虾】
+
+[info] | 2026-03-31 14:08:41 | WebQQ: 收到 nt/message-sent 事件, sseClients: 0
+
+[info] | 2026-03-31 14:08:41 | 消息发送 { chatType: 2, peerUid: '1020588915', guildId: '' }
+
+[info] | 2026-03-31 14:09:17 | [收-群] PJSK世界计划(682255155) かなで(1550318633)：
+[图片]34A7F2E99DFCE510F00756A9214E5C7A.jpg
+
+
+[info] | 2026-03-31 14:09:17 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:09:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:10:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:11:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:11:57 | [收-群] PJSK世界计划(682255155) キラキラ✨Lezska（音游残障人士(29053789)：
+[图片]BFB0D27B3B83D9456ABB58EAF2E8098C.png
+这带宽nb
+
+[info] | 2026-03-31 14:11:57 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:12:20 | [收-群] 25点，worldlink2见！(1056859232) 失眠夜(3153466289)：
+🤔是吸太冷了
+
+[info] | 2026-03-31 14:12:20 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:12:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:12:47 | [收-群] 25点，worldlink2见！(1056859232) 白星(749528056)：
+吸作为队伍里的贝斯手，还是唱的太少了，一直在弹
+
+[info] | 2026-03-31 14:12:47 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:12:56 | [收-群] PJSK世界计划(682255155) 开车缺人请艾特我 (国烤倍率226 id:bfes小咸鱼)(2841902212)：
+像极了我昨天下日服app的速度
+
+[info] | 2026-03-31 14:12:56 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:13:07 | [收-群] 25点，worldlink2见！(1056859232) 白星(749528056)：
+志步一直都让我感觉很厉害，好像懂很多的样子，但实际上确实是懂很多的
+
+[info] | 2026-03-31 14:13:07 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:13:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:13:34 | [收-群] PJSK世界计划(682255155) キラキラ✨Lezska（音游残障人士(29053789)：
+高达上一个服务器从github下载速度的10倍
+
+[info] | 2026-03-31 14:13:34 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:14:13 | WebSocket 事件上报 ws://localhost:3939/ws notice.notify
+
+[info] | 2026-03-31 14:14:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:14:42 | [收-群] PJSK世界计划(682255155) キラキラ✨SAGE(3120706279)：
+help
+
+[info] | 2026-03-31 14:14:42 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:14:42 | 收到反向 Websocket 消息 { action: 'send_group_msg', params: { group_id: 682255155, message: [ { type: 'text', data: { text: '当前可用的指令有：\n' + '    ament  生成MC风格的成就/进度图片\n' + '\t【注意图标获取的优先级】：Minecaft游戏图标 > 引用消息的图片 > 参数传入的图片 > at用户的头像 > 默认fallback幸运方块图标。【没说明白就去看source code】\n' + '    blocker  \n' + '    lunatic  来点发病文学\n' + '    mc  Minecraft 工具\n' + '    menu  显示指令菜单\n' + '    rgl  \n' + '    roll  随机选择\n' + '    抽卡帮助  \n' + '    查号帮助  \n' + '    漂流瓶  漂流瓶\n' + '    签到帮助  \n' + '输入“help 指令名”查看特定指令的语法和使用示例。' } } ] }, echo: 30 }
+
+[info] | 2026-03-31 14:14:42 | [发-群] PJSK世界计划(682255155) nene女仆(3675867653)：
+当前可用的指令有：
+    ament  生成MC风格的成就/进度图片
+	【注意图标获取的优先级】：Minecaft游戏图标 > 引用消息的图片 > 参数传入的图片 > at用户的头像 > 默认fallback幸运方块图标。【没说明白就去看source code】
+    blocker  
+    lunatic  来点发病文学
+    mc  Minecraft 工具
+    menu  显示指令菜单
+    rgl  
+    roll  随机选择
+    抽卡帮助  
+    查号帮助  
+    漂流瓶  漂流瓶
+    签到帮助  
+输入“help 指令名”查看特定指令的语法和使用示例。
+
+[info] | 2026-03-31 14:14:42 | WebQQ: 收到 nt/message-sent 事件, sseClients: 0
+
+[info] | 2026-03-31 14:14:42 | 消息发送 { chatType: 2, peerUid: '682255155', guildId: '' }
+
+[info] | 2026-03-31 14:14:42 | [收-群] PJSK世界计划(682255155) Hataune Miku(3346368533)：
+打   游
+遍   戏
+天   开
+下   挂
+无   我
+敌   最
+手   吊
+此人因为玩个游戏还要开挂献祭自己那不知道存不存在的双亲已被禁止使用HarukiBot
+
+[info] | 2026-03-31 14:14:42 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:14:43 | [收-群] PJSK世界计划(682255155) キラキラ✨苹果鲷鱼烧baka笨蛋(3130224867)：
+欢迎您使用HarukiBot
+使用帮助: https://docs.haruki.seiunx.com
+
+[info] | 2026-03-31 14:14:43 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:14:46 | [收-群] PJSK世界计划(682255155) キラキラ✨Lezska（音游残障人士(29053789)：
+爽了
+
+[info] | 2026-03-31 14:14:46 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:14:56 | [收-群] PJSK世界计划(682255155) キラキラ✨SAGE(3120706279)：
+[图片]13EE431AA94892D4E4BD0306E1C279DA.png
+
+
+[info] | 2026-03-31 14:14:56 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:15:07 | [收-群] PJSK世界计划(682255155) ユ灵猫（无偿代花钱）(2535081283)：
+[图片]470590A9368A226EE1218259C85BA58B.jpg
+
+
+[info] | 2026-03-31 14:15:07 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:15:24 | [收-群] PJSK世界计划(682255155) キラキラ✨SAGE(3120706279)：
+借鉴了Haruki dev的内容
+
+[info] | 2026-03-31 14:15:24 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:15:24 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: -138390780 }, echo: { seq: 2862 } }
+
+[info] | 2026-03-31 14:15:24 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: -138390780 }, echo: 32 }
+
+[info] | 2026-03-31 14:15:25 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: -138390780 }, echo: '311' }
+
+[info] | 2026-03-31 14:15:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:15:27 | [收-群] 25点，worldlink2见！(1056859232) 奈白(2220163251)：
+[图片]20937F6FB8A63E8ADF2A0B444C9ABC13.jpg
+
+
+[info] | 2026-03-31 14:15:27 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:15:45 | [收-群] PJSK世界计划(682255155) キラキラ✨SAGE(3120706279)：
+[图片]341BE82FC6E80D448A1041BFE89D7ABC.png
+
+
+[info] | 2026-03-31 14:15:45 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:16:26 | [收-群] PJSK世界计划(682255155) かなで(1550318633)：
+[图片]8C43029199D66C120A43C6A56AA85504.jpg
+
+
+[info] | 2026-03-31 14:16:26 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:16:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:16:44 | [收-群] 25点，worldlink2见！(1056859232) 奈白(2220163251)：
+@白星 和shiho同cv的隔壁的贝斯手基本不唱歌（）
+
+[info] | 2026-03-31 14:16:44 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:16:44 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: 881727597 }, echo: 34 }
+
+[info] | 2026-03-31 14:16:44 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: 881727597 }, echo: { seq: 2863 } }
+
+[info] | 2026-03-31 14:16:44 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 1056859232, user_id: 749528056, no_cache: false }, echo: { seq: 2864 } }
+
+[info] | 2026-03-31 14:16:44 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: 881727597 }, echo: '312' }
+
+[info] | 2026-03-31 14:16:56 | [收-群] 25点，worldlink2见！(1056859232) 白星(749528056)：
+非常憧憬她，希望未来也能成为这种做事雷厉风行的人吧
+
+[info] | 2026-03-31 14:16:56 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:17:02 | [收-群] 25点，worldlink2见！(1056859232) 失眠夜(3153466289)：
+乐队一般都是主唱唱歌
+
+[info] | 2026-03-31 14:17:02 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:17:23 | [收-群] 25点，worldlink2见！(1056859232) 失眠夜(3153466289)：
+但是烤批太吓人了
+
+[info] | 2026-03-31 14:17:23 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:17:23 | [收-群] 25点，worldlink2见！(1056859232) 白星(749528056)：
+知道的
+
+[info] | 2026-03-31 14:17:23 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:17:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:17:36 | [收-群] 25点，worldlink2见！(1056859232) 失眠夜(3153466289)：
+敢让其他人不唱歌等着被冲死吧
+
+[info] | 2026-03-31 14:17:36 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:17:57 | [收-群] 25点，worldlink2见！(1056859232) 失眠夜(3153466289)：
+ln因为一歌多唱了两句歌词就被冲了
+
+[info] | 2026-03-31 14:17:57 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:18:12 | [收-群] 25点，worldlink2见！(1056859232) 白星(749528056)：
+没办法，毕竟是乐队
+
+[info] | 2026-03-31 14:18:12 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:18:17 | 群表情回应 { target: { sequence: 106720 }, info: { code: '10068', count: 1, operatorUid: 'u_wFC95RYUnj3A2sDjgIHpHA', type: 1 } }
+
+[info] | 2026-03-31 14:18:17 | WebSocket 事件上报 ws://localhost:3939/ws notice.group_msg_emoji_like
+
+[info] | 2026-03-31 14:18:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:18:47 | [收-群] 25点，worldlink2见！(1056859232) 奈白(2220163251)：
+准确来看应该就ln和vbs算乐队吧
+
+[info] | 2026-03-31 14:18:47 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:19:18 | [收-群] 25点，worldlink2见！(1056859232) 白星(749528056)：
+vbs准确来说是街头艺人吧
+
+[info] | 2026-03-31 14:19:18 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:19:25 | [收-群] 25点，worldlink2见！(1056859232) 奈白(2220163251)：
+🤔
+
+[info] | 2026-03-31 14:19:25 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:19:27 | [收-群] 25点，worldlink2见！(1056859232) 奈白(2220163251)：
+好像也是
+
+[info] | 2026-03-31 14:19:27 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:19:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:19:33 | [收-群] 25点，worldlink2见！(1056859232) 白星(749528056)：
+而且这个团一直都非常流行2+2模式
+
+[info] | 2026-03-31 14:19:33 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:19:42 | [收-群] 25点，worldlink2见！(1056859232) 白星(749528056)：
+官方卖的太狠了
+
+[info] | 2026-03-31 14:19:42 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:19:44 | [收-群] 25点，worldlink2见！(1056859232) 奈白(2220163251)：
+俩同（）
+
+[info] | 2026-03-31 14:19:44 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:19:51 | [收-群] 25点，worldlink2见！(1056859232) 白星(749528056)：
+反而显得有些刻意，没那么自然
+
+[info] | 2026-03-31 14:19:51 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:20:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:21:04 | [收-群] 25点，worldlink2见！(1056859232) 失眠夜(3153466289)：
+ln敢像真正乐队那样只有主唱唱歌
+
+[info] | 2026-03-31 14:21:04 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:21:17 | [收-群] PJSK世界计划(682255155) バカ✨豚ちゃんです～(3113544196)：
+@不可萌nene✨ 要
+
+[info] | 2026-03-31 14:21:17 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:21:17 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: -559185433 }, echo: { seq: 2865 } }
+
+[info] | 2026-03-31 14:21:17 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: -559185433 }, echo: 36 }
+
+[info] | 2026-03-31 14:21:17 | 收到反向 Websocket 消息 { action: 'get_group_member_info', params: { group_id: 682255155, user_id: 3479543026, no_cache: false }, echo: { seq: 2866 } }
+
+[info] | 2026-03-31 14:21:17 | 收到反向 Websocket 消息 { action: 'get_msg', params: { message_id: -559185433 }, echo: '314' }
+
+[info] | 2026-03-31 14:21:20 | [收-群] 25点，worldlink2见！(1056859232) 失眠夜(3153466289)：
+一歌估计飞的满天是
+
+[info] | 2026-03-31 14:21:20 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:21:22 | [收-群] PJSK世界计划(682255155) バカ✨豚ちゃんです～(3113544196)：
+什么歌
+
+[info] | 2026-03-31 14:21:22 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:21:25 | [收-群] 25点，worldlink2见！(1056859232) 奈白(2220163251)：
+🤔这时候我就不得不提了邦邦有个贝斯主唱
+
+[info] | 2026-03-31 14:21:25 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:21:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:22:27 | WebSocket 事件上报 ws://localhost:3939/ws meta_event
+
+[info] | 2026-03-31 14:22:33 | [收-群] 25点，worldlink2见！(1056859232) 失眠夜(3153466289)：
+一歌也不是纯主唱🤔
+
+[info] | 2026-03-31 14:22:33 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:22:38 | [收-群] 25点，worldlink2见！(1056859232) 失眠夜(3153466289)：
+也要玩乐器
+
+[info] | 2026-03-31 14:22:38 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+
+[info] | 2026-03-31 14:22:54 | WebSocket 事件上报 ws://localhost:3939/ws notice.notify
+
+[info] | 2026-03-31 14:23:15 | [收-群] PJSK世界计划(682255155) 水晶豆芽(804589861)：
+㊗️～你的鼻子有两个孔～
+
+[info] | 2026-03-31 14:23:15 | WebSocket 事件上报 ws://localhost:3939/ws message.group
+

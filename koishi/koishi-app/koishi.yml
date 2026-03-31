@@ -24,6 +24,9 @@ plugins:
       help:
         config:
           hidden: true
+        aliases:
+          help:
+            filter: false
       plugin:
         config:
           hidden: true

@@ -5,6 +5,41 @@ cwd="$(cd "$(dirname "${BASH_SOURCE[O]}")" && pwd)"
 # ========== 清理 llone/data 下的 logs 和 temp 文件夹 ==========
 echo "Cleaning llone/data logs and temp directories..."
 
+# ========== 检查并安装 npm ==========
+echo "Checking npm availability..."
+
+if ! command -v npm &> /dev/null; then
+    echo "npm not found. Attempting to install..."
+    
+    # 检测 Linux 发行版并安装
+    if command -v apt-get &> /dev/null; then
+        echo "Detected Debian/Ubuntu system. Installing npm..."
+        sudo apt-get update
+        sudo apt-get install -y npm
+    elif command -v yum &> /dev/null; then
+        echo "Detected CentOS/RHEL system. Installing npm..."
+        sudo yum install -y npm
+    elif command -v dnf &> /dev/null; then
+        echo "Detected Fedora system. Installing npm..."
+        sudo dnf install -y npm
+    else
+        echo "Error: Unsupported package manager. Please install npm manually."
+        exit 1
+    fi
+    
+    # 再次检查是否安装成功
+    if command -v npm &> /dev/null; then
+        echo "npm installed successfully."
+    else
+        echo "Failed to install npm. Please install manually and rerun this script."
+        exit 1
+    fi
+else
+    echo "npm is already available: $(npm --version)"
+fi
+
+echo ""
+
 LLONE_DATA_DIR="${cwd}/llone/data"
 
 # 检查 llone/data 目录是否存在
@@ -75,7 +110,6 @@ else
     screen -S "llone" bash -c "
         cd '${cwd}/llone' && \
         echo '=== Running start.sh ===' && \
-        ./start.sh \
-        exec bash
+        ./start.sh && exec bash
     "
 fi
