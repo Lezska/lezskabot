@@ -135,27 +135,6 @@ else
     echo "python3.12-venv is functional."
 fi
 
-# 3. 确保 python3 和 python 命令指向 python3.12（可选，保持兼容性）
-# 不强制修改系统默认 python3，但提供提示
-if command -v python3 &> /dev/null; then
-    PY3_VERSION=$(python3 --version 2>&1 | grep -oE '[0-9]+\.[0-9]+')
-    if [[ "$PY3_VERSION" != "3.12" ]]; then
-        echo "Note: System python3 is version $PY3_VERSION, but we will use python3.12 explicitly."
-    fi
-fi
-
-# 设置最终使用的 Python 命令
-PYTHON_CMD="python3.12"
-echo "Will use '$PYTHON_CMD' for running Python scripts."
-
-# 可选：确保 pip3.12 可用
-if ! command -v pip3.12 &> /dev/null; then
-    echo "pip3.12 not found. Attempting to install..."
-    python3.12 -m ensurepip --upgrade 2>/dev/null || {
-        echo "Could not install pip. You may need to install python3.12-pip manually."
-    }
-fi
-
 echo ""
 
 # ========== 检查并安装 unzip ==========
