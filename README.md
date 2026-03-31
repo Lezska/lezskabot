@@ -1,4 +1,5 @@
 # 本仓库仅用作备份，以及可能进行的服务器迁移
+# OS: Ubuntu 24.04 LTS
 ## A Tencent QQ Bot by Lezska
 ## Based on LLOneBot
 ## Features:
