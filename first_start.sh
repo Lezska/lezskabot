@@ -258,8 +258,8 @@ if screen -list | grep -q "astr"; then
 # 执行
 else
     screen -d -m -S "astr" bash -c "
-    cd '${cwd}/AstrBot' || exit 1 && \
-    rm -f data/data_v4.db-shm data/data_v4.db_wal data/fish.db-shm data/fish.db-wal && \
+    cd '${cwd}/AstrBot' && \
+    rm -f data/data_v4.db-shm data/data_v4.db-wal data/fish.db-shm data/fish.db-wal && \
     python3 -m venv ./venv && \
     source venv/bin/activate && \
     python -m pip install -r requirements.txt -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple && \
@@ -301,9 +301,10 @@ else
     screen -S "llone" bash -c "
         mkdir llone && \
         mv LLBot-CLI-linux-x64.zip llone && \
-        unzip llone/LLBot-CLI-linux-x64.zip && \
-        chmod +x llone/start.sh && \
+        cd '${cwd}/llone' && \
+        unzip LLBot-CLI-linux-x64.zip && \
+        chmod +x start.sh && \
         echo '=== Running start.sh ===' && \
-        cd '${cwd}' && ./llone/start.sh && exec bash
+        ./start.sh && exec bash
     "
 fi
