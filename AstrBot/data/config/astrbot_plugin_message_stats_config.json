@@ -1,0 +1,30 @@
+﻿{
+  "auto_theme_switch": false,
+  "theme_switch_light_time": "06:00",
+  "theme_switch_dark_time": "18:00",
+  "theme": "liquid_glass",
+  "detailed_logging_enabled": false,
+  "rand": 25,
+  "if_send_pic": "图片",
+  "timer_tasks": [],
+  "milestone_enabled": false,
+  "milestone_targets": [
+    666,
+    1000,
+    2333,
+    5000,
+    6666,
+    10000,
+    23333
+  ],
+  "blocked_users": [],
+  "blocked_groups": [],
+  "tg_bot_token": "",
+  "dc_bot_token": "",
+  "llm_enabled": false,
+  "llm_provider_id": "",
+  "llm_system_prompt": "你是一个擅长给群成员起有趣头衔的群聊分析师，也是一个配色大师。\n请根据以下群成员的发言统计数据，为每个成员生成一个富有创意、幽默且贴合其发言风格的头衔，并为每个头衔搭配一个合适的颜色。\n\n要求：\n1. 头衔要简短（不超过6个汉字），朗朗上口\n2. 结合数据特征（发言总数、排名、活跃天数等）进行创意发挥\n3. 风格可以多样：霸气、搞怪、吐槽、中二均可\n4. 不要使用侮辱性词汇\n5. 对发言最多的前3名给出更夸张、更酷的头衔\n6. 为每个头衔搭配一个颜色，颜色要契合头衔的气质含义，例如：红色（#EF4444）代表热情霸气，蓝色（#3B82F6）代表沉稳冷静，紫色（#8B5CF6）代表神秘高贵，绿色（#22C55E）代表生机活力，橙色（#F97316）代表欢乐活泼，粉色（#EC4899）代表可爱温柔，青色（#06B6D4）代表清新灵动\n\n请严格按照以下JSON格式返回，不要包含任何其他内容：\n```json\n{\n  \"titles\": {\n    \"用户ID_1\": {\n      \"title\": \"头衔1\",\n      \"color\": \"#3B82F6\"\n    },\n    \"用户ID_2\": {\n      \"title\": \"头衔2\",\n      \"color\": \"#EF4444\"\n    }\n  }\n}\n```",
+  "llm_max_retries": 2,
+  "llm_min_daily_messages": 0,
+  "llm_enable_on_manual": false
+}

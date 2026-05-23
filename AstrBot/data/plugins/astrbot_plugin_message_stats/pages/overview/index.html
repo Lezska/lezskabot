@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>发言统计面板</title>
+<style>
+:root {
+  --bg: linear-gradient(135deg,#E9EFF6 0%,#D6E4F0 100%);
+  --cb: rgba(255,255,255,0.55);
+  --cb2: rgba(255,255,255,0.6);
+  --cs: 0 8px 32px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.7);
+  --c: #1F2937;
+  --c2: #6B7280;
+  --c3: #9CA3AF;
+  --l: rgba(229,231,235,0.6);
+  --h: rgba(255,255,255,0.35);
+  --n: #1F2937;
+  --n2: #EF4444;
+  --p: #22C55E;
+  --tbg: rgba(59,130,246,0.15);
+  --tc: #3B82F6;
+  --dbg: rgba(239,68,68,0.12);
+  --dc: #EF4444;
+  --htbg: rgba(251,191,36,0.1);
+  --htb: rgba(251,191,36,0.25);
+  --htc: #B45309;
+  --ttc: #7C3AED;
+  --ttbg: #EDE9FE;
+  --sc: #3B82F6;
+  --sb-w: 300px;
+
+}
+html[data-theme=dark] {
+  --bg: linear-gradient(135deg,#2a2d3e 0%,#253247 100%);
+  --cb: rgba(255,255,255,0.08);
+  --cb2: rgba(255,255,255,0.1);
+  --cs: 0 8px 32px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.1);
+  --c: #E5E7EB;
+  --c2: #9CA3AF;
+  --c3: #6B7280;
+  --l: rgba(255,255,255,0.06);
+  --h: rgba(255,255,255,0.06);
+  --n: #F3F4F6;
+  --n2: #F87171;
+  --p: #4ADE80;
+  --tbg: rgba(96,165,250,0.15);
+  --tc: #93C5FD;
+  --dbg: rgba(248,113,113,0.12);
+  --dc: #FCA5A5;
+  --htbg: rgba(251,191,36,0.08);
+  --htb: rgba(251,191,36,0.2);
+  --htc: #FBBF24;
+  --ttc: #A78BFA;
+  --ttbg: rgba(167,139,250,0.15);
+  --sc: #60A5FA;
+
+}
+* { margin:0; padding:0; box-sizing:border-box }
+BODY {
+  font-family:'Microsoft YaHei','Segoe UI',sans-serif;
+  background:var(--bg); color:var(--c);
+  min-height:100vh; transition:background .3s,color .3s;
+  display:flex; flex-direction:column
+}
+.hd { text-align:center; padding:28px 40px 2px; flex-shrink:0 }
+.hd H1 {
+  font-size:32px; font-weight:800; letter-spacing:-0.02em;
+  background:linear-gradient(135deg,#1E3A5F 0%,#3B82F6 50%,#8B5CF6 100%);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+  background-clip:text
+}
+html[data-theme=dark] .hd H1 {
+  background:linear-gradient(135deg,#60A5FA 0%,#A78BFA 100%);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+  background-clip:text
+}
+.mn { display:flex; flex:1; padding:16px 40px 40px; gap:20px; min-height:0 }
+.sb { width:var(--sb-w); flex-shrink:0; display:flex; flex-direction:column }
+.sb .c { flex:1; overflow:hidden; margin:0; display:flex; flex-direction:column }
+.sb .c H2 {
+  font-size:18px; text-align:center;
+  padding:16px 16px 8px; border-bottom:2px solid var(--l); margin:0
+}
+.sb-hint {
+  text-align:center; font-size:11px; color:var(--c3);
+  padding:8px 16px 6px; line-height:1.4
+}
+.sb .ul-wrap { flex:1; overflow-y:auto; padding:4px 8px }
+.sb li {
+  padding:14px 16px; flex-direction:column;
+  align-items:stretch; gap:6px; border-bottom:1px solid var(--l);
+  position:relative; overflow:hidden
+}
+.sb li:last-child { border-bottom:none }
+.sb li:hover { transform:translateX(3px); border-radius:10px }
+.sb li .A { font-size:14px; position:relative; z-index:1 }
+.sb li .B { font-size:12px; position:relative; z-index:1 }
+.sb li.sel { background:var(--tbg); border-radius:10px }
+.sb li .spark {
+  position:absolute; right:-6px; top:50%; transform:translateY(-50%);
+  width:130px; height:60px; pointer-events:none; z-index:0
+}
+.sb li .spark SVG { display:block; width:100%; height:100% }
+
+
+.spark-line { stroke-dasharray:200; stroke-dashoffset:200; animation:sparkDraw 1.2s ease forwards }
+@keyframes sparkDraw { to { stroke-dashoffset:0 } }
+
+
+
+
+.ct { flex:1; min-width:0; display:flex; flex-direction:column }
+.ct .c { flex:1; margin:0 }
+.emp {
+  flex:1; display:flex; align-items:center; justify-content:center;
+  text-align:center; padding:40px; color:var(--c3); font-size:15px;
+  background:var(--cb); backdrop-filter:blur(16px) saturate(140%);
+  -webkit-backdrop-filter:blur(16px) saturate(140%);
+  border-radius:20px; box-shadow:var(--cs); border:1px solid var(--cb2)
+}
+.c {
+  padding:0; background:var(--cb);
+  backdrop-filter:blur(16px) saturate(140%);
+  -webkit-backdrop-filter:blur(16px) saturate(140%);
+  border-radius:20px; margin:20px 0; box-shadow:var(--cs);
+  border:1px solid var(--cb2); overflow:hidden;
+  transition:background .3s,border .3s,box-shadow .3s; position:relative
+}
+.c-top { position:absolute; top:10px; right:10px; z-index:1 }
+.del-corner {
+  display:inline-flex; align-items:center; padding:8px 16px;
+  background:var(--dbg); color:var(--dc); border:none; border-radius:16px;
+  font-size:13px; outline:none; cursor:pointer; transition:all .3s;
+  line-height:1.4; white-space:nowrap
+}
+.del-corner:hover { background:rgba(248,113,113,0.25) }
+html[data-theme=dark] .del-corner:hover { background:rgba(248,113,113,0.3) }
+.gn {
+  text-align:center; padding:28px 20px 8px; font-size:20px;
+  font-weight:700; color:var(--n); line-height:1.5; word-break:break-all
+}
+ul { list-style:none; padding:4px 0 }
+li {
+  display:flex; align-items:center; padding:16px;
+  border-bottom:1px solid var(--l); cursor:pointer; transition:all .3s ease
+}
+li:last-child { border-bottom:none }
+li:hover { background:var(--h); transform:translateX(5px); border-radius:16px }
+li .l { flex:1; min-width:0 }
+li .A { font-size:18px; font-weight:600; color:var(--n); transition:color .3s }
+li .B { font-size:13px; color:var(--c2); margin:4px 0 0 }
+.rc { padding:4px 0 }
+.ri {
+  display:flex; align-items:center; padding:16px;
+  border-bottom:1px solid var(--l); transition:all .3s ease
+}
+.ri:last-child { border-bottom:none }
+.ri:hover { background:var(--h); transform:translateX(5px); border-radius:16px }
+.av {
+  width:60px; height:60px; border-radius:50%; flex-shrink:0;
+  display:flex; align-items:center; justify-content:center;
+  font-size:22px; font-weight:700; color:#fff; margin:0 25px 0 0;
+  box-shadow:0 4px 8px rgba(0,0,0,.2);
+  text-shadow:0 1px 3px rgba(0,0,0,.3); overflow:hidden
+}
+.ri2 { flex:1; min-width:0 }
+.ri2 .nn { font-size:20px; font-weight:600; color:var(--n); transition:color .3s }
+.ri2 .tt {
+  font-size:12px; color:var(--ttc); font-weight:700; margin:0 0 0 6px;
+  background:var(--ttbg); padding:0 6px; border-radius:6px; display:inline-block
+}
+.ri2 .dd { font-size:13px; color:var(--c2); margin:4px 0 0 }
+.rs { text-align:right; flex-shrink:0; margin:0 0 0 20px }
+.rs .nn2 { font-size:24px; font-weight:700; color:var(--n2) }
+.rs .pp { font-size:15px; color:var(--p); font-weight:500; margin:4px 0 0 }
+.hi { text-align:center; padding:16px 16px 20px; border-bottom:1px solid var(--l) }
+.hi .X { font-size:36px; font-weight:700; color:var(--n2) }
+.hi .y { font-size:14px; color:var(--c2); margin:6px 0 0 }
+.hi .z { font-size:12px; color:var(--c3); margin:2px 0 0 }
+.ld { text-align:center; padding:80px 20px; color:var(--c3); font-size:16px }
+.em { text-align:center; padding:80px 20px; color:var(--c3) }
+.sb .ld { padding:40px 20px }
+.dock-wrap {
+  display:flex; justify-content:center; padding:12px 16px 4px
+}
+.dock {
+  display:inline-flex; background:var(--cb);
+  backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+  border-radius:24px; padding:3px; gap:1px;
+  border:1px solid var(--cb2)
+}
+.dock-item {
+  padding:6px 20px; border-radius:20px; border:none;
+  font-size:13px; font-weight:500; cursor:pointer;
+  background:transparent; color:var(--c2);
+  transition:all .25s ease; outline:none
+}
+.dock-item:hover { color:var(--c) }
+.dock-item.act {
+  background:var(--tc); color:#fff;
+  box-shadow:0 2px 8px rgba(59,130,246,0.3)
+}
+#md {
+  position:fixed; top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.5); display:none; align-items:center;
+  justify-content:center; z-index:999
+}
+#md_in {
+  background:var(--cb); backdrop-filter:blur(16px);
+  border-radius:16px; padding:30px; max-width:400px; text-align:center;
+  box-shadow:0 8px 40px rgba(0,0,0,.3); border:1px solid var(--cb2)
+}
+#md_msg { font-size:16px; font-weight:600; margin:0 0 20px; color:var(--n) }
+#md_btns { display:flex; gap:12px; justify-content:center }
+#md_btns button {
+  padding:8px 24px; border:none; border-radius:12px;
+  font-size:14px; cursor:pointer; outline:none
+}
+@media(max-width:800px) {
+  .mn { flex-direction:column; padding:12px 16px 24px; gap:12px }
+  .sb { width:100% }
+  .hd { padding:16px 16px 0 }
+  .hd H1 { font-size:24px }
+  .sb .ul-wrap { max-height:260px }
+  .gn { padding:50px 20px 8px }
+  .sb li .spark { width:80px; height:40px }
+}
+/* 全卡动画（切换群组时） */
+@keyframes fi { from { opacity:0; transform:translateY(12px) } to { opacity:1; transform:translateY(0) } }
+@keyframes fl { from { opacity:0 } to { opacity:1 } }
+@keyframes fis { from { opacity:0; transform:translateY(10px) } to { opacity:1; transform:translateY(0) } }
+.enter .c,.enter .emp,.enter .ld { animation:fi .35s ease both }
+.enter .ct .c { animation:fi .35s ease both }
+.enter .ct .c .gn { animation:fi .35s ease both }
+.enter .ct .c .dock-wrap { animation:fi .35s ease .06s both }
+.enter .ct .c .hi { animation:fi .35s ease .1s both }
+.enter .ct .c .ri { animation:fis .4s ease both }
+.enter .ct .c .ri:nth-child(1) { animation-delay:.05s }
+.enter .ct .c .ri:nth-child(2) { animation-delay:.1s }
+.enter .ct .c .ri:nth-child(3) { animation-delay:.15s }
+.enter .ct .c .ri:nth-child(4) { animation-delay:.2s }
+.enter .ct .c .ri:nth-child(5) { animation-delay:.25s }
+.enter .ct .c .ri:nth-child(6) { animation-delay:.3s }
+.enter .ct .c .ri:nth-child(7) { animation-delay:.35s }
+.enter .ct .c .ri:nth-child(8) { animation-delay:.4s }
+.enter .ct .c .ri:nth-child(9) { animation-delay:.45s }
+.enter .ct .c .ri:nth-child(10) { animation-delay:.5s }
+.enter .ct .c .ri:nth-child(11) { animation-delay:.55s }
+.enter .ct .c .ri:nth-child(12) { animation-delay:.6s }
+.enter .ct .c .ri:nth-child(13) { animation-delay:.65s }
+.enter .ct .c .ri:nth-child(14) { animation-delay:.7s }
+.enter .ct .c .ri:nth-child(15) { animation-delay:.75s }
+.enter .c-top { animation:fl .2s ease .15s both }
+.enter .del-corner { animation:fl .2s ease .15s both }
+/* Dock 切换时只有列表动画 */
+.dock-ripple .ri { animation:fis .35s ease both }
+.dock-ripple .ri:nth-child(1) { animation-delay:0s }
+.dock-ripple .ri:nth-child(2) { animation-delay:.04s }
+.dock-ripple .ri:nth-child(3) { animation-delay:.08s }
+.dock-ripple .ri:nth-child(4) { animation-delay:.12s }
+.dock-ripple .ri:nth-child(5) { animation-delay:.16s }
+.dock-ripple .ri:nth-child(6) { animation-delay:.2s }
+.dock-ripple .ri:nth-child(7) { animation-delay:.24s }
+.dock-ripple .ri:nth-child(8) { animation-delay:.28s }
+.dock-ripple .ri:nth-child(9) { animation-delay:.32s }
+.dock-ripple .ri:nth-child(10) { animation-delay:.36s }
+.dock-ripple .ri:nth-child(11) { animation-delay:.4s }
+.dock-ripple .ri:nth-child(12) { animation-delay:.44s }
+.dock-ripple .ri:nth-child(13) { animation-delay:.48s }
+.dock-ripple .ri:nth-child(14) { animation-delay:.52s }
+.dock-ripple .ri:nth-child(15) { animation-delay:.56s }
+</style>
+</head>
+<body>
+
+<div class="hd"><h1>发言统计面板</h1></div>
+
+<div class="mn">
+  <div class="sb" id="sidebar">
+    <div class="c">
+      <h2>选择群组</h2>
+      <div class="sb-hint">💡 群名称会在触发发言榜后更新</div>
+      <div class="ul-wrap"><ul id="gl"></ul></div>
+    </div>
+  </div>
+  <div class="ct" id="content">
+    <div class="emp">👈 从左侧选择一个群组查看详情</div>
+  </div>
+</div>
+
+<div id="md">
+  <div id="md_in">
+    <div id="md_msg">确认删除？</div>
+    <div id="md_btns">
+      <button id="md_no" style="background:rgba(128,128,128,0.15);color:var(--c)">取消</button>
+      <button id="md_yes" style="background:#EF4444;color:#fff">确认删除</button>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+const B = window.AstrBotPluginPage;
+if (!B) {
+  document.querySelector('.emp').innerHTML = '<div class="ld">Bridge not available</div>';
+  document.body.style.display = 'flex';
+} else {
+  await B.ready();
+
+  (function() {
+    const dm = window.matchMedia('(prefers-color-scheme:dark)');
+    function st(d) { document.documentElement.setAttribute('data-theme', d ? 'dark' : 'light'); }
+    st(dm.matches);
+    dm.addEventListener('change', function(e) { st(e.matches); });
+  })();
+
+  const GL = document.getElementById('gl');
+  const CT = document.getElementById('content');
+  const MD = document.getElementById('md');
+  const MD_MSG = document.getElementById('md_msg');
+  const MD_YES = document.getElementById('md_yes');
+  const MD_NO = document.getElementById('md_no');
+  let MD_CB = null, GD = [], SEL = null, RANK_MODE = 'total';
+
+
+  MD_YES.onclick = function() { MD.style.display = 'none'; if (MD_CB) MD_CB(); };
+  MD_NO.onclick = function() { MD.style.display = 'none'; };
+  MD.onclick = function(e) { if (e.target === MD) MD.style.display = 'none'; };
+
+  function F(r) { return r && r.data ? r.data : r; }
+
+  const pal = ['#F59E0B','#3B82F6','#8B5CF6','#EC4899','#10B981','#EF4444','#14B8A6','#F97316','#6366F1','#84CC16','#06B6D4','#D946EF','#0EA5E9','#EAB308','#A855F7'];
+  function getColor(s) {
+    let h = 0;
+    for (let i = 0; i < s.length; i++) { h = (h * 31 + s.charCodeAt(i)) >>> 0; }
+    return pal[h % pal.length];
+  }
+  function makeAvatar(n) {
+    const c = n && n.trim() ? n.trim()[0] : '?';
+    return '<div class="av" style="background:' + getColor(n || 'x') + '">' + c + '</div>';
+  }
+
+  function makeCurvePath(counts, w, h) {
+    const n = counts.length;
+    const mx = Math.max(1, ...counts);
+    const pts = counts.map(function(v, i) { return { x: (i / (n - 1 || 1)) * w, y: h - (v / mx) * (h - 4) - 2 }; });
+    if (pts.length === 0) return '';
+    let d = 'M' + pts[0].x.toFixed(1) + ',' + pts[0].y.toFixed(1);
+    if (pts.length === 1) return d;
+    for (let i = 0; i < pts.length - 1; i++) {
+      const p0 = pts[i], p1 = pts[i + 1];
+      const cpx = (p0.x + p1.x) / 2;
+      d += 'C' + cpx.toFixed(1) + ',' + p0.y.toFixed(1) + ' ' + cpx.toFixed(1) + ',' + p1.y.toFixed(1) + ' ' + p1.x.toFixed(1) + ',' + p1.y.toFixed(1);
+    }
+    return d;
+  }
+  // 生成闭合的面积路径（曲线 + 右下 + 左下）
+  function makeAreaPath(counts, w, h) {
+    const n = counts.length;
+    const mx = Math.max(1, ...counts);
+    const pts = counts.map(function(v, i) { return { x: (i / (n - 1 || 1)) * w, y: h - (v / mx) * (h - 4) - 2 }; });
+    if (pts.length === 0) return '';
+    let d = 'M' + pts[0].x.toFixed(1) + ',' + pts[0].y.toFixed(1);
+    if (pts.length === 1) return d + 'L' + w + ',' + h + 'L0,' + h + 'Z';
+    for (let i = 0; i < pts.length - 1; i++) {
+      const p0 = pts[i], p1 = pts[i + 1];
+      const cpx = (p0.x + p1.x) / 2;
+      d += 'C' + cpx.toFixed(1) + ',' + p0.y.toFixed(1) + ' ' + cpx.toFixed(1) + ',' + p1.y.toFixed(1) + ' ' + p1.x.toFixed(1) + ',' + p1.y.toFixed(1);
+    }
+    d += 'L' + w + ',' + h + 'L0,' + h + 'Z';
+    return d;
+  }
+
+
+  let sparkDataCache = {};
+  function loadSparkline(gid, callback) {
+    if (sparkDataCache[gid]) { callback(sparkDataCache[gid]); return; }
+    B.apiGet('chart', { group_id: gid }).then(function(r) {
+      const d = F(r), counts = d && d.counts ? d.counts : [];
+      sparkDataCache[gid] = counts; callback(counts);
+    }).catch(function() { callback([]); });
+  }
+
+  function loadAllSparks() {
+    if (!GD || !GD.length) return;
+    GD.forEach(function(g) {
+      loadSparkline(g.group_id, function(counts) {
+        const li = GL.querySelector('li[data-gid="' + g.group_id + '"]');
+        if (!li || !counts || counts.length < 2) return;
+        const sw = 120, sh = 50, path = makeCurvePath(counts, sw, sh);
+        if (!path) return;
+        const id = 'sg' + g.group_id.replace(/-/g,'_');
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        const c1 = isDark ? '#93C5FD' : '#3B82F6';
+        const c2 = isDark ? '#E0E7FF' : '#DBEAFE';
+        const areaPath = makeAreaPath(counts, sw, sh);
+        li.insertAdjacentHTML('beforeend',
+          '<div class="spark"><svg viewBox="0 0 ' + sw + ' ' + sh + '">'
+          + '<defs>'
+          + '<linearGradient id="' + id + '" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="' + c1 + '" stop-opacity="0"/><stop offset="60%" stop-color="' + c1 + '" stop-opacity="0.4"/><stop offset="100%" stop-color="' + c1 + '" stop-opacity="1"/></linearGradient>'
+          + '<linearGradient id="af_' + id + '" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="' + c1 + '" stop-opacity="0"/><stop offset="60%" stop-color="' + c1 + '" stop-opacity="0.15"/><stop offset="100%" stop-color="' + c1 + '" stop-opacity="0.5"/></linearGradient>'
+          + '</defs>'
+          + '<path d="' + areaPath + '" fill="url(#af_' + id + ')" stroke="none" class="spark-area" id="sa_' + id + '"/>'
+          + '<path d="' + path + '" fill="none" stroke="url(#' + id + ')" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="spark-line"/>'
+          + '</svg></div>');
+
+
+
+
+
+
+
+
+
+      });
+    });
+  }
+
+  function renderSidebar() {
+    let h = '';
+    if (!GD || !GD.length) {
+      GL.innerHTML = '<li style="cursor:default;color:var(--c3);justify-content:center;padding:40px 14px;border:none">暂无群组数据</li>'; return;
+    }
+    GD.forEach(function(x) {
+      const dn = x.display_name || x.group_name || '群' + x.group_id;
+      const un = x.user_count || 0, tm = x.total_messages || 0, sel = SEL === x.group_id ? ' sel' : '';
+      h += '<li class="' + sel + '" data-gid="' + x.group_id + '"><div class="l"><div class="A">' + dn + '</div><div class="B">' + un + ' 人 · ' + tm + ' 条' + (x.file_size ? ' · ' + x.file_size : '') + '</div></div></li>';
+    });
+    GL.innerHTML = h;
+    loadAllSparks();
+    GL.querySelectorAll('li[data-gid]').forEach(function(el) { el.onclick = function() { enterGroup(this.dataset.gid); }; });
+  }
+
+  function renderDetail(animated) {
+    const g = GD.find(function(x) { return x.group_id === SEL; });
+    if (!g) { CT.innerHTML = '<div class="emp">👈 从左侧选择一个群组查看详情</div>'; return; }
+    const u = g.top_users || [], dn = g.display_name || g.group_name || '群' + g.group_id;
+    const tm = g.total_messages || 0, uc = g.user_count || 0;
+    let h = '';
+    h += '<div class="c">'
+      + '<div class="c-top"><button class="del-corner" id="delBtn">删除数据</button></div>'
+      + '<div class="gn">' + dn + '</div>'
+      + '<div class="dock-wrap"><div class="dock" id="dockBar">'
+      + ['total','daily','week','month','year'].map(function(m) { const names = {total:'总',daily:'日',week:'周',month:'月',year:'年'}; return '<button class="dock-item' + (RANK_MODE === m ? ' act' : '') + '" data-mode="' + m + '">' + names[m] + '</button>'; }).join('')
+      + '</div></div>'
+      + '<div class="hi"><div class="X">' + tm + '</div><div class="y">总发言数 · 共 ' + uc + ' 人</div><div class="z">ID: ' + g.group_id + (g.file_size ? ' · 数据: ' + g.file_size : '') + '</div></div>'
+      + '<div class="rc">';
+    if (u.length) {
+      h += u.map(function(x) {
+        const tc = x.title_color || '#7C3AED', t = x.title ? '<span class="tt" style="color:'+tc+';background:'+tc+'22">「' + x.title + '」</span>' : '';
+        return '<div class="ri">' + makeAvatar(x.nickname) + '<div class="ri2"><div class="nn">' + x.nickname + t + '</div><div class="dd">最近发言: ' + (x.last_date || '未知') + '</div></div><div class="rs"><div class="nn2">' + x.message_count + '</div><div class="pp">' + x.percentage.toFixed(1) + '%</div></div></div>';
+      }).join('');
+    } else { h += '<div class="em" style="padding:40px 20px">暂无用户数据</div>'; }
+    h += '</div></div></div>';
+    CT.innerHTML = h;
+
+    // 如果是群组切换，在 .ct 上加 enter 触发全卡动画
+    if (animated) { CT.classList.add('enter'); }
+    else { CT.classList.remove('enter'); }
+
+    // Dock 事件
+    document.querySelectorAll('#dockBar .dock-item').forEach(function(b) {
+      b.onclick = function() {
+        // 更新 Dock 按钮样式
+        document.querySelectorAll('#dockBar .dock-item').forEach(function(x) { x.classList.remove('act'); });
+        this.classList.add('act');
+        RANK_MODE = this.dataset.mode;
+        // 只更新列表数据
+        const rcEl = document.querySelector('.rc');
+        if (rcEl) rcEl.innerHTML = '<div class="ld" style="padding:40px">加载中...</div>';
+        B.apiGet('stats', { group_id: SEL, rank_type: RANK_MODE }).then(function(r) {
+          const d = F(r), ng = d && d.group ? d.group : null;
+          if (!ng) return;
+          const idx = GD.findIndex(function(x) { return x.group_id === SEL; });
+          if (idx > -1) {
+            GD[idx] = Object.assign({}, GD[idx], { top_users: ng.top_users, total_messages: ng.total_messages, user_count: ng.user_count });
+          }
+          // 更新总发言数
+          const hiEl = document.querySelector('.hi');
+          if (hiEl) {
+            hiEl.innerHTML = '<div class="X">' + (ng.total_messages || 0) + '</div><div class="y">总发言数 · 共 ' + (ng.user_count || 0) + ' 人</div><div class="z">ID: ' + SEL + '</div>';
+          }
+          // 更新列表
+          const u2 = ng.top_users || [];
+          const rcEl2 = document.querySelector('.rc');
+          if (!rcEl2) return;
+          let h2 = '';
+          if (u2.length) {
+            h2 += u2.map(function(x) {
+              const tc = x.title_color || '#7C3AED', t = x.title ? '<span class="tt" style="color:'+tc+';background:'+tc+'22">「' + x.title + '」</span>' : '';
+              return '<div class="ri">' + makeAvatar(x.nickname) + '<div class="ri2"><div class="nn">' + x.nickname + t + '</div><div class="dd">最近发言: ' + (x.last_date || '未知') + '</div></div><div class="rs"><div class="nn2">' + x.message_count + '</div><div class="pp">' + x.percentage.toFixed(1) + '%</div></div></div>';
+            }).join('');
+          } else { h2 = '<div class="em" style="padding:40px 20px">暂无用户数据</div>'; }
+          rcEl2.innerHTML = h2;
+          rcEl2.classList.remove('dock-ripple');
+          void rcEl2.offsetWidth;
+          rcEl2.classList.add('dock-ripple');
+        }).catch(function() {});
+
+      };
+    });
+
+
+    const db = document.getElementById('delBtn');
+    if (db) {
+      db.onclick = function() {
+        MD_MSG.textContent = '确定要删除此群组的所有发言数据吗？此操作不可恢复！';
+        MD_CB = function() {
+          const done = function() { GD = GD.filter(function(x) { return x.group_id !== SEL; }); SEL = null; renderSidebar(); renderDetail(true); };
+          if (B.apiPost) {
+            B.apiPost('delete', { group_id: SEL }).then(done).catch(function() {});
+          } else {
+            fetch('delete', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ group_id: SEL })
+            }).then(function(r) { return r.json(); }).then(done).catch(function() {});
+          }
+        };
+        MD.style.display = 'flex';
+      };
+    }
+  }
+
+  function loadGroups() {
+    GL.innerHTML = '<li style="cursor:default;color:var(--c3);justify-content:center;padding:40px 14px;border:none">加载中...</li>';
+    B.apiGet('stats').then(function(r) {
+      const d = F(r), g = d && d.groups ? d.groups : null;
+      if (g && g.length) {
+        GD = g;
+        // 先预加载所有 sparkline 数据到缓存
+        var sparkPromises = GD.map(function(x) {
+          return B.apiGet('chart', { group_id: x.group_id }).then(function(r2) {
+            var d2 = F(r2);
+            sparkDataCache[x.group_id] = d2 && d2.counts ? d2.counts : [];
+          }).catch(function() { sparkDataCache[x.group_id] = []; });
+        });
+        Promise.all(sparkPromises).then(function() {
+          renderSidebar();
+          if (SEL) { var still = GD.find(function(x) { return x.group_id === SEL; }); if (!still) { SEL = null; renderDetail(true); } else { enterGroup(SEL); } }
+          else if (GD.length && !SEL) { SEL = GD[0].group_id; renderSidebar(); enterGroup(SEL); }
+        });
+      } else { GD = []; renderSidebar(); CT.innerHTML = '<div class="emp">暂无群组数据</div>'; }
+    }).catch(function() { GL.innerHTML = '<li style="cursor:default;color:var(--c3);justify-content:center;padding:40px 14px;border:none">加载失败</li>'; CT.innerHTML = '<div class="emp">暂无群组数据</div>'; });
+  }
+
+
+  function enterGroup(id) {
+    SEL = id; renderSidebar();
+    CT.innerHTML = '<div class="ld">加载中...</div>';
+    B.apiGet('stats', { group_id: id, rank_type: RANK_MODE }).then(function(r) {
+      const d = F(r), ng = d && d.group ? d.group : null;
+      if (!ng) { CT.innerHTML = '<div class="emp">暂无数据</div>'; return; }
+      const idx = GD.findIndex(function(x) { return x.group_id === id; });
+      if (idx > -1) { GD[idx] = Object.assign({}, GD[idx], { top_users: ng.top_users, total_messages: ng.total_messages, user_count: ng.user_count, file_size: ng.file_size, display_name: ng.display_name, group_name: ng.group_name }); }
+      renderDetail(true); // 全卡动画
+    }).catch(function() { CT.innerHTML = '<div class="emp">加载失败</div>'; });
+  }
+
+  window.enterGroup = enterGroup;
+  loadGroups();
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿{
+    "enable_keyword_switching": true,
+    "keyword_mappings": [
+        "关键词:人格"
+    ],
+    "auto_switch_scope": "conversation",
+    "manage_wait_timeout_seconds": 60,
+    "admin_commands": [
+        "create",
+        "update",
+        "delete",
+        "avatar"
+    ],
+    "llm_tool_options": [],
+    "enable_auto_switch_announce": true,
+    "clear_context_on_switch": false,
+    "sync_nickname_on_switch": true,
+    "nickname_sync_mode": "group_card",
+    "sync_avatar_on_switch": false,
+    "nickname_template": "[B0T]{persona_id}"
+}

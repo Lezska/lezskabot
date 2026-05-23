@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "display_name": "AstrBot Message Stats",
+    "short_desc": "Track group message counts with leaderboards and scheduled push",
+    "desc": "Track group member message counts. Supports total/daily/weekly/monthly/yearly leaderboards, LLM title generation, and scheduled push."
+  },
+  "config": {
+    "theme": {
+      "description": "Leaderboard theme",
+      "hint": "Visual theme for the leaderboard image. Overridden when auto theme switch is enabled."
+    },
+    "auto_theme_switch": {
+      "description": "Auto theme switch",
+      "hint": "Automatically switch between light/dark themes based on time of day."
+    },
+    "theme_switch_light_time": {
+      "description": "Light theme start time",
+      "hint": "Format HH:MM, e.g. 06:00"
+    },
+    "theme_switch_dark_time": {
+      "description": "Dark theme start time",
+      "hint": "Format HH:MM, e.g. 18:00"
+    },
+    "detailed_logging_enabled": {
+      "description": "Detailed logging",
+      "hint": "Disable to reduce log verbosity. Only system-level and error logs will be kept."
+    },
+    "rand": {
+      "description": "Leaderboard display count",
+      "hint": "Number of users shown in the leaderboard, recommended 5-50."
+    },
+    "if_send_pic": {
+      "description": "Output mode",
+      "hint": "Image mode looks more beautiful; text mode uses fewer resources."
+    },
+    "timer_enabled": {
+      "description": "Enable scheduled push",
+      "hint": "Automatically push leaderboard at the scheduled time."
+    },
+    "timer_push_time": {
+      "description": "Push time",
+      "hint": "Supports HH:MM format (daily at specific time) or cron format (e.g. '0 9 * * *' for daily 9 AM)."
+    },
+    "timer_target_groups": {
+      "description": "Target groups",
+      "hint": "Group IDs to receive scheduled pushes. Leave empty to push to all groups."
+    },
+    "timer_rank_type": {
+      "description": "Leaderboard type",
+      "hint": "Type of leaderboard for scheduled push."
+    },
+    "milestone_enabled": {
+      "description": "Milestone push",
+      "hint": "Automatically push when a user reaches a milestone message count."
+    },
+    "milestone_targets": {
+      "description": "Milestone counts",
+      "hint": "Message counts that trigger milestone push, e.g. 666, 1000, 5000, 10000."
+    },
+    "blocked_users": {
+      "description": "Blocked users",
+      "hint": "Users excluded from statistics and leaderboards. Enter the full user ID."
+    },
+    "blocked_groups": {
+      "description": "Blocked groups",
+      "hint": "Groups excluded from statistics. Enter the full group ID."
+    },
+    "tg_bot_token": {
+      "description": "Telegram Bot Token",
+      "hint": "Fill in to display real TG user avatars. Leave empty for colored text avatars.\n\nWhy enter again?\nAstrBot's architecture does not expose the adapter's Bot Token to plugins.\nThe plugin needs to call TG Bot API directly to fetch avatars, so an independent Token is required.\n\nHow to get: Create a Bot via @BotFather. Format: 123456:ABCdef..."
+    },
+    "dc_bot_token": {
+      "description": "Discord Bot Token",
+      "hint": "Fill in to display real DC user avatars. Leave empty for colored text avatars.\n\nWhy enter again?\nAstrBot's architecture does not expose the adapter's Bot Token to plugins.\nThe plugin needs to call Discord REST API directly to fetch avatars, so an independent Token is required.\n\nHow to get: Create a Bot in Discord Developer Portal."
+    },
+    "llm_enabled": {
+      "description": "Enable LLM title analysis",
+      "hint": "Generate personalized titles for users using LLM during scheduled pushes."
+    },
+    "llm_provider_id": {
+      "description": "LLM Provider ID",
+      "hint": "Select the LLM Provider for title generation. Leave empty for default session provider."
+    },
+    "llm_system_prompt": {
+      "description": "Title prompt",
+      "hint": "Customize title generation style and colors. Leave empty for default prompt."
+    },
+    "llm_max_retries": {
+      "description": "LLM retries",
+      "hint": "Number of retries when LLM call fails."
+    },
+    "llm_min_daily_messages": {
+      "description": "Min daily messages",
+      "hint": "Users with daily messages below this threshold won't get titles. Set to 0 to analyze all users."
+    },
+    "llm_enable_on_manual": {
+      "description": "Manual query LLM",
+      "hint": "Also generate titles on manual queries (e.g. 'leaderboard', 'today'). Note: consumes Tokens."
+    }
+  }
+}

@@ -1,0 +1,105 @@
+﻿{
+  "webui": {
+    "secret_key": "keyfishing",
+    "port": 7777
+  },
+  "tax": {
+    "is_tax": false,
+    "threshold": 1000000,
+    "step_coins": 100000,
+    "step_rate": 0.01,
+    "min_rate": 0.001,
+    "max_rate": 0.2,
+    "transfer_tax_rate": 0.05
+  },
+  "fishing": {
+    "cooldown_seconds": 120,
+    "quality_bonus_max_chance": 1.0
+  },
+  "steal": {
+    "cooldown_seconds": 3600
+  },
+  "electric_fish": {
+    "enabled": true,
+    "cooldown_seconds": 7200,
+    "base_success_rate": 0.6,
+    "failure_penalty_max_rate": 0.5
+  },
+  "game": {
+    "daily_reset_hour": 0,
+    "wheel_of_fate_daily_limit": 5,
+    "wipe_bomb_attempts": 10
+  },
+  "user": {
+    "initial_coins": 2000
+  },
+  "market": {
+    "listing_tax_rate": 0.05
+  },
+  "sell_prices": {
+    "by_rarity_1": 100,
+    "by_rarity_2": 500,
+    "by_rarity_3": 2000,
+    "by_rarity_4": 5000,
+    "by_rarity_5": 10000
+  },
+  "exchange": {
+    "update_timing": "9:00, 15:00, 21:00",
+    "account_fee": 100000,
+    "capacity": 1000,
+    "tax_rate": 0.05,
+    "volatility": {
+      "dried_fish": 0.08,
+      "fish_roe": 0.12,
+      "fish_oil": 0.1
+    },
+    "event_chance": 0.1,
+    "max_change_rate": 0.2,
+    "min_price": 1,
+    "max_price": 1000000,
+    "sentiment_weights": {
+      "panic": 0.1,
+      "pessimistic": 0.2,
+      "neutral": 0.4,
+      "optimistic": 0.2,
+      "euphoric": 0.1
+    },
+    "merge_window_minutes": 30,
+    "initial_prices": {
+      "dried_fish": 6000,
+      "fish_roe": 12000,
+      "fish_oil": 10000
+    }
+  },
+  "loan": {
+    "default_interest_rate": 0.05,
+    "system_loan_ratio": 0.1,
+    "system_loan_days": 7
+  },
+  "sicbo": {
+    "countdown_seconds": 60,
+    "min_bet": 100,
+    "max_bet": 1000000,
+    "min_banker_coins": 1000000,
+    "message_mode": "image"
+  },
+  "blackjack": {
+    "min_bet": 100,
+    "max_bet": 1000000,
+    "min_banker_coins": 1000000,
+    "join_timeout": 60,
+    "action_timeout": 30,
+    "message_mode": "image",
+    "streak_win_bonus_threshold": 3,
+    "streak_win_bonus_rate": 0.1,
+    "streak_lose_consolation_threshold": 3,
+    "streak_lose_consolation": 500
+  },
+  "slot": {
+    "daily_limit": 50,
+    "max_multi_spin": 10,
+    "streak_protection": 20,
+    "initial_jackpot": 0,
+    "message_mode": "image"
+  }
+}

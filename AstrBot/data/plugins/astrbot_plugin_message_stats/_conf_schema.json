@@ -1,0 +1,189 @@
+{
+  "auto_theme_switch": {
+    "type": "bool",
+    "description": "自动主题切换",
+    "hint": "启用后根据时间自动切换排行榜主题（浅色/深色），会覆盖下方的手动主题设置",
+    "default": false
+  },
+  "theme_switch_light_time": {
+    "type": "string",
+    "description": "浅色主题开始时间",
+    "hint": "浅色主题开始时间，格式 HH:MM，例如 06:00",
+    "default": "06:00"
+  },
+  "theme_switch_dark_time": {
+    "type": "string",
+    "description": "深色主题开始时间",
+    "hint": "深色主题开始时间，格式 HH:MM，例如 18:00",
+    "default": "18:00"
+  },
+  "theme": {
+    "type": "string",
+    "description": "排行榜主题风格",
+    "hint": "图片显示排行榜的主题风格（启用自动主题切换后此设置将被覆盖）",
+    "default": "default",
+    "options": [
+      "default",
+      "liquid_glass",
+      "liquid_glass_dark",
+      "cartoon_light",
+      "cartoon_dark"
+    ]
+  },
+  "detailed_logging_enabled": {
+    "type": "bool",
+    "description": "是否开启详细日志记录",
+    "hint": "关闭后将隐藏'记录消息统计'等详细日志，只保留重要的系统日志和错误日志",
+    "default": true
+  },
+  "rand": {
+    "type": "int",
+    "description": "排行榜显示人数",
+    "hint": "排行榜中显示的用户数量，建议5-50人",
+    "default": 20,
+    "slider": {
+      "min": 1,
+      "max": 100,
+      "step": 1
+    }
+  },
+  "if_send_pic": {
+    "type": "string",
+    "description": "排行榜输出模式",
+    "hint": "选择排行榜的展示方式，图片模式更美观但消耗更多资源",
+    "default": "图片",
+    "options": ["文字", "图片"]
+  },
+  "timer_tasks": {
+    "type": "template_list",
+    "description": "定时推送任务",
+    "hint": "可添加多个定时推送任务；保存后每个任务会包含 __template_key 和对应配置项",
+    "templates": {
+      "rank_push": {
+        "name": "排行榜定时推送",
+        "hint": "在指定时间向指定群组推送发言排行榜",
+        "items": {
+          "enabled": {
+            "type": "bool",
+            "description": "启用此任务",
+            "hint": "关闭后此任务不会执行",
+            "default": true
+          },
+          "push_time": {
+            "type": "string",
+            "description": "推送时间",
+            "hint": "支持 HH:MM 格式（每日指定时间）或 cron 格式（如 0 9 * * * 表示每天9点）",
+            "default": "09:00"
+          },
+          "target_groups": {
+            "type": "list",
+            "description": "推送目标群组",
+            "hint": "需要接收定时推送的群组ID列表，留空则不推送",
+            "default": []
+          },
+          "rank_type": {
+            "type": "string",
+            "description": "排行榜类型",
+            "hint": "选择定时推送的排行榜统计范围",
+            "default": "daily",
+            "options": [
+              "今日榜",
+              "总榜",
+              "本周榜",
+              "本月榜",
+              "本年榜",
+              "去年榜"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "milestone_enabled": {
+    "type": "bool",
+    "description": "发言里程碑推送",
+    "hint": "启用后当用户发言达到里程碑次数时自动推送排行榜",
+    "default": false
+  },
+  "milestone_targets": {
+    "type": "list",
+    "item_type": "int",
+    "description": "里程碑次数列表",
+    "hint": "触发推送的发言次数里程碑，如 666、1000、5000、10000",
+
+    "default": [666, 1000, 2333, 5000, 6666, 10000, 23333]
+  },
+  "blocked_users": {
+    "type": "list",
+    "description": "屏蔽用户列表",
+    "hint": "屏蔽指定用户，使其不显示在发言榜上且不统计其发言数据。请输入完整的用户ID。",
+    "default": []
+  },
+  "blocked_groups": {
+    "type": "list",
+    "description": "屏蔽群聊列表",
+    "hint": "屏蔽指定群聊，使其不统计发言数据且无法使用排行榜指令。请输入完整的群组ID。",
+    "default": []
+  },
+  "tg_bot_token": {
+    "type": "string",
+    "description": "Telegram Bot Token",
+    "hint": "填写后可获取TG用户的真实头像。留空则使用彩色文字头像。\n\nAstrBot不会将适配器的Bot Token暴露给插件，插件需自行调用TG Bot API获取头像，因此需要独立的Token配置。\n\n获取方式：@BotFather创建Bot后获得，格式 123456:ABCdef...",
+    "default": ""
+  },
+  "dc_bot_token": {
+    "type": "string",
+    "description": "Discord Bot Token",
+    "hint": "填写后可获取DC用户的真实头像。留空则使用彩色文字头像。\n\nAstrBot不会将适配器的Bot Token暴露给插件，插件需自行调用Discord REST API获取头像，因此需要独立的Token配置。\n\n获取方式：Discord Developer Portal 创建Bot后获得。",
+    "default": ""
+  },
+  "llm_enabled": {
+    "type": "bool",
+    "description": "启用 LLM 发言头衔分析",
+    "hint": "开启后，定时推送排行榜时将使用LLM根据发言数据为每个成员生成个性化头衔",
+    "default": false
+  },
+  "llm_provider_id": {
+    "type": "string",
+    "description": "LLM Provider ID",
+    "_special": "select_provider",
+    "default": "",
+    "hint": "选择用于生成头衔的 LLM Provider。留空则使用当前会话的默认 Provider"
+  },
+  "llm_system_prompt": {
+    "type": "text",
+    "description": "头衔生成提示词",
+    "hint": "用于控制头衔生成风格颜色和JSON格式，留空则使用默认模板。",
+    "default": "你是一个擅长给群成员起有趣头衔的群聊分析师，也是一个配色大师。\n请根据以下群成员的发言统计数据，为每个成员生成一个富有创意、幽默且贴合其发言风格的头衔，并为每个头衔搭配一个合适的颜色。\n\n要求：\n1. 头衔要简短（不超过6个汉字），朗朗上口\n2. 结合数据特征（发言总数、排名、活跃天数等）进行创意发挥\n3. 风格可以多样：霸气、搞怪、吐槽、中二均可\n4. 不要使用侮辱性词汇\n5. 对发言最多的前3名给出更夸张、更酷的头衔\n6. 为每个头衔搭配一个颜色，颜色要契合头衔的气质含义，例如：红色（#EF4444）代表热情霸气，蓝色（#3B82F6）代表沉稳冷静，紫色（#8B5CF6）代表神秘高贵，绿色（#22C55E）代表生机活力，橙色（#F97316）代表欢乐活泼，粉色（#EC4899）代表可爱温柔，青色（#06B6D4）代表清新灵动\n\n请严格按照以下JSON格式返回，不要包含任何其他内容：\n```json\n{\n  \"titles\": {\n    \"用户ID_1\": {\n      \"title\": \"头衔1\",\n      \"color\": \"#3B82F6\"\n    },\n    \"用户ID_2\": {\n      \"title\": \"头衔2\",\n      \"color\": \"#EF4444\"\n    }\n  }\n}\n```",
+    "editor_mode": true,
+    "editor_language": "markdown"
+  },
+  "llm_max_retries": {
+    "type": "int",
+    "description": "LLM 重试次数",
+    "hint": "LLM调用失败时的重试次数",
+    "default": 2,
+    "slider": {
+      "min": 0,
+      "max": 5,
+      "step": 1
+    }
+  },
+  "llm_min_daily_messages": {
+    "type": "int",
+    "description": "每日发言次数最小值（头衔分析）",
+    "hint": "只有当日发言次数达到此值的用户，LLM才会为其生成头衔。设为0则分析所有有发言的用户。",
+    "default": 0,
+    "slider": {
+      "min": 0,
+      "max": 100,
+      "step": 5
+    }
+  },
+  "llm_enable_on_manual": {
+    "type": "bool",
+    "description": "手动查询时也启用LLM分析",
+    "hint": "开启后，使用发言榜、今日发言榜等手动命令时也会调用LLM生成头衔（注意会产生Token消耗）",
+    "default": false
+  }
+}

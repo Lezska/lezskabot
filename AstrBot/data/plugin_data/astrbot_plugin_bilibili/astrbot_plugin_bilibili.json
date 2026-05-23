@@ -1,0 +1,248 @@
+{
+  "bili_sub_list": {
+    "lzk:GroupMessage:682255155": [
+      {
+        "uid": 13148307,
+        "last": "1205289628575203333",
+        "is_live": false,
+        "filter_types": [],
+        "filter_regex": [],
+        "recent_ids": [
+          "1205289628575203333",
+          "1205279281987452928",
+          "1205247409055072325",
+          "1205201727756697609"
+        ],
+        "live_atall": false,
+        "last_live_start_ts": 0
+      },
+      {
+        "uid": 177291194,
+        "last": "1197399099307982951",
+        "is_live": false,
+        "filter_types": [],
+        "filter_regex": [],
+        "recent_ids": [
+          "1197399099307982951",
+          "1185895458910765064",
+          "1185524369433034872",
+          "1169248693984952326"
+        ],
+        "live_atall": false,
+        "last_live_start_ts": 0
+      },
+      {
+        "uid": 3546749308242173,
+        "last": "1205470191140470790",
+        "is_live": false,
+        "filter_types": [],
+        "filter_regex": [],
+        "recent_ids": [
+          "1205470191140470790",
+          "1205242263643357225",
+          "1205145491632816131",
+          "1205114567853604885"
+        ],
+        "live_atall": false,
+        "last_live_start_ts": 0
+      },
+      {
+        "uid": 627704742,
+        "last": "1171875616213958676",
+        "is_live": false,
+        "filter_types": [],
+        "filter_regex": [],
+        "recent_ids": [
+          "1171875616213958676",
+          "1171499892504264705",
+          "1152405150795563013",
+          "1114965130623320103"
+        ],
+        "live_atall": false,
+        "last_live_start_ts": 0
+      },
+      {
+        "uid": 334055770,
+        "last": "1202439703042719751",
+        "is_live": false,
+        "filter_types": [],
+        "filter_regex": [],
+        "recent_ids": [
+          "1202439703042719751",
+          "1201326434580168818",
+          "1200955349414182946",
+          "1200584277138341938"
+        ],
+        "live_atall": false,
+        "last_live_start_ts": 0
+      },
+      {
+        "uid": 3546599749847563,
+        "last": "1182299398792544262",
+        "is_live": false,
+        "filter_types": [],
+        "filter_regex": [],
+        "recent_ids": [
+          "1182299398792544262",
+          "1162500076311937046",
+          "1142446075118878725",
+          "1094215207263141892"
+        ],
+        "live_atall": false,
+        "last_live_start_ts": 0
+      }
+    ],
+    "lezskabot:GroupMessage:682255155": [
+      {
+        "uid": 334055770,
+        "last": "1202439703042719751",
+        "is_live": false,
+        "filter_types": [],
+        "filter_regex": [],
+        "recent_ids": [
+          "1202439703042719751",
+          "1201326434580168818",
+          "1200955349414182946",
+          "1200584277138341938"
+        ],
+        "live_atall": false,
+        "last_live_start_ts": 0
+      },
+      {
+        "uid": 13148307,
+        "last": "1205289628575203333",
+        "is_live": false,
+        "filter_types": [],
+        "filter_regex": [],
+        "recent_ids": [
+          "1205289628575203333",
+          "1205279281987452928",
+          "1205247409055072325",
+          "1205201727756697609"
+        ],
+        "live_atall": false,
+        "last_live_start_ts": 0
+      },
+      {
+        "uid": 177291194,
+        "last": "1197399099307982951",
+        "is_live": false,
+        "filter_types": [],
+        "filter_regex": [],
+        "recent_ids": [
+          "1197399099307982951",
+          "1185895458910765064",
+          "1185524369433034872",
+          "1169248693984952326"
+        ],
+        "live_atall": false,
+        "last_live_start_ts": 0
+      },
+      {
+        "uid": 3546749308242173,
+        "last": "1205470191140470790",
+        "is_live": false,
+        "filter_types": [],
+        "filter_regex": [],
+        "recent_ids": [
+          "1205470191140470790",
+          "1205242263643357225",
+          "1205145491632816131",
+          "1205114567853604885"
+        ],
+        "live_atall": false,
+        "last_live_start_ts": 0
+      },
+      {
+        "uid": 627704742,
+        "last": "1171875616213958676",
+        "is_live": false,
+        "filter_types": [],
+        "filter_regex": [],
+        "recent_ids": [
+          "1171875616213958676",
+          "1171499892504264705",
+          "1152405150795563013",
+          "1114965130623320103"
+        ],
+        "live_atall": false,
+        "last_live_start_ts": 0
+      },
+      {
+        "uid": 3546599749847563,
+        "last": "1162500076311937046",
+        "is_live": false,
+        "filter_types": [],
+        "filter_regex": [],
+        "recent_ids": [
+          "1162500076311937046",
+          "1142446075118878725",
+          "1094215207263141892",
+          "1015994743198318598"
+        ],
+        "live_atall": false,
+        "last_live_start_ts": 0
+      }
+    ],
+    "lezskabot:GroupMessage:1020588915": [
+      {
+        "uid": 334055770,
+        "last": "1202439703042719751",
+        "is_live": false,
+        "filter_types": [],
+        "filter_regex": [],
+        "recent_ids": [
+          "1202439703042719751",
+          "1201326434580168818",
+          "1200955349414182946",
+          "1200584277138341938"
+        ],
+        "live_atall": false,
+        "last_live_start_ts": 0
+      }
+    ],
+    "lezskabot:GroupMessage:1081551953": [
+      {
+        "uid": 334055770,
+        "last": "1202439703042719751",
+        "is_live": false,
+        "filter_types": [],
+        "filter_regex": [],
+        "recent_ids": [
+          "1202439703042719751",
+          "1201326434580168818",
+          "1200955349414182946",
+          "1200584277138341938"
+        ],
+        "live_atall": false,
+        "last_live_start_ts": 0
+      }
+    ],
+    "lezskabot:GroupMessage:1091191330": [
+      {
+        "uid": 334055770,
+        "last": "1202439703042719751",
+        "is_live": false,
+        "filter_types": [],
+        "filter_regex": [],
+        "recent_ids": [
+          "1202439703042719751",
+          "1201326434580168818",
+          "1200955349414182946",
+          "1200584277138341938"
+        ],
+        "live_atall": false,
+        "last_live_start_ts": 0
+      }
+    ]
+  },
+  "credential": {
+    "sessdata": "e32c33a7%2C1791304010%2Ce04e4%2A41CjCIDmCNkhxXo-le7hxXFKyx2opXmtw60AXoy5fCYiHPV_7nBa-NYydohEsMF1p-PQYSVmpfdGVhYURRWVY5Ul9KSlJUOFZuN3N2ZUFoU25fQUJ6bmJKdERKMXFRS1VOTThsMnlsTnlmQWctcTdKNXRmYkVjZmJReUlZSjN4X1dCUGFUTkktcXhRIIEC",
+    "bili_jct": "379c4c9cecadbc66cef522770427a52d",
+    "buvid3": null,
+    "buvid4": null,
+    "dedeuserid": "334055770",
+    "ac_time_value": "e3200541c23ee8829755f1ab9dbc9241"
+  },
+  "last_success_sub_notify_ts": 1779508896
+}

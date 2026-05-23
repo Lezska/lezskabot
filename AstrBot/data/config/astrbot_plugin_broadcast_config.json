@@ -1,0 +1,10 @@
+﻿{
+  "broadcast_max_delay": 1.1,
+  "skip_source": true,
+  "disable_gids": [
+    "723810257",
+    "1064778922",
+    "759370835"
+  ],
+  "disable_uids": []
+}

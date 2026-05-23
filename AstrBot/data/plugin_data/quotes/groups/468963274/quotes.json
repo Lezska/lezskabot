@@ -1,0 +1,20 @@
+{
+  "schema_version": 3,
+  "session_key": "468963274",
+  "quotes": [
+    {
+      "id": "1763537187953_3922",
+      "qq": "2544269700",
+      "name": "逗我吗",
+      "text": "🦌",
+      "created_by": "29053789",
+      "created_at": 1763537187.9532754,
+      "group": "468963274",
+      "kind": "standard",
+      "image_ids": [],
+      "media_ids": [],
+      "segments": [],
+      "forward_nodes": []
+    }
+  ]
+}

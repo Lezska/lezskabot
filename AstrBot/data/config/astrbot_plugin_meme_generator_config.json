@@ -1,0 +1,21 @@
+﻿{
+  "enable_plugin": true,
+  "trigger_prefix": "",
+  "cooldown_seconds": 3,
+  "generation_timeout": 30,
+  "enable_avatar_cache": false,
+  "cache_expire_hours": 24,
+  "disabled_templates": [
+    "喜报",
+    "悲报",
+    "ph",
+    "滚",
+    "这是我老婆",
+    "亲",
+    "蹭",
+    "贴"
+  ],
+  "enable_auto_meme": false,
+  "auto_meme_scope": "all",
+  "auto_meme_level": "平衡"
+}

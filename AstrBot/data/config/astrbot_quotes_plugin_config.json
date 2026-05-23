@@ -1,0 +1,19 @@
+﻿{
+  "storage": "",
+  "global_mode": false,
+  "delete_permission": "管理员",
+  "blacklist": [],
+  "avatar_provider": "qlogo",
+  "image": {
+    "width": 1280,
+    "height": 427,
+    "bg_color": "#000",
+    "text_color": "#fff",
+    "font_family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', Arial, sans-serif"
+  },
+  "image_signature_use_group": true,
+  "poke_enabled": true,
+  "poke_probability": 20,
+  "poke_group_whitelist": [],
+  "poke_group_blacklist": []
+}

@@ -1,0 +1,31 @@
+{
+  "group_id": "1071110215",
+  "last_updated": "2026-01-06T11:21:22.221299",
+  "users": [
+    {
+      "user_id": "3220419645",
+      "nickname": "皓月星静",
+      "message_count": 3,
+      "history": [
+        "2026-01-04",
+        "2026-01-04",
+        "2026-01-04"
+      ],
+      "last_date": "2026-01-04",
+      "first_message_time": 1767534902,
+      "last_message_time": 1767534987
+    },
+    {
+      "user_id": "3387265308",
+      "nickname": "洛洛",
+      "message_count": 2,
+      "history": [
+        "2026-01-06",
+        "2026-01-06"
+      ],
+      "last_date": "2026-01-06",
+      "first_message_time": 1767669682,
+      "last_message_time": 1767669682
+    }
+  ]
+}

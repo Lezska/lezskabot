@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "display_name": "AstrBot 群发言统计插件",
+    "short_desc": "统计群成员发言次数，支持多种排行榜和定时推送",
+    "desc": "统计群成员发言次数，支持总榜/日榜/周榜/月榜/年榜排行榜、LLM 头衔分析和定时推送"
+  },
+  "config": {
+    "theme": {
+      "description": "排行榜主题风格",
+      "hint": "图片显示排行榜的主题风格（启用自动主题切换后此设置将被覆盖）"
+    },
+    "auto_theme_switch": {
+      "description": "自动主题切换",
+      "hint": "启用后根据时间自动切换排行榜主题（浅色/深色），会覆盖下方的手动主题设置"
+    },
+    "theme_switch_light_time": {
+      "description": "浅色主题开始时间",
+      "hint": "格式 HH:MM，例如 06:00"
+    },
+    "theme_switch_dark_time": {
+      "description": "深色主题开始时间",
+      "hint": "格式 HH:MM，例如 18:00"
+    },
+    "detailed_logging_enabled": {
+      "description": "是否开启详细日志记录",
+      "hint": "关闭后将隐藏'记录消息统计'等详细日志，只保留重要的系统日志和错误日志"
+    },
+    "rand": {
+      "description": "排行榜显示人数",
+      "hint": "排行榜中显示的用户数量，建议5-50人"
+    },
+    "if_send_pic": {
+      "description": "排行榜输出模式",
+      "hint": "选择排行榜的展示方式，图片模式更美观但消耗更多资源"
+    },
+    "timer_enabled": {
+      "description": "是否启用定时推送排行榜功能",
+      "hint": "开启后将在指定时间自动向指定群组推送排行榜"
+    },
+    "timer_push_time": {
+      "description": "定时推送时间",
+      "hint": "支持 HH:MM 格式（每日指定时间）或 cron 格式（如 '0 9 * * *' 表示每天9点）"
+    },
+    "timer_target_groups": {
+      "description": "定时推送目标群组",
+      "hint": "需要接收定时推送的群组ID列表，留空则推送到所有群组"
+    },
+    "timer_rank_type": {
+      "description": "定时推送排行榜类型",
+      "hint": "选择定时推送的排行榜统计范围"
+    },
+    "milestone_enabled": {
+      "description": "发言里程碑推送",
+      "hint": "启用后当用户发言达到里程碑次数时自动推送排行榜"
+    },
+    "milestone_targets": {
+      "description": "里程碑次数列表",
+      "hint": "触发推送的发言次数里程碑，如 666、1000、5000、10000"
+    },
+    "blocked_users": {
+      "description": "屏蔽用户列表",
+      "hint": "屏蔽指定用户，使其不显示在发言榜上且不统计其发言数据。请输入完整的用户ID。"
+    },
+    "blocked_groups": {
+      "description": "屏蔽群聊列表",
+      "hint": "屏蔽指定群聊，使其不统计发言数据且无法使用排行榜指令。请输入完整的群组ID。"
+    },
+    "tg_bot_token": {
+      "description": "Telegram Bot Token",
+      "hint": "填写后可获取TG用户的真实头像。留空则使用彩色文字头像。\n\n为什么要再次填入？\nAstrBot的架构不会将适配器的Bot Token暴露给插件，\n插件需要自行调用TG Bot API来获取头像，因此需要独立的Token配置。\n\n获取方式：@BotFather 创建Bot后获得，格式 123456:ABCdef..."
+    },
+    "dc_bot_token": {
+      "description": "Discord Bot Token",
+      "hint": "填写后可获取DC用户的真实头像。留空则使用彩色文字头像。\n\n为什么要再次填入？\nAstrBot的架构不会将适配器的Bot Token暴露给插件，\n插件需要自行调用Discord REST API来获取头像，因此需要独立的Token配置。\n\n获取方式：Discord Developer Portal 创建Bot后获得。"
+    },
+    "llm_enabled": {
+      "description": "启用 LLM 发言头衔分析",
+      "hint": "开启后，定时推送排行榜时将使用LLM根据发言数据为每个成员生成个性化头衔"
+    },
+    "llm_provider_id": {
+      "description": "LLM Provider ID",
+      "hint": "选择用于生成头衔的 LLM Provider。留空则使用当前会话的默认 Provider"
+    },
+    "llm_system_prompt": {
+      "description": "头衔生成提示词",
+      "hint": "用于控制头衔生成风格和颜色，留空则使用默认模板。"
+    },
+    "llm_max_retries": {
+      "description": "LLM 重试次数",
+      "hint": "LLM调用失败时的重试次数"
+    },
+    "llm_min_daily_messages": {
+      "description": "每日发言次数最小值（头衔分析）",
+      "hint": "只有当日发言次数达到此值的用户，LLM才会为其生成头衔。设为0则分析所有有发言的用户。"
+    },
+    "llm_enable_on_manual": {
+      "description": "手动查询时也启用LLM分析",
+      "hint": "开启后，使用发言榜、今日发言榜等手动命令时也会调用LLM生成头衔（注意会产生Token消耗）"
+    }
+  }
+}

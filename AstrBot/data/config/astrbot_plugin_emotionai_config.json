@@ -1,0 +1,11 @@
+﻿{
+  "session_based": true,
+  "favour_min": -100,
+  "favour_max": 100,
+  "change_min": -10,
+  "change_max": 5,
+  "admin_qq_list": [
+    "29053789"
+  ],
+  "plugin_priority": 100000
+}

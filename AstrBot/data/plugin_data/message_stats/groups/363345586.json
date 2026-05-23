@@ -1,0 +1,79 @@
+{
+  "group_id": "363345586",
+  "last_updated": "2026-03-27T01:46:42.226045",
+  "users": [
+    {
+      "user_id": "249076553",
+      "nickname": "天音彼方Official",
+      "message_count": 4,
+      "history": [
+        "2026-03-26",
+        "2026-03-26",
+        "2026-03-26",
+        "2026-03-27"
+      ],
+      "last_date": "2026-03-27",
+      "first_message_time": 1774458193,
+      "last_message_time": 1774547198
+    },
+    {
+      "user_id": "2695630496",
+      "nickname": "兰梅海鸥",
+      "message_count": 2,
+      "history": [
+        "2026-03-26",
+        "2026-03-26"
+      ],
+      "last_date": "2026-03-26",
+      "first_message_time": 1774458210,
+      "last_message_time": 1774458211
+    },
+    {
+      "user_id": "3889274188",
+      "nickname": "沃沃",
+      "message_count": 1,
+      "history": [
+        "2026-03-26"
+      ],
+      "last_date": "2026-03-26",
+      "first_message_time": 1774458243,
+      "last_message_time": 1774458243
+    },
+    {
+      "user_id": "3889001741",
+      "nickname": "小小",
+      "message_count": 1,
+      "history": [
+        "2026-03-26"
+      ],
+      "last_date": "2026-03-26",
+      "first_message_time": 1774458243,
+      "last_message_time": 1774458243
+    },
+    {
+      "user_id": "2854208812",
+      "nickname": "电妹酱owo",
+      "message_count": 2,
+      "history": [
+        "2026-03-26",
+        "2026-03-26"
+      ],
+      "last_date": "2026-03-26",
+      "first_message_time": 1774458254,
+      "last_message_time": 1774458260
+    },
+    {
+      "user_id": "3889005451",
+      "nickname": "Saki酱",
+      "message_count": 3,
+      "history": [
+        "2026-03-27",
+        "2026-03-27",
+        "2026-03-27"
+      ],
+      "last_date": "2026-03-27",
+      "first_message_time": 1774547199,
+      "last_message_time": 1774547202
+    }
+  ]
+}

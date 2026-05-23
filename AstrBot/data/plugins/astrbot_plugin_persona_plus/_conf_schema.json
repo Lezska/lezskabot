@@ -1,0 +1,86 @@
+{
+    "enable_keyword_switching": {
+    "description": "启用关键词切换",
+    "hint": "关闭后仍然可以使用指令切换。",
+    "type": "bool",
+    "default": true
+  },
+  "keyword_mappings": {
+    "description": "关键词与人格切换映射列表",
+    "hint": "每项填写一个映射字符串，格式为 关键词:人格ID；也支持在配置里直接填写对象形式。",
+    "type": "list",
+    "default": ["关键词:人格"]
+  },
+  "auto_switch_scope": {
+    "description": "切换作用范围",
+    "hint": "决定切换后人格应用于当前对话、会话或全局",
+    "type": "string",
+    "default": "conversation",
+    "options": [
+      "conversation",
+      "session",
+      "global"
+    ]
+  },
+  "manage_wait_timeout_seconds": {
+    "description": "管理指令等待超时时长",
+    "hint": "创建或更新人格时等待用户发送内容的最长时间(秒)",
+    "type": "int",
+    "default": 60
+  },
+  "admin_commands": {
+    "description": "需要管理员权限的指令列表",
+    "hint": "勾选表示该指令需要管理员权限执行。",
+    "type": "list",
+    "options": ["switch", "create", "update", "delete", "export", "view", "list", "help", "avatar"],
+    "default": ["create", "update", "delete", "avatar","export"]
+  },
+  "llm_tool_options": {
+    "description": "函数工具选项",
+    "hint": "细分控制向 LLM 暴露的人格管理函数工具：list(列表)、switch(切换)、view(详情)、create(创建)、update(更新)、export(导出)、delete(删除)。未勾选项不会暴露。",
+    "type": "list",
+    "options": ["list", "switch", "view", "create", "update", "export", "delete"],
+    "default": []
+  },
+  "enable_auto_switch_announce": {
+    "description": "切换提示",
+    "hint": "切换人格时，是否发送提示",
+    "type": "bool",
+    "default": true
+  },
+  "clear_context_on_switch": {
+    "description": "切换后清空上下文",
+    "hint": "启用后，切换人格后会自动清空当前对话上下文，不需要手动reset",
+    "type": "bool",
+    "default": false
+  },
+  "sync_nickname_on_switch": {
+    "description": "修改 QQ 昵称",
+    "hint": "是否在切换人格时改变 QQ 昵称(仅适配NapCat!!!)",
+    "type": "bool",
+    "default": true
+  },
+  "nickname_sync_mode": {
+    "description": "昵称同步模式",
+    "hint": "profile: 仅修改QQ昵称; group_card: 群聊中仅修改群名片,私聊不修改; hybrid: 群聊中修改群名片,私聊中修改QQ昵称。",
+    "type": "string",
+    "default": "group_card",
+    "options": [
+      "profile",
+      "group_card",
+      "hybrid"
+    ]
+  },
+  "sync_avatar_on_switch": {
+    "description": "修改 QQ 头像",
+    "hint": "是否在切换人格时改变 QQ 头像(仅适配NapCat!!!)",
+    "type": "bool",
+    "default": false
+  },
+  "nickname_template": {
+    "description": "昵称模板",
+    "hint": "更改昵称时使用的模板，支持 {persona_id}(人格ID) 占位符",
+    "type": "string",
+    "default": "[B0T]{persona_id}"
+  }
+}

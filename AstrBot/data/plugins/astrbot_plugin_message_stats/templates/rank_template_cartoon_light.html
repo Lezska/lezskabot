@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; style-src 'self' 'unsafe-inline' https:;">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>{% raw %}
+        @import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: "ZCOOL KuaiLe", "Comic Sans MS", "Chalkboard SE", "Marker Felt", "PingFang SC", cursive, sans-serif;
+            background: #fef9ef;
+            min-height: 100vh;
+            padding: 32px 24px;
+            color: #4a3728;
+            position: relative;
+        }
+
+        /* 手绘纹理背景 */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background:
+                radial-gradient(circle at 10% 20%, rgba(255, 183, 77, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 90% 80%, rgba(129, 199, 132, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(100, 181, 246, 0.08) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ====== Header 手绘风标题区 ====== */
+        .header {
+            text-align: center;
+            margin-bottom: 24px;
+            background: #fff8ee;
+            border-radius: 60px 60px 60px 12px;
+            padding: 28px 24px 24px;
+            border: 3px solid #5d4037;
+            box-shadow: 8px 8px 0 #5d4037;
+            position: relative;
+        }
+
+        /* 手绘小装饰：左上角圆点 */
+        .header::before {
+            content: '✦';
+            position: absolute;
+            top: -12px;
+            left: 24px;
+            font-size: 28px;
+            color: #ff8a65;
+            transform: rotate(-15deg);
+        }
+
+        /* 手绘小装饰：右上角星星 */
+        .header::after {
+            content: '✧';
+            position: absolute;
+            top: -14px;
+            right: 28px;
+            font-size: 32px;
+            color: #ffb74d;
+            transform: rotate(20deg);
+        }
+
+        .group-info {
+            font-size: 14px;
+            color: #8d6e63;
+            background: #fff3e0;
+            display: inline-block;
+            padding: 4px 16px;
+            border-radius: 30px;
+            border: 2px dashed #bcaaa4;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            font-size: 42px;
+            font-weight: 400;
+            color: #5d4037;
+            line-height: 1.2;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 0 #ffe0b2;
+            padding: 4px 8px;
+            display: inline-block;
+            transform: rotate(-1deg);
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 12px;
+        }
+
+        .stat-item {
+            text-align: center;
+            background: #ffccbc;
+            border-radius: 30px;
+            padding: 8px 24px;
+            border: 2.5px solid #5d4037;
+            box-shadow: 4px 4px 0 #5d4037;
+        }
+
+        .stat-value {
+            font-size: 42px;
+            font-weight: 400;
+            color: #bf360c;
+            line-height: 1.1;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            color: #795548;
+            letter-spacing: 1px;
+        }
+
+        /* ====== Rank Cards 手绘风格卡片 ====== */
+        .rank-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .rank-card {
+            display: flex;
+            align-items: center;
+            background: #fffef5;
+            border-radius: 40px 60px 60px 40px;
+            padding: 12px 16px;
+            border: 3px solid #5d4037;
+            box-shadow: 6px 6px 0 #5d4037;
+            position: relative;
+            transition: all 0.2s ease;
+        }
+
+        .rank-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0 #5d4037;
+        }
+
+        /* 不同排名的背景色 */
+        .rank-card:nth-child(1) {
+            background: #fff8e1;
+            border-color: #f9a825;
+            box-shadow: 6px 6px 0 #f9a825;
+        }
+        .rank-card:nth-child(2) {
+            background: #f5f5f5;
+            border-color: #78909c;
+            box-shadow: 6px 6px 0 #78909c;
+        }
+        .rank-card:nth-child(3) {
+            background: #fbe9e7;
+            border-color: #a1887f;
+            box-shadow: 6px 6px 0 #a1887f;
+        }
+
+        .rank-card.self-card {
+            border-color: #42a5f5 !important;
+            box-shadow: 6px 6px 0 #42a5f5 !important;
+            background: #e3f2fd !important;
+        }
+
+        .rank-card.separator {
+            margin-top: 16px;
+            border-top: 4px dashed #bcaaa4;
+            border-radius: 0 0 40px 40px;
+            padding-top: 24px;
+            box-shadow: none;
+            background: transparent;
+            border-left: none;
+            border-right: none;
+            border-bottom: 3px solid #5d4037;
+        }
+
+        /* Rank Badge 手绘排名徽章 */
+        .rank-num {
+            width: 48px;
+            height: 48px;
+            border-radius: 50% 50% 50% 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+            margin-right: 14px;
+            background: #e0e0e0;
+            color: #5d4037;
+            border: 2.5px solid #5d4037;
+            transform: rotate(-3deg);
+        }
+
+        .rank-card:nth-child(1) .rank-num {
+            width: 58px;
+            height: 58px;
+            font-size: 28px;
+            background: linear-gradient(135deg, #ffd54f, #ffb300);
+            border-color: #f57f17;
+            color: #fff;
+            transform: rotate(-5deg);
+            box-shadow: 3px 3px 0 #f57f17;
+        }
+
+        .rank-card:nth-child(2) .rank-num {
+            width: 52px;
+            height: 52px;
+            font-size: 24px;
+            background: linear-gradient(135deg, #cfd8dc, #90a4ae);
+            border-color: #546e7a;
+            color: #fff;
+            transform: rotate(3deg);
+            box-shadow: 3px 3px 0 #546e7a;
+        }
+
+        .rank-card:nth-child(3) .rank-num {
+            width: 50px;
+            height: 50px;
+            font-size: 22px;
+            background: linear-gradient(135deg, #d7ccc8, #a1887f);
+            border-color: #6d4c41;
+            color: #fff;
+            transform: rotate(-2deg);
+            box-shadow: 3px 3px 0 #6d4c41;
+        }
+
+        /* Avatar 头像 - 圆角不规则的卡通感 */
+        .avatar-wrap {
+            width: 50px;
+            height: 50px;
+            border-radius: 40% 60% 60% 40%;
+            flex-shrink: 0;
+            margin-right: 14px;
+            overflow: hidden;
+            border: 3px solid #5d4037;
+            box-shadow: 3px 3px 0 #5d4037;
+        }
+
+        .rank-card:nth-child(1) .avatar-wrap {
+            width: 60px;
+            height: 60px;
+            border-radius: 35% 65% 70% 30%;
+            border-color: #f9a825;
+            box-shadow: 3px 3px 0 #f9a825;
+        }
+
+        .rank-card:nth-child(2) .avatar-wrap {
+            width: 55px;
+            height: 55px;
+            border-radius: 65% 35% 30% 70%;
+            border-color: #78909c;
+            box-shadow: 3px 3px 0 #78909c;
+        }
+
+        .rank-card:nth-child(3) .avatar-wrap {
+            width: 52px;
+            height: 52px;
+            border-radius: 45% 55% 55% 45%;
+            border-color: #a1887f;
+            box-shadow: 3px 3px 0 #a1887f;
+        }
+
+        .avatar-wrap img, .avatar-wrap svg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* User Info */
+        .user-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .user-name-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 2px;
+        }
+
+        .user-name {
+            font-size: 18px;
+            color: #4e342e;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: 400;
+        }
+
+        .rank-card:nth-child(1) .user-name {
+            font-size: 22px;
+            color: #e65100;
+        }
+
+        .rank-card:nth-child(2) .user-name {
+            font-size: 20px;
+        }
+
+        .rank-card:nth-child(3) .user-name {
+            font-size: 19px;
+        }
+
+        .user-title-tag {
+            font-size: 11px;
+            padding: 2px 12px;
+            border-radius: 30px;
+            white-space: nowrap;
+            flex-shrink: 0;
+            background: #fff3e0;
+            color: #e65100;
+            border: 2px solid #ffcc80;
+            transform: rotate(-1deg);
+            display: inline-block;
+        }
+
+        .user-meta {
+            font-size: 12px;
+            color: #a1887f;
+        }
+
+        /* Stats (right side) */
+        .progress-wrapper {
+            flex-shrink: 0;
+            text-align: right;
+            margin-left: 12px;
+        }
+
+        .msg-count {
+            font-size: 22px;
+            color: #4e342e;
+            line-height: 1.2;
+            background: #fff3e0;
+            padding: 2px 12px;
+            border-radius: 30px;
+            border: 2px solid #5d4037;
+            display: inline-block;
+            transform: rotate(1deg);
+        }
+
+        .rank-card:nth-child(1) .msg-count {
+            font-size: 26px;
+            background: #fff8e1;
+            border-color: #f9a825;
+            transform: rotate(-1deg);
+        }
+
+        .rank-card:nth-child(2) .msg-count {
+            font-size: 24px;
+            transform: rotate(2deg);
+        }
+
+        .rank-card:nth-child(3) .msg-count {
+            font-size: 23px;
+            transform: rotate(-2deg);
+        }
+
+        .msg-pct {
+            font-size: 13px;
+            color: #8d6e63;
+            margin-top: 2px;
+        }
+
+        /* ====== Footer ====== */
+        .footer {
+            text-align: center;
+            margin-top: 28px;
+            padding-top: 16px;
+            border-top: 3px dashed #d7ccc8;
+            color: #bcaaa4;
+        }
+
+        .footer p {
+            margin: 4px 0;
+            font-size: 12px;
+        }
+    {% endraw %}</style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            {% if group_name %}
+            <div class="group-info">✏️ {{ group_name }} · {{ group_id }}</div>
+            {% endif %}
+            <div class="title">{{ title }}</div>
+            <div class="stats-row">
+                <div class="stat-item">
+                    <div class="stat-value">{{ total_messages }}</div>
+                    <div class="stat-label">总发言</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rank List -->
+        <div class="rank-list">
+            {% for item in user_items %}
+            <div class="rank-card{% if item.is_current_user %} self-card{% endif %}{% if item.is_separator %} separator{% endif %}">
+                <!-- Rank -->
+                <div class="rank-num">
+                    {% if item.rank == 1 %}🥇{% elif item.rank == 2 %}🥈{% elif item.rank == 3 %}🥉{% else %}{{ item.rank }}{% endif %}
+                </div>
+
+                <!-- Avatar -->
+                <div class="avatar-wrap">
+                    <img src="{{ item.avatar_url }}" alt="{{ item.nickname }}" />
+                </div>
+
+                <!-- User Info -->
+                <div class="user-info">
+                    <div class="user-name-row">
+                        <span class="user-name">{{ item.nickname }}</span>
+                        {% if item.title %}
+                        <span class="user-title-tag"{% if item.title_color %} style="background:{{ item.title_color }}18; border-color:{{ item.title_color }}80; color:{{ item.title_color }};"{% endif %}>「{{ item.title }}」</span>
+                        {% endif %}
+                    </div>
+                    <div class="user-meta">最近发言: {{ item.last_date }}</div>
+                </div>
+
+                <!-- Stats -->
+                <div class="progress-wrapper">
+                    <div class="msg-count">{{ item.total }} 次</div>
+                    <div class="msg-pct">{{ "%.1f"|format(item.percentage) }}%</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            {% if llm_token_info %}<p>{{ llm_token_info }}</p>{% endif %}
+            <p>🎨 由 AstrBot 发言统计插件 · 手绘风格</p>
+            <p>🕐 生成时间: {{ current_time }}</p>
+        </div>
+    </div>
+</body>
+</html>

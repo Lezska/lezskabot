@@ -1,0 +1,212 @@
+{"id":1,"type":"info","level":2,"name":"app","meta":{},"content":"\u001b[38;5;15;1mKoishi/4.18.10\u001b[0m","timestamp":1779294983204}
+{"id":2,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mgroup:entry\u001b[0m","timestamp":1779294983307}
+{"id":3,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mgroup:server\u001b[0m","timestamp":1779294983309}
+{"id":4,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mserver:iyvqw3\u001b[0m","timestamp":1779294983310}
+{"id":5,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mgroup:basic\u001b[0m","timestamp":1779294983786}
+{"id":6,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45madmin:yfr8w8\u001b[0m","timestamp":1779294983787}
+{"id":7,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mcommands:liuq4c\u001b[0m","timestamp":1779294983792}
+{"id":8,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mhelp:fakvkp\u001b[0m","timestamp":1779294983797}
+{"id":9,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mhttp:7ka2ck\u001b[0m","timestamp":1779294983801}
+{"id":10,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mlocales:dhqsqe\u001b[0m","timestamp":1779294983804}
+{"id":11,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mproxy-agent:594rku\u001b[0m","timestamp":1779294983810}
+{"id":12,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mrate-limit:jeszun\u001b[0m","timestamp":1779294984094}
+{"id":13,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mtelemetry:eob9t0\u001b[0m","timestamp":1779294984098}
+{"id":14,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mgroup:console\u001b[0m","timestamp":1779294984120}
+{"id":15,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mactions:2y6lej\u001b[0m","timestamp":1779294984121}
+{"id":16,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45manalytics:wynivs\u001b[0m","timestamp":1779294984124}
+{"id":17,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mauth:c9brgm\u001b[0m","timestamp":1779294984131}
+{"id":18,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mconfig:ez1tt3\u001b[0m","timestamp":1779294984136}
+{"id":19,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mconsole:y6kw4v\u001b[0m","timestamp":1779294984311}
+{"id":20,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mdataview:kh0qqb\u001b[0m","timestamp":1779294984324}
+{"id":21,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mlogger:3oafoi\u001b[0m","timestamp":1779294984328}
+{"id":22,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mmarket:rb9ss1\u001b[0m","timestamp":1779294984332}
+{"id":23,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mnotifier:hqhrom\u001b[0m","timestamp":1779294984423}
+{"id":24,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45moobe:gedmxh\u001b[0m","timestamp":1779294984427}
+{"id":25,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mstatus:rjhdf0\u001b[0m","timestamp":1779294984430}
+{"id":26,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mtheme-vanilla:xph3ej\u001b[0m","timestamp":1779294984490}
+{"id":27,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mgroup:storage\u001b[0m","timestamp":1779294984493}
+{"id":28,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mdatabase-sqlite:trh0pf\u001b[0m","timestamp":1779294984494}
+{"id":29,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45massets-local:ffai0c\u001b[0m","timestamp":1779294984509}
+{"id":30,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mgroup:adapter\u001b[0m","timestamp":1779294984521}
+{"id":31,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45manti-space:fk2qty\u001b[0m","timestamp":1779294984522}
+{"id":32,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mblockly-null:lp0hx8\u001b[0m","timestamp":1779294984525}
+{"id":33,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mpuppeteer:noenkr\u001b[0m","timestamp":1779294984582}
+{"id":34,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45madapter-onebot:wqmw9x\u001b[0m","timestamp":1779294985042}
+{"id":35,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mmenu:mulwf1\u001b[0m","timestamp":1779294985092}
+{"id":36,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mrizgame-guess-letters:2xa68a\u001b[0m","timestamp":1779294985099}
+{"id":37,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45msayo-roll:oibvy4\u001b[0m","timestamp":1779294985103}
+{"id":38,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mre-driftbottle:ptodv9\u001b[0m","timestamp":1779294985107}
+{"id":39,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mkeyword-blocker:1b1278\u001b[0m","timestamp":1779294985127}
+{"id":40,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mlunatic:22bd3m\u001b[0m","timestamp":1779294985132}
+{"id":41,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mawa-mc-ament:rwr33m\u001b[0m","timestamp":1779294985134}
+{"id":42,"type":"info","level":2,"name":"loader","meta":{"paths":[]},"content":"apply plugin \u001b[38;5;45mmc-tools:h22llh\u001b[0m","timestamp":1779294985139}
+{"id":43,"type":"info","level":2,"name":"assets","meta":{"paths":["ffai0c"]},"content":"missing config \"selfUrl\", fallback to \"file:\" scheme","timestamp":1779294985495}
+{"id":44,"type":"info","level":2,"name":"rizgame-guess-letters","meta":{},"content":"plugin register finish.","timestamp":1779294985598}
+{"id":45,"type":"info","level":2,"name":"puppeteer","meta":{"paths":["noenkr"]},"content":"chrome executable found at \u001b[38;5;201m/usr/bin/google-chrome-stable\u001b[0m","timestamp":1779294986014}
+{"id":46,"type":"info","level":2,"name":"server","meta":{"paths":["iyvqw3"]},"content":"server listening at \u001b[38;5;57mhttp://0.0.0.0:5140\u001b[0m","timestamp":1779294986100}
+{"id":47,"type":"info","level":2,"name":"console","meta":{"paths":["y6kw4v"]},"content":"webui is available at \u001b[38;5;166mhttp://127.0.0.1:5140\u001b[0m","timestamp":1779294986102}
+{"id":48,"type":"info","level":2,"name":"auth","meta":{"paths":["c9brgm"]},"content":"creating admin account","timestamp":1779294986614}
+{"id":82,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loading 3 plugin(s)","timestamp":1779294988217}
+{"id":83,"type":"info","level":2,"name":"blockly","meta":{"paths":["lp0hx8"]},"content":"Loaded 3 plugin(s)","timestamp":1779294988589}
+{"id":2483,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：1张二星  1张三星  1张四星  获得2040P点，当前P点数为62207","timestamp":1779295615505}
+{"id":5330,"type":"info","level":2,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"用户937530578绑定了cnid：7635662513039842089","timestamp":1779296694190}
+{"id":5984,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2858787094完成了一次签到！","timestamp":1779297073211}
+{"id":6125,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2858787094抽到了一张☆二星★卡，剩余27P点","timestamp":1779297130880}
+{"id":8667,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"629832381完成了一次签到！","timestamp":1779298833277}
+{"id":8735,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"629832381抽到了一张☆二星★卡，剩余25427P点","timestamp":1779298869181}
+{"id":8760,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"629832381抽到了一张☆二星★卡，剩余25027P点","timestamp":1779298880015}
+{"id":8784,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"629832381抽到了一张☆二星★卡，剩余24627P点","timestamp":1779298889604}
+{"id":8808,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"629832381抽到了一张❀三星☄卡，剩余24227P点","timestamp":1779298898317}
+{"id":9919,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"956937232完成了一次签到！","timestamp":1779301857388}
+{"id":10172,"type":"error","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2658604288抽卡失败，积分不足","timestamp":1779302187050}
+{"id":10657,"type":"info","level":2,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"已更新2186790348的抢劫次数和记录","timestamp":1779303629216}
+{"id":10680,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2186790348抢劫2628075910失败！失去了194P点！","timestamp":1779303630020}
+{"id":10681,"type":"info","level":2,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2186790348今天的抢劫记录为-194   |    剩余抢劫次数为2","timestamp":1779303630021}
+{"id":10763,"type":"info","level":2,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"已更新2433884076的抢劫次数和记录","timestamp":1779303679986}
+{"id":10784,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2433884076抢了2628075910的130P点！","timestamp":1779303680607}
+{"id":10785,"type":"info","level":2,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2433884076今天的抢劫记录为130   |    剩余抢劫次数为2","timestamp":1779303680608}
+{"id":10945,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：1张二星  2张三星  获得1400P点，当前P点数为62213","timestamp":1779303775991}
+{"id":10954,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：2张二星  1张三星  1张四星  获得2320P点，当前P点数为50626","timestamp":1779303776819}
+{"id":11001,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：2张二星  1张三星  获得1120P点，当前P点数为62133","timestamp":1779303783407}
+{"id":11079,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：3张二星  1张三星  获得1400P点，当前P点数为50426","timestamp":1779303813392}
+{"id":11212,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：2张二星  2张三星  获得1680P点，当前P点数为50506","timestamp":1779303898201}
+{"id":11298,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：2张二星  1张三星  获得1120P点，当前P点数为62053","timestamp":1779303910088}
+{"id":11327,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：3张二星  1张三星  获得1400P点，当前P点数为50306","timestamp":1779303917701}
+{"id":11380,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：2张二星  1张三星  获得1120P点，当前P点数为61973","timestamp":1779303924285}
+{"id":11427,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：2张二星  1张三星  获得1120P点，当前P点数为61893","timestamp":1779303930821}
+{"id":11557,"type":"error","level":1,"name":"绑定id","meta":{"paths":["lp0hx8"]},"content":"3159907920输入错误id：5245795083857930，id过短","timestamp":1779303959710}
+{"id":11561,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：3张二星  1张三星  获得1400P点，当前P点数为50106","timestamp":1779303960390}
+{"id":11672,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：2张二星  1张四星  获得1760P点，当前P点数为62453","timestamp":1779303978487}
+{"id":11788,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：1张二星  3张三星  获得1960P点，当前P点数为50466","timestamp":1779303998682}
+{"id":11821,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：1张二星  1张三星  1张四星  获得2040P点，当前P点数为63293","timestamp":1779304003996}
+{"id":11908,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：4张二星  获得1120P点，当前P点数为49986","timestamp":1779304019608}
+{"id":11996,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：3张二星  1张三星  获得1400P点，当前P点数为49786","timestamp":1779304040685}
+{"id":12045,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2433884076完成了一次签到！","timestamp":1779304049891}
+{"id":12078,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：3张二星  1张三星  获得1400P点，当前P点数为49586","timestamp":1779304061320}
+{"id":12173,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：2张二星  1张四星  获得1760P点，当前P点数为63853","timestamp":1779304078502}
+{"id":12200,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：2张二星  2张三星  获得1680P点，当前P点数为49666","timestamp":1779304084690}
+{"id":12350,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：1张二星  2张三星  获得1400P点，当前P点数为64053","timestamp":1779304141287}
+{"id":12391,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：3张二星  获得840P点，当前P点数为63693","timestamp":1779304147514}
+{"id":12439,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：2张二星  1张三星  获得1120P点，当前P点数为63613","timestamp":1779304153890}
+{"id":12460,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：1张二星  2张三星  1张四星  获得2600P点，当前P点数为50666","timestamp":1779304162588}
+{"id":12528,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：4张二星  获得1120P点，当前P点数为50186","timestamp":1779304189004}
+{"id":12657,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：2张二星  1张三星  获得1120P点，当前P点数为63533","timestamp":1779304212405}
+{"id":12690,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：3张二星  1张三星  获得1400P点，当前P点数为49986","timestamp":1779304214896}
+{"id":12769,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：3张二星  获得840P点，当前P点数为63173","timestamp":1779304230089}
+{"id":12780,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：3张二星  1张三星  获得1400P点，当前P点数为49786","timestamp":1779304230919}
+{"id":12833,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：2张二星  1张三星  获得1120P点，当前P点数为63093","timestamp":1779304239886}
+{"id":12927,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：4张二星  获得1120P点，当前P点数为49306","timestamp":1779304269983}
+{"id":12995,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：1张二星  2张三星  获得1400P点，当前P点数为63293","timestamp":1779304282307}
+{"id":13050,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：3张二星  1张三星  获得1400P点，当前P点数为49106","timestamp":1779304293192}
+{"id":13170,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：1张二星  3张三星  获得1960P点，当前P点数为49466","timestamp":1779304320582}
+{"id":13188,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：3张二星  获得840P点，当前P点数为62933","timestamp":1779304322904}
+{"id":13243,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2186790348献祭了：3张二星  获得840P点，当前P点数为62573","timestamp":1779304329683}
+{"id":13343,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：3张二星  1张三星  获得1400P点，当前P点数为49266","timestamp":1779304347481}
+{"id":13434,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：3张二星  1张三星  获得1400P点，当前P点数为49066","timestamp":1779304364212}
+{"id":13493,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：3张二星  1张三星  获得1400P点，当前P点数为48866","timestamp":1779304375496}
+{"id":13573,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：3张二星  1张三星  获得1400P点，当前P点数为48666","timestamp":1779304395215}
+{"id":13637,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：4张二星  获得1120P点，当前P点数为48186","timestamp":1779304413981}
+{"id":13710,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：4张二星  获得1120P点，当前P点数为47706","timestamp":1779304430493}
+{"id":13771,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：4张二星  获得1120P点，当前P点数为47226","timestamp":1779304450681}
+{"id":13803,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2186790348抢了2628075910的147P点！","timestamp":1779304451414}
+{"id":13804,"type":"info","level":2,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2186790348今天的抢劫记录为-47   |    剩余抢劫次数为1","timestamp":1779304451416}
+{"id":13928,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：3张二星  1张FES  获得2840P点，当前P点数为48319","timestamp":1779304505109}
+{"id":13983,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2186790348抢了2628075910的460P点！","timestamp":1779304511908}
+{"id":13984,"type":"info","level":2,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2186790348今天的抢劫记录为413   |    剩余抢劫次数为0","timestamp":1779304511918}
+{"id":14032,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：4张二星  获得1120P点，当前P点数为47379","timestamp":1779304519599}
+{"id":14047,"type":"error","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2628075910抢劫失败！该用户今天抢劫次数已用完","timestamp":1779304526514}
+{"id":14183,"type":"info","level":2,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2186790348向2628075910赠送了5200个P点","timestamp":1779304587398}
+{"id":14975,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：2张二星  1张三星  1张四星  获得2320P点，当前P点数为53299","timestamp":1779305953828}
+{"id":15028,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：2张二星  2张三星  获得1680P点，当前P点数为53379","timestamp":1779305966549}
+{"id":15138,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"1986429457完成了一次签到！","timestamp":1779306026837}
+{"id":15183,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2186790348完成了一次签到！","timestamp":1779306033509}
+{"id":15194,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：2张二星  2张三星  获得1680P点，当前P点数为53459","timestamp":1779306034389}
+{"id":15302,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：3张二星  1张三星  获得1400P点，当前P点数为53259","timestamp":1779306211617}
+{"id":15346,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：4张二星  获得1120P点，当前P点数为52779","timestamp":1779306229598}
+{"id":15389,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：3张二星  1张三星  获得1400P点，当前P点数为52579","timestamp":1779306241186}
+{"id":15457,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：3张二星  1张三星  获得1400P点，当前P点数为52379","timestamp":1779306304093}
+{"id":15501,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：3张二星  1张三星  获得1400P点，当前P点数为52179","timestamp":1779306320402}
+{"id":15575,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：2张二星  2张三星  获得1680P点，当前P点数为52259","timestamp":1779306363118}
+{"id":15619,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2628075910献祭了：4张二星  获得1120P点，当前P点数为51779","timestamp":1779306373292}
+{"id":16030,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：4张二星  1张四星  获得2320P点，当前P点数为30041","timestamp":1779313085720}
+{"id":16100,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：2张二星  2张三星  1张FES  获得3680P点，当前P点数为31721","timestamp":1779313115232}
+{"id":16145,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：5张二星  获得1400P点，当前P点数为31121","timestamp":1779313124802}
+{"id":16190,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：3张二星  2张三星  获得1960P点，当前P点数为31081","timestamp":1779313134902}
+{"id":16241,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：5张二星  获得1400P点，当前P点数为30481","timestamp":1779313149601}
+{"id":16287,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：2张二星  3张三星  获得2240P点，当前P点数为30721","timestamp":1779313162592}
+{"id":16332,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：4张二星  1张三星  获得1680P点，当前P点数为30401","timestamp":1779313171711}
+{"id":16380,"type":"warn","level":2,"name":"session","meta":{},"content":"Error: Error with request send_group_msg, args: {\"group_id\":1081551953,\"message\":[{\"type\":\"text\",\"data\":{\"text\":\"输入要献祭的卡在卡组中的位置，用空格隔开（可献祭3~8张卡）\"}}]}, retcode: 1200\n    at _Internal._get (/root/lezskabot/koishi/koishi-app/node_modules/koishi-plugin-adapter-onebot/lib/index.js:119:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async _Internal.<computed> [as sendGroupMsg] (/root/lezskabot/koishi/koishi-app/node_modules/koishi-plugin-adapter-onebot/lib/index.js:162:20)\n    at async OneBotMessageEncoder.flush (/root/lezskabot/koishi/koishi-app/node_modules/koishi-plugin-adapter-onebot/lib/index.js:771:338)\n    at async OneBotMessageEncoder.send (/root/lezskabot/koishi/koishi-app/node_modules/@satorijs/core/lib/index.cjs:755:5)\n    at async Proxy.sendMessage (/root/lezskabot/koishi/koishi-app/node_modules/@satorijs/core/lib/index.cjs:487:22)\n    at async _Command.eval (eval at <anonymous> (/root/lezskabot/koishi/koishi-app/node_modules/koishi-plugin-blockly-null/lib/index.js:1:1), <anonymous>:354:11)\n    at async Array.<anonymous> (/root/lezskabot/koishi/koishi-app/node_modules/@koishijs/core/lib/index.cjs:1079:14)\n    at async _Command.execute (/root/lezskabot/koishi/koishi-app/node_modules/@koishijs/core/lib/index.cjs:1093:22)\n    at async /root/lezskabot/koishi/koishi-app/node_modules/@koishijs/core/lib/index.cjs:2049:22","timestamp":1779313194684}
+{"id":16392,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：3张二星  2张三星  获得1960P点，当前P点数为30361","timestamp":1779313218382}
+{"id":16437,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：5张二星  获得1400P点，当前P点数为29761","timestamp":1779313229689}
+{"id":16482,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：4张二星  1张三星  获得1680P点，当前P点数为29441","timestamp":1779313238300}
+{"id":16506,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076抽到了一张❀三星☄卡，剩余29041P点","timestamp":1779313241304}
+{"id":16530,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076抽到了一张❀三星☄卡，剩余28641P点","timestamp":1779313249091}
+{"id":16554,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076抽到了一张❀三星☄卡，剩余28241P点","timestamp":1779313253896}
+{"id":16578,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076抽到了一张☆二星★卡，剩余27841P点","timestamp":1779313258111}
+{"id":16602,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076抽到了一张☆二星★卡，剩余27441P点","timestamp":1779313262395}
+{"id":16623,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：2张二星  3张三星  获得2240P点，当前P点数为29681","timestamp":1779313267422}
+{"id":16669,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：3张二星  2张三星  获得1960P点，当前P点数为29641","timestamp":1779313277813}
+{"id":16714,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：3张二星  2张三星  获得1960P点，当前P点数为29601","timestamp":1779313285310}
+{"id":16771,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：3张二星  1张三星  1张FES  获得3400P点，当前P点数为31001","timestamp":1779313306706}
+{"id":16828,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：4张二星  1张四星  获得2320P点，当前P点数为31321","timestamp":1779313323915}
+{"id":16874,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：5张二星  获得1400P点，当前P点数为30721","timestamp":1779313333320}
+{"id":16919,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：5张二星  获得1400P点，当前P点数为30121","timestamp":1779313341909}
+{"id":16976,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：4张二星  1张四星  获得2320P点，当前P点数为30441","timestamp":1779313360296}
+{"id":17021,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：5张二星  获得1400P点，当前P点数为29841","timestamp":1779313367822}
+{"id":17076,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：3张二星  2张三星  获得1960P点，当前P点数为29801","timestamp":1779313390499}
+{"id":17122,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：5张二星  获得1400P点，当前P点数为29201","timestamp":1779313400002}
+{"id":17167,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：4张二星  1张三星  获得1680P点，当前P点数为28881","timestamp":1779313407484}
+{"id":17212,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：4张二星  1张三星  获得1680P点，当前P点数为28561","timestamp":1779313415794}
+{"id":17236,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076抽到了一张❀三星☄卡，剩余28161P点","timestamp":1779313419614}
+{"id":17260,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076抽到了一张☆二星★卡，剩余27761P点","timestamp":1779313423884}
+{"id":17284,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076抽到了一张❀三星☄卡，剩余27361P点","timestamp":1779313426606}
+{"id":17308,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076抽到了一张☆二星★卡，剩余26961P点","timestamp":1779313429380}
+{"id":17332,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076抽到了一张☆二星★卡，剩余26561P点","timestamp":1779313431885}
+{"id":17353,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：3张二星  2张三星  获得1960P点，当前P点数为28521","timestamp":1779313438199}
+{"id":17398,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：5张二星  获得1400P点，当前P点数为27921","timestamp":1779313447691}
+{"id":17444,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：4张二星  1张三星  获得1680P点，当前P点数为27601","timestamp":1779313454612}
+{"id":17489,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：3张二星  2张三星  获得1960P点，当前P点数为27561","timestamp":1779313461622}
+{"id":17546,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：3张二星  1张三星  1张四星  获得2600P点，当前P点数为28161","timestamp":1779313486579}
+{"id":17570,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076抽到了一张☆二星★卡，剩余27761P点","timestamp":1779313489791}
+{"id":17594,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076抽到了一张☆二星★卡，剩余27361P点","timestamp":1779313492291}
+{"id":17618,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076抽到了一张☆二星★卡，剩余26961P点","timestamp":1779313495087}
+{"id":17642,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076抽到了一张☆二星★卡，剩余26561P点","timestamp":1779313497985}
+{"id":17666,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076抽到了一张☆二星★卡，剩余26161P点","timestamp":1779313501014}
+{"id":17687,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：5张二星  获得1400P点，当前P点数为27561","timestamp":1779313505400}
+{"id":17733,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：3张二星  2张三星  获得1960P点，当前P点数为27521","timestamp":1779313513104}
+{"id":17790,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：4张二星  1张四星  获得2320P点，当前P点数为27841","timestamp":1779313528828}
+{"id":17847,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：2张二星  1张三星  2张四星  获得3520P点，当前P点数为29361","timestamp":1779313548908}
+{"id":17892,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：3张二星  2张三星  获得1960P点，当前P点数为29321","timestamp":1779313557979}
+{"id":17937,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：5张二星  获得1400P点，当前P点数为28721","timestamp":1779313567507}
+{"id":17983,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：1张二星  4张三星  获得2520P点，当前P点数为29241","timestamp":1779313576908}
+{"id":18028,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：4张二星  1张三星  获得1680P点，当前P点数为28921","timestamp":1779313584588}
+{"id":18085,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2433884076献祭了：4张二星  1张四星  获得2320P点，当前P点数为29241","timestamp":1779313602203}
+{"id":18166,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2433884076抢劫2085287779失败！失去了所有P点！","timestamp":1779313691681}
+{"id":18167,"type":"info","level":2,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"2433884076今天的抢劫记录为89   |    剩余抢劫次数为1","timestamp":1779313691682}
+{"id":18288,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2085287779献祭了：3张二星  获得840P点，当前P点数为4024","timestamp":1779313739480}
+{"id":18352,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2085287779献祭了：1张二星  1张三星  1张FES  获得2840P点，当前P点数为5664","timestamp":1779313759806}
+{"id":18443,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2085287779献祭了：2张二星  1张四星  获得1760P点，当前P点数为6224","timestamp":1779313793512}
+{"id":18503,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2085287779献祭了：2张二星  1张四星  获得1760P点，当前P点数为6784","timestamp":1779313819618}
+{"id":18544,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2085287779献祭了：2张二星  1张三星  获得1120P点，当前P点数为6704","timestamp":1779313836979}
+{"id":18585,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2085287779献祭了：3张二星  获得840P点，当前P点数为6344","timestamp":1779313848811}
+{"id":18626,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2085287779献祭了：3张二星  获得840P点，当前P点数为5984","timestamp":1779313857483}
+{"id":18667,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2085287779献祭了：3张二星  获得840P点，当前P点数为5624","timestamp":1779313864998}
+{"id":18709,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2085287779献祭了：2张二星  1张三星  获得1120P点，当前P点数为5544","timestamp":1779313872286}
+{"id":18750,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2085287779献祭了：3张二星  获得840P点，当前P点数为5184","timestamp":1779313879183}
+{"id":18791,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2085287779献祭了：2张二星  1张三星  获得1120P点，当前P点数为5104","timestamp":1779313886786}
+{"id":18832,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"2085287779献祭了：3张二星  获得840P点，当前P点数为4744","timestamp":1779313895694}
+{"id":19306,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"3940650338完成了一次签到！","timestamp":1779317732955}
+{"id":19421,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"3956839342完成了一次签到！","timestamp":1779318299051}
+{"id":19599,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"3534850564完成了一次签到！","timestamp":1779318832036}
+{"id":19618,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"3534850564抽到了一张❀三星☄卡，剩余4893P点","timestamp":1779318844476}
+{"id":19638,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"3534850564抽到了一张☆二星★卡，剩余4493P点","timestamp":1779318852810}
+{"id":19657,"type":"info","level":2,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"3534850564抽到了一张☆二星★卡，剩余4093P点","timestamp":1779318859343}
+{"id":19931,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"1602618344完成了一次签到！","timestamp":1779320332352}
+{"id":19960,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"1813783853完成了一次签到！","timestamp":1779320452324}
+{"id":20029,"type":"success","level":1,"name":"签到","meta":{"paths":["lp0hx8"]},"content":"3903949840完成了一次签到！","timestamp":1779320658272}
+{"id":20115,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"3903949840献祭了：4张二星  2张三星  获得2240P点，当前P点数为10983","timestamp":1779320781236}
+{"id":20223,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"3903949840献祭了：4张二星  1张三星  获得1680P点，当前P点数为10263","timestamp":1779320873306}
+{"id":20288,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"3903949840献祭了：3张二星  2张三星  获得1960P点，当前P点数为10223","timestamp":1779320999487}
+{"id":20334,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"3903949840献祭了：4张二星  1张三星  获得1680P点，当前P点数为9903","timestamp":1779321025402}
+{"id":20397,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"3903949840献祭了：3张二星  1张三星  1张四星  获得2600P点，当前P点数为10503","timestamp":1779321069923}
+{"id":20443,"type":"success","level":1,"name":"抽卡与卡组","meta":{"paths":["lp0hx8"]},"content":"3903949840献祭了：3张二星  2张三星  获得1960P点，当前P点数为10463","timestamp":1779321103292}

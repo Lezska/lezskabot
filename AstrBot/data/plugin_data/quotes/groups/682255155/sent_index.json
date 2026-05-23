@@ -1,0 +1,16 @@
+{
+  "schema_version": 3,
+  "session_key": "682255155",
+  "sent": [
+    {
+      "quote_id": "1762956411908_6457",
+      "fingerprint": "de9993250081f3d65c5c294fcc9f97d2903a245947abaaa063f504599734e950",
+      "sent_at": 1778073883.814461
+    },
+    {
+      "quote_id": "1767627639810_4672",
+      "fingerprint": "ce6187e424d94716b29c88a8a05a7c88d61d056d00f87640d151b416cb99cade",
+      "sent_at": 1778074120.523845
+    }
+  ]
+}

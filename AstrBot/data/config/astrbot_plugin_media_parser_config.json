@@ -1,0 +1,83 @@
+﻿{
+  "parsers": {
+    "bilibili": "仅富媒体",
+    "douyin": "仅富媒体",
+    "tiktok": "仅富媒体",
+    "kuaishou": "仅富媒体",
+    "weibo": "仅富媒体",
+    "xiaohongshu": "仅富媒体",
+    "xianyu": "仅富媒体",
+    "toutiao": "仅富媒体",
+    "xiaoheihe": "仅富媒体",
+    "twitter": "仅富媒体"
+  },
+  "trigger": {
+    "auto_parse": true,
+    "keywords": [
+      "视频解析",
+      "解析视频"
+    ],
+    "reply_trigger": false
+  },
+  "message": {
+    "auto_pack": false,
+    "opening": {
+      "enable": false,
+      "content": "流媒体解析bot为您服务 ٩( 'ω' )و"
+    },
+    "hot_comments": {
+      "count": 0,
+      "bilibili": true,
+      "weibo": true,
+      "xiaohongshu": true
+    }
+  },
+  "download": {
+    "max_concurrent": 5,
+    "cache_dir": "/app/sharedFolder/video_parser/cache",
+    "max_video_size_mb": 1000.0,
+    "large_video_threshold_mb": 100.0
+  },
+  "permissions": {
+    "admin_id": "29053789",
+    "whitelist": {
+      "enable": false,
+      "user": [],
+      "group": []
+    },
+    "blacklist": {
+      "enable": false,
+      "user": [],
+      "group": []
+    }
+  },
+  "bilibili_enhanced": {
+    "use_cookie": false,
+    "cookie": "",
+    "max_quality": "不限制",
+    "admin_assist": {
+      "enable": false,
+      "reply_timeout_minutes": 1440,
+      "request_cooldown_minutes": 1440
+    }
+  },
+  "proxy": {
+    "address": "",
+    "tiktok": false,
+    "xiaoheihe_video": true,
+    "twitter": {
+      "parse": false,
+      "image": true,
+      "video": true
+    }
+  },
+  "media_relay": {
+    "enable": false,
+    "callback_url": "",
+    "ttl": 300
+  },
+  "admin": {
+    "clean_cache_keyword": "清理媒体",
+    "debug": false
+  }
+}
