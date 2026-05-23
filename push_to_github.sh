@@ -146,6 +146,7 @@ fi
 
 echo "将要添加的路径:"
 printf '  %s\n' "${EXPANDED_PATHS[@]}"
+git config lfs.threshold 50
 
 # ---- 关键修复：在 git add 之前扫描大文件并配置 LFS ----
 echo "正在扫描大文件（> $LFS_THRESHOLD）并配置 Git LFS..."
