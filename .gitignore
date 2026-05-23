@@ -1,0 +1,37 @@
+# ============================================
+# 1. 先取消可能已有的忽略规则（确保关键目录可被跟踪）
+#    如果原来有规则忽略了这些目录，! 会强制将它们重新包含
+# ============================================
+!AstrBot/
+!AstrBot/data/
+!*.sh
+!koishi/
+!*.zip
+!onebotfilter/
+!llone/
+
+# ============================================
+# 2. 在需要跟踪的目录内，精确排除不需要的子内容
+# ============================================
+
+# --- AstrBot/data/ 下排除临时目录和数据库临时文件 ---
+AstrBot/data/**/temp/
+AstrBot/data/temp_images/
+AstrBot/data/**/tmp/
+AstrBot/data/**/cache/
+# 所有 .db-shm 和 .db-wal 文件（即使在子目录中）
+AstrBot/data/**/*.db-shm
+AstrBot/data/**/*.db-wal
+
+# --- koishi/ 下排除所有 node_modules 和其他目录---
+koishi/**/node_modules/
+koishi/koishi-app/data/logs/
+koishi/koishi-app/data/menu/cache/
+koishi/**/docker/
+
+# --- 全局排除其他常见的垃圾文件（可选，防止未来误添加） ---
+*.db-shm
+*.db-wal
+
+# --- cards/ 目录特殊处理 ---
+cards/** filter=lfs diff=lfs merge=lfs -text
