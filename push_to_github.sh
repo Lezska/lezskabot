@@ -13,6 +13,7 @@ DEFAULT_INCLUDE_PATHS=(
     "./onebotfilter"
     "./haruki*"
     "./llone/bin/llbot/data/*.json"
+    "./.gitignore"  # 确保 .gitignore 也被添加，以便 LFS 跟踪规则生效
 )
 # --------------------------
 
