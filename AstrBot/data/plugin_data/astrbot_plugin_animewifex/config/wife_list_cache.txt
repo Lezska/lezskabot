@@ -664,6 +664,7 @@ img1/黄金拼图!大宫忍.jpg
 img1/黄金拼图!九条可怜.jpg
 img1/黄金拼图!小路绫.jpg
 img1/黄金拼图!猪熊阳子.jpg
+img1/黄金神威!阿席莉帕.jpg
 img1/灰色系列!春寺由梨亚.jpg
 img1/灰色系列!风见一姬.jpg
 img1/灰色系列!松岛满.jpg
@@ -1532,7 +1533,6 @@ img1/天使嚣嚣!谷风天音.jpg
 img1/天使嚣嚣!谷风天音.png
 img1/天使嚣嚣!小云雀来海.jpg
 img1/天使嚣嚣!小云雀来海.png
-img1/天使嚣嚣!星河辉耶.png
 img1/天朝铁道少女!川崎镜.jpg
 img1/天朝铁道少女!梁凌薇.jpg
 img1/天朝铁道少女!邵若燕.jpg
@@ -1998,6 +1998,7 @@ img1/Vtuber!まいたけCh.jpg
 img1/お徳用!Ringo-chan.jpg
 img1/ナナブンノニジュウニ!泷川美羽.jpg
 img1/ひなビタ♪!芽兔咩呜.jpg
+img2/天使嚣嚣!星河辉耶.png
 img2/天体的秩序!诺艾尔.jpg
 img2/天元突破红莲螺岩!尼娅·铁佩林.jpg
 img2/天元突破红莲螺岩!尼娅·铁佩林.png
