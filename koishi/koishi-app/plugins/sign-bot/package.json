@@ -1,0 +1,12 @@
+{
+  "name": "koishi-plugin-sign-bot",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "files": ["lib"],
+  "koishi": {
+    "service": {
+      "required": ["database"],
+      "optional": []
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "koishi-plugin-blockly-shared",
+  "version": "1.0.0",
+  "main": "lib/blockly-shared.js",
+  "files": [
+    "lib"
+  ]
+}

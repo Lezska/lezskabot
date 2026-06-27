@@ -16,6 +16,8 @@ plugins:
         config:
           hidden: true
       cn绑定:
+        aliases:
+          /cn绑定: null
         config:
           hidden: true
       command:
@@ -37,6 +39,8 @@ plugins:
         config:
           hidden: true
       tw绑定:
+        aliases:
+          /tw绑定: null
         config:
           hidden: true
       usage:
@@ -171,6 +175,13 @@ plugins:
           设抢: null
         config:
           hidden: true
+      sensoji:
+        name: /求签
+        aliases:
+          求签: null
+      漂流瓶.查看我的瓶子:
+        aliases:
+          我的瓶子: null
     help:fakvkp: {}
     http:7ka2ck: {}
     ~inspect:vwlv3j: {}
@@ -244,6 +255,10 @@ plugins:
       查id: /.*/
       问: /.*/
       开字母: /.*/
+      捞漂流瓶: /.*/
+      /绑定: /.*/
+      /cn绑定: /.*/
+      /tw绑定: /.*/
     nocommandlist: {}
   blockly-null:lp0hx8: {}
   puppeteer:noenkr: {}
@@ -265,6 +280,7 @@ plugins:
     saveMode: file
     allowDropOthers: true
     preview: false
+    bottleLimit: 5
   ~koishi:ten6xx: {}
   keyword-blocker:1b1278:
     command_authority: 1
@@ -278,3 +294,9 @@ plugins:
       - platform: onebot
         channelId: '682255155'
     statusEnabled: false
+  chess:skwxia: {}
+  sensoji-anime:w9pb28: {}
+  ~sudoku-bot:97fp05: {}
+  koishi-plugin-blockly-shared:kxxv1e: {}
+  koishi-plugin-sign-bot:wwkez4: {}
+  koishi-plugin-gacha-bot:dfpyk0: {}
