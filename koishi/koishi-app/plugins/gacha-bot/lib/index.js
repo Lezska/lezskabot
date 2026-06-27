@@ -47,6 +47,11 @@ module.exports.Config = Schema.object({
   maxDeckSize: Schema.number().default(10).description('卡组最大数'),
   imageDir: Schema.string().default('/root/lezskabot/cards').description('卡牌图片目录'),
   imageExt: Schema.string().default('png').description('卡牌图片扩展名'),
+  // Borrowed from sign-bot — referenced in 抽卡帮助 only. Keep values
+  // in sync with sign-bot's Config (or move to a shared config schema
+  // later if you actually want them to diverge).
+  robWinMax: Schema.number().default(1000).description('抢p点成功最多获得 P 点（仅用于帮助文案展示）'),
+  robFailPenaltyMax: Schema.number().default(600).description('抢劫失败最多损失 P 点（仅用于帮助文案展示）'),
 })
 
 module.exports.usage = '抽卡 / 卡组 / 献祭'
@@ -141,28 +146,32 @@ module.exports.apply = async (ctx, config) => {
     return Number(cardStr.charAt(1)) || 0
   }
 
-  // ── 抽卡帮助 ───────────────────────────────────────────────────
-  ctx.command("抽卡帮助").action(async () => {
-    return [
-      "欢迎使用抽卡与卡组系统！",
-      `"抽卡"→${config.drawCost}P点抽一次卡`,
-      '"连续抽卡"→消耗P点进行连抽直到出现目标稀有度',
-      '"快速抽卡"→消耗P点将卡组抽满',
-      '------这条很重要！------',
-      '★抽到的卡相当于在你手上拿着，再抽直接覆盖',
-      '★"加入卡组[空格]位置"→替换对应位置的卡',
-      '如果卡组有空位会自动存入',
-      '--------------------------',
-      `★"我的卡组"→查看自己的卡组，卡组容量为${config.maxDeckSize}（图多，建议私发bot）`,
-      '"交换位置 [位置1] [位置2]"→交换对应位置的卡',
-      '稀有度列表：二星、三星、四星(?)、FES',
-      `相应概率：${config.drawThresholds[0] / 10}%、${(config.drawThresholds[1] - config.drawThresholds[0]) / 10}%、${(config.drawThresholds[2] - config.drawThresholds[1]) / 10}%、${(config.drawThresholds[3] - config.drawThresholds[2]) / 10}%`,
-      '"我有几抽"→计算P点够多少抽',
-      '------卡组满了之后------',
-      '"献祭"→献祭其中3~8张获得不同数量的P点',
-      '"献祭[空格]抽卡"→全部献祭，进行一次必中四星及以上的抽卡',
-      '☆祝各位欧气爆棚！',
-    ].join("\n")
+  // ── 抽卡帮助（合并转发消息，raw onebot API 走 LLOneBot 兼容字段） ─
+  ctx.command("抽卡帮助").action(async ({ session }) => {
+    return await H.withErrorBoundary(session, async () => {
+      const R = config.rarityNames
+      const T = config.drawThresholds
+      const p1 = T[0] / 10
+      const p2 = (T[1] - T[0]) / 10
+      const p3 = (T[2] - T[1]) / 10
+      const p4 = (T[3] - T[2]) / 10
+      const lines = [
+        `【抽卡与卡组】\n卡组容量 ${config.maxDeckSize} 张\n单抽消耗 ${config.drawCost} P 点`,
+
+        `【基础抽卡】\n\n抽卡\n→ 1 抽，消耗 ${config.drawCost} P 点\n（别名：进行抽卡）\n\n连续抽卡 [目标]\n→ 一直抽，直到命中目标稀有度\n目标可输：3 / 三 / 三星\n            4 / 四 / 四星\n            FES / fes\n\n快速抽卡\n→ 把卡组抽满\n（每个空位 ${config.drawCost} P 点）`,
+
+        `【查看 & 管理】\n\n卡组\n→ 查看自己的 ${config.maxDeckSize} 张卡\n（合并转发，建议私发 bot）\n\n加入 [位置]\n→ 把刚抽到的卡放进卡组\n（位置范围 1-${config.maxDeckSize}）\n\n交换位置 [A] [B]\n→ 卡组内两张卡交换位置\n（A、B 都是 1-${config.maxDeckSize} 的整数）\n\n我有几抽\n→ 当前 P 点能抽几次`,
+
+        `【献祭】（卡组满 ${config.maxDeckSize} 张后才可用）\n\n献祭 1 2 3 4\n→ 献祭指定位置，按稀有度返 P 点\n（每次 3~${config.maxDeckSize} 张）\n\n献祭 全部\n→ 献祭全部 ${config.maxDeckSize} 张卡\n\n献祭 抽卡\n→ 献祭全部，必中 3 星以上\n（清空卡组）`,
+
+        `【概率】\n普通抽卡\n  ${R[0]} ${p1}%\n  ${R[1]} ${p2}%\n  ${R[2]} ${p3}%\n  ${R[3]} ${p4}%\n献祭抽卡\n  ${R[1]} 0%\n  ${R[2]} 95%\n  ${R[3]} 5%`,
+
+        `【提示】\n· 抽到的卡先放在"手上"\n  再抽一次会覆盖手上的卡\n· 卡组有空格时自动存入\n  没空格就手动用「加入 [位置]」\n· 抢 P 点说明看「签到帮助」`,
+      ]
+      const nodes = lines.map(t => H.buildHelpNode(session, t))
+      await H.sendHelpForward(session, nodes)
+      return null
+    }, "抽卡帮助")
   })
 
   // ── 卡组（合并转发消息，绕过 satorijs 渲染用 raw onebot API） ─────
@@ -243,10 +252,12 @@ module.exports.apply = async (ctx, config) => {
   })
 
   // ── 连续抽卡 ────────────────────────────────────────────────────
-  ctx.command("连续抽卡").action(async ({ session }) => {
+  ctx.command("连续抽卡 [target:text]").action(async ({ session }, target) => {
     return await H.withErrorBoundary(session, async () => {
-      await session.send(`${h("at", { id: session.userId })} 输入抽卡目标：3 / 三 / 三星 / 4 / 四 / 四星 / FES / fes / 5 / 五 / ssr / ur`)
-      const target = await session.prompt(60000)
+      if (!target) {
+        await session.send(`${h("at", { id: session.userId })} 输入抽卡目标：3 / 三 / 三星 / 4 / 四 / 四星 / FES / fes`)
+        target = await session.prompt(60000)
+      }
       const targetRarity = H.parseRarity(target)
       if (targetRarity === 0) {
         return `${h("at", { id: session.userId })}  你输入的啥啊笨蛋`
@@ -417,8 +428,11 @@ module.exports.apply = async (ctx, config) => {
         }
       }
 
-      // Parse args from session.content (text after "献祭")
-      const text = (session.content || "").trim()
+      // Parse args from session.content. Koishi 4.x doesn't always strip the
+      // command name from session.content, so defensively remove "献祭"
+      // prefix before splitting.
+      let text = (session.content || "").trim()
+      text = text.replace(/^献祭\s*/, "")
       const tokens = text.length > 0 ? text.split(/\s+/) : []
 
       if (tokens.length === 0) {

@@ -35,6 +35,8 @@ module.exports.Config = Schema.object({
   signInMax: Schema.number().default(6000).description('签到获得 P 点最大值'),
   signInMultiplier: Schema.number().default(10).description('admin 签到倍数'),
   maxRobAttempts: Schema.number().default(5).description('每天抢p点次数上限'),
+  robRestoreHours: Schema.number().default(2)
+    .description('抢p点次数恢复间隔（小时）。每次抢后 +1 计数需要等这么久才恢复'),
   minRobTargetPoints: Schema.number().default(400)
     .description('目标用户低于该 P 点数禁止抢（保护低积分用户）'),
   robFailPenaltyMax: Schema.number().default(600).description('抢劫失败最多损失 P 点'),
@@ -48,17 +50,29 @@ module.exports.apply = async (ctx, config) => {
   const logger = ctx.logger("签到")
   const H = createHelpers(ctx, config)
 
-  // ── 签到帮助 ─────────────────────────────────────────────────────
+  // ── 签到帮助（合并转发消息，raw onebot API 走 LLOneBot 兼容字段） ─
   ctx.command("签到帮助").action(async ({ session }) => {
-    return [
-      "“签到”——每日签到获得P点（可以用来抽卡，见“抽卡帮助”）",
-      "“我的p点”——看自己P点与今日状态",
-      "“查看p点@用户”——看别人有多少P点",
-      `“抢p点@用户”——50%成功 50%失败（失败会扣的哦）`,
-      `     ↑每天有${config.maxRobAttempts}次机会`,
-      "“送p点 [数量] @用户”——赠送p点（一次发完，不要等bot再问）",
-      "“十倍抢p点 @用户”——特权用户专属",
-    ].join("\n")
+    return await H.withErrorBoundary(session, async () => {
+      const signInMin = config.signInMin
+      const signInMax = config.signInMax
+      const signMult = config.signInMultiplier
+      const maxRob = config.maxRobAttempts
+      const restoreH = config.robRestoreHours
+      const minTarget = config.minRobTargetPoints
+      const robWin = config.robWinMax
+      const robFail = config.robFailPenaltyMax
+      const lines = [
+        `【签到 / P点 / 抢劫 / 赠送】速查\nP 点 = 跨插件通用积分，签到 / 抢 / 送渠道获得，抽卡也用 P 点`,
+        `【基础签到】\n签到               → 每天第一次随机 ${signInMin}-${signInMax} P 点（admin ×${signMult}）\n我的p点           → 自己 P 点 + 今日各状态（签到/抢/送/收）\n查看p点 @用户      → 看他人 P 点 + 今日状态`,
+        `【抢 / 送】\n抢p点 @用户         → 50% 成功 / 50% 失败\n送p点 [数量] @用户  → 一次发完，不要等 bot 再问\n十倍抢p点 @用户     → 特权用户专属（×10）`,
+        `【抢p点 限额】\n· 上限 ${maxRob} 次\n· 每 ${restoreH} 小时自动恢复 1 次（不抢也计时，满了不停）\n· 目标 < ${minTarget} P 点禁止抢（保护低积分）\n· 成功获得 0-${robWin} P 点，失败损失 0-${robFail} P 点\n· admin 无限次（不扣次数）`,
+        `【管理员】\n重置抢 @用户            → 抢次数补满到 ${maxRob}\n设置抢次数 [n] @用户    → 自定义抢次数\n设置p点 添加/扣除/设置 [值] @用户 → 改 P 点（操作三选一）`,
+        `【边界 / 行为】\n· 不能抢/送 自己或 bot：抢@bot → "抢我干什么？坏蛋baka！" / 送@bot → "谢谢你嗷"\n· admin 签到 ×${signMult} 倍额且无冷却\n· 卡组类帮助用 "抽卡帮助" 命令查看`,
+      ]
+      const nodes = lines.map(t => H.buildHelpNode(session, t))
+      await H.sendHelpForward(session, nodes)
+      return null
+    }, "签到帮助")
   })
 
   // ── 重置抢（admin） ─────────────────────────────────────────────
@@ -146,12 +160,8 @@ module.exports.apply = async (ctx, config) => {
   // ── 送p点 [数量] @用户 ────────────────────────────────────────
   ctx.command("送p点").action(async ({ session }) => {
     return await H.withErrorBoundary(session, async () => {
-      // [SPLIT-BOT-MSG]
       if (H.isSelfOrBot(session)) {
-        const _t = H.atTarget(session)
-        if (_t === String(session.userId)) return "哪有送自己的？"
-        if (_t === String(session.selfId) || H.isAtTargetBot(session)) return "谢谢你嗷"
-        return "不能送自己或bot"
+        return "哪有送自己的？"
       }
       const target = H.atTarget(session)
       if (!target) return "请 @ 一个用户"
@@ -216,14 +226,11 @@ module.exports.apply = async (ctx, config) => {
   // ── 抢p点 ───────────────────────────────────────────────────────
   ctx.command("抢p点").action(async ({ session }) => {
     return await H.withErrorBoundary(session, async () => {
-      // [SPLIT-BOT-MSG]
       if (H.isSelfOrBot(session)) {
-        const _t = H.atTarget(session)
-        if (_t === String(session.userId)) return "你抢自己干什么？"
-        if (_t === String(session.selfId) || H.isAtTargetBot(session)) return "抢我干什么？坏蛋baka！"
-        return "不能抢自己或bot"
+        return "你抢自己干什么？"
       }
       const target = H.atTarget(session)
+      if (!target) return "请 @ 一个用户再抢"
       const uid = String(session.userId)
       const rob = await H.getRobState(uid)
       const myPoints = await H.getPoints(uid)
@@ -350,14 +357,11 @@ module.exports.apply = async (ctx, config) => {
       if (!H.isPrivileged(uid)) {
         return `${h("at", { id: uid })}你有权限吗你就抢？baka!`
       }
-      // [SPLIT-BOT-MSG]
       if (H.isSelfOrBot(session)) {
-        const _t = H.atTarget(session)
-        if (_t === String(session.userId)) return "你抢自己干什么？"
-        if (_t === String(session.selfId) || H.isAtTargetBot(session)) return "抢我干什么？坏蛋baka！"
-        return "不能抢自己或bot"
+        return "你抢自己干什么？"
       }
       const target = H.atTarget(session)
+      if (!target) return "请 @ 一个用户再抢"
       const myPoints = await H.getPoints(uid)
       const targetPoints = await H.getPoints(target)
       if (targetPoints === 0) return "他已经没有P点了！"

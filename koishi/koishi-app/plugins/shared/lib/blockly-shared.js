@@ -23,6 +23,7 @@ const SUFFIX = {
   signAt: "的签到时间",           // legacy, unused after refactor
   robCount: "的抢劫次数",
   robDate: "抢劫日期",
+  robLastReset: "的抢劫上次恢复", // timestamp (ms) of last rob count replenishment
   robNet: "的抢劫记录",           // net P gained/lost today
   sendDate: "送p点日期",
   sendToday: "今日赠送p点",
@@ -166,6 +167,9 @@ function createHelpers(ctx, config) {
   function robCountKey(userId) {
     return `${POINTS_NS}.${userId}${SUFFIX.robCount}`
   }
+  function robLastResetKey(userId) {
+    return `${POINTS_NS}.${userId}${SUFFIX.robLastReset}`
+  }
   function robNetKey(userId) {
     return `${POINTS_NS}.${userId}${SUFFIX.robNet}`
   }
@@ -202,23 +206,53 @@ function createHelpers(ctx, config) {
     await kvSet(todayKey(userId), next)
     return next
   }
-  // For rob (抢劫): check date, reset if new day, return count + net
+  // For rob (抢劫): the timer runs continuously from the first rob.
+  // It is NOT reset on each rob action — once you've started, every
+  // config.robRestoreHours (default 2) elapsed adds +1 back, up to
+  // maxRobAttempts. So if you rob all 5, you wait 5*2h = 10h total
+  // to be back at full. While count < maxCount, ticks accrue on every
+  // getRobState call; once full, no more accrual.
   async function getRobState(userId) {
+    const lastReset = safeNum(await kvGet(robLastResetKey(userId)))
+    const maxCount = config.maxRobAttempts ?? 5
+    const restoreMs = (config.robRestoreHours ?? 2) * 3600 * 1000
+    let count = safeNum(await kvGet(robCountKey(userId)))
+
+    if (lastReset === 0) {
+      // First time: full count, start the (never-resetting) timer
+      count = maxCount
+      await kvSet(robCountKey(userId), count)
+      await kvSet(robLastResetKey(userId), Date.now())
+    } else if (count < maxCount) {
+      // Only accrue while not full
+      const elapsed = Date.now() - lastReset
+      const ticks = Math.floor(elapsed / restoreMs)
+      if (ticks > 0) {
+        count = Math.min(maxCount, count + ticks)
+        await kvSet(robCountKey(userId), count)
+        // Intentionally do NOT update lastReset — the timer keeps running
+        // so once full, it stays full and you don't keep accruing "credit"
+        // that disappears the moment you rob again.
+      }
+    }
+
+    // net: daily reset (like sendToday/recvToday) — auto-rollover on day change
     const date = await kvGet(robDateKey(userId))
-    if (date == null || isSameDay(date)) {
+    let net
+    if (date == null || !isSameDay(date)) {
       await kvSet(robDateKey(userId), todayISO())
-      const maxCount = config.maxRobAttempts ?? 3
-      await kvSet(robCountKey(userId), maxCount)
       await kvSet(robNetKey(userId), 0)
-      return { count: maxCount, net: 0 }
+      net = 0
+    } else {
+      net = safeNum(await kvGet(robNetKey(userId)))
     }
-    return {
-      count: safeNum(await kvGet(robCountKey(userId))),
-      net: safeNum(await kvGet(robNetKey(userId))),
-    }
+
+    return { count, net }
   }
   async function setRobCount(userId, count) {
     await kvSet(robCountKey(userId), count)
+    // Intentionally do NOT touch lastReset — the replenishment timer
+    // runs continuously from the first rob, not from each rob action.
   }
   async function setRobNet(userId, net) {
     await kvSet(robNetKey(userId), net)
@@ -296,6 +330,42 @@ function createHelpers(ctx, config) {
     }
   }
 
+  // Send a merged forward message via raw onebot API (bypasses satorijs
+  // encoder so the `user_id` / `nickname` field names reach LLOneBot
+  // correctly). The bot is the author of every node; pass an array of
+  // node objects, each `{type:'node',data:{user_id,nickname,content:[...]}}`.
+  //
+  // nodes: Array<{type:'node', data:{user_id:number, nickname:string, content:Array<CQCode>}}>
+  // (Use buildHelpNode() to construct each node.)
+  async function sendHelpForward(session, nodes) {
+    const internal = session.bot?.internal
+    if (!internal) throw new Error("session.bot.internal not available")
+    const isDirect = session.isDirect
+    const channelId = session.event?.channel?.id || session.channelId
+    if (isDirect) {
+      const peerUid = channelId.startsWith("private:")
+        ? channelId.slice("private:".length)
+        : String(session.userId)
+      await internal.sendPrivateForwardMsg(peerUid, nodes)
+    } else {
+      await internal.sendGroupForwardMsg(channelId, nodes)
+    }
+  }
+
+  // Build one node for sendHelpForward. text is a string; the bot is
+  // always the author.
+  function buildHelpNode(session, text) {
+    const botName = session.bot?.user?.name || String(session.selfId) || "bot"
+    const botUserId = parseInt(session.selfId) || 0
+    return {
+      type: "node",
+      data: {
+        user_id: botUserId,
+        nickname: botName,
+        content: [{ type: "text", data: { text } }],
+      },
+    }
+  }
 
   // Math
   function randInt(a, b) {
@@ -311,7 +381,9 @@ function createHelpers(ctx, config) {
     kvGet, kvSet, kvDel, safeNum,
     // Date
     todayISO, isSameDay, dayOfMonth,
-    // P点
+    // P点 + key builders
+    pointsKey, sendDateKey, sendTodayKey, recvDateKey, recvTodayKey,
+    robDateKey, robCountKey, robLastResetKey, robNetKey, signDateKey,
     getPoints, addPoints, setPoints,
     getTodayCounter, addTodayCounter,
     getRobState, setRobCount, setRobNet,
@@ -320,7 +392,7 @@ function createHelpers(ctx, config) {
     deckKey, parseDeck, serializeDeck, emptyDeck, fillDeckSlots,
     findFirstEmpty, isDeckFull, tryAutoFillDeck,
     // Util
-    withErrorBoundary, randInt,
+    withErrorBoundary, randInt, sendHelpForward, buildHelpNode,
     // Gacha config helpers (consumed by gacha-bot)
     parseRarity, rarityName, rollRarity,
     // Config (for downstream consumers)
