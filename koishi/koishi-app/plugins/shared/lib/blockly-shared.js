@@ -8,7 +8,7 @@
 //   - rollRarity(config): returns 1-4 by probability
 //   - Constants (POINTS_NS, BUILTIN_KEYS, ...)
 
-const { Schema } = require("koishi")
+const { Schema, h } = require("koishi")
 
 // Points / P点 namespace — both sign-bot and gacha-bot write here.
 // Originally sign-bot was hardcoded as `var 每日签到 = '每日签到'` and
@@ -29,6 +29,7 @@ const SUFFIX = {
   sendToday: "今日赠送p点",
   recvDate: "收p点日期",
   recvToday: "今日收到p点",
+  pity: "的抽卡保底",                // 4星/FES pity counter (resets on 4星/FES)
 }
 
 // Pure helpers (no ctx needed) --------------------------------------
@@ -206,34 +207,26 @@ function createHelpers(ctx, config) {
     await kvSet(todayKey(userId), next)
     return next
   }
-  // For rob (抢劫): the timer runs continuously from the first rob.
-  // It is NOT reset on each rob action — once you've started, every
-  // config.robRestoreHours (default 2) elapsed adds +1 back, up to
-  // maxRobAttempts. So if you rob all 5, you wait 5*2h = 10h total
-  // to be back at full. While count < maxCount, ticks accrue on every
-  // getRobState call; once full, no more accrual.
+  // For rob (抢劫): the timer is anchored to the FIRST rob and never
+  // moves. Replenishment happens inside setRobCount — every time the
+  // user actually robs, we look at how many restoreMs boundaries have
+  // passed since lastReset, and add those ticks back to count (capped
+  // at maxCount) before persisting. This gives the desired behavior:
+  //   - User has 5 robs. Uses one. count=4.
+  //   - 30 min later robs again. count=3. (No accrual yet.)
+  //   - 1h 5 min after first rob robs again. count=3 (one tick accrued
+  //     back), but the diff display still shows ~55min until the next
+  //     +1 because lastReset is still pinned to the first rob.
+  // getRobState itself does NOT mutate count — it just reads (and on
+  // first ever call seeds count=maxCount, lastReset=now).
   async function getRobState(userId) {
     const lastReset = safeNum(await kvGet(robLastResetKey(userId)))
     const maxCount = config.maxRobAttempts ?? 5
-    const restoreMs = (config.robRestoreHours ?? 2) * 3600 * 1000
-    let count = safeNum(await kvGet(robCountKey(userId)))
-
+    const count = safeNum(await kvGet(robCountKey(userId)))
     if (lastReset === 0) {
-      // First time: full count, start the (never-resetting) timer
-      count = maxCount
-      await kvSet(robCountKey(userId), count)
+      // First time: full count, start the (never-resetting) timer.
+      await kvSet(robCountKey(userId), maxCount)
       await kvSet(robLastResetKey(userId), Date.now())
-    } else if (count < maxCount) {
-      // Only accrue while not full
-      const elapsed = Date.now() - lastReset
-      const ticks = Math.floor(elapsed / restoreMs)
-      if (ticks > 0) {
-        count = Math.min(maxCount, count + ticks)
-        await kvSet(robCountKey(userId), count)
-        // Intentionally do NOT update lastReset — the timer keeps running
-        // so once full, it stays full and you don't keep accruing "credit"
-        // that disappears the moment you rob again.
-      }
     }
 
     // net: daily reset (like sendToday/recvToday) — auto-rollover on day change
@@ -249,13 +242,94 @@ function createHelpers(ctx, config) {
 
     return { count, net }
   }
+  // Persist count after a rob. `count` is the value the caller has
+  // already computed (= prior count - 1). This fn also handles
+  // replenishment: ticks that have passed since the first rob (i.e.
+  // lastReset) are added back, capped at maxCount. lastReset itself
+  // is intentionally NOT updated — the countdown to the next +1
+  // stays anchored to the first rob so the display keeps ticking down
+  // even across rapid-fire robs.
+  // Persist count after a rob. `count` is the value the caller has
+  // already computed (= prior count - 1). This fn also handles
+  // replenishment: ticks that have passed since the first rob (i.e.
+  // lastReset) are added back. lastReset itself is intentionally NOT
+  // updated — the countdown to the next +1 stays anchored to the
+  // first rob so the display keeps ticking down even across rapid-fire
+  // robs.
+  //
+  // No hard cap is applied: maxCount is only used as the initial value
+  // in getRobState's first-time setup. Admin `设置抢次数` can grant
+  // any positive count, and accrual ticks simply add on top.
+  //
+  // Cooldown model: lastReset is the timestamp of the last *action* (a
+  // rob or admin override). Accrual happens lazily in getRobState,
+  // capped at maxCount, so a 49h break doesn't dump 49 ticks on the
+  // next call. setRobCount always rewrites lastReset=now so two
+  // rapid-fire robs don't double-count the cooldown.
   async function setRobCount(userId, count) {
-    await kvSet(robCountKey(userId), count)
-    // Intentionally do NOT touch lastReset — the replenishment timer
-    // runs continuously from the first rob, not from each rob action.
+    await kvSet(robCountKey(userId), Math.max(0, count))
+    // Only seed lastReset if it has never been set (count just went from
+    // 0 to maxCount on first-ever rob).  Once set, leave it alone — it
+    // is the anchor for the continuous 1h-per-count recovery timer.
+    const existing = await kvGet(robLastResetKey(userId))
+    if (!existing) {
+      await kvSet(robLastResetKey(userId), Date.now())
+    }
   }
   async function setRobNet(userId, net) {
     await kvSet(robNetKey(userId), net)
+    // Stamp today's date so the daily-reset in getRobState doesn't fire
+    // on the next call and wipe out the freshly-written net.
+    await kvSet(robDateKey(userId), todayISO())
+  }
+
+  // Next 2h-boundary timestamp at which the user's rob count goes up by
+  // 1. Returns null when the timer hasn't started yet or the count is
+  // already at maxCount.
+  async function getNextRobRefillAt(userId) {
+    const lastReset = safeNum(await kvGet(robLastResetKey(userId)))
+    if (lastReset === 0) return null
+    const count = safeNum(await kvGet(robCountKey(userId)))
+    const maxCount = config.maxRobAttempts ?? 5
+    if (count >= maxCount) return null
+    const restoreMs = (config.robRestoreHours ?? 1) * 3600 * 1000
+    const elapsed = Date.now() - lastReset
+    const ticks = Math.floor(elapsed / restoreMs)
+    return lastReset + (ticks + 1) * restoreMs
+  }
+
+  // Format a millisecond duration as "X小时Y分Z秒" with second-level
+// precision. Zero-valued leading components are omitted (so 30s
+// renders as "30秒", 5m as "5分0秒", 1h 0m 0s as "1小时0分0秒").
+// No rounding — what you see is the actual second-accurate remainder
+// (Math.floor, so "1分59秒" stays as is until the second ticks over).
+  function formatDuration(ms) {
+    if (ms <= 0) return "0秒"
+    const totalSec = Math.floor(ms / 1000)
+    const h = Math.floor(totalSec / 3600)
+    const m = Math.floor((totalSec % 3600) / 60)
+    const s = totalSec % 60
+    const parts = []
+    if (h > 0) parts.push(`${h}小时`)
+    if (h > 0 || m > 0) parts.push(`${m}分`)
+    parts.push(`${s}秒`)
+    return parts.join("")
+  }
+
+  // Pity counter for gacha draws. Increments on every draw attempt;
+  // resets to 0 when a 4星 (r=3) or FES (r=4) drops. At pity == 100
+  // (the 100th draw), the draw is forced to 4星 or FES.
+  function pityKey(userId) {
+    return `${POINTS_NS}.${userId}${SUFFIX.pity}`
+  }
+  async function getPity(userId) {
+    return safeNum(await kvGet(pityKey(userId)))
+  }
+  async function setPity(userId, value) {
+    await kvSet(pityKey(userId), Math.max(0, value | 0))
+  }
+  async function resetPity(userId) {
+    await kvSet(pityKey(userId), 0)
   }
   async function getSignDate(userId) {
     return await kvGet(signDateKey(userId))
@@ -367,10 +441,55 @@ function createHelpers(ctx, config) {
     }
   }
 
-  // Math
-  function randInt(a, b) {
+// Parse the first integer from raw message content, ignoring any XML-like
+// element tags (notably <at id="123456789"/>, whose qq number would
+// otherwise be picked up by \d+). Returns null if no digits found.
+function parseAmountFromContent(content) {
+  const text = String(content || "").replace(/<[^>]+>/g, "")
+  const m = text.match(/-?\d+/)
+  return m ? Math.floor(Number(m[0])) : null
+}
+
+// Match the 设置p点 / similar operation keyword from the message text.
+// Returns the longest matching op ("设置" / "扣除" / "添加") found in any
+// token, or null if none. Robust against "设@xxx 设置 10000" where the
+// first token is a 1-char prefix truncated by the at element.
+function matchSettingOp(text) {
+  const tokens = String(text || "").trim().split(/\s+/).filter(Boolean)
+  if (tokens.length === 0) return null
+  const ops = ["设置", "扣除", "添加"]
+  for (const tok of tokens) {
+    for (const op of ops) {
+      if (tok.startsWith(op)) return op
+    }
+  }
+  return null
+}
+
+// Strip all XML-like element tags from raw message content, leaving only
+// human-readable text. Useful when you want to regex over the message but
+// don't care about at/image/etc. tags.
+function stripElements(content) {
+  return String(content || "").replace(/<[^>]+>/g, "")
+}
+
+// Math
+function randInt(a, b) {
     if (a > b) { const t = a; a = b; b = t }
     return Math.floor(Math.random() * (b - a + 1) + a)
+  }
+
+  // Build a onebot @-element for a user id. Replaces the noisy
+  // `h("at", { id: String(uid) })` blockly-style pattern.
+  function at(id) {
+    return h("at", { id: String(id) })
+  }
+  // Send a reply that starts with an @-mention of `uid`. `lines` is
+  // an array of strings or h() elements that get joined together.
+  // Replaces the `await session.send([h("at", { id: uid }), ...].join(""))`
+  // pattern that appears dozens of times in the bots.
+  async function replyAt(session, uid, lines) {
+    await session.send([at(uid), ...lines].join(""))
   }
 
   return {
@@ -386,13 +505,17 @@ function createHelpers(ctx, config) {
     robDateKey, robCountKey, robLastResetKey, robNetKey, signDateKey,
     getPoints, addPoints, setPoints,
     getTodayCounter, addTodayCounter,
-    getRobState, setRobCount, setRobNet,
+    getRobState, setRobCount, setRobNet, getNextRobRefillAt, formatDuration,
     getSignDate, setSignDate,
+    // Pity (gacha)
+    pityKey, getPity, setPity, resetPity,
     // Deck
     deckKey, parseDeck, serializeDeck, emptyDeck, fillDeckSlots,
     findFirstEmpty, isDeckFull, tryAutoFillDeck,
     // Util
     withErrorBoundary, randInt, sendHelpForward, buildHelpNode,
+    at, replyAt,
+    parseAmountFromContent, stripElements, matchSettingOp,
     // Gacha config helpers (consumed by gacha-bot)
     parseRarity, rarityName, rollRarity,
     // Config (for downstream consumers)

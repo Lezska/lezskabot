@@ -291,6 +291,7 @@ img1/初雪樱!吾妻夜.png
 img1/初雪樱!希洛库玛.png
 img1/初雪樱!小坂井绫.png
 img1/初雪樱!玉树樱.png
+img1/初音岛!芳乃樱.png
 img1/雏逻辑!莉昂妮丝·叶利斯特拉托娃.jpg
 img1/雏逻辑!妮娜·亚历山德罗芙娜.jpg
 img1/雏子的笔记!樱木雏子.jpg
@@ -665,6 +666,7 @@ img1/黄金拼图!九条可怜.jpg
 img1/黄金拼图!小路绫.jpg
 img1/黄金拼图!猪熊阳子.jpg
 img1/黄金神威!阿席莉帕.jpg
+img1/黄金神威!茵卡拉玛.jpg
 img1/灰色系列!春寺由梨亚.jpg
 img1/灰色系列!风见一姬.jpg
 img1/灰色系列!松岛满.jpg
@@ -787,14 +789,16 @@ img1/绝区零!简·杜.jpg
 img1/绝区零!简.jpg
 img1/绝区零!橘福福.jpg
 img1/绝区零!可琳·威克斯.jpg
+img1/绝区零!蕾米埃尔·丹.jpg
 img1/绝区零!铃.jpg
 img1/绝区零!琉音.jpg
 img1/绝区零!露西.jpg
 img1/绝区零!猫宫又奈.jpg
 img1/绝区零!妮可·德玛拉.jpg
-img1/绝区零!普罗米亚.jpg
+img1/绝区零!普罗米娅.jpg
 img1/绝区零!千夏.jpg
 img1/绝区零!薇薇安·班希.jpg
+img1/绝区零!维琳娜·艾嘉德.jpg
 img1/绝区零!希希芙.jpg
 img1/绝区零!席德.jpg
 img1/绝区零!星见雅.jpg
@@ -1001,6 +1005,7 @@ img1/明日方舟!新约能天使.jpg
 img1/明日方舟!星极.jpg
 img1/明日方舟!星源.jpg
 img1/明日方舟!崖心.jpg
+img1/明日方舟!宴.jpg
 img1/明日方舟!焰影苇草.jpg
 img1/明日方舟!耶拉冈德.jpg
 img1/明日方舟!伊芙利特.jpg
@@ -1018,6 +1023,7 @@ img1/明日方舟终末地!弧光.jpg
 img1/明日方舟终末地!洁尔佩塔.png
 img1/明日方舟终末地!莱万汀.jpg
 img1/明日方舟终末地!洛茜.png
+img1/明日方舟终末地!弭弗.png
 img1/明日方舟终末地!佩丽卡.jpg
 img1/明日方舟终末地!秋栗.jpg
 img1/明日方舟终末地!赛希.jpg
@@ -1093,7 +1099,7 @@ img1/魔法使的新娘!羽鸟智世.jpg
 img1/魔法使之夜!苍崎青子.jpg
 img1/魔法使之夜!久远寺有珠.jpg
 img1/魔鬼恋人!小森唯.jpg
-img1/魔卡少女樱!木之本樱.jpeg
+img1/魔卡少女樱!木之本樱.png
 img1/魔女的夜宴!椎叶䌷.png
 img1/魔女的夜宴!户隐憧子.png
 img1/魔女的夜宴!绫地宁宁.jpg
@@ -1122,6 +1128,7 @@ img1/南家三姐妹!南夏奈.jpg
 img1/男女之间的友情存在吗!犬冢日葵.jpg
 img1/尼尔：自动人形!寄叶二号B型.jpg
 img1/尼尔：自动人形!寄叶A型二号.jpg
+img1/尼古喵喵!藤雅妮子.jpg
 img1/匿名代码!爱咲桃.jpg
 img1/逆流茶会!朱鹭咲澪.png
 img1/逆流茶会!朱鹭咲浅羽.jpg
@@ -1410,9 +1417,9 @@ img1/少女与战车!喀秋莎.jpeg
 img1/少女与战车!米卡.jpg
 img1/少女与战车!秋山优花里.jpg
 img1/少女与战车!五十铃华.png
-img1/少女与战车!西住美穗.jpeg
+img1/少女与战车!西住美穗.jpg
 img1/少女与战车!西住真穗.png
-img1/少女与战车!逸见艾丽卡.jpeg
+img1/少女与战车!逸见艾丽卡.png
 img1/少女终末旅行!千户.jpg
 img1/少女终末旅行!尤莉.jpg
 img1/深夜冲击!莉布.jpg
@@ -1520,19 +1527,6 @@ img1/天才麻将少女!园城寺怜.png
 img1/天才麻将少女!竹井久.png
 img1/天才王子的赤字国家重生术!妮妮姆·拉雷.jpg
 img1/天降之物!阿斯特蕾亚.jpg
-img1/天降之物!妮姆芙.jpg
-img1/天降之物!伊卡洛斯.webp
-img1/天籁人偶!灰樱.png
-img1/天使怪盜!原田梨红.png
-img1/天使降临到了我身边!白咲花.jpg
-img1/天使降临到了我身边!姬坂乃爱.jpg
-img1/天使降临到了我身边!星野日向.jpg
-img1/天使嚣嚣!白雪乃爱.png
-img1/天使嚣嚣!高楯欧丽叶.png
-img1/天使嚣嚣!谷风天音.jpg
-img1/天使嚣嚣!谷风天音.png
-img1/天使嚣嚣!小云雀来海.jpg
-img1/天使嚣嚣!小云雀来海.png
 img1/天朝铁道少女!川崎镜.jpg
 img1/天朝铁道少女!梁凌薇.jpg
 img1/天朝铁道少女!邵若燕.jpg
@@ -1592,6 +1586,7 @@ img1/BanG Dream!山吹沙绫.png
 img1/BanG Dream!上原绯玛丽.png
 img1/BanG Dream!市谷有咲.png
 img1/BanG Dream!桐谷透子.png
+img1/BanG Dream!丸山彩.png
 img1/BanG Dream!弦卷心.png
 img1/BanG Dream!要乐奈.jpg
 img1/BanG Dream!要乐奈.png
@@ -1721,6 +1716,7 @@ img1/Ingress!莎拉·科波拉.jpg
 img1/JoJo的奇妙冒险!空条徐伦.jpg
 img1/JOJO的奇妙冒险!杉本铃美.jpg
 img1/JoJo的奇妙冒险!特莉休·乌纳.jpg
+img1/K!栉名安娜.jpg
 img1/Kanon!水濑秋子.jpg
 img1/keroro军曹!东谷小雪.jpg
 img1/keroro军曹!亚丽莎.jpg
@@ -1796,6 +1792,7 @@ img1/NIKKE!爱丽丝.jpg
 img1/NIKKE!毒蛇.jpg
 img1/NIKKE!灰姑娘.jpg
 img1/NIKKE!蕾贝儿.jpg
+img1/NIKKE!玛律恰那.jpg
 img1/NIKKE!桃乐丝Doro.jpg
 img1/NIKKE!伊莱格.jpg
 img1/ONE PIECE!罗宾.jpg
@@ -1871,6 +1868,7 @@ img1/Vtuber!白上吹雪.jpg
 img1/Vtuber!百鬼绫目.jpeg
 img1/Vtuber!百鬼绫目.jpg
 img1/Vtuber!绊爱.jpg
+img1/Vtuber!薄荷幻影.jpg
 img1/Vtuber!宝钟玛琳.jpg
 img1/Vtuber!本间向日葵.jpeg
 img1/Vtuber!本间向日葵.jpg
@@ -1931,6 +1929,7 @@ img1/Vtuber!七诗无名.png
 img1/Vtuber!琪琪·沐林.jpg
 img1/Vtuber!绮绮罗罗薇薇.jpg
 img1/Vtuber!千灯夕阳.jpg
+img1/Vtuber!千凛步.jpg
 img1/Vtuber!戌亥床.jpeg
 img1/Vtuber!戌神沁音.jpg
 img1/Vtuber!雀宮スズメ.jpg
@@ -1979,6 +1978,7 @@ img1/Vtuber!樱巫女.jpg
 img1/Vtuber!英丽萨.png
 img1/Vtuber!鹰宫莉音.jpeg
 img1/Vtuber!永雏塔菲.jpg
+img1/Vtuber!御子神琴音.jpg
 img1/Vtuber!月之美兔.png
 img1/Vtuber!真白花音.jpg
 img1/Vtuber!珠乃井南奈.jpg
@@ -1998,6 +1998,19 @@ img1/Vtuber!まいたけCh.jpg
 img1/お徳用!Ringo-chan.jpg
 img1/ナナブンノニジュウニ!泷川美羽.jpg
 img1/ひなビタ♪!芽兔咩呜.jpg
+img2/天降之物!妮姆芙.jpg
+img2/天降之物!伊卡洛斯.webp
+img2/天籁人偶!灰樱.png
+img2/天使怪盜!原田梨红.png
+img2/天使降临到了我身边!白咲花.jpg
+img2/天使降临到了我身边!姬坂乃爱.jpg
+img2/天使降临到了我身边!星野日向.jpg
+img2/天使嚣嚣!白雪乃爱.png
+img2/天使嚣嚣!高楯欧丽叶.png
+img2/天使嚣嚣!谷风天音.jpg
+img2/天使嚣嚣!谷风天音.png
+img2/天使嚣嚣!小云雀来海.jpg
+img2/天使嚣嚣!小云雀来海.png
 img2/天使嚣嚣!星河辉耶.png
 img2/天体的秩序!诺艾尔.jpg
 img2/天元突破红莲螺岩!尼娅·铁佩林.jpg
@@ -2050,6 +2063,7 @@ img2/蔚蓝档案!不破莲华.jpg
 img2/蔚蓝档案!才羽绿.jpg
 img2/蔚蓝档案!才羽桃井.jpg
 img2/蔚蓝档案!秤亚津子.png
+img2/蔚蓝档案!春原瞬.jpg
 img2/蔚蓝档案!春原心奈.jpg
 img2/蔚蓝档案!丹花伊吹.jpg
 img2/蔚蓝档案!调月莉音.jpg
@@ -2066,6 +2080,7 @@ img2/蔚蓝档案!狐坂若藻.jpg
 img2/蔚蓝档案!花冈柚子.jpg
 img2/蔚蓝档案!火宫千夏.png
 img2/蔚蓝档案!间宵时雨.jpg
+img2/蔚蓝档案!角楯花凛.jpg
 img2/蔚蓝档案!久田泉奈.jpg
 img2/蔚蓝档案!久田伊树菜.jpg
 img2/蔚蓝档案!橘光.jpg
@@ -2238,6 +2253,7 @@ img2/邪神与厨二病少女!花园百合铃.jpg
 img2/邪神与厨二病少女!美杜莎.jpg
 img2/邪神与厨二病少女!邪神酱.jpg
 img2/心灵终结!天秤.jpg
+img2/心跳回忆!藤崎诗织.jpg
 img2/心跳文学部!莫妮卡.jpg
 img2/心之彼端2!向坂环.jpg
 img2/新妹魔王的契约者!成濑澪.jpg
@@ -2445,6 +2461,7 @@ img2/玉子市场!北白川玉子.png
 img2/原神!阿蕾奇诺.jpg
 img2/原神!安柏.jpeg
 img2/原神!安柏.jpg
+img2/原神!安娜丝塔夏·费奥多罗夫娜·雪奈茨娜娅.jpg
 img2/原神!八重神子.jpg
 img2/原神!芭芭拉.jpeg
 img2/原神!芭芭拉.jpg
@@ -2485,6 +2502,8 @@ img2/原神!珊瑚宫心海.jpg
 img2/原神!申鹤.png
 img2/原神!神里绫华.jpg
 img2/原神!丝柯克.png
+img2/原神!瓦蕾莎.jpg
+img2/原神!沃雅妮莎.jpg
 img2/原神!希格雯.jpg
 img2/原神!香菱.jpg
 img2/原神!宵宫.jpg

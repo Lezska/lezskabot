@@ -47,11 +47,6 @@ module.exports.Config = Schema.object({
   maxDeckSize: Schema.number().default(10).description('卡组最大数'),
   imageDir: Schema.string().default('/root/lezskabot/cards').description('卡牌图片目录'),
   imageExt: Schema.string().default('png').description('卡牌图片扩展名'),
-  // Borrowed from sign-bot — referenced in 抽卡帮助 only. Keep values
-  // in sync with sign-bot's Config (or move to a shared config schema
-  // later if you actually want them to diverge).
-  robWinMax: Schema.number().default(1000).description('抢p点成功最多获得 P 点（仅用于帮助文案展示）'),
-  robFailPenaltyMax: Schema.number().default(600).description('抢劫失败最多损失 P 点（仅用于帮助文案展示）'),
 })
 
 module.exports.usage = '抽卡 / 卡组 / 献祭'
@@ -88,6 +83,35 @@ module.exports.apply = async (ctx, config) => {
   function rollRarityDraw() { return rollRarityCustom(config.drawThresholds) }
   function rollRaritySacrifice() { return rollRarityCustom(config.sacrificeThresholds) }
 
+// Pity wrappers: increment a per-user counter on every draw attempt.
+// Reset to 0 when rarity ≥ resetThreshold drops. At pity == 100 the
+// draw is forced to satisfy resetThreshold. Persistence is shared
+// across 抽卡 / 连续抽卡 / 快速抽卡 — same counter (献祭 does not count).
+//
+// resetThreshold:
+//   - 3 (default): any 4星 or FES resets pity — used by 抽卡 / 快速抽卡.
+//   - targetRarity: only target-or-better resets pity — used by 连续抽卡.
+//     E.g. target=FES (r=4), intermediate 4星 (r=3) does NOT reset.
+  async function rollDrawWithPity(uid, resetThreshold = 3) {
+    let pity = await H.getPity(uid)
+    pity++
+    let r
+    if (pity >= 100) {
+      // Force a draw satisfying resetThreshold
+      if (resetThreshold >= 4) {
+        r = 4  // FES only
+      } else {
+        r = H.randInt(1, 1000) <= 950 ? 3 : 4  // 4星/FES
+      }
+      pity = 0
+    } else {
+      r = rollRarityDraw()
+      if (r >= resetThreshold) pity = 0
+    }
+    await H.setPity(uid, pity)
+    return r
+  }
+
   async function getPoints(uid) {
     return H.safeNum(await H.kvGet(pointsKey(uid)))
   }
@@ -101,27 +125,44 @@ module.exports.apply = async (ctx, config) => {
     await H.kvSet(pointsKey(uid), Math.max(0, value | 0))
   }
 
-  // Build a gacha-result message (used for 抽卡, 连续抽卡, 献祭抽卡)
+  // Build a gacha-result message (used for 抽卡, 连续抽卡).
   // If autoFilledSlot is set, appends "此卡已自动存入你卡组的第N位".
-  function buildGachaResult({ rarity, idx, remainingPoints, autoFilledSlot = null, handHint = true }) {
+  // `pity` is shown on the line right after the rarity name.
+  function buildGachaResult({ session, rarity, idx, remainingPoints, autoFilledSlot = null, handHint = true, pity = null }) {
     const lines = [
       h("image", { url: cardImage(rarity, idx) }),
       "\n",
-      h("at", { id: this.session.userId }),
+      H.at(session.userId),
       "",
       H.rarityName(rarity, { rarityNames: config.rarityNames }),
       "",
     ]
-    if (handHint) {
-      lines.push(`此卡在你手中，请手动加入卡组\n`)
+    if (pity != null) {
+      lines.push(`\n保底：${pity}/100`)
     }
-    lines.push(`你还有${remainingPoints}P点\n`)
-    lines.push(`也就是${Math.floor(remainingPoints / config.drawCost)}抽。\n`)
-    lines.push(`请仔细阅读"抽卡帮助"！\n`)
+    if (handHint) {
+      lines.push(`\n此卡在你手中，请手动加入卡组`)
+    }
+    lines.push(`\n你还有${remainingPoints}P点`)
+    lines.push(`\n也就是${Math.floor(remainingPoints / config.drawCost)}抽。`)
+    lines.push(`\n请仔细阅读"抽卡帮助"！`)
     if (autoFilledSlot) {
-      lines.push(`此卡已自动存入你卡组的第${autoFilledSlot}位`)
+      lines.push(`\n此卡已自动存入你卡组的第${autoFilledSlot}位`)
     }
     return lines.join("")
+  }
+  // Sibling of buildGachaResult for the 连续抽卡 "花光了也没抽到" case.
+  // Same structure: image + @mention + rarity name + pity line.
+  function buildGachaExhausted({ session, rarity, idx, remainingPoints, pity }) {
+    return [
+      H.at(session.userId),
+      "真可惜呢花光了也没抽到\n",
+      `你还有${remainingPoints}P点\n`,
+      `最后一次抽卡结果：\n`,
+      H.rarityName(rarity, { rarityNames: config.rarityNames }),
+      pity != null ? `\n保底：${pity}/100` : "",
+      h("image", { url: cardImage(rarity, idx) }),
+    ].join("")
   }
 
   // Card store / load / fill logic
@@ -284,9 +325,11 @@ module.exports.apply = async (ctx, config) => {
       let lastIdx = 0
       let stopReason = null  // 'hit' | 'exhausted'
 
-      // Roll until target rarity hit or draws exhausted
+      // Roll until target rarity hit or draws exhausted. Pity resets only
+// when target is hit (or exceeded) — intermediate 4星 (r=3) doesn't
+// reset when target is FES (r=4).
       for (let i = 1; i <= maxDraws; i++) {
-        const r = rollRarityDraw()
+        const r = await rollDrawWithPity(uid, targetRarity)
         drawsUsed = i
         lastRarity = r
         lastIdx = rollCard(r)
@@ -303,18 +346,15 @@ module.exports.apply = async (ctx, config) => {
       const newPoints = startPoints - cost
       // Cache the card
       await H.kvSet(cacheKey(uid), cardId(lastRarity, lastIdx))
+      const pity = await H.getPity(uid)
       if (stopReason === 'exhausted') {
         // No hit
-        const finalPoints = await H.kvGet(pointsKey(uid))  // re-read to be safe
         await setPoints(uid, newPoints)
-        return [
-          h("at", { id: uid }),
-          `真可惜呢花光了也没抽到\n`,
-          `你还有${finalPoints}P点\n`,
-          `最后一次抽卡结果：\n`,
-          H.rarityName(lastRarity, { rarityNames: config.rarityNames }),
-          h("image", { url: cardImage(lastRarity, lastIdx) }),
-        ].join("")
+        const finalPoints = await H.kvGet(pointsKey(uid))  // re-read after set
+        return buildGachaExhausted({
+          session, rarity: lastRarity, idx: lastIdx,
+          remainingPoints: finalPoints, pity,
+        })
       }
       // Hit: persist new points + try auto-fill
       await setPoints(uid, newPoints)
@@ -325,29 +365,20 @@ module.exports.apply = async (ctx, config) => {
         await setDeck(uid, deck)
         await clearCache(uid)
         const finalPoints = await H.kvGet(pointsKey(uid))
-        await session.send([
-          h("image", { url: cardImage(lastRarity, lastIdx) }), "\n",
-          h("at", { id: uid }), "",
-          H.rarityName(lastRarity, { rarityNames: config.rarityNames }), "", "\n",
-          `你还有${finalPoints}P点\n`,
-          `也就是${Math.floor(newPoints / config.drawCost)}抽。\n`,
-          `请仔细阅读"抽卡帮助"！\n`,
-          `此卡已自动存入你卡组的第${slot + 1}位`,
-        ].join(""))
+        await session.send(buildGachaResult({
+          session, rarity: lastRarity, idx: lastIdx,
+          remainingPoints: finalPoints, autoFilledSlot: slot + 1,
+          handHint: false, pity,
+        }))
         logger.info(`${uid} 抽到了一张${H.rarityName(lastRarity, { rarityNames: config.rarityNames })}卡，剩余${finalPoints}P点`)
         return null
       } else {
         // Hand: user must 加入卡组 manually
         const finalPoints = await H.kvGet(pointsKey(uid))
-        await session.send([
-          h("image", { url: cardImage(lastRarity, lastIdx) }), "\n",
-          h("at", { id: uid }), "",
-          H.rarityName(lastRarity, { rarityNames: config.rarityNames }), "", "\n",
-          `此卡在你手中，请手动加入卡组\n`,
-          `你还有${finalPoints}P点\n`,
-          `也就是${Math.floor(newPoints / config.drawCost)}抽。\n`,
-          `请仔细阅读"抽卡帮助"！\n`,
-        ].join(""))
+        await session.send(buildGachaResult({
+          session, rarity: lastRarity, idx: lastIdx,
+          remainingPoints: finalPoints, handHint: true, pity,
+        }))
         logger.info(`${uid} 抽到了一张${H.rarityName(lastRarity, { rarityNames: config.rarityNames })}卡，剩余${finalPoints}P点`)
         return null
       }
@@ -369,9 +400,10 @@ module.exports.apply = async (ctx, config) => {
         logger.error(`${uid} 抽卡失败，积分不足`)
         return null
       }
-      const r = rollRarityDraw()
+      const r = await rollDrawWithPity(uid)
       const idx = rollCard(r)
       const newPoints = startPoints - config.drawCost
+      const pity = await H.getPity(uid)
       await H.kvSet(cacheKey(uid), cardId(r, idx))
       await setPoints(uid, newPoints)
 
@@ -382,28 +414,19 @@ module.exports.apply = async (ctx, config) => {
         await setDeck(uid, deck)
         await clearCache(uid)
         const finalPoints = await H.kvGet(pointsKey(uid))
-        await session.send([
-          h("image", { url: cardImage(r, idx) }), "\n",
-          h("at", { id: uid }), "",
-          H.rarityName(r, { rarityNames: config.rarityNames }), "", "\n",
-          `你还有${finalPoints}P点\n`,
-          `也就是${Math.floor(newPoints / config.drawCost)}抽。\n`,
-          `请仔细阅读"抽卡帮助"！\n`,
-          `此卡已自动存入你卡组的第${slot + 1}位`,
-        ].join(""))
+        await session.send(buildGachaResult({
+          session, rarity: r, idx,
+          remainingPoints: finalPoints, autoFilledSlot: slot + 1,
+          handHint: false, pity,
+        }))
         logger.info(`${uid} 抽到了一张${H.rarityName(r, { rarityNames: config.rarityNames })}卡，剩余${finalPoints}P点`)
         return null
       } else {
         const finalPoints = await H.kvGet(pointsKey(uid))
-        await session.send([
-          h("image", { url: cardImage(r, idx) }), "\n",
-          h("at", { id: uid }), "",
-          H.rarityName(r, { rarityNames: config.rarityNames }), "", "\n",
-          `此卡在你手中，请手动加入卡组\n`,
-          `你还有${finalPoints}P点\n`,
-          `也就是${Math.floor(newPoints / config.drawCost)}抽。\n`,
-          `请仔细阅读"抽卡帮助"！\n`,
-        ].join(""))
+        await session.send(buildGachaResult({
+          session, rarity: r, idx,
+          remainingPoints: finalPoints, handHint: true, pity,
+        }))
         logger.info(`${uid} 抽到了一张${H.rarityName(r, { rarityNames: config.rarityNames })}卡，剩余${finalPoints}P点`)
         return null
       }
@@ -444,12 +467,11 @@ module.exports.apply = async (ctx, config) => {
         const r = rollRaritySacrifice()
         const idx = rollCard(r)
         await H.kvSet(cacheKey(uid), cardId(r, idx))
-        await session.send([
+        await H.replyAt(session, uid, [
           h("image", { url: cardImage(r, idx) }), "\n",
-          h("at", { id: uid }),
           `你献祭了卡组抽到了一张${H.rarityName(r, { rarityNames: config.rarityNames })}卡牌！\n`,
-          `输入"加入卡组"将这张卡牌加入卡组。`,
-        ].join(""))
+          `输入"加入"将这张卡牌加入卡组。`,
+        ])
         await H.kvDel(deckKey(uid, "卡组"))  // 献祭后清空
         return null
       }
@@ -498,8 +520,8 @@ module.exports.apply = async (ctx, config) => {
     const payoutInt = Math.round(config.drawCost * payout)
     const newPoints = await addPoints(uid, payoutInt)
 
-    const summary = []
-    summary.push(h("at", { uid }), "你献祭了：\n")
+const summary = []
+    summary.push(H.at(uid), "你献祭了：\n")
     if (rarityCount[0] > 0) summary.push(`${rarityCount[0]}张二星\n`)
     if (rarityCount[1] > 0) summary.push(`${rarityCount[1]}张三星\n`)
     if (rarityCount[2] > 0) summary.push(`${rarityCount[2]}张四星\n`)
@@ -588,33 +610,53 @@ module.exports.apply = async (ctx, config) => {
   ctx.command("快速抽卡").action(async ({ session }) => {
     return await H.withErrorBoundary(session, async () => {
       const uid = String(session.userId)
-      let points = await getPoints(uid)
-      if (points < config.drawCost) {
-        if (points === 0) {
+      const startPoints = await getPoints(uid)
+
+      // 1. P 点不足检查：一次抽卡都付不起就直接报
+      if (startPoints < config.drawCost) {
+        if (startPoints === 0) {
           await session.send("没有积分，请先签到获得积分。")
         } else {
-          await session.send(`当前积分为${points}点，不够一抽。一抽要${config.drawCost}呢`)
+          await session.send(`当前积分为${startPoints}点，不够一抽。一抽要${config.drawCost}呢`)
         }
         logger.error(`${uid} 抽卡失败，积分不足`)
         return null
       }
+
+      // 2. 卡组已满检查：没有空位的话抽了也没地方放
       const deck = await loadOrInitDeck(uid)
+      const emptySlots = deck.filter((s) => s === "0").length
+      if (emptySlots === 0) {
+        await session.send("你的卡组已满，没有空位可以放新卡。先献祭一些再抽吧。")
+        return null
+      }
+
+      // 实际能抽几次 = min(可抽次数, 空位数)
+      const maxDraws = Math.min(
+        Math.floor(startPoints / config.drawCost),
+        emptySlots,
+      )
       const dist = [0, 0, 0, 0]
       const filled = []
+      let points = startPoints
 
-      for (let i = 0; i < config.maxDeckSize; i++) {
-        if (points < config.drawCost) break
-        if (deck[i] === "0") {
-          const r = rollRarityDraw()
-          const idx = rollCard(r)
-          dist[r - 1]++
-          points = points - config.drawCost
-          await setPoints(uid, points)
-          filled.push(i + 1)
-          deck[i] = cardId(r, idx)
-        }
+      // For each draw, find the next empty slot rather than overwriting
+      // the deck in slot order — the original blockly behaviour. This
+      // way, if slots 1 and 3 are already filled, draws land in 2, 4, ...
+      // instead of clobbering 1 and 2.
+      for (let i = 0; i < maxDraws; i++) {
+        const slot = H.findFirstEmpty(deck)
+        if (slot < 0) break
+        const r = await rollDrawWithPity(uid)
+        const idx = rollCard(r)
+        dist[r - 1]++
+        points = points - config.drawCost
+        await setPoints(uid, points)
+        filled.push(slot + 1)
+        deck[slot] = cardId(r, idx)
       }
       await setDeck(uid, deck)
+      const pity = await H.getPity(uid)
       const distStr = [
         dist[0] > 0 ? `${dist[0]}张二星  \n` : null,
         dist[1] > 0 ? `${dist[1]}张三星  \n` : null,
@@ -628,6 +670,7 @@ module.exports.apply = async (ctx, config) => {
         distStr,
         `${filled.length}张卡\n已存入你卡组的第${filled.join(", ")}位\n`,
         lowPoints ? `你只剩${points}P点了，不够抽了` : `你还有${points}P点`,
+        `\n保底：${pity}/100`,
       ].join("")
       await session.send(summary)
       return null

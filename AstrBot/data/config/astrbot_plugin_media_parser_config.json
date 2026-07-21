@@ -1,11 +1,11 @@
 ﻿{
   "parsers": {
-    "bilibili": "仅富媒体",
-    "douyin": "仅富媒体",
+    "bilibili": "全部发送",
+    "douyin": "全部发送",
     "tiktok": "仅富媒体",
-    "kuaishou": "仅富媒体",
+    "kuaishou": "全部发送",
     "weibo": "仅富媒体",
-    "xiaohongshu": "仅富媒体",
+    "xiaohongshu": "全部发送",
     "xianyu": "仅富媒体",
     "toutiao": "仅富媒体",
     "xiaoheihe": "仅富媒体",
@@ -13,23 +13,50 @@
   },
   "trigger": {
     "auto_parse": true,
+    "reply_trigger": false,
     "keywords": [
       "视频解析",
       "解析视频"
-    ],
-    "reply_trigger": false
+    ]
   },
   "message": {
-    "auto_pack": false,
     "opening": {
       "enable": false,
       "content": "流媒体解析bot为您服务 ٩( 'ω' )و"
     },
+    "packing": {
+      "mode": "全部打包",
+      "thresholds": {
+        "image_count": 0,
+        "video_count": 0,
+        "node_count": 0
+      }
+    },
+    "text_metadata": {
+      "quote_user_message": false
+    },
     "hot_comments": {
       "count": 0,
-      "bilibili": true,
-      "weibo": true,
-      "xiaohongshu": true
+      "bilibili": false,
+      "weibo": false,
+      "xiaohongshu": false
+    }
+  },
+  "translation": {
+    "enable": false,
+    "content_scope": "正文和标题",
+    "target_language": "简体中文",
+    "llm": {
+      "provider_source": "AstrBot 内置提供商",
+      "astrbot_provider": {
+        "provider_id": "minimax-token-plan/MiniMax-M3"
+      },
+      "custom_provider": {
+        "provider": "自定义 OpenAI 兼容",
+        "base_url": "",
+        "api_key": "",
+        "model": "gpt-5.5"
+      }
     }
   },
   "download": {
@@ -64,7 +91,7 @@
   "proxy": {
     "address": "",
     "tiktok": false,
-    "xiaoheihe_video": true,
+    "xiaoheihe_video": false,
     "twitter": {
       "parse": false,
       "image": true,

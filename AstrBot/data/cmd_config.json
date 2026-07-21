@@ -48,20 +48,6 @@
       "type": "openai_chat_completion",
       "provider_type": "chat_completion",
       "key": [
-        "sk-63fdbf87e9d748a59c4b92c97aeab896"
-      ],
-      "api_base": "https://api.deepseek.com/v1",
-      "timeout": 120,
-      "proxy": "",
-      "custom_headers": {},
-      "id": "deepseek",
-      "enable": true
-    },
-    {
-      "provider": "deepseek",
-      "type": "openai_chat_completion",
-      "provider_type": "chat_completion",
-      "key": [
         "sk-JkQgYFLde5UDbtlLBfDeC0Ed8a954f2dA36f4c46AfF5BdBe"
       ],
       "api_base": "https://api.edgefn.net/v1",
@@ -84,6 +70,42 @@
       "custom_headers": {},
       "id": "siliconflow",
       "enable": true
+    },
+    {
+      "provider": "minimax-token-plan",
+      "type": "minimax_token_plan",
+      "provider_type": "chat_completion",
+      "key": [
+        "sk-cp-HMUFNWzAUUr_AaKPGD-NRa-vIrbs9fHWBsyu9bY0Gw4GZKS9qHWEr4Uo2Si_-4uf6wJSSrbU8EjwcgcmWQMTzHzLI3K3M__vdhlMF1OCpvdUYds5olLMdAk"
+      ],
+      "api_base": "https://api.minimaxi.com/anthropic",
+      "timeout": 120,
+      "proxy": "",
+      "custom_headers": {
+        "User-Agent": "claude-code/0.1.0",
+        "Authorization": "Bearer sk-cp-gWIBWshiVjgE9xNsddem3OpkKaDtt7_H7D2oAGP6AOAINAFrA2YkLXoc4H-3jiGlUftOZRPgvTdvToGgtHJF5cIFfBf-OXttuqqzjAPhnctpYDqUsJpWovk"
+      },
+      "anth_thinking_config": {
+        "type": "",
+        "budget": 0,
+        "effort": ""
+      },
+      "id": "minimax-token-plan",
+      "enable": true
+    },
+    {
+      "provider": "deepseek",
+      "type": "openai_chat_completion",
+      "provider_type": "chat_completion",
+      "key": [
+        "sk-74daefdd91034651b625b9420dc5a9ac"
+      ],
+      "api_base": "https://api.deepseek.com/v1",
+      "timeout": 120,
+      "proxy": "",
+      "custom_headers": {},
+      "id": "deepseek",
+      "enable": true
     }
   ],
   "provider": [
@@ -99,18 +121,6 @@
       ],
       "custom_extra_body": {},
       "max_context_tokens": 0
-    },
-    {
-      "id": "deepseek/deepseek-v4-flash",
-      "enable": true,
-      "provider_source_id": "deepseek",
-      "model": "deepseek-v4-flash",
-      "modalities": [
-        "text",
-        "tool_use"
-      ],
-      "custom_extra_body": {},
-      "max_context_tokens": 1000000
     },
     {
       "id": "siliconflow/Qwen/Qwen3.5-4B",
@@ -140,18 +150,6 @@
       "max_context_tokens": 0
     },
     {
-      "id": "deepseek/deepseek-v4-pro",
-      "enable": true,
-      "provider_source_id": "deepseek",
-      "model": "deepseek-v4-pro",
-      "modalities": [
-        "text",
-        "tool_use"
-      ],
-      "custom_extra_body": {},
-      "max_context_tokens": 1000000
-    },
-    {
       "id": "embedding",
       "type": "openai_embedding",
       "provider": "openai",
@@ -176,15 +174,53 @@
       "rerank_api_suffix": "/v1/rerank",
       "rerank_model": "BAAI/bge-reranker-v2-m3",
       "timeout": 20
+    },
+    {
+      "id": "minimax-token-plan/MiniMax-M3",
+      "enable": true,
+      "provider_source_id": "minimax-token-plan",
+      "model": "MiniMax-M3",
+      "modalities": [
+        "text",
+        "tool_use"
+      ],
+      "custom_extra_body": {},
+      "max_context_tokens": 0
+    },
+    {
+      "id": "minimax-token-plan/MiniMax-M2.7-highspeed",
+      "enable": true,
+      "provider_source_id": "minimax-token-plan",
+      "model": "MiniMax-M2.7-highspeed",
+      "modalities": [
+        "text",
+        "tool_use"
+      ],
+      "custom_extra_body": {},
+      "max_context_tokens": 204800
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash",
+      "enable": true,
+      "provider_source_id": "deepseek",
+      "model": "deepseek-v4-flash",
+      "modalities": [
+        "text",
+        "tool_use"
+      ],
+      "custom_extra_body": {},
+      "max_context_tokens": 1000000
     }
   ],
   "provider_settings": {
     "enable": true,
-    "default_provider_id": "deepseek/deepseek-v4-flash",
+    "default_provider_id": "minimax-token-plan/MiniMax-M3",
     "fallback_chat_models": [
+      "deepseek_1/Kimi-K2-Instruct",
       "deepseek_1/Qwen3-235B-A22B-2507"
     ],
-    "default_image_caption_provider_id": "",
+    "request_max_retries": 5,
+    "default_image_caption_provider_id": "deepseek_1/Qwen3-235B-A22B-2507",
     "image_caption_prompt": "Please describe the image using Chinese.",
     "provider_pool": [
       "*"
@@ -197,6 +233,7 @@
     "websearch_brave_key": [],
     "websearch_baidu_app_builder_key": "",
     "websearch_firecrawl_key": [],
+    "websearch_exa_key": [],
     "web_search_link": false,
     "display_reasoning_text": false,
     "identifier": true,
@@ -209,7 +246,7 @@
     "prompt_prefix": "{{prompt}}",
     "context_limit_reached_strategy": "truncate_by_turns",
     "llm_compress_instruction": "Based on our full conversation history, produce a concise summary of key takeaways and/or project progress.\n1. Systematically cover all core topics discussed and the final conclusion/outcome for each; clearly highlight the latest primary focus.\n2. If any tools were used, summarize tool usage (total call count) and extract the most valuable insights from tool outputs.\n3. If there was an initial user goal, state it first and describe the current progress/status.\n4. Write the summary in the user's language.\n",
-    "llm_compress_keep_recent": 6,
+    "llm_compress_keep_recent_ratio": 0.15,
     "llm_compress_provider_id": "",
     "max_context_length": -1,
     "dequeue_context_length": 1,
@@ -342,6 +379,17 @@
     "host": "0.0.0.0",
     "port": 6185,
     "disable_access_log": true,
+    "trust_proxy_headers": false,
+    "auth_rate_limit": {
+      "enable": true,
+      "average_interval": 1.0,
+      "max_burst": 3
+    },
+    "totp": {
+      "enable": false,
+      "secret": "",
+      "recovery_code_hash": ""
+    },
     "ssl": {
       "enable": false,
       "cert_file": "",

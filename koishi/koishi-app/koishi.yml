@@ -1,6 +1,5 @@
 plugins:
   group:server:
-    $collapsed: true
     server:iyvqw3:
       host: 0.0.0.0
       port: 5140
@@ -99,9 +98,7 @@ plugins:
         config:
           hidden: true
       sayo-roll:
-        name: /roll
         aliases:
-          roll: null
           问: null
       reactle:
         aliases:
@@ -182,6 +179,55 @@ plugins:
       漂流瓶.查看我的瓶子:
         aliases:
           我的瓶子: null
+      d:
+        name: /提问
+        aliases:
+          提问: null
+      memory:
+        config:
+          hidden: true
+      立即提取:
+        config:
+          hidden: true
+      设置提取间隔:
+        config:
+          hidden: true
+      词库:
+        config:
+          hidden: true
+      词库统计:
+        config:
+          hidden: true
+      提取状态:
+        config:
+          hidden: true
+      重置api:
+        config:
+          hidden: true
+      查看api:
+        config:
+          hidden: true
+      设置api:
+        config:
+          hidden: true
+      删词:
+        config:
+          hidden: true
+      加词:
+        config:
+          hidden: true
+      抽卡:
+        config:
+          hidden: true
+      memory-cleanup:
+        config:
+          hidden: true
+      memory-clear:
+        config:
+          hidden: true
+      memory-view:
+        config:
+          hidden: true
     help:fakvkp: {}
     http:7ka2ck: {}
     ~inspect:vwlv3j: {}
@@ -253,7 +299,6 @@ plugins:
       cn绑定: /.*/
       tw绑定: /.*/
       查id: /.*/
-      问: /.*/
       开字母: /.*/
       捞漂流瓶: /.*/
       /绑定: /.*/
@@ -263,14 +308,13 @@ plugins:
   blockly-null:lp0hx8: {}
   puppeteer:noenkr: {}
   adapter-onebot:wqmw9x:
-    selfId: '3829649357'
+    selfId: '2763371925'
   menu:mulwf1: {}
   rizgame-guess-letters:2xa68a:
     test: 1
     randSongMode: range
     startValue: 3
     endValue: 7
-  sayo-roll:oibvy4: {}
   re-driftbottle:ptodv9:
     manager:
       - '29053789'
@@ -284,10 +328,8 @@ plugins:
   ~koishi:ten6xx: {}
   keyword-blocker:1b1278:
     command_authority: 1
-  ~dialogue:u9x67h: {}
   lunatic:22bd3m: {}
   awa-mc-ament:rwr33m: {}
-  ~minecraft-skin:v9rewx: {}
   mc-tools:h22llh:
     updInterval: 5
     noticeTargets:
@@ -296,7 +338,38 @@ plugins:
     statusEnabled: false
   chess:skwxia: {}
   sensoji-anime:w9pb28: {}
-  ~sudoku-bot:97fp05: {}
   koishi-plugin-blockly-shared:kxxv1e: {}
   koishi-plugin-sign-bot:wwkez4: {}
   koishi-plugin-gacha-bot:dfpyk0: {}
+  koishi-plugin-bot-migrator:t9yt3a: {}
+  group-memory:j8p9ft:
+    maxContext: 200
+    recordPrivateChat: false
+    triggerOnAt: false
+    triggerOnReply: false
+    logDatabaseOps: false
+    logContextInject: false
+    logMessageReceive: false
+    logContentPreview: false
+    logColorOutput: false
+    logTimestamp: false
+    logMiddlewarePriority: false
+    supportSeparateContext: false
+    logLevel: none
+  koishi-plugin-random-answer:bfx2ri:
+    llmEnabled: true
+    llmAllowedGroups:
+      - '1091191330'
+    llmIntervalMin: 60
+    llmMaxMessagesPerRun: 200
+    llmMinWordLen: 1
+    llmMaxRetries: 3
+    llmArchiveRaw: true
+    llmMaxWordLen: 15
+    allowedGroups:
+      - '1091191330'
+      - '1020588915'
+      - '821370924'
+    adminIds:
+      - '29053789'
+  koishi-plugin-sticker-maker:sm0001: {}
