@@ -1,0 +1,138 @@
+{
+  "ts": 1783634967346,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 47380,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1569181511",
+        "user_name": "ELAINA",
+        "role": "user",
+        "content": "已经2-0了吗",
+        "timestamp": 1783632895183
+      },
+      {
+        "id": 47379,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2658604288",
+        "user_name": "夜明夏野",
+        "role": "user",
+        "content": "状态来了",
+        "timestamp": 1783632659082
+      },
+      {
+        "id": 47378,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2658604288",
+        "user_name": "夜明夏野",
+        "role": "user",
+        "content": "我去",
+        "timestamp": 1783632655466
+      },
+      {
+        "id": 47377,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2658604288",
+        "user_name": "夜明夏野",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhRG-07ED0hoCUJ1eJzMz48oSyJcQhjKiAYg_woo0Of_28TGlQMyBHByb2RQgL2jAVoQhLWwrep9H2maxlSGll7_THoCNKyCAQJneg&amp;spec=0&amp;rkey=CAISMIf4BdgxBWr20Gx0WJEI8Nx9MuPvfRw9ToOLGiB7ocoG469rIsxPB2TrLMAwhs1AVg\" file=\"A082B0BE7B16BC40804169805041E72F.jpg\" sub-type=\"1\" file-size=\"99402\"/>",
+        "timestamp": 1783632466207
+      },
+      {
+        "id": 47376,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2658604288",
+        "user_name": "夜明夏野",
+        "role": "user",
+        "content": "姆巴佩这球轨迹帅",
+        "timestamp": 1783632457756
+      },
+      {
+        "id": 47375,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2658604288",
+        "user_name": "夜明夏野",
+        "role": "user",
+        "content": "1：0",
+        "timestamp": 1783632448158
+      },
+      {
+        "id": 47374,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1938355860",
+        "user_name": "Fourier",
+        "role": "user",
+        "content": "晚安",
+        "timestamp": 1783632377605
+      },
+      {
+        "id": 47373,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3320846932",
+        "user_name": "权威小孩姐",
+        "role": "user",
+        "content": "晚安",
+        "timestamp": 1783632148105
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[05:34] 已经2-0了吗\n[05:30] 状态来了\n[05:30] 我去\n[05:27] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhRG-07ED0hoCUJ1eJzMz48oSyJcQhjKiAYg_woo0Of_28TGlQMyBHByb2RQgL2jAVoQhLWwrep9H2maxlSGll7_THoCNKyCAQJneg&amp;spec=0&amp;rkey=CAIS\n[05:27] 姆巴佩这球轨迹帅\n[05:27] 1：0\n[05:26] 晚安\n[05:22] 晚安",
+  "raw": "已经2-0了吗\n状态来了\n我去\n姆巴佩这球轨迹帅\n1：0\n晚安\n这球绝了\n牛啊\n好家伙\n绷不住了\n笑死\n真的假的\n离谱\n炸了\n666\n急了急了\n破防了\n太强了\n等我\n马上到\n下班了下班了\n睡了睡了\n有人吗\n在吗在吗\n冲冲冲\n赢麻了\nGG\n舒服了\n完蛋\n可惜\n我去这\n哈哈哈这\n真的服了\n带不动\n爆了",
+  "phrases": [
+    "已经2-0了吗",
+    "状态来了",
+    "我去",
+    "姆巴佩这球轨迹帅",
+    "1：0",
+    "晚安",
+    "这球绝了",
+    "牛啊",
+    "好家伙",
+    "绷不住了",
+    "笑死",
+    "真的假的",
+    "离谱",
+    "炸了",
+    "666",
+    "急了急了",
+    "破防了",
+    "太强了",
+    "等我",
+    "马上到",
+    "下班了下班了",
+    "睡了睡了",
+    "有人吗",
+    "在吗在吗",
+    "冲冲冲",
+    "赢麻了",
+    "GG",
+    "舒服了",
+    "完蛋",
+    "可惜",
+    "我去这",
+    "哈哈哈这",
+    "真的服了",
+    "带不动",
+    "爆了"
+  ],
+  "added": [
+    "已经2-0了吗",
+    "状态来了",
+    "姆巴佩这球轨迹帅",
+    "1：0",
+    "这球绝了",
+    "马上到",
+    "GG",
+    "我去这",
+    "哈哈哈这",
+    "带不动"
+  ]
+}

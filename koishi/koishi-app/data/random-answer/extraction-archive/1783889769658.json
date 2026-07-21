@@ -1,0 +1,87 @@
+{
+  "ts": 1783889769658,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 63588,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "257755483",
+        "user_name": "苗清浅",
+        "role": "user",
+        "content": "晚安",
+        "timestamp": 1783888619742
+      },
+      {
+        "id": 63587,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3967681268",
+        "user_name": "予我你的长夜",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhRFGi_hk13mEkkfNJXlbBjtxBFGgBjA3QIg_wooqrzkq_3NlQMyBHByb2RQgL2jAVoQAZHEybTk8zGvLeQDM2i8OnoCsxyCAQJneg&amp;spec=0&amp;rkey=CAMSMFKk39FbFsYn279jeD6jUvIxCF2cdie1rTm1TKJSwUdUmDpWhv4Uz3AKglwypnyCug\" file=\"BC3DD3E78281309A56C4D10BB11B5B1F.jpg\" sub-type=\"1\" file-size=\"44736\"/>",
+        "timestamp": 1783888183889
+      },
+      {
+        "id": 63586,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3967681268",
+        "user_name": "予我你的长夜",
+        "role": "user",
+        "content": "签到",
+        "timestamp": 1783888175142
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[04:36] 晚安\n[04:29] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhRFGi_hk13mEkkfNJXlbBjtxBFGgBjA3QIg_wooqrzkq_3NlQMyBHByb2RQgL2jAVoQAZHEybTk8zGvLeQDM2i8OnoCsxyCAQJneg&amp;spec=0&amp;rkey=CAMS\n[04:29] 签到",
+  "raw": "晚安\n签到\n早安\n哈哈哈哈哈\n笑死\n离谱\n绷不住了\n绝了\n啊这\n懂了\n我去\n真的假的\n不会吧\n哈哈哈\n笑死我了\n可以可以\n冲冲冲\n睡了睡了\n吃饭了\n下班\n摸鱼\n救命\n完蛋\n没事\n好吧\n等下\n马上\n干嘛\n在吗\n你猜\n想得美\n烦死了\n开心\n今天天气不错\n躺了\n笑晕\n破防了\n离谱到家\n无敌\n666",
+  "phrases": [
+    "晚安",
+    "签到",
+    "早安",
+    "哈哈哈哈哈",
+    "笑死",
+    "离谱",
+    "绷不住了",
+    "绝了",
+    "啊这",
+    "懂了",
+    "我去",
+    "真的假的",
+    "不会吧",
+    "哈哈哈",
+    "笑死我了",
+    "可以可以",
+    "冲冲冲",
+    "睡了睡了",
+    "吃饭了",
+    "下班",
+    "摸鱼",
+    "救命",
+    "完蛋",
+    "没事",
+    "好吧",
+    "等下",
+    "马上",
+    "干嘛",
+    "在吗",
+    "你猜",
+    "想得美",
+    "烦死了",
+    "开心",
+    "今天天气不错",
+    "躺了",
+    "笑晕",
+    "破防了",
+    "离谱到家",
+    "无敌",
+    "666"
+  ],
+  "added": [
+    "吃饭了",
+    "想得美",
+    "今天天气不错",
+    "无敌"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "ts": 1784067484170,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 78251,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3997019972",
+        "user_name": "八号大",
+        "role": "user",
+        "content": "签到",
+        "timestamp": 1784065907276
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[05:51] 签到",
+  "raw": "签到",
+  "phrases": [
+    "签到"
+  ],
+  "added": []
+}

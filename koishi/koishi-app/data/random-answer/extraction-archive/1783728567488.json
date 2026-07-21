@@ -1,0 +1,159 @@
+{
+  "ts": 1783728567488,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 52810,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1296434423",
+        "user_name": "随风飘流",
+        "role": "user",
+        "content": "早安",
+        "timestamp": 1783728300724
+      },
+      {
+        "id": 52809,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "370484313",
+        "user_name": "。。。",
+        "role": "user",
+        "content": "捞漂流瓶",
+        "timestamp": 1783727647711
+      },
+      {
+        "id": 52808,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "370484313",
+        "user_name": "。。。",
+        "role": "user",
+        "content": "捞漂流瓶",
+        "timestamp": 1783727635566
+      },
+      {
+        "id": 52807,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "909913330",
+        "user_name": "人",
+        "role": "user",
+        "content": "捞漂流瓶",
+        "timestamp": 1783726757021
+      },
+      {
+        "id": 52806,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "909913330",
+        "user_name": "人",
+        "role": "user",
+        "content": "捞漂流瓶",
+        "timestamp": 1783726750543
+      },
+      {
+        "id": 52805,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "909913330",
+        "user_name": "人",
+        "role": "user",
+        "content": "捞漂流瓶",
+        "timestamp": 1783726744091
+      },
+      {
+        "id": 52804,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "909913330",
+        "user_name": "人",
+        "role": "user",
+        "content": "捞漂流瓶",
+        "timestamp": 1783726727747
+      },
+      {
+        "id": 52803,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "909913330",
+        "user_name": "人",
+        "role": "user",
+        "content": "捞漂流瓶",
+        "timestamp": 1783726716609
+      },
+      {
+        "id": 52802,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "909913330",
+        "user_name": "人",
+        "role": "user",
+        "content": "好多绘名 <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQVbb_GWAzxBtwLT1KI-_9hnyaW6hiZ-BUg_woopfCG56PJlQMyBHByb2RQgL2jAVoQk8Q2kpfyCBTMUjNFEYpA_HoCNMyCAQJuag&amp;spec=0&amp;rkey=CAQSMB6va2H-X8zV9mKJQIgl3STExSNJmb9yLzi7xjuqZywo5lOix8kxin_Blpn0tOIaqg\" file=\"2CA4D6E4BE1E4A6633B6B5126D70DA47.png\" sub-type=\"0\" file-size=\"359449\"/>",
+        "timestamp": 1783726710213
+      },
+      {
+        "id": 52801,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "370484313",
+        "user_name": "。。。",
+        "role": "user",
+        "content": "捞漂流瓶",
+        "timestamp": 1783725616296
+      },
+      {
+        "id": 52800,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3986092865",
+        "user_name": "エヴァ・ドミナンスXII",
+        "role": "user",
+        "content": "签到",
+        "timestamp": 1783725432133
+      },
+      {
+        "id": 52799,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "909913330",
+        "user_name": "人",
+        "role": "user",
+        "content": "捞漂流瓶114",
+        "timestamp": 1783725365453
+      },
+      {
+        "id": 52798,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3986092865",
+        "user_name": "エヴァ・ドミナンスXII",
+        "role": "user",
+        "content": "捞漂流瓶 344",
+        "timestamp": 1783725346262
+      },
+      {
+        "id": 52797,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3320846932",
+        "user_name": "权威小孩姐",
+        "role": "user",
+        "content": "晚安",
+        "timestamp": 1783725316971
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[08:05] 早安\n[07:54] 捞漂流瓶\n[07:53] 捞漂流瓶\n[07:39] 捞漂流瓶\n[07:39] 捞漂流瓶\n[07:39] 捞漂流瓶\n[07:38] 捞漂流瓶\n[07:38] 捞漂流瓶\n[07:38] 好多绘名 <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQVbb_GWAzxBtwLT1KI-_9hnyaW6hiZ-BUg_woopfCG56PJlQMyBHByb2RQgL2jAVoQk8Q2kpfyCBTMUjNFEYpA_HoCNMyCAQJuag&amp;spec=0&amp;rkey\n[07:20] 捞漂流瓶\n[07:17] 签到\n[07:16] 捞漂流瓶114\n[07:15] 捞漂流瓶 344\n[07:15] 晚安",
+  "raw": "早安\n晚安\n签到\n捞漂流瓶\n好多绘名",
+  "phrases": [
+    "早安",
+    "晚安",
+    "签到",
+    "捞漂流瓶",
+    "好多绘名"
+  ],
+  "added": [
+    "好多绘名"
+  ]
+}

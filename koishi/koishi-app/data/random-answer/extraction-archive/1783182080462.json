@@ -1,0 +1,44 @@
+{
+  "ts": 1783182080462,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 16594,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3911816075",
+        "user_name": "check是结奈",
+        "role": "user",
+        "content": "懒得清了",
+        "timestamp": 1783182077878
+      },
+      {
+        "id": 16593,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1569181511",
+        "user_name": "ELAINA",
+        "role": "user",
+        "content": "<at id=\"956937232\" name=\"AAA神秘orz男\"/> 确定是早上吗",
+        "timestamp": 1783182021313
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[00:21] check是结奈: 懒得清了\n[00:20] ELAINA: <at id=\"956937232\" name=\"AAA神秘orz男\"/> 确定是早上吗",
+  "raw": "懒得\n清吧\n我先睡了\n确实\n是吧\n笑死\n好家伙\n绝了",
+  "phrases": [
+    "懒得",
+    "清吧",
+    "我先睡了",
+    "确实",
+    "是吧",
+    "笑死",
+    "好家伙",
+    "绝了"
+  ],
+  "added": [
+    "懒得",
+    "清吧",
+    "我先睡了"
+  ]
+}

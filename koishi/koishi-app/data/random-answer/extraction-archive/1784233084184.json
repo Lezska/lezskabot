@@ -1,0 +1,85 @@
+{
+  "ts": 1784233084184,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 88218,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQItpkmRxKvcLdyO0ojECSQ88JuahjAcCD_CiiV6PCm-teVAzIEcHJvZFCAvaMBWhC5ipLqGsO-rIHQWOY5EocNegIJGYIBAmd6&amp;spec=0&amp;rkey=CAESMFetJQOBWVBv4fX8_wQVpQiKBsS5nQLaue-Rc6uMkWrcwpwow9qQP6KYqZ-ijS0qoQ\" file=\"8849EA9E0821AC17629AA0B28A580E04.png\" sub-type=\"1\" file-size=\"14400\"/>",
+        "timestamp": 1784230965543
+      },
+      {
+        "id": 88217,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "睡觉睡觉",
+        "timestamp": 1784230963305
+      },
+      {
+        "id": 88216,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "晚安",
+        "timestamp": 1784230855555
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[03:42] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQItpkmRxKvcLdyO0ojECSQ88JuahjAcCD_CiiV6PCm-teVAzIEcHJvZFCAvaMBWhC5ipLqGsO-rIHQWOY5EocNegIJGYIBAmd6&amp;spec=0&amp;rkey=CAESMF\n[03:42] 睡觉睡觉\n[03:40] 晚安",
+  "raw": "睡觉睡觉\n晚安\n梦里啥都有\n好困啊\n撑不住了\n碎觉碎觉\n该睡了\n眼睛睁不开了\n躺平了\n收工收工\n明天再说\n先撤了\n拜拜啦\n睡了睡了\n困成狗了\n不想动\n脑子宕机了\n电量不足\n要死了困\n该充电了\n扛不住了\n眼睛糊了\nzzz\n晚安玛卡巴卡\n不聊了\n溜了溜了\n告辞\n睡了晚安",
+  "phrases": [
+    "睡觉睡觉",
+    "晚安",
+    "梦里啥都有",
+    "好困啊",
+    "撑不住了",
+    "碎觉碎觉",
+    "该睡了",
+    "眼睛睁不开了",
+    "躺平了",
+    "收工收工",
+    "明天再说",
+    "先撤了",
+    "拜拜啦",
+    "睡了睡了",
+    "困成狗了",
+    "不想动",
+    "脑子宕机了",
+    "电量不足",
+    "要死了困",
+    "该充电了",
+    "扛不住了",
+    "眼睛糊了",
+    "zzz",
+    "晚安玛卡巴卡",
+    "不聊了",
+    "溜了溜了",
+    "告辞",
+    "睡了晚安"
+  ],
+  "added": [
+    "梦里啥都有",
+    "碎觉碎觉",
+    "眼睛睁不开了",
+    "明天再说",
+    "拜拜啦",
+    "困成狗了",
+    "脑子宕机了",
+    "电量不足",
+    "要死了困",
+    "该充电了",
+    "扛不住了",
+    "眼睛糊了",
+    "不聊了",
+    "睡了晚安"
+  ]
+}

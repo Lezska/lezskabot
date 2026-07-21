@@ -1,0 +1,7 @@
+{
+  "name": "koishi-plugin-random-answer",
+  "version": "0.1.0",
+  "description": "听写随机词回答。问开头消息触发，解析 什么/谁/多少/几/干什么/为什么/X不X/A还是B/概率 等关键字，从词库抽取或替换。",
+  "main": "lib/index.js",
+  "koishi": {}
+}

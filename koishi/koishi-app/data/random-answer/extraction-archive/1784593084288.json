@@ -1,0 +1,78 @@
+{
+  "ts": 1784593084288,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 117843,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1569181511",
+        "user_name": "ELAINA",
+        "role": "user",
+        "content": "👍👍👍",
+        "timestamp": 1784592475540
+      },
+      {
+        "id": 117842,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "971217490",
+        "user_name": "桜の花",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhSzmjF6ewfhJunJd-aobqbeRNTC8BjG2Bcg_woo66Xt9bzilQMyBHByb2RQgL2jAVoQYpEtLhSEgn2oj_4RCjyIgHoCl2aCAQJuag&amp;spec=0&amp;rkey=CAMSMJ45WF4pB2AJ0tawGjvOhSfQa0xdccKAehAEfNxsmdUTfqfjK85OCV5Hik3DX6wXaQ\" file=\"C69E9F9EA19BA58C2CA40845FCECA653.jpg\" sub-type=\"1\" file-size=\"388166\"/>",
+        "timestamp": 1784592445916
+      },
+      {
+        "id": 117841,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1469078804",
+        "user_name": "KKKKKK",
+        "role": "user",
+        "content": "年轻人看点片没事😋",
+        "timestamp": 1784592248750
+      },
+      {
+        "id": 117840,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1569181511",
+        "user_name": "ELAINA",
+        "role": "user",
+        "content": "<forward id=\"7664762598561162880\"/>",
+        "timestamp": 1784591609274
+      },
+      {
+        "id": 117839,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1469078804",
+        "user_name": "KKKKKK",
+        "role": "user",
+        "content": "早安",
+        "timestamp": 1784591160360
+      },
+      {
+        "id": 117838,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3678291414",
+        "user_name": "s.h.0108_Ln",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhR-pH8d0xOkBD_I1vTJBom1jVvu3hjQqR0g_woom8-RlbXilQMyBHByb2RQgL2jAVoQaxEcYC0zdkDTUXVcI5q0GHoCaSmCAQJuag&amp;spec=0&amp;rkey=CAQSMJ0Zyujx1Q3jmddPkNOQVc2TycAc8X-v6AJJqXRbvaPO5AzX6EzRo9cciX2kqFiBLA\" file=\"FCE77D6AA7D4465866F867F67AE72779.jpg\" sub-type=\"1\" file-size=\"480464\"/>",
+        "timestamp": 1784590363837
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[08:07] 👍👍👍\n[08:07] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhSzmjF6ewfhJunJd-aobqbeRNTC8BjG2Bcg_woo66Xt9bzilQMyBHByb2RQgL2jAVoQYpEtLhSEgn2oj_4RCjyIgHoCl2aCAQJuag&amp;spec=0&amp;rkey=CAMS\n[08:04] 年轻人看点片没事😋\n[07:53] <forward id=\"7664762598561162880\"/>\n[07:46] 早安\n[07:32] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhR-pH8d0xOkBD_I1vTJBom1jVvu3hjQqR0g_woom8-RlbXilQMyBHByb2RQgL2jAVoQaxEcYC0zdkDTUXVcI5q0GHoCaSmCAQJuag&amp;spec=0&amp;rkey=CAQS",
+  "raw": "早\n👍👍👍\n年轻人看点片没事😋\n早安",
+  "phrases": [
+    "早",
+    "👍👍👍",
+    "年轻人看点片没事😋",
+    "早安"
+  ],
+  "added": [
+    "年轻人看点片没事😋"
+  ]
+}

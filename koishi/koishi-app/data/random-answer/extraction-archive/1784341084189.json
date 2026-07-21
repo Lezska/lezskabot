@@ -1,0 +1,201 @@
+{
+  "ts": 1784341084189,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 93861,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3534850564",
+        "user_name": "𝓢𝖙𝖆𝖗𝖉𝖚𝖘𝖙✡",
+        "role": "user",
+        "content": "签到",
+        "timestamp": 1784340612523
+      },
+      {
+        "id": 93860,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1296434423",
+        "user_name": "随风飘流",
+        "role": "user",
+        "content": "等会",
+        "timestamp": 1784340108418
+      },
+      {
+        "id": 93859,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2729599723",
+        "user_name": "砂糖",
+        "role": "user",
+        "content": "深圳",
+        "timestamp": 1784340037511
+      },
+      {
+        "id": 93858,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2729599723",
+        "user_name": "砂糖",
+        "role": "user",
+        "content": "<at id=\"1296434423\" name=\"随风飘流\"/> 看看",
+        "timestamp": 1784340032169
+      },
+      {
+        "id": 93857,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1296434423",
+        "user_name": "随风飘流",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhTY87F9D2GO4uVVu8w_rPEXErGMNxjUViD_CijjwIS5kNuVAzIEcHJvZFCAvaMBWhDRLtWaGYm9GPEECnpE5C2IegIhE4IBAmd6&amp;spec=0&amp;rkey=CAESMA4KzM-Kpfp34IPjbkXR_LOnKvwWOW6XM1YCRmAKpuXXX9SGd6svypHQgx0amEq9wQ\" file=\"DF98496A64E4CBDD5E6080F26E1BE720.jpg\" sub-type=\"1\" file-size=\"11092\"/>",
+        "timestamp": 1784339989118
+      },
+      {
+        "id": 93856,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2718246309",
+        "user_name": "李子",
+        "role": "user",
+        "content": "<video src=\"https://multimedia.nt.qq.com.cn/download?appid=1415&amp;format=origin&amp;orgfmt=t264&amp;spec=0&amp;rkey=CAISqAGKPkFJeHAjck4EhJh61YQB1rWqJFzAtmFGrd1uPiXoWY1oeIoJioUflZ_Jjak6hOKvWGuXEEa9PeXTzI1Sp-x4FIwFyIiNG5fkurdmQpQNIn2zpGBgBYJu5uOA_L_3SLd1x6GVjqJwnP4q12Zd-Q7ux0cp0G8AXHpRUoUJrcLsu3d2-5EkXeKGUHBEx32YOBtgFHdPlj5otpMwPmXb5282LKJnNiILJi4\" file=\"31023effa1016cc3411fc36bec6da010.mp4\" path=\"/root/.config/QQ/nt_qq_c783e4d0291ea9313653a01262674807/nt_data/Video/2026-07/Ori/31023effa1016cc3411fc36bec6da010.mp4\" file-size=\"5663992\"/>",
+        "timestamp": 1784339931949
+      },
+      {
+        "id": 93855,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2549628272",
+        "user_name": "芙锦",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhRwbN01lQAxlQ0I_Fw8dykZcpTSpRiNkjIg_wools6hl5DblQMyBHByb2RQgL2jAVoQvYza8VtJIhIzhk3mPq0x63oCvzuCAQJneg&amp;spec=0&amp;rkey=CAESMA4KzM-Kpfp34IPjbkXR_LOnKvwWOW6XM1YCRmAKpuXXX9SGd6svypHQgx0amEq9wQ\" file=\"E02048BA7FF29F12A348F21DAEC16982.jpg\" sub-type=\"1\" file-size=\"821517\"/>",
+        "timestamp": 1784339917723
+      },
+      {
+        "id": 93854,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2718246309",
+        "user_name": "李子",
+        "role": "user",
+        "content": "<audio src=\"https://multimedia.nt.qq.com.cn/download?appid=1403&amp;fileid=EhTkR3wKAO_d6wZQz4e8fqFLdNJ2mhi8iQIg-woo7qa1h5DblQMyBHByb2RQgPUkWhB74JfcqSlYDcgCcnplHSEvegLwO4IBAm5q&amp;format=amr&amp;rkey=CAISqAGKPkFJeHAjck4EhJh61YQBaicABpg4JG_hftrTgVjUDUNJmg3wwNQZQT8B2bZFimNLJi-XHDhtke4q-7j5T7XIOT8ab1zCAHK0UmS40o2RZV0AQV0WI697HrJN_t8HN1wv5is_NW_mFh3XCCI9NqVjQNnCDJEjCDE-Bk16-eIgkwjwdQaGykvPutaR3V28qczmbdt5S7Ifb6REFLLGAb995bXWKxxWv3c\" file=\"fa06f9e4462b5fd2220eea6d93d26846.amr\" path=\"/root/.config/QQ/nt_qq_c783e4d0291ea9313653a01262674807/nt_data/Ptt/2026-07/Ori/fa06f9e4462b5fd2220eea6d93d26846.amr\" file-size=\"33980\"/>",
+        "timestamp": 1784339885406
+      },
+      {
+        "id": 93853,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1537952619",
+        "user_name": "安广多惠子",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhSNHjG05jOC2-iK5tnD2VudCSWU0xjsjgMg_woon7CatY_blQMyBHByb2RQgL2jAVoQUaqenm4as0Wse6_DMhbjg3oCfYyCAQJuag&amp;spec=0&amp;rkey=CAESMA4KzM-Kpfp34IPjbkXR_LOnKvwWOW6XM1YCRmAKpuXXX9SGd6svypHQgx0amEq9wQ\" file=\"A37F4EA9D126DC81C7414E8A03C1A21E.jpg\" sub-type=\"1\" file-size=\"51052\"/>",
+        "timestamp": 1784339712664
+      },
+      {
+        "id": 93852,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1537952619",
+        "user_name": "安广多惠子",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhTQ4JhCNu2fLznWuWYp59OxSgunPRibiAgg_wooqdWptI_blQMyBHByb2RQgL2jAVoQtU6n_1jUdiBEbr5NwKy-vnoCBdmCAQJuag&amp;spec=0&amp;rkey=CAESMA4KzM-Kpfp34IPjbkXR_LOnKvwWOW6XM1YCRmAKpuXXX9SGd6svypHQgx0amEq9wQ\" file=\"BEE8C6077968BB6F6CC24B958BB905F6.jpg\" sub-type=\"0\" file-size=\"132123\"/>",
+        "timestamp": 1784339711120
+      },
+      {
+        "id": 93851,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3534850564",
+        "user_name": "𝓢𝖙𝖆𝖗𝖉𝖚𝖘𝖙✡",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQ7GHw9cRgR1EgJD9_z0bieM-NUrhiQpk0g_woog6O0s4_blQMyBHByb2RQgL2jAVoQVU3dXj_2rF97_rSrWdvzcnoClPCCAQJneg&amp;spec=0&amp;rkey=CAESMA4KzM-Kpfp34IPjbkXR_LOnKvwWOW6XM1YCRmAKpuXXX9SGd6svypHQgx0amEq9wQ\" file=\"13F45A5700BD1D414A66470F4B2579DE.jpg\" sub-type=\"0\" file-size=\"1266448\"/>",
+        "timestamp": 1784339708223
+      },
+      {
+        "id": 93846,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3534850564",
+        "user_name": "𝓢𝖙𝖆𝖗𝖉𝖚𝖘𝖙✡",
+        "role": "user",
+        "content": "<face id=\"5\" name=\"流泪\" platform=\"onebot\"><img src=\"https://koishi.js.org/QFace/gif/s5.gif\"/></face>",
+        "timestamp": 1784339145431
+      },
+      {
+        "id": 93845,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3534850564",
+        "user_name": "𝓢𝖙𝖆𝖗𝖉𝖚𝖘𝖙✡",
+        "role": "user",
+        "content": "至今驯服不了杯面",
+        "timestamp": 1784339143113
+      },
+      {
+        "id": 93844,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3534850564",
+        "user_name": "𝓢𝖙𝖆𝖗𝖉𝖚𝖘𝖙✡",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhTNJ8kHs7PK6MSZpOTK1NL3sRWZuRiJlFUg_woopIn8oY3blQMyBHByb2RQgL2jAVoQtTRK6-uc2glqc90Is8b0VHoCVzKCAQJneg&amp;spec=0&amp;rkey=CAESMA4KzM-Kpfp34IPjbkXR_LOnKvwWOW6XM1YCRmAKpuXXX9SGd6svypHQgx0amEq9wQ\" file=\"25CD30CD8E30170CB9E8B0798FB2E882.jpg\" sub-type=\"0\" file-size=\"1395209\"/>",
+        "timestamp": 1784339135822
+      },
+      {
+        "id": 93843,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1296434423",
+        "user_name": "随风飘流",
+        "role": "user",
+        "content": "到站了",
+        "timestamp": 1784339106183
+      },
+      {
+        "id": 93842,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1296434423",
+        "user_name": "随风飘流",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhTY87F9D2GO4uVVu8w_rPEXErGMNxjUViD_Ciix9J2TjduVAzIEcHJvZFCAvaMBWhDboxjuJPOUC_IosjaYQy5negLFvIIBAmd6&amp;spec=0&amp;rkey=CAESMA4KzM-Kpfp34IPjbkXR_LOnKvwWOW6XM1YCRmAKpuXXX9SGd6svypHQgx0amEq9wQ\" file=\"DF98496A64E4CBDD5E6080F26E1BE720.jpg\" sub-type=\"1\" file-size=\"11092\"/>",
+        "timestamp": 1784339104540
+      },
+      {
+        "id": 93832,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1569181511",
+        "user_name": "ELAINA",
+        "role": "user",
+        "content": "👍",
+        "timestamp": 1784337617095
+      },
+      {
+        "id": 93831,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1569181511",
+        "user_name": "ELAINA",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhT4UtxyPWiXQmFrvY1qW3-AgJbLEhjc4FIg_woohK2pzYfblQMyBHByb2RQgL2jAVoQq7qvw10pkCVvW1xTX35Fd3oCnReCAQJuag&amp;spec=0&amp;rkey=CAISMAkHfIsz7Z7n_gpxN0MbwvUb_2rfBscC80GmrTXEmcSlSmi0LemX5LSDpwAUD44FfQ\" file=\"642F5262AFEB7B73E0A1B8FA8777F37A.jpg\" sub-type=\"0\" file-size=\"1355868\"/>",
+        "timestamp": 1784337616632
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[10:10] 签到\n[10:01] 等会\n[10:00] 深圳\n[10:00] <at id=\"1296434423\" name=\"随风飘流\"/> 看看\n[09:59] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhTY87F9D2GO4uVVu8w_rPEXErGMNxjUViD_CijjwIS5kNuVAzIEcHJvZFCAvaMBWhDRLtWaGYm9GPEECnpE5C2IegIhE4IBAmd6&amp;spec=0&amp;rkey=CAESMA\n[09:58] <video src=\"https://multimedia.nt.qq.com.cn/download?appid=1415&amp;format=origin&amp;orgfmt=t264&amp;spec=0&amp;rkey=CAISqAGKPkFJeHAjck4EhJh61YQB1rWqJFzAtmFGrd1uPiXoWY1oeIoJioUflZ_Jjak6hOKvWGuXEEa9Pe\n[09:58] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhRwbN01lQAxlQ0I_Fw8dykZcpTSpRiNkjIg_wools6hl5DblQMyBHByb2RQgL2jAVoQvYza8VtJIhIzhk3mPq0x63oCvzuCAQJneg&amp;spec=0&amp;rkey=CAES\n[09:58] <audio src=\"https://multimedia.nt.qq.com.cn/download?appid=1403&amp;fileid=EhTkR3wKAO_d6wZQz4e8fqFLdNJ2mhi8iQIg-woo7qa1h5DblQMyBHByb2RQgPUkWhB74JfcqSlYDcgCcnplHSEvegLwO4IBAm5q&amp;format=amr&amp;rkey=\n[09:55] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhSNHjG05jOC2-iK5tnD2VudCSWU0xjsjgMg_woon7CatY_blQMyBHByb2RQgL2jAVoQUaqenm4as0Wse6_DMhbjg3oCfYyCAQJuag&amp;spec=0&amp;rkey=CAES\n[09:55] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhTQ4JhCNu2fLznWuWYp59OxSgunPRibiAgg_wooqdWptI_blQMyBHByb2RQgL2jAVoQtU6n_1jUdiBEbr5NwKy-vnoCBdmCAQJuag&amp;spec=0&amp;rkey=CAES\n[09:55] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQ7GHw9cRgR1EgJD9_z0bieM-NUrhiQpk0g_woog6O0s4_blQMyBHByb2RQgL2jAVoQVU3dXj_2rF97_rSrWdvzcnoClPCCAQJneg&amp;spec=0&amp;rkey=CAES\n[09:45] <face id=\"5\" name=\"流泪\" platform=\"onebot\"><img src=\"https://koishi.js.org/QFace/gif/s5.gif\"/></face>\n[09:45] 至今驯服不了杯面\n[09:45] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhTNJ8kHs7PK6MSZpOTK1NL3sRWZuRiJlFUg_woopIn8oY3blQMyBHByb2RQgL2jAVoQtTRK6-uc2glqc90Is8b0VHoCVzKCAQJneg&amp;spec=0&amp;rkey=CAES\n[09:45] 到站了\n[09:45] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhTY87F9D2GO4uVVu8w_rPEXErGMNxjUViD_Ciix9J2TjduVAzIEcHJvZFCAvaMBWhDboxjuJPOUC_IosjaYQy5negLFvIIBAmd6&amp;spec=0&amp;rkey=CAESMA\n[09:20] 👍\n[09:20] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhT4UtxyPWiXQmFrvY1qW3-AgJbLEhjc4FIg_woohK2pzYfblQMyBHByb2RQgL2jAVoQq7qvw10pkCVvW1xTX35Fd3oCnReCAQJuag&amp;spec=0&amp;rkey=CAIS",
+  "raw": "签到\n等会\n深圳\n到站了\n至今驯服不了杯面",
+  "phrases": [
+    "签到",
+    "等会",
+    "深圳",
+    "到站了",
+    "至今驯服不了杯面"
+  ],
+  "added": [
+    "深圳",
+    "到站了",
+    "至今驯服不了杯面"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ts": 1784517484279,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 111318,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2815431315",
+        "user_name": "方士兵解",
+        "role": "user",
+        "content": "<json data=\"{&quot;ver&quot;:&quot;1.0.0.19&quot;,&quot;prompt&quot;:&quot;[QQ小程序]同时拥有你QQ和B站好友的竟然是...？&quot;,&quot;config&quot;:{&quot;type&quot;:&quot;normal&quot;,&quot;width&quot;:0,&quot;height&quot;:0,&quot;forward&quot;:1,&quot;autoSize&quot;:0,&quot;ctime&quot;:1784516340,&quot;token&quot;:&quot;ae0c2e84929d76042b68de2163629ba2&quot;},&quot;needShareCallBack&quot;:false,&quot;app&quot;:&quot;com.tencent.miniapp_01&quot;,&quot;view&quot;:&quot;view_8C8E89B49BE609866298ADDFF2DBABA4&quot;,&quot;meta&quot;:{&quot;detail_1&quot;:{&quot;appid&quot;:&quot;1109937557&quot;,&quot;appType&quot;:0,&quot;title&quot;:&quot;哔哩哔哩&quot;,&quot;desc&quot;:&quot;同时拥有你QQ和B站好友的竟然是...？&quot;,&quot;icon&quot;:&quot;https:\\/\\/open.gtimg.cn\\/open\\/app_icon\\/00\\/95\\/17\\/76\\/100951776_100_m.png?t=1784107366&quot;,&quot;preview&quot;:&quot;https:\\/\\/qq.ugcimg.cn\\/v1\\/a0rovnjh3ahbu06225jm323emh4rio875skjkoat9vlec7p31ch6rmv4ilnavuqhr4vlp9h9ct9mqtjl2887ev9eabm95j9ovvl4n0kjmerl6vearkfugbcen79pe689\\/e9vf2tsqr6j29hl2kodb3vahlc&quot;,&quot;url&quot;:&quot;m.q.qq.com\\/a\\/s\\/6cff1ced7f5ae85c7adff683334369d9&quot;,&quot;scene&quot;:1036,&quot;host&quot;:{&quot;uin&quot;:2815431315,&quot;nick&quot;:&quot;方士兵解&quot;},&quot;shareTemplateId&quot;:&quot;8C8E89B49BE609866298ADDFF2DBABA4&quot;,&quot;shareTemplateData&quot;:{},&quot;qqdocurl&quot;:&quot;https:\\/\\/b23.tv\\/jyfk5gC?share_medium=android&amp;share_source=qq&amp;bbid=XUBF10DB140723C15FA6EC7AD021F46836E0B&amp;ts=1784516338397&quot;,&quot;showLittleTail&quot;:&quot;&quot;,&quot;gamePoints&quot;:&quot;&quot;,&quot;gamePointsUrl&quot;:&quot;&quot;,&quot;shareOrigin&quot;:0}}}\"/>",
+        "timestamp": 1784516359726
+      },
+      {
+        "id": 111317,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1296434423",
+        "user_name": "随风飘流",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhT0ikVZN7FVvsxpre7wI1GHDYN12RiW4wEg_wooxr35r53glQMyBHByb2RQgL2jAVoQzA9yxpjQ4FlAdBVp_GXJrXoCbnKCAQJneg&amp;spec=0&amp;rkey=CAISMCpnhPuF5AwD8PeNVlWokT0tIQNWdHygz7SNuuT43Fj_FUBeODQmqLrzayBzNqSpLg\" file=\"19232F7277A48BCDCC2302434A3D6EF8.jpg\" sub-type=\"1\" file-size=\"29078\"/>",
+        "timestamp": 1784515257908
+      },
+      {
+        "id": 111315,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "909913330",
+        "user_name": "人",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQj0Hytq_XvC1vm1VVXUS-c5zOZZBjk-gwg_woo3aDhvJvglQMyBHByb2RQgL2jAVoQAR6bKPlYxyRbuNPirm80nXoCYXyCAQJuag&amp;spec=0&amp;rkey=CAISMCpnhPuF5AwD8PeNVlWokT0tIQNWdHygz7SNuuT43Fj_FUBeODQmqLrzayBzNqSpLg\" file=\"F909692A6D4AEDF0319027BD9DA64416.png\" sub-type=\"0\" file-size=\"212324\"/>",
+        "timestamp": 1784514747950
+      },
+      {
+        "id": 111314,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1242401280",
+        "user_name": "キッテン_ff_59191",
+        "role": "user",
+        "content": "大勺子",
+        "timestamp": 1784514378153
+      },
+      {
+        "id": 111313,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2307984960",
+        "user_name": "Doyouky",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhTvJvy2sD63tUWYDtdzhW9xxXi8RRjDxQsg_woox7Kqv5jglQMyBHByb2RQgL2jAVoQVv6wsmU2VarmwJV5-u2eEXoCoK2CAQJneg&amp;spec=0&amp;rkey=CAISMCpnhPuF5AwD8PeNVlWokT0tIQNWdHygz7SNuuT43Fj_FUBeODQmqLrzayBzNqSpLg\" file=\"CB0AA6149B25BA8A049A0732A566F441.jpg\" sub-type=\"1\" file-size=\"189123\"/>",
+        "timestamp": 1784513947916
+      },
+      {
+        "id": 111312,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2181712967",
+        "user_name": "Bella",
+        "role": "user",
+        "content": "吃不吃 <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhTAoe187wea5zHct2KEFuRrBPwZWRianw8g_wootoX4spjglQMyBHByb2RQgL2jAVoQHTCG77e3WWq9lZ_sKlQA93oCTFyCAQJuag&amp;spec=0&amp;rkey=CAISMCpnhPuF5AwD8PeNVlWokT0tIQNWdHygz7SNuuT43Fj_FUBeODQmqLrzayBzNqSpLg\" file=\"CAC2923217A4FEA47A0D912E0E8FC343.jpg\" sub-type=\"0\" file-size=\"249754\"/>",
+        "timestamp": 1784513923335
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[10:59] <json data=\"{&quot;ver&quot;:&quot;1.0.0.19&quot;,&quot;prompt&quot;:&quot;[QQ小程序]同时拥有你QQ和B站好友的竟然是...？&quot;,&quot;config&quot;:{&quot;type&quot;:&quot;normal&quot;,&quot;width&quot;:0,&quot;height&qu\n[10:40] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhT0ikVZN7FVvsxpre7wI1GHDYN12RiW4wEg_wooxr35r53glQMyBHByb2RQgL2jAVoQzA9yxpjQ4FlAdBVp_GXJrXoCbnKCAQJneg&amp;spec=0&amp;rkey=CAIS\n[10:32] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQj0Hytq_XvC1vm1VVXUS-c5zOZZBjk-gwg_woo3aDhvJvglQMyBHByb2RQgL2jAVoQAR6bKPlYxyRbuNPirm80nXoCYXyCAQJuag&amp;spec=0&amp;rkey=CAIS\n[10:26] 大勺子\n[10:19] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhTvJvy2sD63tUWYDtdzhW9xxXi8RRjDxQsg_woox7Kqv5jglQMyBHByb2RQgL2jAVoQVv6wsmU2VarmwJV5-u2eEXoCoK2CAQJneg&amp;spec=0&amp;rkey=CAIS\n[10:18] 吃不吃 <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhTAoe187wea5zHct2KEFuRrBPwZWRianw8g_wootoX4spjglQMyBHByb2RQgL2jAVoQHTCG77e3WWq9lZ_sKlQA93oCTFyCAQJuag&amp;spec=0&amp;rkey=",
+  "raw": "大勺子\n吃不吃",
+  "phrases": [
+    "大勺子",
+    "吃不吃"
+  ],
+  "added": [
+    "大勺子",
+    "吃不吃"
+  ]
+}

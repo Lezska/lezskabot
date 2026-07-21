@@ -1,0 +1,43 @@
+{
+  "ts": 1784337484188,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 93828,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2307984960",
+        "user_name": "Doyouky",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQyBVOz5lBrRZJBRjkAgiOfTBWyDxiIaSD_Cii6vL2G_tqVAzIEcHJvZFCAvaMBWhDrgoe2H5D5T43FdBcMK4NKegLe5YIBAmd6&amp;spec=0&amp;rkey=CAISMAkHfIsz7Z7n_gpxN0MbwvUb_2rfBscC80GmrTXEmcSlSmi0LemX5LSDpwAUD44FfQ\" file=\"6A0B4FAC8B7D05C11408D01A90E38C9C.jpg\" sub-type=\"1\" file-size=\"13448\"/>",
+        "timestamp": 1784335050620
+      },
+      {
+        "id": 93827,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2307984960",
+        "user_name": "Doyouky",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQitAt0oNFFnK_ASqmm-7Ku2691BhiO7wQg_woo84i07P3alQMyBHByb2RQgL2jAVoQnEZ2yE-HwIQNKWu37berGXoCpeGCAQJneg&amp;spec=0&amp;rkey=CAISMAkHfIsz7Z7n_gpxN0MbwvUb_2rfBscC80GmrTXEmcSlSmi0LemX5LSDpwAUD44FfQ\" file=\"3CB2296FAA9D25AB88D0DC22F51AD5EE.jpg\" sub-type=\"1\" file-size=\"79758\"/>",
+        "timestamp": 1784334995961
+      },
+      {
+        "id": 93826,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3986092865",
+        "user_name": "エヴァ・ドミナンスXII",
+        "role": "user",
+        "content": "签到",
+        "timestamp": 1784334986206
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[08:37] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQyBVOz5lBrRZJBRjkAgiOfTBWyDxiIaSD_Cii6vL2G_tqVAzIEcHJvZFCAvaMBWhDrgoe2H5D5T43FdBcMK4NKegLe5YIBAmd6&amp;spec=0&amp;rkey=CAISMA\n[08:36] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQitAt0oNFFnK_ASqmm-7Ku2691BhiO7wQg_woo84i07P3alQMyBHByb2RQgL2jAVoQnEZ2yE-HwIQNKWu37berGXoCpeGCAQJneg&amp;spec=0&amp;rkey=CAIS\n[08:36] 签到",
+  "raw": "签到",
+  "phrases": [
+    "签到"
+  ],
+  "added": []
+}

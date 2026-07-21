@@ -1,0 +1,412 @@
+{
+  "ts": 1783282647164,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 22484,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2141971921",
+        "user_name": "若离sama",
+        "role": "user",
+        "content": "早安",
+        "timestamp": 1783282504952
+      },
+      {
+        "id": 22483,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3997019972",
+        "user_name": "八号大",
+        "role": "user",
+        "content": "好玩",
+        "timestamp": 1783281435688
+      },
+      {
+        "id": 22482,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1012113121",
+        "user_name": "浮鱼",
+        "role": "user",
+        "content": "ys好玩吗",
+        "timestamp": 1783281163331
+      },
+      {
+        "id": 22481,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3997019972",
+        "user_name": "八号大",
+        "role": "user",
+        "content": "到底谁才是boss",
+        "timestamp": 1783281149711
+      },
+      {
+        "id": 22480,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3997019972",
+        "user_name": "八号大",
+        "role": "user",
+        "content": "<video src=\"https://multimedia.nt.qq.com.cn/download?appid=1415&amp;format=origin&amp;orgfmt=t264&amp;spec=0&amp;rkey=CAESqAGuAyRVcY6SvsLjac6DKmjV6nVIWMEPVIQTA7OFUdcuYKPhiie0EW5UehhAfyCI87j9lHLGGKV9_P1qYV4StYKLN8wqVLrXGdMoSVSCvHC--UKdYf5dmK_ebw60RVfgAAlxAA5deEOIrnO54C3E9oyJzuO3BVA5DvgkgerfmVCB_-6t-CuywLEr5Yb_aXL6C6AOta4BteG_uw7aPZ1hE1HT0n1rlfriqD8\" file=\"6b720c6e7aa1222832705e65194980dd.mp4\" path=\"/root/.config/QQ/nt_qq_c783e4d0291ea9313653a01262674807/nt_data/Video/2026-07/Ori/6b720c6e7aa1222832705e65194980dd.mp4\" file-size=\"5142149\"/>",
+        "timestamp": 1783281135551
+      },
+      {
+        "id": 22479,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3997019972",
+        "user_name": "八号大",
+        "role": "user",
+        "content": "越来越离谱了",
+        "timestamp": 1783281129109
+      },
+      {
+        "id": 22478,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3997019972",
+        "user_name": "八号大",
+        "role": "user",
+        "content": "其实我在玩东方",
+        "timestamp": 1783280781087
+      },
+      {
+        "id": 22477,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3997019972",
+        "user_name": "八号大",
+        "role": "user",
+        "content": "<video src=\"https://multimedia.nt.qq.com.cn/download?appid=1415&amp;format=origin&amp;orgfmt=t264&amp;spec=0&amp;rkey=CAQSqAEznP4727YVI98E5ICLLvgDF1iULjdeTNCy47AxkY2R-g3R-zkHuvI0mNhYwyPK7pX2yYQ-qUyzslMCFx-D7wiz_A6N7x66cGVgs-i1rB2ySRoDaNU0SwjZTKM8af7peH5xdCMuTGASooKfrU_GxLji-xS2mSRiyZwTJNC_J93g5WGT8M8K5s8ahQwcgghj10wN4za6BgG5I46LIFn27GnAIBEbB_CU9hc\" file=\"35d906e9f1cefc6668f56de9f8ed4bfc.mp4\" path=\"/root/.config/QQ/nt_qq_c783e4d0291ea9313653a01262674807/nt_data/Video/2026-07/Ori/35d906e9f1cefc6668f56de9f8ed4bfc.mp4\" file-size=\"1613646\"/>",
+        "timestamp": 1783280779368
+      },
+      {
+        "id": 22476,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3320846932",
+        "user_name": "权威小孩姐",
+        "role": "user",
+        "content": "<at id=\"3980423768\" name=\"Oxygen\"/> 妈妈",
+        "timestamp": 1783280537239
+      },
+      {
+        "id": 22475,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3320846932",
+        "user_name": "权威小孩姐",
+        "role": "user",
+        "content": "四分钟。",
+        "timestamp": 1783280517455
+      },
+      {
+        "id": 22474,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3320846932",
+        "user_name": "权威小孩姐",
+        "role": "user",
+        "content": "为什么德语B2要考学术报告。",
+        "timestamp": 1783280515470
+      },
+      {
+        "id": 22473,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3320846932",
+        "user_name": "权威小孩姐",
+        "role": "user",
+        "content": "诡异",
+        "timestamp": 1783280506827
+      },
+      {
+        "id": 22472,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "真睡了。",
+        "timestamp": 1783280435093
+      },
+      {
+        "id": 22471,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "打错字了。",
+        "timestamp": 1783280432384
+      },
+      {
+        "id": 22470,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "什么的。",
+        "timestamp": 1783280428463
+      },
+      {
+        "id": 22469,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "你看到了回我一下我先睡了。。",
+        "timestamp": 1783280370052
+      },
+      {
+        "id": 22468,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "<at id=\"1296434423\" name=\"随风飘流\"/> 哦对了你有没有特别喜欢的游戏角色什么都",
+        "timestamp": 1783280349297
+      },
+      {
+        "id": 22467,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "好困。",
+        "timestamp": 1783280273896
+      },
+      {
+        "id": 22466,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "我得睡了。。",
+        "timestamp": 1783280271512
+      },
+      {
+        "id": 22465,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhR61wsdMZ7lv4eVoafMKaXixYQ4qRjwqAMg_woojdTf1aS8lQMyBHByb2RQgL2jAVoQ1E1qDfk6WIJI7qxIWcAjiXoCLqWCAQJneg&amp;spec=0&amp;rkey=CAMSMLpoiuK5ulYyQFmTYZbc8pqSw63XZ7VCwGlu1A34WdlHNkTS8F_e4LLc9tRiiqxJTg\" file=\"1884932F819B6D9F7272EA6D3EAEDE64.png\" sub-type=\"1\" file-size=\"54384\"/>",
+        "timestamp": 1783280265489
+      },
+      {
+        "id": 22464,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "那确实没办法。",
+        "timestamp": 1783280263741
+      },
+      {
+        "id": 22463,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1296434423",
+        "user_name": "随风飘流",
+        "role": "user",
+        "content": "嗯对）",
+        "timestamp": 1783280190360
+      },
+      {
+        "id": 22462,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhSPEKPHLppl02jiD8CytS7doPyrMxjhjAgg_wootomdk6S8lQMyBHByb2RQgL2jAVoQgg624rVh86wOAFXhEsb-zXoC_3qCAQJneg&amp;spec=0&amp;rkey=CAMSMLpoiuK5ulYyQFmTYZbc8pqSw63XZ7VCwGlu1A34WdlHNkTS8F_e4LLc9tRiiqxJTg\" file=\"4A12BC4F678A5A57C9A860EA669E47D1.png\" sub-type=\"1\" file-size=\"132705\"/>",
+        "timestamp": 1783280125878
+      },
+      {
+        "id": 22461,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "就单纯睡不着？",
+        "timestamp": 1783280123838
+      },
+      {
+        "id": 22460,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1296434423",
+        "user_name": "随风飘流",
+        "role": "user",
+        "content": "没事",
+        "timestamp": 1783280106044
+      },
+      {
+        "id": 22459,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "咋回事",
+        "timestamp": 1783280091514
+      },
+      {
+        "id": 22458,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1296434423",
+        "user_name": "随风飘流",
+        "role": "user",
+        "content": "因为睡不着（）",
+        "timestamp": 1783280074607
+      },
+      {
+        "id": 22457,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "晚安",
+        "timestamp": 1783280070300
+      },
+      {
+        "id": 22456,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "睡觉睡觉",
+        "timestamp": 1783280067459
+      },
+      {
+        "id": 22455,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "现在困死了。",
+        "timestamp": 1783280028951
+      },
+      {
+        "id": 22454,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3320846932",
+        "user_name": "权威小孩姐",
+        "role": "user",
+        "content": "<at id=\"3980423768\" name=\"Oxygen\"/> 妈妈",
+        "timestamp": 1783280018562
+      },
+      {
+        "id": 22453,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "我刷视频刷爽了",
+        "timestamp": 1783280018251
+      },
+      {
+        "id": 22452,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "怎么你也不睡",
+        "timestamp": 1783280013360
+      },
+      {
+        "id": 22451,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1296434423",
+        "user_name": "随风飘流",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhT5TZnLOujPEYGADyhdZRy_bgj_FRjHGSD_CiipkebmoryVAzIEcHJvZFCAvaMBWhBCE5uC9I0igpEmrdCgq6UsegKYFYIBAmd6&amp;spec=0&amp;rkey=CAMSMLpoiuK5ulYyQFmTYZbc8pqSw63XZ7VCwGlu1A34WdlHNkTS8F_e4LLc9tRiiqxJTg\" file=\"3E79EE02108F28D3348FF4A602CC23D1.jpg\" sub-type=\"1\" file-size=\"3271\"/>",
+        "timestamp": 1783279764545
+      },
+      {
+        "id": 22450,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3320846932",
+        "user_name": "权威小孩姐",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQgl42Rrt3PRv1bagR8QSSCIAWfRBiflSgg_woo85a7z6K8lQMyBHByb2RQgL2jAVoQjA-ZEvMnKaMUDuLOL0ON7noCA7yCAQJneg&amp;spec=0&amp;rkey=CAMSMLpoiuK5ulYyQFmTYZbc8pqSw63XZ7VCwGlu1A34WdlHNkTS8F_e4LLc9tRiiqxJTg\" file=\"F91E42179B347FA4055CDBCD7EA523A2.png\" sub-type=\"0\" file-size=\"658079\"/>",
+        "timestamp": 1783279718401
+      },
+      {
+        "id": 22449,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3320846932",
+        "user_name": "权威小孩姐",
+        "role": "user",
+        "content": "？",
+        "timestamp": 1783279716569
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[04:15] 早安\n[03:57] 好玩\n[03:52] ys好玩吗\n[03:52] 到底谁才是boss\n[03:52] <video src=\"https://multimedia.nt.qq.com.cn/download?appid=1415&amp;format=origin&amp;orgfmt=t264&amp;spec=0&amp;rkey=CAESqAGuAyRVcY6SvsLjac6DKmjV6nVIWMEPVIQTA7OFUdcuYKPhiie0EW5UehhAfyCI87j9lHLGGKV9_P\n[03:52] 越来越离谱了\n[03:46] 其实我在玩东方\n[03:46] <video src=\"https://multimedia.nt.qq.com.cn/download?appid=1415&amp;format=origin&amp;orgfmt=t264&amp;spec=0&amp;rkey=CAQSqAEznP4727YVI98E5ICLLvgDF1iULjdeTNCy47AxkY2R-g3R-zkHuvI0mNhYwyPK7pX2yYQ-qUyzsl\n[03:42] <at id=\"3980423768\" name=\"Oxygen\"/> 妈妈\n[03:41] 四分钟。\n[03:41] 为什么德语B2要考学术报告。\n[03:41] 诡异\n[03:40] 真睡了。\n[03:40] 打错字了。\n[03:40] 什么的。\n[03:39] 你看到了回我一下我先睡了。。\n[03:39] <at id=\"1296434423\" name=\"随风飘流\"/> 哦对了你有没有特别喜欢的游戏角色什么都\n[03:37] 好困。\n[03:37] 我得睡了。。\n[03:37] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhR61wsdMZ7lv4eVoafMKaXixYQ4qRjwqAMg_woojdTf1aS8lQMyBHByb2RQgL2jAVoQ1E1qDfk6WIJI7qxIWcAjiXoCLqWCAQJneg&amp;spec=0&amp;rkey=CAMS\n[03:37] 那确实没办法。\n[03:36] 嗯对）\n[03:35] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhSPEKPHLppl02jiD8CytS7doPyrMxjhjAgg_wootomdk6S8lQMyBHByb2RQgL2jAVoQgg624rVh86wOAFXhEsb-zXoC_3qCAQJneg&amp;spec=0&amp;rkey=CAMS\n[03:35] 就单纯睡不着？\n[03:35] 没事\n[03:34] 咋回事\n[03:34] 因为睡不着（）\n[03:34] 晚安\n[03:34] 睡觉睡觉\n[03:33] 现在困死了。\n[03:33] <at id=\"3980423768\" name=\"Oxygen\"/> 妈妈\n[03:33] 我刷视频刷爽了\n[03:33] 怎么你也不睡\n[03:29] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhT5TZnLOujPEYGADyhdZRy_bgj_FRjHGSD_CiipkebmoryVAzIEcHJvZFCAvaMBWhBCE5uC9I0igpEmrdCgq6UsegKYFYIBAmd6&amp;spec=0&amp;rkey=CAMSML\n[03:28] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQgl42Rrt3PRv1bagR8QSSCIAWfRBiflSgg_woo85a7z6K8lQMyBHByb2RQgL2jAVoQjA-ZEvMnKaMUDuLOL0ON7noCA7yCAQJneg&amp;spec=0&amp;rkey=CAMS\n[03:28] ？",
+  "raw": "早安\n晚安\n好困\n睡了\n诡异\n好玩\n离谱\n咋回事\n没事\n嗯对\n好耶\n哈哈哈\n笑死\n真的吗\n可以\n不对\n卧槽\n我错了\n不行\n服了\n算了\n救命\n饿了吗\n好耶\n绝了\n绷不住了\n真的吗\n笑不活了\n啊这\n离谱\n怎么办",
+  "phrases": [
+    "早安",
+    "晚安",
+    "好困",
+    "睡了",
+    "诡异",
+    "好玩",
+    "离谱",
+    "咋回事",
+    "没事",
+    "嗯对",
+    "好耶",
+    "哈哈哈",
+    "笑死",
+    "真的吗",
+    "可以",
+    "不对",
+    "卧槽",
+    "我错了",
+    "不行",
+    "服了",
+    "算了",
+    "救命",
+    "饿了吗",
+    "好耶",
+    "绝了",
+    "绷不住了",
+    "真的吗",
+    "笑不活了",
+    "啊这",
+    "离谱",
+    "怎么办"
+  ],
+  "added": [
+    "好困",
+    "诡异",
+    "好玩",
+    "咋回事",
+    "嗯对",
+    "不对",
+    "我错了",
+    "饿了吗"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ts": 1784243884184,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 88235,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2680244246",
+        "user_name": "阿瑠瓶",
+        "role": "user",
+        "content": "早",
+        "timestamp": 1784243843114
+      },
+      {
+        "id": 88234,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2729599723",
+        "user_name": "砂糖",
+        "role": "user",
+        "content": "早",
+        "timestamp": 1784243357314
+      },
+      {
+        "id": 88233,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3999320948",
+        "user_name": "鲸云_Whalecloud",
+        "role": "user",
+        "content": "早",
+        "timestamp": 1784243080991
+      },
+      {
+        "id": 88232,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1652933285",
+        "user_name": "榆",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQcekB35s0kxcTD0vcbIwIHO4F9hRiP1RIg_woowK6xjZ_YlQMyBHByb2RQgL2jAVoQy87xhNP1XKD_05KxFBpdb3oCNO6CAQJneg&amp;spec=0&amp;rkey=CAQSMLZLgZbybGrHiQDUozXZFvS9zafmV94NNBo1jheThej6esQyoFA4D16WKraWfWZhGg\" file=\"C580B5FD504A17A3FEC5E6B09D0B540F.png\" sub-type=\"0\" file-size=\"305807\"/>",
+        "timestamp": 1784240847708
+      },
+      {
+        "id": 88231,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1652933285",
+        "user_name": "榆",
+        "role": "user",
+        "content": "我勒个跳跳糖",
+        "timestamp": 1784240835480
+      },
+      {
+        "id": 88230,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1652933285",
+        "user_name": "榆",
+        "role": "user",
+        "content": "早安",
+        "timestamp": 1784240759261
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[07:17] 早\n[07:09] 早\n[07:04] 早\n[06:27] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQcekB35s0kxcTD0vcbIwIHO4F9hRiP1RIg_woowK6xjZ_YlQMyBHByb2RQgL2jAVoQy87xhNP1XKD_05KxFBpdb3oCNO6CAQJneg&amp;spec=0&amp;rkey=CAQS\n[06:27] 我勒个跳跳糖\n[06:25] 早安",
+  "raw": "早\n早安\n我勒个跳跳糖",
+  "phrases": [
+    "早",
+    "早安",
+    "我勒个跳跳糖"
+  ],
+  "added": [
+    "我勒个跳跳糖"
+  ]
+}

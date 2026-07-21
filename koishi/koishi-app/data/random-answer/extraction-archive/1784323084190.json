@@ -1,0 +1,31 @@
+{
+  "ts": 1784323084190,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 93740,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1242401280",
+        "user_name": "キッテン_ff_59191",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhRtjDPcSa2f3TLqrTvMFBNCpwxypRjm9Agg_woossWj_MXalQMyBHByb2RQgL2jAVoQ1s2W9PNWpLOHM78zqs2rQXoCOwiCAQJneg&amp;spec=0&amp;rkey=CAQSMAeSA6ibx-Wi2u9CkdbVuzmGOeARLmIzzvmYZ91k-m1Kwn5osYMDiy3G7cqhQZ_vgA\" file=\"B37EE48C12A33B8B470CBA603D02854D.jpg\" sub-type=\"1\" file-size=\"146022\"/>",
+        "timestamp": 1784319997263
+      },
+      {
+        "id": 93739,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1242401280",
+        "user_name": "キッテン_ff_59191",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhT1wirkl7thjtvmJWa2JEoYh-CkVBja_kwg_woo7raP9cXalQMyBHByb2RQgL2jAVoQa4TN7EEPYVdgK3IwLDX5cnoCcBOCAQJneg&amp;spec=0&amp;rkey=CAQSMAeSA6ibx-Wi2u9CkdbVuzmGOeARLmIzzvmYZ91k-m1Kwn5osYMDiy3G7cqhQZ_vgA\" file=\"2BCBB187CD9354A884B6B49C97DE3422.png\" sub-type=\"0\" file-size=\"1261402\"/>",
+        "timestamp": 1784319984457
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[04:26] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhRtjDPcSa2f3TLqrTvMFBNCpwxypRjm9Agg_woossWj_MXalQMyBHByb2RQgL2jAVoQ1s2W9PNWpLOHM78zqs2rQXoCOwiCAQJneg&amp;spec=0&amp;rkey=CAQS\n[04:26] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhT1wirkl7thjtvmJWa2JEoYh-CkVBja_kwg_woo7raP9cXalQMyBHByb2RQgL2jAVoQa4TN7EEPYVdgK3IwLDX5cnoCcBOCAQJneg&amp;spec=0&amp;rkey=CAQS",
+  "raw": "（输入仅包含图片消息，没有可提取的文字短句）",
+  "phrases": [],
+  "added": []
+}

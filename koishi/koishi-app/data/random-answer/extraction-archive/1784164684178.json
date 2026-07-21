@@ -1,0 +1,119 @@
+{
+  "ts": 1784164684178,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 82798,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "956937232",
+        "user_name": "神秘ネ推男",
+        "role": "user",
+        "content": "我去",
+        "timestamp": 1784164234499
+      },
+      {
+        "id": 82797,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "956937232",
+        "user_name": "神秘ネ推男",
+        "role": "user",
+        "content": "居然赢了",
+        "timestamp": 1784164232458
+      },
+      {
+        "id": 82796,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "956937232",
+        "user_name": "神秘ネ推男",
+        "role": "user",
+        "content": "下半场没看睡觉了",
+        "timestamp": 1784164229293
+      },
+      {
+        "id": 82795,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "956937232",
+        "user_name": "神秘ネ推男",
+        "role": "user",
+        "content": "<at id=\"1569181511\" name=\"nene好泡友\"/> 牛逼",
+        "timestamp": 1784164222832
+      },
+      {
+        "id": 82791,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3055983840",
+        "user_name": "希",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhSPW_LoFH-uR6IvaYPhPJ6xYC_OcBi3qx0g_woo7viWy_3VlQMyBHByb2RQgL2jAVoQc3Kz-nzFM_Y3BUC9FLFmmnoCg0OCAQJneg&amp;spec=0&amp;rkey=CAESMNDHarC0wDeY-d6oanWvX4ZmmVXg8Pzy2ywsysJE8v7YJLDywepfisooJINjqGCIzQ\" file=\"D0000067201A07E5FCC50BBBEF41C24B.jpg\" sub-type=\"0\" file-size=\"480695\"/>",
+        "timestamp": 1784163127718
+      },
+      {
+        "id": 82790,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3055983840",
+        "user_name": "希",
+        "role": "user",
+        "content": "飞飞猫",
+        "timestamp": 1784163127265
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[09:10] 我去\n[09:10] 居然赢了\n[09:10] 下半场没看睡觉了\n[09:10] <at id=\"1569181511\" name=\"nene好泡友\"/> 牛逼\n[08:52] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhSPW_LoFH-uR6IvaYPhPJ6xYC_OcBi3qx0g_woo7viWy_3VlQMyBHByb2RQgL2jAVoQc3Kz-nzFM_Y3BUC9FLFmmnoCg0OCAQJneg&amp;spec=0&amp;rkey=CAES\n[08:52] 飞飞猫",
+  "raw": "我去\n居然赢了\n下半场没看睡觉了\n牛逼\n笑死我了\n哈哈哈哈哈\n绝了\n离谱\n绷不住了\n笑死\n牛啊\n真服了\n太强了吧\n破防了\n可以啊\n逆天\n什么鬼\n好家伙\n笑不活了\n太真实了\n服了服了\n这都行\n离谱到家\n我哭死\n我裂开\n我真的会谢\n笑到头掉\n一脸懵逼\n瞬间清醒\n这波啊\n懂的都懂\n我直接好家伙\n就这？\n啊这\n血压升高\n当场去世\n气得发抖\n笑出声",
+  "phrases": [
+    "我去",
+    "居然赢了",
+    "下半场没看睡觉了",
+    "牛逼",
+    "笑死我了",
+    "哈哈哈哈哈",
+    "绝了",
+    "离谱",
+    "绷不住了",
+    "笑死",
+    "牛啊",
+    "真服了",
+    "太强了吧",
+    "破防了",
+    "可以啊",
+    "逆天",
+    "什么鬼",
+    "好家伙",
+    "笑不活了",
+    "太真实了",
+    "服了服了",
+    "这都行",
+    "离谱到家",
+    "我哭死",
+    "我裂开",
+    "我真的会谢",
+    "笑到头掉",
+    "一脸懵逼",
+    "瞬间清醒",
+    "这波啊",
+    "懂的都懂",
+    "我直接好家伙",
+    "就这？",
+    "啊这",
+    "血压升高",
+    "当场去世",
+    "气得发抖",
+    "笑出声"
+  ],
+  "added": [
+    "居然赢了",
+    "下半场没看睡觉了",
+    "太强了吧",
+    "一脸懵逼",
+    "瞬间清醒",
+    "我直接好家伙",
+    "当场去世",
+    "气得发抖"
+  ]
+}

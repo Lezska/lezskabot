@@ -1,0 +1,103 @@
+{
+  "ts": 1784344684188,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 93871,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3416987485",
+        "user_name": "希辞",
+        "role": "user",
+        "content": "<at id=\"3646945294\" name=\"奈々ちゃん╰\"/>",
+        "timestamp": 1784342968482
+      },
+      {
+        "id": 93870,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1296434423",
+        "user_name": "随风飘流",
+        "role": "user",
+        "content": "<at id=\"3646945294\" name=\"奈々ちゃん╰\"/>",
+        "timestamp": 1784342880000
+      },
+      {
+        "id": 93869,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1296434423",
+        "user_name": "随风飘流",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhTY87F9D2GO4uVVu8w_rPEXErGMNxjUViD_CijwrIG6mduVAzIEcHJvZFCAvaMBWhCHpCUBHt9-Esd2OJxyTv2XegJalYIBAmd6&amp;spec=0&amp;rkey=CAESMJSbEiJ_6zp6gRAqh5awZNoRWCpcMrs7NIiqRiYK6-0L22khc5x_dm3TWtg3XPLsdg\" file=\"DF98496A64E4CBDD5E6080F26E1BE720.jpg\" sub-type=\"1\" file-size=\"11092\"/>",
+        "timestamp": 1784342407169
+      },
+      {
+        "id": 93866,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3055983840",
+        "user_name": "希",
+        "role": "user",
+        "content": "远哥护卫队",
+        "timestamp": 1784341491706
+      },
+      {
+        "id": 93865,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3055983840",
+        "user_name": "希",
+        "role": "user",
+        "content": "接下来向我们走来的是",
+        "timestamp": 1784341486557
+      },
+      {
+        "id": 93864,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1652933285",
+        "user_name": "榆",
+        "role": "user",
+        "content": "一个棱镜球",
+        "timestamp": 1784341476734
+      },
+      {
+        "id": 93863,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1652933285",
+        "user_name": "榆",
+        "role": "user",
+        "content": "远哥严选<at id=\"3494950988\" name=\"千羽\"/> <at id=\"3911816075\" name=\"check是结奈૮₍ ˃̵ᴗ˂̵₎₎ა\"/> <at id=\"3055983840\" name=\"希\"/>",
+        "timestamp": 1784341421905
+      },
+      {
+        "id": 93862,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1652933285",
+        "user_name": "榆",
+        "role": "user",
+        "content": "看看鸭pp",
+        "timestamp": 1784341317312
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[10:49] <at id=\"3646945294\" name=\"奈々ちゃん╰\"/>\n[10:48] <at id=\"3646945294\" name=\"奈々ちゃん╰\"/>\n[10:40] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhTY87F9D2GO4uVVu8w_rPEXErGMNxjUViD_CijwrIG6mduVAzIEcHJvZFCAvaMBWhCHpCUBHt9-Esd2OJxyTv2XegJalYIBAmd6&amp;spec=0&amp;rkey=CAESMJ\n[10:24] 远哥护卫队\n[10:24] 接下来向我们走来的是\n[10:24] 一个棱镜球\n[10:23] 远哥严选<at id=\"3494950988\" name=\"千羽\"/> <at id=\"3911816075\" name=\"check是结奈૮₍ ˃̵ᴗ˂̵₎₎ა\"/> <at id=\"3055983840\" name=\"希\"/>\n[10:21] 看看鸭pp",
+  "raw": "接下来向我们走来的是\n远哥严选\n看看鸭pp\n一个棱镜球\n远哥护卫队",
+  "phrases": [
+    "接下来向我们走来的是",
+    "远哥严选",
+    "看看鸭pp",
+    "一个棱镜球",
+    "远哥护卫队"
+  ],
+  "added": [
+    "接下来向我们走来的是",
+    "远哥严选",
+    "看看鸭pp",
+    "一个棱镜球",
+    "远哥护卫队"
+  ]
+}

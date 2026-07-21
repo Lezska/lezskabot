@@ -1,0 +1,252 @@
+{
+  "ts": 1783248683674,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 19899,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "971217490",
+        "user_name": "桜の花",
+        "role": "user",
+        "content": "这么好看",
+        "timestamp": 1783248680685
+      },
+      {
+        "id": 19898,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "971217490",
+        "user_name": "桜の花",
+        "role": "user",
+        "content": "我嘞个豆",
+        "timestamp": 1783248679189
+      },
+      {
+        "id": 19897,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1569181511",
+        "user_name": "ELAINA",
+        "role": "user",
+        "content": "这个真好看",
+        "timestamp": 1783248652913
+      },
+      {
+        "id": 19896,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3320846932",
+        "user_name": "权威小孩姐",
+        "role": "user",
+        "content": "问我被人重视的概率",
+        "timestamp": 1783248644841
+      },
+      {
+        "id": 19895,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2141971921",
+        "user_name": "若离sama",
+        "role": "user",
+        "content": "<at id=\"971217490\" name=\"水上由岐🌸\"/>",
+        "timestamp": 1783248644153
+      },
+      {
+        "id": 19893,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2141971921",
+        "user_name": "若离sama",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhSf-kbVkQVL9EhVam4iTXW9dXqPBxiehwUg_woo64Wi7K67lQMyBHByb2RQgL2jAVoQIR3672UAUaq8RINA8Nk2P3oCNaCCAQJneg&amp;spec=0&amp;rkey=CAMSMHGkRusgUmygi5BhUGtWm5aIgg60VSXjiwQOHelANC68gT9LtXkQIpYC9ITMQkE3Aw\" file=\"5AC1956981A767F0F3B68AC3E7F59FA0.png\" sub-type=\"0\" file-size=\"82846\"/>",
+        "timestamp": 1783248638718
+      },
+      {
+        "id": 19892,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3986092865",
+        "user_name": "エヴァ・ドミナンスXII",
+        "role": "user",
+        "content": "问我喜欢谁",
+        "timestamp": 1783248633475
+      },
+      {
+        "id": 19891,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3320846932",
+        "user_name": "权威小孩姐",
+        "role": "user",
+        "content": "。",
+        "timestamp": 1783248620042
+      },
+      {
+        "id": 19890,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2141971921",
+        "user_name": "若离sama",
+        "role": "user",
+        "content": "问我喜欢谁",
+        "timestamp": 1783248615028
+      },
+      {
+        "id": 19889,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3320846932",
+        "user_name": "权威小孩姐",
+        "role": "user",
+        "content": "问我被这个bot针对的概率",
+        "timestamp": 1783248614617
+      },
+      {
+        "id": 19888,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "问我喜欢谁",
+        "timestamp": 1783248610822
+      },
+      {
+        "id": 19887,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3320846932",
+        "user_name": "权威小孩姐",
+        "role": "user",
+        "content": "问我被这个bpt针对的概率",
+        "timestamp": 1783248606492
+      },
+      {
+        "id": 19886,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "问我喜欢谁",
+        "timestamp": 1783248606135
+      },
+      {
+        "id": 19885,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3320846932",
+        "user_name": "权威小孩姐",
+        "role": "user",
+        "content": "。",
+        "timestamp": 1783248600530
+      },
+      {
+        "id": 19884,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3320846932",
+        "user_name": "权威小孩姐",
+        "role": "user",
+        "content": "问我收到生日礼物的概率",
+        "timestamp": 1783248596801
+      },
+      {
+        "id": 19883,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "问我喜欢谁",
+        "timestamp": 1783248595194
+      },
+      {
+        "id": 19882,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "问我喜欢谁",
+        "timestamp": 1783248591584
+      },
+      {
+        "id": 19881,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3980423768",
+        "user_name": "Oxygen",
+        "role": "user",
+        "content": "问我喜欢谁",
+        "timestamp": 1783248587362
+      },
+      {
+        "id": 19880,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "1569181511",
+        "user_name": "ELAINA",
+        "role": "user",
+        "content": "发言限制了",
+        "timestamp": 1783248578778
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[18:51] 这么好看\n[18:51] 我嘞个豆\n[18:50] 这个真好看\n[18:50] 问我被人重视的概率\n[18:50] <at id=\"971217490\" name=\"水上由岐🌸\"/>\n[18:50] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhSf-kbVkQVL9EhVam4iTXW9dXqPBxiehwUg_woo64Wi7K67lQMyBHByb2RQgL2jAVoQIR3672UAUaq8RINA8Nk2P3oCNaCCAQJneg&amp;spec=0&amp;rkey=CAMS\n[18:50] 问我喜欢谁\n[18:50] 。\n[18:50] 问我喜欢谁\n[18:50] 问我被这个bot针对的概率\n[18:50] 问我喜欢谁\n[18:50] 问我被这个bpt针对的概率\n[18:50] 问我喜欢谁\n[18:50] 。\n[18:49] 问我收到生日礼物的概率\n[18:49] 问我喜欢谁\n[18:49] 问我喜欢谁\n[18:49] 问我喜欢谁\n[18:49] 发言限制了",
+  "raw": "这么好看\n这个真好看\n我嘞个豆\n呃呃呃\n好好好\n哈哈哈\n笑死我了\n离谱\n绝了\n绷不住了\n难绷\n寄了\n完蛋\n等一下\n别急\n真的吗\n假的吧\n可以的\n没事\n算了\n行吧\n呐呢\n啊啊啊啊\n呜呜呜\n怎么办\n好的呢\n谢谢\n收到\n晚安\n拜拜\n哈哈\n嘿\n呜呜\n诶\n呦\n嘶\n哇\n啧",
+  "phrases": [
+    "这么好看",
+    "这个真好看",
+    "我嘞个豆",
+    "呃呃呃",
+    "好好好",
+    "哈哈哈",
+    "笑死我了",
+    "离谱",
+    "绝了",
+    "绷不住了",
+    "难绷",
+    "寄了",
+    "完蛋",
+    "等一下",
+    "别急",
+    "真的吗",
+    "假的吧",
+    "可以的",
+    "没事",
+    "算了",
+    "行吧",
+    "呐呢",
+    "啊啊啊啊",
+    "呜呜呜",
+    "怎么办",
+    "好的呢",
+    "谢谢",
+    "收到",
+    "晚安",
+    "拜拜",
+    "哈哈",
+    "嘿",
+    "呜呜",
+    "诶",
+    "呦",
+    "嘶",
+    "哇",
+    "啧"
+  ],
+  "added": [
+    "这么好看",
+    "这个真好看",
+    "呃呃呃",
+    "难绷",
+    "假的吧",
+    "呐呢",
+    "啊啊啊啊",
+    "好的呢",
+    "诶",
+    "呦",
+    "嘶"
+  ]
+}

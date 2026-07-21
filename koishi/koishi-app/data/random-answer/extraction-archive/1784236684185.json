@@ -1,0 +1,31 @@
+{
+  "ts": 1784236684185,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 88228,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3262879946",
+        "user_name": "须藤未来（扩列➕我）",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQH0JCA-O7FEA6r4LS-12lzPY-3GxjmywUg_woo9KCO8IvYlQMyBHByb2RQgL2jAVoQl0_MdLivbI2a0hhPXVeLknoCzGSCAQJuag&amp;spec=0&amp;rkey=CAESMGouE_m5L7bae09x4NFTCQDV_GkcMQs8ZqSJqDFC6XBu0rRTudds7J3TLPvJwTFXgw\" file=\"7A0FC48960A99F64BC1C5C73CFAEB80B.jpg\" sub-type=\"1\" file-size=\"91622\"/>",
+        "timestamp": 1784235683455
+      },
+      {
+        "id": 88227,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2781758816",
+        "user_name": "经典医学牲",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhSWxhmK_NBDgcf5yLt-EFbM_fF_ARiSKyD_CijMoqDpi9iVAzIEcHJvZFCAvaMBWhC4nuXVdjReh2j7-oR9UIZdegJDI4IBAmd6&amp;spec=0&amp;rkey=CAESMGouE_m5L7bae09x4NFTCQDV_GkcMQs8ZqSJqDFC6XBu0rRTudds7J3TLPvJwTFXgw\" file=\"ECB886B323F8BA633554940F50C2154D.jpg\" sub-type=\"1\" file-size=\"5522\"/>",
+        "timestamp": 1784235668252
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[05:01] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhQH0JCA-O7FEA6r4LS-12lzPY-3GxjmywUg_woo9KCO8IvYlQMyBHByb2RQgL2jAVoQl0_MdLivbI2a0hhPXVeLknoCzGSCAQJuag&amp;spec=0&amp;rkey=CAES\n[05:01] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhSWxhmK_NBDgcf5yLt-EFbM_fF_ARiSKyD_CijMoqDpi9iVAzIEcHJvZFCAvaMBWhC4nuXVdjReh2j7-oR9UIZdegJDI4IBAmd6&amp;spec=0&amp;rkey=CAESMG",
+  "raw": "（输入里只有图片，没有可提取的文字聊天内容，故输出为空）",
+  "phrases": [],
+  "added": []
+}

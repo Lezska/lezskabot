@@ -1,0 +1,23 @@
+{
+  "ts": 1783462167309,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 36729,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3320846932",
+        "user_name": "权威小孩姐",
+        "role": "user",
+        "content": "喵",
+        "timestamp": 1783461933333
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[06:05] 喵",
+  "raw": "喵",
+  "phrases": [
+    "喵"
+  ],
+  "added": []
+}

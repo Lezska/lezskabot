@@ -1,0 +1,85 @@
+{
+  "ts": 1783552167323,
+  "byGroup": {
+    "1091191330": [
+      {
+        "id": 42650,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3911816075",
+        "user_name": "check是结奈",
+        "role": "user",
+        "content": "怎么是JOJO啊",
+        "timestamp": 1783552012840
+      },
+      {
+        "id": 42649,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3911816075",
+        "user_name": "check是结奈",
+        "role": "user",
+        "content": "ber",
+        "timestamp": 1783551994054
+      },
+      {
+        "id": 42648,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2352339577",
+        "user_name": "NO. 2 希",
+        "role": "user",
+        "content": "谁懂去帮爸妈干活的路上就听到有人说我家。。卖的很靓的感觉",
+        "timestamp": 1783550264174
+      },
+      {
+        "id": 42647,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2352339577",
+        "user_name": "NO. 2 希",
+        "role": "user",
+        "content": "<img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhTo5VM5SdDqEgfYW28dkqSknzmuBxjlDyD_Cijbn_S1ksSVAzIEcHJvZFCAvaMBWhAmZ7d2pBjZYTOu0cmEQuvfegLzOoIBAmd6&amp;spec=0&amp;rkey=CAISMCC0x7Ev4yQ7csuq9Ch_B0gssFHYiK1QudLgOetD0S_1Z0m9UTDvvcZualw6VI6rcg\" file=\"E402E7E273D373BEC95518C2D38A099C.jpg\" sub-type=\"7\" file-size=\"2021\"/>",
+        "timestamp": 1783550244933
+      },
+      {
+        "id": 42646,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "2352339577",
+        "user_name": "NO. 2 希",
+        "role": "user",
+        "content": "谁懂去帮爸妈干活的路上就听到有人说我家。。卖的好的感觉",
+        "timestamp": 1783550240126
+      },
+      {
+        "id": 42645,
+        "session_id": "group:1091191330",
+        "session_type": "group",
+        "user_id": "3055983840",
+        "user_name": "希",
+        "role": "user",
+        "content": "谢谢金",
+        "timestamp": 1783548731180
+      }
+    ]
+  },
+  "prompt": "【群 1091191330】\n[07:06] 怎么是JOJO啊\n[07:06] ber\n[06:37] 谁懂去帮爸妈干活的路上就听到有人说我家。。卖的很靓的感觉\n[06:37] <img src=\"https://multimedia.nt.qq.com.cn/download?appid=1407&amp;fileid=EhTo5VM5SdDqEgfYW28dkqSknzmuBxjlDyD_Cijbn_S1ksSVAzIEcHJvZFCAvaMBWhAmZ7d2pBjZYTOu0cmEQuvfegLzOoIBAmd6&amp;spec=0&amp;rkey=CAISMC\n[06:37] 谁懂去帮爸妈干活的路上就听到有人说我家。。卖的好的感觉\n[06:12] 谢谢金",
+  "raw": "怎么是JOJO啊\n谁懂这种感觉\n谢谢金\nber\n卖的很靓的感觉\n帮爸妈干活路上\n好家伙",
+  "phrases": [
+    "怎么是JOJO啊",
+    "谁懂这种感觉",
+    "谢谢金",
+    "ber",
+    "卖的很靓的感觉",
+    "帮爸妈干活路上",
+    "好家伙"
+  ],
+  "added": [
+    "怎么是JOJO啊",
+    "谁懂这种感觉",
+    "谢谢金",
+    "卖的很靓的感觉",
+    "帮爸妈干活路上"
+  ]
+}
