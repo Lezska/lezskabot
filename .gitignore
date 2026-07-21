@@ -35,3 +35,17 @@ koishi/**/docker/
 
 # --- cards/ 目录特殊处理 ---
 cards/** filter=lfs diff=lfs merge=lfs -text
+# --- Secrets: NEVER commit these. Even though koishi/koishi-app/.env
+#     was committed in the initial LFS commit 5ca530b, future commits
+#     must not include it. The file is also untracked via `git rm --cached`
+#     so .gitignore actually takes effect.
+#     See README "安全" section for the secret-rotation checklist.
+koishi/koishi-app/.env
+koishi/koishi-app/data/random-answer/llm-config.json
+llone/bin/llbot/data/config_*.json
+llone/bin/llbot/data/accounts.json
+llone/bin/llbot/data/llbot.json
+
+# Note: cards/ has LFS rules above (line 37). Other plugin-level secrets
+# (e.g. plugin_data/<plugin>/*.json with auth tokens) should also be added
+# here on a per-plugin basis. Be conservative.

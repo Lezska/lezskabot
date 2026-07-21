@@ -172,6 +172,35 @@ if [ -f .gitattributes ]; then
     git add .gitattributes
 fi
 
+# ---- 安全检查：staged 文件名匹配 secret 模式则 abort ----
+# .env / .key / 任何 *.token / QQ 配置文件 / LLM api config 等等，
+# 一旦 staged 就会推上去。Root .gitignore 已经盖了主要路径，
+# 但作为 init-push 脚本多一道闸更安全：扫 staged 文件名 + 路径，
+# 命中就 exit 1 让人确认。
+echo "扫描 staged 文件中的 secret 模式..."
+SECRET_PATTERN='(\.env$|\.env\.|secret|api[_-]?key|token|appkey|accounts\.json|config_[0-9]+\.json|llm-config\.json|private[_-]?key)'
+STAGED=$(git diff --cached --name-only)
+HITS=$(echo "$STAGED" | grep -iE "$SECRET_PATTERN" || true)
+if [ -n "$HITS" ]; then
+    if [ "${FORCE:-}" = "1" ]; then
+        echo "  FORCE=1 set, skipping secret scan (matched but ignored):"
+        echo "$HITS" | sed 's/^/    /'
+    else
+        echo ""
+        echo "ERROR: detected secret pattern, aborting commit!"
+        echo "Matched files:"
+        echo "$HITS" | sed 's/^/  /'
+        echo ""
+        echo "If you're sure these are not secrets (e.g. a directory whose name"
+        echo "happens to contain 'token'), edit SECRET_PATTERN in push_to_github.sh"
+        echo "to whitelist them. Or confirm it is a false positive and use"
+        echo "FORCE=1 to skip:"
+        echo "  FORCE=1 $0 ..."
+        exit 1
+    fi
+else
+    echo "  clean (no secret pattern matches)"
+fi
 # ---- 提交 ----
 if git diff --cached --quiet; then
     echo "没有需要提交的内容。"
