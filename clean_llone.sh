@@ -24,6 +24,6 @@ if [ -d "${LLONE_LOG_DIR}" ]; then
     mkdir -p "${LLONE_LOG_DIR}"
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] ✓ logs folder cleaned"
 else
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ⚠ Warning: ${LLONE_TOG_DIR} not found"
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ⚠ Warning: ${LLONE_LOG_DIR} not found"
     mkdir -p "${LLONE_LOG_DIR}"
 fi
