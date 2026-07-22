@@ -47,7 +47,7 @@ QQ bot stack + 状态备份/迁移仓库。
 | `koishi/koishi-app/.env` | 含 LLM API key（明文）。**initial commit `5ca530b` 已把这个文件 commit 进去了 —— 这是个安全 bug，详见下面"安全"一节** | `git show 5ca530b:koishi/koishi-app/.env` 拿到历史版本，或从环境变量重写 |
 | `koishi/koishi-app/data/random-answer/llm-config.json` | 含当前生效的 LLM API key（`设置api` 命令创建） | 跑 `设置api <key> [base] [model]` 重建，或从备份恢复 |
 | `llone/bin/llbot/data/config_<uin>.json`（**当前生产账号 `config_2763371925.json` 不在 repo 里**） | 含 QQ 登录 token | 重新扫码登录，或从 `/root/lezskabot/llone/bin/llbot/data/` 备份拷过来 |
-| `cards/`（3.9 GB，pjsk 图库） | 体积太大，`.gitignore` 里写的是 LFS 规则但从未 `git add` 进去 | `build.sh` 末尾的 `git clone https://github.com/Lezska/pjskcards.git && mv pjskcards cards` 重建；或从 `pjskcards` 仓库自己 pull |
+| `pjskcards/`（3.9 GB，pjsk 图库） | 体积太大，`.gitignore` 整体排除；gacha-bot 插件读 `/root/lezskabot/pjskcards/{rarity}/{idx}.png` | `build.sh` 末尾 `git clone ... pjskcards.git` + `rm -rf pjskcards/.git`（省 4GB），目录名固定为 `pjskcards` |
 | `/tmp/restart_koishi.py` | 在 `/tmp/` 不在 repo；是 koishi 的启动脚本（先 `source .env` 再 `npm start`） | 手写或从 https://... 这种永久地址取（见 `koishi/koishi-app/data/random-answer/lib/index.js:760` 注释里的引用） |
 
 ### ⚠️ 重建后必然缺失的运行时状态

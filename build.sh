@@ -20,6 +20,10 @@ echo "-----AstrBot Done-----"
 echo ""
 
 echo "-----Fetching pjskcards-----"
+# 目录名固定 pjskcards（gacha-bot 插件默认读 /root/lezskabot/pjskcards）
 git clone https://github.com/Lezska/pjskcards.git
-mv pjskcards cards
+echo "-----Cleaning pjskcards/.git-----"
+# 部署只需要图片文件，不要 git 历史（pack 约 4GB，省磁盘）
+# 用户不再需要从 pjskcards 仓库拉更新，如需更新直接 rm -rf pjskcards && 重跑 build.sh
+rm -rf pjskcards/.git
 echo "-----pjskcards Done-----"

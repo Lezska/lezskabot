@@ -34,7 +34,11 @@ koishi/**/docker/
 *.db-wal
 
 # --- cards/ 目录特殊处理 ---
-cards/** filter=lfs diff=lfs merge=lfs -text
+# pjskcards/ - 部署时由 build.sh 拉取, 图片文件不进 git (避免误 add 1213 PNG ≈ 3.8G)
+# 真正部署时由 build.sh: git clone ... pjskcards.git && rm -rf pjskcards/.git
+pjskcards/
+# 兼容旧目录名 (如有遗留的 cards/ 也忽略, 避免误 add)
+cards/
 # --- Secrets: NEVER commit these. Even though koishi/koishi-app/.env
 #     was committed in the initial LFS commit 5ca530b, future commits
 #     must not include it. The file is also untracked via `git rm --cached`
