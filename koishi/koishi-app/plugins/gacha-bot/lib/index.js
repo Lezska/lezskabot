@@ -45,7 +45,7 @@ module.exports.Config = Schema.object({
     .description('献祭时各稀有度 P点 倍数（乘以 drawCost）'),
   drawCost: Schema.number().default(400).description('单次抽卡消耗 P 点'),
   maxDeckSize: Schema.number().default(10).description('卡组最大数'),
-  imageDir: Schema.string().default('/root/lezskabot/cards').description('卡牌图片目录'),
+  imageDir: Schema.string().default('/root/lezskabot/pjskcards').description('卡牌图片目录'),
   imageExt: Schema.string().default('png').description('卡牌图片扩展名'),
 })
 
