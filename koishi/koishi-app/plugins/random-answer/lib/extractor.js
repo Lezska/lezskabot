@@ -269,11 +269,15 @@ async function callAnthropic(ctx, apiBase, apiKey, model, systemMsg, userMessage
 
 async function callOpenAI(ctx, apiBase, apiKey, model, messages, timeoutMs) {
   const url = `${apiBase.replace(/\/+$/, "")}/chat/completions`
+  // 关掉 Qwen3 系列的 thinking 模式. siliconflow 上 Qwen3 (4B/8B/14B/32B...) 默认
+  // 进 thinking: message.content 被 <think>...</think> 抽空, 一次小请求 ~20s.
+  // 顶层 enable_thinking=false 是 siliconflow 识别的关 thinking 方式.
   const res = await ctx.http.post(url, {
     model,
     messages,
     temperature: 0.9,
     max_tokens: 2048,
+    enable_thinking: false,
   }, {
     headers: { Authorization: `Bearer ${apiKey}` },
     timeout: timeoutMs,
