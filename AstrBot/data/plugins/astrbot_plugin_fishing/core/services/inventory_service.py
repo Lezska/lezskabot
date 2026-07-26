@@ -1,3 +1,4 @@
+import asyncio
 import json
 from datetime import datetime, timedelta
 from typing import Dict, Any, Optional
@@ -1545,18 +1546,27 @@ class InventoryService:
         
         return is_first_infinite
 
-    def use_item(self, user_id: str, item_id: int, quantity: int = 1) -> Dict[str, Any]:
+    async def use_item(self, user_id: str, item_id: int, quantity: int = 1) -> Dict[str, Any]:
         """
         使用一个或多个道具，并将效果处理委托给 EffectManager。
+
+        支持同步和异步 effect_handler.apply 双协议:
+          - 旧 effect (apply 是同步 def): 直接拿返回值
+          - 新 effect (apply 是 async def): 拿到 coroutine, 自动 await
+        这样新增的 async effect (如时运沙漏批量 go_fish) 不会阻塞 event loop,
+        同时不破坏现有 11 个 sync effect.
         """
         if quantity <= 0:
             return {"success": False, "message": "数量必须大于0"}
 
-        user = self.user_repo.get_by_id(user_id)
+        # IO 操作放线程池, 不阻塞 event loop
+        user = await asyncio.to_thread(self.user_repo.get_by_id, user_id)
         if not user:
             return {"success": False, "message": "用户不存在"}
 
-        item_inventory = self.inventory_repo.get_user_item_inventory(user_id)
+        item_inventory = await asyncio.to_thread(
+            self.inventory_repo.get_user_item_inventory, user_id
+        )
         available_quantity = item_inventory.get(item_id, 0)
         if available_quantity < quantity:
             return {"success": False, "message": f"你只有 {available_quantity} 个该道具，数量不足"}
@@ -1585,20 +1595,27 @@ class InventoryService:
                 if item_template.effect_payload
                 else {}
             )
-            
+
             # 传递 quantity 参数给效果处理器
-            result = effect_handler.apply(user, item_template, payload, quantity=quantity)
+            apply_result = effect_handler.apply(user, item_template, payload, quantity=quantity)
+            # 协议兼容: 旧 effect 同步返回 dict, 新 effect 可能返回 coroutine
+            if asyncio.iscoroutine(apply_result):
+                result = await apply_result
+            else:
+                result = apply_result
 
             # 只有在效果处理成功时才消耗道具
             if result.get("success", False):
-                self.inventory_repo.decrease_item_quantity(user_id, item_id, quantity)
+                await asyncio.to_thread(
+                    self.inventory_repo.decrease_item_quantity, user_id, item_id, quantity
+                )
                 # 确保返回的消息包含道具名称和数量
                 final_message = f"成功使用了 {quantity} 个【{item_template.name}】！{result.get('message', '')}"
                 result["message"] = final_message
             else:
                 # 效果处理失败，不消耗道具，但保持原始错误消息
                 result["message"] = f"❌ 使用道具失败：{result.get('message', '')}"
-            
+
             return result
 
         except Exception as e:

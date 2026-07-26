@@ -351,7 +351,7 @@ async def use_item(plugin: "FishingPlugin", event: AstrMessageEvent):
             yield event.plain_result(f"❌ 无法解析数量：{str(e)}。示例：1 或 五 或 一千")
             return
 
-    result = plugin.inventory_service.use_item(user_id, item_id, quantity)
+    result = await plugin.inventory_service.use_item(user_id, item_id, quantity)
 
     if result and result.get("success"):
         yield event.plain_result(f"✅ {result['message']}")
@@ -619,7 +619,7 @@ async def use_equipment(plugin: "FishingPlugin", event: AstrMessageEvent, equipm
                 return
 
         # 使用道具
-        if result := plugin.inventory_service.use_item(user_id, int(item_id), quantity):
+        if result := await plugin.inventory_service.use_item(user_id, int(item_id), quantity):
             if result["success"]:
                 yield event.plain_result(result["message"])
             else:
