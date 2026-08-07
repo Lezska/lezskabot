@@ -5,7 +5,7 @@
 // deduplicates, and adds them to the word DB.
 //
 // State:
-//   <dataDir>/extractor-state.json       — { lastExtractionTs, intervalMin }
+//   <dataDir>/extractor-state.json       — { lastExtractionTs, intervalMin, autoEnabled }
 //   <dataDir>/extraction-archive/<ts>.json — optional per-run debug archive
 //
 // LLM contract: Anthropic-compatible Messages API.
@@ -34,12 +34,19 @@ const SYSTEM_PROMPT = `你是一个群聊语料整理助手。给定一段时间
 
 直接输出短句，每行一条。`
 
-async function readState(stateFile) {
+async function readState(stateFile, defaultIntervalMin = 60) {
+  const fallbackInterval = Math.max(1, Number(defaultIntervalMin) || 60)
   try {
     const raw = await fs.readFile(stateFile, "utf-8")
-    return JSON.parse(raw)
+    const state = JSON.parse(raw)
+    return {
+      ...state,
+      lastExtractionTs: Number(state.lastExtractionTs) || 0,
+      intervalMin: Math.max(1, Number(state.intervalMin) || fallbackInterval),
+      autoEnabled: state.autoEnabled !== false,
+    }
   } catch {
-    return { lastExtractionTs: 0, intervalMin: 60 }
+    return { lastExtractionTs: 0, intervalMin: fallbackInterval, autoEnabled: true }
   }
 }
 
@@ -434,7 +441,7 @@ async function runExtraction(ctx, config, dbApi) {
   }
 }
 
-function startExtractor(ctx, config, dbApi) {
+async function startExtractor(ctx, config, dbApi) {
   if (!config.llmEnabled) return null
   if (!config.llmApiBase) {
     ctx.logger("random-answer").warn("llmEnabled=true 但 llmApiBase 未配置，跳过 extractor 启动")
@@ -442,46 +449,71 @@ function startExtractor(ctx, config, dbApi) {
   }
 
   let timer = null
-  const dataDir = config.dataDir
-  const stateFile = path.join(dataDir, "extractor-state.json")
+  let startupTimer = null
+  const stateFile = path.join(config.dataDir, "extractor-state.json")
+  const initialState = await readState(stateFile, config.llmIntervalMin)
+  let autoEnabled = initialState.autoEnabled
+  let intervalMin = initialState.intervalMin || config.llmIntervalMin
+  config.llmIntervalMin = intervalMin
 
-  const schedule = (intervalMin) => {
+  const clearAutomaticTimers = () => {
     if (timer) clearInterval(timer)
-    const ms = Math.max(1, Number(intervalMin) || 60) * 60 * 1000
+    if (startupTimer) clearTimeout(startupTimer)
+    timer = null
+    startupTimer = null
+  }
+
+  const persistState = async (updates) => {
+    const state = await readState(stateFile, intervalMin)
+    await writeState(stateFile, { ...state, ...updates })
+  }
+
+  const schedule = () => {
+    if (!autoEnabled) return
+    if (timer) clearInterval(timer)
     timer = setInterval(() => {
       runExtraction(ctx, config, dbApi).then(result => {
         ctx.logger("random-answer").info("extractor run: " + JSON.stringify(result))
-      }).catch(e => {
-        ctx.logger("random-answer").error("extractor run failed: " + (e?.stack || e))
+      }).catch(error => {
+        ctx.logger("random-answer").error("extractor run failed: " + (error?.stack || error))
       })
-    }, ms)
+    }, intervalMin * 60 * 1000)
     ctx.logger("random-answer").info(`extractor 已启动，间隔 ${intervalMin} 分钟`)
   }
 
-  schedule(config.llmIntervalMin)
-
-  // Fire one extraction immediately on startup so accumulated messages
-  // since the last run don't have to wait a full interval cycle. The
-  // scheduled timer still handles subsequent runs at regular intervals.
-  setTimeout(() => {
-    runExtraction(ctx, config, dbApi).then(result => {
-      ctx.logger("random-answer").info("extractor run (startup): " + JSON.stringify(result))
-    }).catch(e => {
-      ctx.logger("random-answer").error("extractor startup run failed: " + (e?.stack || e))
-    })
-  }, 5000)
+  if (autoEnabled) {
+    schedule()
+    // Run once after startup so accumulated messages do not wait for a full interval.
+    startupTimer = setTimeout(() => {
+      startupTimer = null
+      if (!autoEnabled) return
+      runExtraction(ctx, config, dbApi).then(result => {
+        ctx.logger("random-answer").info("extractor run (startup): " + JSON.stringify(result))
+      }).catch(error => {
+        ctx.logger("random-answer").error("extractor startup run failed: " + (error?.stack || error))
+      })
+    }, 5000)
+  }
 
   return {
     runNow: () => runExtraction(ctx, config, dbApi),
-    setInterval: async (min) => {
-      const m = Math.max(1, Number(min) || 60)
-      config.llmIntervalMin = m
-      schedule(m)
-      const s = await readState(stateFile)
-      s.intervalMin = m
-      await writeState(stateFile, s)
+    isAutoEnabled: () => autoEnabled,
+    setAutoEnabled: async (enabled) => {
+      const next = Boolean(enabled)
+      if (next === autoEnabled) return false
+      autoEnabled = next
+      await persistState({ autoEnabled })
+      clearAutomaticTimers()
+      if (autoEnabled) schedule()
+      return true
     },
-    stop: () => { if (timer) clearInterval(timer); timer = null },
+    setInterval: async (min) => {
+      intervalMin = Math.max(1, Number(min) || 60)
+      config.llmIntervalMin = intervalMin
+      await persistState({ intervalMin })
+      if (autoEnabled) schedule()
+    },
+    stop: clearAutomaticTimers,
   }
 }
 

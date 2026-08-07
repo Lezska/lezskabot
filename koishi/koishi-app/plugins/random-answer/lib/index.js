@@ -861,7 +861,7 @@ module.exports.apply = async (ctx, config) => {
 
   // Start the scheduled extractor (no-op if llmEnabled=false). Expose
   // the controller on ctx so admin commands can drive it.
-  const extractor = startExtractor(ctx, config, dbApi)
+  const extractor = await startExtractor(ctx, config, dbApi)
   ctx.randomAnswerExtractor = extractor
 
   // ── 词库自检 ────────────────────────────────────────────────────
@@ -879,6 +879,22 @@ module.exports.apply = async (ctx, config) => {
     fix: true,
   })
   ctx.randomAnswerWordsAudit = wordsAudit
+
+  ctx.command("开启自动提取", "开启 LLM 定时自动提取（admin）")
+    .action(async ({ session }) => {
+      if (!await isAdmin(session)) return "需要管理员权限"
+      if (!extractor) return "extractor 不可用（请检查 llmEnabled 和 llmApiBase）"
+      const changed = await extractor.setAutoEnabled(true)
+      return changed ? "自动提取已开启；下次按设定间隔运行" : "自动提取已经处于开启状态"
+    })
+
+  ctx.command("关闭自动提取", "关闭 LLM 定时自动提取（admin，立即提取仍可用）")
+    .action(async ({ session }) => {
+      if (!await isAdmin(session)) return "需要管理员权限"
+      if (!extractor) return "extractor 不可用（请检查 llmEnabled 和 llmApiBase）"
+      const changed = await extractor.setAutoEnabled(false)
+      return changed ? "自动提取已关闭；立即提取仍可使用" : "自动提取已经处于关闭状态"
+    })
 
   ctx.command("设置提取间隔 <min:number>", "设置 LLM 提取间隔（分钟，admin）")
     .action(async ({ session }, min) => {
@@ -911,7 +927,9 @@ module.exports.apply = async (ctx, config) => {
       // of how their mental clock works. Local uses server's TZ.
       const localStr = ts ? new Date(ts).toLocaleString("zh-CN", { hour12: false }) : null
       return JSON.stringify({
-        enabled: !!extractor,
+        configuredEnabled: Boolean(config.llmEnabled),
+        extractorAvailable: Boolean(extractor),
+        autoEnabled: extractor ? extractor.isAutoEnabled() : false,
         ...state,
         lastExtractionAt: ts ? new Date(ts).toISOString() : null,
         lastExtractionAtLocal: localStr,
