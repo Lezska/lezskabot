@@ -1831,7 +1831,7 @@ class MessageStatsPlugin(Star):
 
             
             # 检查图片文件是否存在
-            if os.path.exists(temp_path):
+            if temp_path and os.path.exists(temp_path):
                 yield event.image_result(str(temp_path))
                 self._schedule_file_cleanup(str(temp_path))
             else:
