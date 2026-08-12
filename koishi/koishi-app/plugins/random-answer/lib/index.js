@@ -25,8 +25,8 @@
 
 const { Schema } = require("koishi")
 const { startExtractor } = require("./extractor")
-const { startWordsAudit } = require("./check-words")
 const { hasReplaceableKeyword } = require("./keyword-detection")
+const { createWordStore } = require("./word-store")
 
 module.exports.name = "random-answer"
 module.exports.inject = { required: ["database"], optional: ["group-memory"] }
@@ -98,7 +98,7 @@ module.exports.apply = async (ctx, config) => {
   const dbFile = path.join(dataDir, "words.json")
   await fs.mkdir(dataDir, { recursive: true })
 
-  async function loadDb() {
+  async function loadLegacyDb() {
     try {
       const raw = await fs.readFile(dbFile, "utf-8")
       const obj = JSON.parse(raw)
@@ -115,14 +115,29 @@ module.exports.apply = async (ctx, config) => {
       return { byLen: {}, all: [] }
     }
   }
-  async function saveDb(db) {
-    const obj = {}
-    for (const [len, words] of Object.entries(db.byLen)) {
-      obj[len] = words.slice().sort()
-    }
-    await fs.writeFile(dbFile, JSON.stringify(obj, null, 2))
+  const legacyDb = await loadLegacyDb()
+  const wordStore = createWordStore(ctx.database, {
+    model: ctx.model,
+    legacy: legacyDb.byLen,
+    minLen: config.minWordLen,
+    maxLen: config.maxWordLen,
+  })
+  const migration = await wordStore.initialize()
+  if (migration.imported > 0) {
+    ctx.logger("random-answer").info(`词库已从 JSON 导入 SQLite：${migration.imported} 个词`)
   }
-  let db = await loadDb()
+
+  function buildDb(rows) {
+    const out = { byLen: {}, all: [] }
+    for (const row of rows) {
+      const len = Number(row.length)
+      const text = String(row.text)
+      ;(out.byLen[len] ||= []).push(text)
+      out.all.push({ len, text })
+    }
+    return out
+  }
+  let db = buildDb(wordStore.all())
 
   function countChars(s) {
     return [...String(s)].length
@@ -174,20 +189,15 @@ module.exports.apply = async (ctx, config) => {
   async function addWord(text, addedBy) {
     const len = countChars(text)
     if (len < config.minWordLen || len > config.maxWordLen) return null
-    ;(db.byLen[len] ||= []).push(text)
-    db.all.push({ len, text })
-    await saveDb(db)
-    return len
+    const added = await wordStore.add(text, addedBy)
+    if (added == null) return null
+    db = buildDb(wordStore.all())
+    return added
   }
   async function removeWord(text) {
-    const before = db.all.length
-    db.all = db.all.filter(r => r.text !== text)
-    for (const lenStr of Object.keys(db.byLen)) {
-      db.byLen[lenStr] = db.byLen[lenStr].filter(t => t !== text)
-      if (db.byLen[lenStr].length === 0) delete db.byLen[lenStr]
-    }
-    if (db.all.length === before) return false
-    await saveDb(db)
+    const removed = await wordStore.remove(text)
+    if (!removed) return false
+    db = buildDb(wordStore.all())
     return true
   }
   // Resolve a specific user's nickname in the current group. Uses the
@@ -866,21 +876,7 @@ module.exports.apply = async (ctx, config) => {
   const extractor = await startExtractor(ctx, config, dbApi)
   ctx.randomAnswerExtractor = extractor
 
-  // ── 词库自检 ────────────────────────────────────────────────────
-  // Periodically re-bucket any word whose actual char count drifted
-  // away from its bucket key (zero-width chars left in by older
-  // versions, manual `加词` mistakes, etc). Runs immediately on
-  // startup so any drift from the previous run gets surfaced in the
-  // log; then every 30 minutes. Audits also happen on each saveDb call
-  // implicitly (since addWord re-checks length), but this catches
-  // pre-existing bad buckets that were stored under the old code path.
-  const wordsAudit = startWordsAudit({
-    dataDir,
-    intervalMin: 30,
-    log: (m) => ctx.logger("random-answer").info(m),
-    fix: true,
-  })
-  ctx.randomAnswerWordsAudit = wordsAudit
+  ctx.logger("random-answer").info(`SQLite 词库已加载：${db.all.length} 个词`)
 
   ctx.command("开启自动提取", "开启 LLM 定时自动提取（admin）")
     .action(async ({ session }) => {
