@@ -26,6 +26,7 @@
 const { Schema } = require("koishi")
 const { startExtractor } = require("./extractor")
 const { startWordsAudit } = require("./check-words")
+const { hasReplaceableKeyword } = require("./keyword-detection")
 
 module.exports.name = "random-answer"
 module.exports.inject = { required: ["database"], optional: ["group-memory"] }
@@ -542,6 +543,7 @@ module.exports.apply = async (ctx, config) => {
     // "问 今天吃什么" and "问今天吃什么" behave the same.
     const body = stripped.slice(trigger.length).replace(/^[\s\u00A0\u3000]+/, "")
     if (!body) return next()
+    if (!hasReplaceableKeyword(body)) return next()
 
     try {
       const repl = await buildReplacements(session)
