@@ -2,17 +2,19 @@
 
 QQ bot stack + 状态备份/迁移仓库。
 
+OneBotFilter 当前并列接入 `astr`、`koishi`、`hrk` 三个 bot 应用：AstrBot 与 Koishi 是双线并行开发的两套机器人服务，Haruki 是现成的第三方机器人项目。
+
 ## 这是什么
 
-4 个独立服务协同工作的 QQ 机器人栈：
+由 OneBotFilter 统一转发的多机器人 QQ 服务栈：
 
 | 服务 | 路径 | 用途 | 启动方式 |
 |---|---|---|---|
-| AstrBot | `AstrBot/` | 主 bot 框架（QQ 消息路由、命令系统、插件市场） | `restart_astr.sh` |
-| Koishi | `koishi/koishi-app/` | 辅助 bot 框架（`random-answer` / `sticker-maker` / 漂流瓶等插件） | `koishi/koishi-app/data/.../restart_koishi.py`（不在 repo，见下） |
+| AstrBot | `AstrBot/` | 并行开发的主机器人服务（QQ 消息路由、命令系统、插件市场） | `restart_astr.sh` |
+| Koishi | `koishi/koishi-app/` | 并行开发的机器人服务（`random-answer` / `sticker-maker` / 漂流瓶等插件） | `koishi/koishi-app/data/.../restart_koishi.py`（不在 repo，见下） |
 | LLOneBot | `llone/` | QQ 协议客户端，给 AstrBot/Koishi 提供 onebot 兼容协议 | `llone/start.sh` |
 | OneBotFilter | `onebotfilter/` | 反向代理 / 消息过滤器 | `onebotfilter/OneBotFilter-v1.3.1-linux-amd64` |
-| Haruki Client | `haruki/` | 另一个 onebot 客户端（备用） | `cd haruki && ./haruki-client` |
+| Haruki | `haruki/` | 现成的机器人项目，通过 OneBotFilter 以 WebSocket 接入（bot-app 名称：`hrk`） | `cd haruki && ./haruki-client` |
 
 支持脚本：
 
