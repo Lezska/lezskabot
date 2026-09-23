@@ -1,0 +1,4 @@
+enableRoomCollect: false
+endpoint: ""
+token: ""
+groupWhitelist: []

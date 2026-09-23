@@ -1,0 +1,31 @@
+host: 0.0.0.0 # 监听IP地址，如果你正在使用Docker或者需要外部访问，请设置为0.0.0.0
+port: 8111 # 监听端口
+controlApiPort: 8111 # HarukiClient 控制 API 端口，用于控制HarukiClient的运行状态和配置，端口和主服务端口可以相同，相同将会自动把控制 API 集成到主服务中
+controlApiAccessToken: null # 控制 API 访问令牌（null = 不需要）
+botId: 59524796 # 你的HarukiClient的Bot ID
+credential: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib3RfaWQiOiI1OTUyNDc5NiIsImNyZWRlbnRpYWwiOiIxbUxaSTVhME5jTDNOMnJMQlJfVElGb3g3UnZ0RmdWeG9tVUlCVGZfUjc4PSJ9.wxWazJSsLM6FDYh4Y_OCdE8T6cSrBasZaaliBhPnUuM" # 你的HarukiClient的登录凭证，应为很长一串JWT字符串
+serverEndpointOverride: "" # 可选：覆盖默认服务器端点（默认不需要填写，除非群内通知需要更改）
+enableHelp: true # 是否启用帮助命令
+helpContent: "欢迎使用此bot\n本bot共接入4个部分\n*Haruki使用帮助: https://neo.haruki.seiunx.com\n*Sakura帮助：https://help.mikuware.top\n*Astr: 输入/helps(主要功能:点歌、今日运势等)\n   可/chat+内容聊天\n*Koishi: 输入menu(主要功能：漂流瓶等)\n   这部分指令不用加/前缀\n-----------------------------\nOwner: Lezska(29053789)\n主群: 1091191330" # 自定义帮助内容（留空将使用默认帮助内容）
+enableCN: true # 是否启用国服功能
+enableGroupCommandLimit: false # 是否启用群指令限流
+globalCommandHourlyLimit: 0 # 全局指令每小时限制（0 = 不限制）
+globalCommandDailyLimit: 0 # 全局指令每天限制（0 = 不限制）
+runMode: blacklist # 运行模式（blacklist = 黑名单模式，whitelist = 白名单模式）
+enableReplyMessage: true # 是否在回复指令结果时引用原消息
+sendBase64Image: false # 是否由客户端下载Cloud图片并以base64发送给OneBot
+mysekaiBirthdayMonitorNotifyEmpty: false # 是否订阅烤森生日材料空结果通知
+mysekaiBirthdayMonitorMode: blacklist # 烤森生日材料订阅黑白名单模式（blacklist = 黑名单模式，whitelist = 白名单模式）
+mysekaiBirthdayMonitorBlacklist: [] # 烤森生日材料订阅黑名单（仅在 mysekaiBirthdayMonitorMode = blacklist 时生效）
+mysekaiBirthdayMonitorWhitelist: [] # 烤森生日材料订阅白名单（仅在 mysekaiBirthdayMonitorMode = whitelist 时生效）
+enableParamEcho: false # 是否在 Cloud 参数解析错误时回显具体参数（仅在显式设为 true 时启用）
+botAdmins: # Bot管理员QQ列表，拥有特殊权限（如添加黑白名单）
+  - 29053789
+enableModules: # 启用的模块（all = 全部）
+  - all
+blacklists: # 黑名单配置，仅在运行模式为blacklist时生效
+  all: []
+whitelists: # 白名单配置，仅在运行模式为whitelist时生效
+  all: []
+userBlacklists: # 用户黑名单配置，格式为 { "qq": [指令列表] }，如果指令列表为 ["all"] 则表示该用户被完全禁止使用指令
+  all: []
