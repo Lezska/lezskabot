@@ -1,0 +1,26 @@
+{
+  "schema_version": 3,
+  "session_key": "835264633",
+  "quotes": [
+    {
+      "id": "q_1788059212588_5e0e1581",
+      "qq": "3678233304",
+      "name": "ムラサメ",
+      "text": "本会话还没有语录，先用 上传 保存一条吧~",
+      "created_by": "1969859341",
+      "created_at": 1788059212.5887554,
+      "group": "835264633",
+      "kind": "standard",
+      "image_ids": [],
+      "media_ids": [],
+      "segments": [
+        {
+          "type": "text",
+          "text": "本会话还没有语录，先用 上传 保存一条吧~",
+          "asset_id": ""
+        }
+      ],
+      "forward_nodes": []
+    }
+  ]
+}

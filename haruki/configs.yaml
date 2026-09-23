@@ -6,7 +6,7 @@ botId: 59524796 # 你的HarukiClient的Bot ID
 credential: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib3RfaWQiOiI1OTUyNDc5NiIsImNyZWRlbnRpYWwiOiIxbUxaSTVhME5jTDNOMnJMQlJfVElGb3g3UnZ0RmdWeG9tVUlCVGZfUjc4PSJ9.wxWazJSsLM6FDYh4Y_OCdE8T6cSrBasZaaliBhPnUuM" # 你的HarukiClient的登录凭证，应为很长一串JWT字符串
 serverEndpointOverride: "" # 可选：覆盖默认服务器端点（默认不需要填写，除非群内通知需要更改）
 enableHelp: true # 是否启用帮助命令
-helpContent: "欢迎使用此bot\n本bot共接入4个部分\n*Haruki使用帮助: https://neo.haruki.seiunx.com\n*Sakura帮助：https://help.mikuware.top\n*Astr: 输入/helps(主要功能:点歌、今日运势等)\n   可/chat+内容聊天\n*Koishi: 输入menu(主要功能：漂流瓶等)\n   这部分指令不用加/前缀\n-----------------------------\nOwner: Lezska(29053789)\n主群: 1091191330" # 自定义帮助内容（留空将使用默认帮助内容）
+helpContent: "欢迎使用此bot\n本bot共接入4个部分\n*Haruki使用帮助: https://neo.haruki.seiunx.com\n*Sakura帮助：https://help.mikuware.top\n   skr的指令要加skr前缀(\"skrpjskb30\")\n*Astr: 输入/helps(主要功能:钓鱼、抽老婆等)\n   可/chat+内容聊天\n*Koishi: 输入menu(主要功能：漂流瓶、抽卡等)\n   这部分指令不用加/前缀\n-----------------------------\nOwner: Lezska(29053789)\n主群: 1091191330" # 自定义帮助内容（留空将使用默认帮助内容）
 enableCN: true # 是否启用国服功能
 enableGroupCommandLimit: false # 是否启用群指令限流
 globalCommandHourlyLimit: 0 # 全局指令每小时限制（0 = 不限制）

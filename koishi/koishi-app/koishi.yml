@@ -308,7 +308,7 @@ plugins:
   blockly-null:lp0hx8: {}
   puppeteer:noenkr: {}
   adapter-onebot:wqmw9x:
-    selfId: '2763371925'
+    selfId: '3678233304'
   menu:mulwf1: {}
   rizgame-guess-letters:2xa68a:
     test: 1
@@ -341,7 +341,6 @@ plugins:
   koishi-plugin-blockly-shared:kxxv1e: {}
   koishi-plugin-sign-bot:wwkez4: {}
   koishi-plugin-gacha-bot:dfpyk0: {}
-  koishi-plugin-bot-migrator:t9yt3a: {}
   group-memory:j8p9ft:
     maxContext: 200
     recordPrivateChat: false

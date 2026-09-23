@@ -1,0 +1,21 @@
+#!/bin/bash
+cd /root/lezskabot
+P='AstrBot/data/plugins/astrbot_plugin_fishing'
+echo "=== HEAD has async def apply? ==="
+git show HEAD:"$P/core/services/item_effects/reset_fishing_cooldown_effect.py" | grep -c "async def apply"
+echo "=== HEAD has def transaction? ==="
+git show HEAD:"$P/core/database/connection_manager.py" | grep -c "def transaction"
+echo "=== HEAD has _ProxyConn? ==="
+git show HEAD:"$P/core/database/connection_manager.py" | grep -c "_ProxyConn"
+echo "=== HEAD has await inventory_service.use_item? ==="
+git show HEAD:"$P/handlers/inventory_handlers.py" | grep -c "await.*use_item"
+echo ""
+echo "=== working async def apply? ==="
+grep -c "async def apply" "$P/core/services/item_effects/reset_fishing_cooldown_effect.py"
+echo "=== working def transaction? ==="
+grep -c "def transaction" "$P/core/database/connection_manager.py"
+echo "=== working _ProxyConn? ==="
+grep -c "_ProxyConn" "$P/core/database/connection_manager.py"
+echo ""
+echo "=== git status (P0+P1 + P3 files only) ==="
+git status --short -- "$P/core/database/connection_manager.py" "$P/core/services/inventory_service.py" "$P/core/services/item_effects/reset_fishing_cooldown_effect.py" "$P/handlers/inventory_handlers.py"

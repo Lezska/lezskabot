@@ -29,6 +29,7 @@ img1/艾尔登法环!玛莉卡.jpg
 img1/艾尔登法环!米凯拉&托莉娜.jpg
 img1/安达与岛村!安达樱.jpg
 img1/安达与岛村!岛村抱月.jpg
+img1/八音节奏!Hachiko.jpg
 img1/拔作岛!渡会雏见.png
 img1/拔作岛!糺川礼.png
 img1/拔作岛!橘麻沙音.png
@@ -86,6 +87,7 @@ img1/崩坏系列!八重樱.jpg
 img1/崩坏系列!布洛妮娅·扎伊切克.jpg
 img1/崩坏系列!长夜月.jpg
 img1/崩坏系列!德丽莎·阿波卡利斯.jpg
+img1/崩坏系列!绯英.jpg
 img1/崩坏系列!风堇.jpg
 img1/崩坏系列!符玄.png
 img1/崩坏系列!海瑟音.jpg
@@ -194,6 +196,7 @@ img1/不道德公会!依塔姆·翔.jpg
 img1/不良少女!优谷优.jpg
 img1/不时轻声地以俄语遮羞的邻座艾莉同学!艾莉莎·米哈伊罗夫纳·九条.jpg
 img1/不时轻声地以俄语遮羞的邻座艾莉同学!宫前乃乃亚.jpg
+img1/不时轻声地以俄语遮羞的邻座艾莉同学!玛利亚·米哈伊罗夫纳·九条.webp
 img1/不时轻声地以俄语遮羞的邻座艾莉同学!周防有希.jpg
 img1/不死不幸!吉娜.jpg
 img1/不要欺负我，长瀞同学!长瀞早濑.png
@@ -672,6 +675,9 @@ img1/灰色系列!风见一姬.jpg
 img1/灰色系列!松岛满.jpg
 img1/灰色系列!小岭幸.jpg
 img1/灰色系列!周防天音.jpg
+img1/灰与幻想的格林姆迦尔!梅莉.jpg
+img1/灰与幻想的格林姆迦尔!梦儿.jpg
+img1/灰与幻想的格林姆迦尔!席赫露.jpg
 img1/灰羽联盟!落下.png
 img1/辉夜大小姐想让我告白～天才们的恋爱头脑战～!白银圭.jpg
 img1/辉夜大小姐想让我告白～天才们的恋爱头脑战～!白银圭.png
@@ -784,11 +790,13 @@ img1/绝区零!艾莲·乔.jpg
 img1/绝区零!安比.jpg
 img1/绝区零!奥菲丝·马格努森.jpg
 img1/绝区零!柏妮思·怀特.jpg
+img1/绝区零!德蕾琪娜·挽昼.jpg
 img1/绝区零!浮波柚叶.jpg
 img1/绝区零!简·杜.jpg
 img1/绝区零!简.jpg
 img1/绝区零!橘福福.jpg
 img1/绝区零!可琳·威克斯.jpg
+img1/绝区零!克拉蕾·弗林特.jpg
 img1/绝区零!蕾米埃尔·丹.jpg
 img1/绝区零!铃.jpg
 img1/绝区零!琉音.jpg
@@ -805,6 +813,7 @@ img1/绝区零!星见雅.jpg
 img1/绝区零!叶瞬光.jpg
 img1/绝区零!仪玄.jpg
 img1/绝区零!照.jpg
+img1/绝区零!朱鸢.jpg
 img1/君主·埃尔梅罗二世事件簿!格蕾.jpg
 img1/凯瑟琳!凯瑟琳.png
 img1/看得见的女孩!四谷见子.jpg
@@ -1021,6 +1030,7 @@ img1/明日方舟终末地!陈千语.jpg
 img1/明日方舟终末地!管理员.jpg
 img1/明日方舟终末地!弧光.jpg
 img1/明日方舟终末地!洁尔佩塔.png
+img1/明日方舟终末地!诀.jpg
 img1/明日方舟终末地!莱万汀.jpg
 img1/明日方舟终末地!洛茜.png
 img1/明日方舟终末地!弭弗.png
@@ -1059,9 +1069,12 @@ img1/鸣潮!洛可可.jpg
 img1/鸣潮!莫宁.jpg
 img1/鸣潮!娜波摩.jpg
 img1/鸣潮!千咲.jpg
+img1/鸣潮!清霄.jpg
 img1/鸣潮!守岸人.jpg
+img1/鸣潮!锁暝.jpg
 img1/鸣潮!西格莉卡.png
 img1/鸣潮!夏空.jpg
+img1/鸣潮!秧秧.jpg
 img1/鸣潮!尤诺.jpg
 img1/鸣潮!赞妮.jpg
 img1/鸣潮!I.R.I.S.jpg
@@ -1128,6 +1141,7 @@ img1/南家三姐妹!南夏奈.jpg
 img1/男女之间的友情存在吗!犬冢日葵.jpg
 img1/尼尔：自动人形!寄叶二号B型.jpg
 img1/尼尔：自动人形!寄叶A型二号.jpg
+img1/尼古喵喵!关西猫.jpg
 img1/尼古喵喵!藤雅妮子.jpg
 img1/匿名代码!爱咲桃.jpg
 img1/逆流茶会!朱鹭咲澪.png
@@ -1477,6 +1491,7 @@ img1/世界计划缤纷舞台!MEIKO.png
 img1/世界什么的怎样都好!千种明日叶.png
 img1/事到如今，喜欢上了青梅竹马!白坂阳花梨.jpg
 img1/事到如今，喜欢上了青梅竹马!须藤绚深.jpg
+img1/事实有时是谎言!寺崎薰.jpg
 img1/噬魂师!玛嘉.jpg
 img1/噬血狂袭!煌坂纱矢华.jpg
 img1/噬血狂袭!蓝羽浅葱.jpg
@@ -1502,9 +1517,6 @@ img1/四叶草剧场!艾丽卡.jpg
 img1/四月是你的谎言!宫园薰.png
 img1/四月是你的谎言!井川绘见.png
 img1/四月是你的谎言!相座凪.jpg
-img1/四月是你的谎言!泽部椿.jpg
-img1/虽然是公会柜台小姐，但是因为讨厌加班所以要去单挑BOSS!阿莉娜·克洛瓦.webp
-img1/太空丹迪!哈妮.jpg
 img1/弹丸论破!春川魔姬.jpg
 img1/弹丸论破!祷佳奈多.jpg
 img1/弹丸论破!腐川冬子.jpg
@@ -1515,22 +1527,6 @@ img1/弹丸论破!塞蕾丝缇雅.jpg
 img1/弹丸论破!舞园沙耶香.jpg
 img1/弹丸论破!雾切响子.jpg
 img1/弹丸论破!罪木蜜柑.jpg
-img1/特利迦奥特曼!卡尔蜜拉.jpg
-img1/天才麻将少女!福路美穗子.png
-img1/天才麻将少女!宫永咲.jpg
-img1/天才麻将少女!宫永咲.png
-img1/天才麻将少女!宫永照.png
-img1/天才麻将少女!天江衣.png
-img1/天才麻将少女!新子憧.png
-img1/天才麻将少女!原村和.png
-img1/天才麻将少女!园城寺怜.png
-img1/天才麻将少女!竹井久.png
-img1/天才王子的赤字国家重生术!妮妮姆·拉雷.jpg
-img1/天降之物!阿斯特蕾亚.jpg
-img1/天朝铁道少女!川崎镜.jpg
-img1/天朝铁道少女!梁凌薇.jpg
-img1/天朝铁道少女!邵若燕.jpg
-img1/天朝铁道少女!西园寺铃.jpg
 img1/恶魔高校!杰诺薇亚.jpg
 img1/恶魔战士!莫莉卡•安斯兰特.jpg
 img1/AcFun!Ac娘.png
@@ -1587,6 +1583,7 @@ img1/BanG Dream!上原绯玛丽.png
 img1/BanG Dream!市谷有咲.png
 img1/BanG Dream!桐谷透子.png
 img1/BanG Dream!丸山彩.png
+img1/BanG Dream!薇欧拉.jpg
 img1/BanG Dream!弦卷心.png
 img1/BanG Dream!要乐奈.jpg
 img1/BanG Dream!要乐奈.png
@@ -1609,6 +1606,7 @@ img1/CLANNAD!藤林杏.jpg
 img1/CLANNAD!相乐美佐枝.jpg
 img1/CLANNAD!一之濑琴美.jpg
 img1/CLANNAD!伊吹风子.jpg
+img1/COCORO!心.jpg
 img1/COP CRAFT!缇拉娜·艾克泽蒂利卡.jpg
 img1/DRACU-RIOT!艾莉娜·奥列格芙娜·阿文.png
 img1/DRACU-RIOT!布良梓.png
@@ -1723,6 +1721,7 @@ img1/keroro军曹!亚丽莎.jpg
 img1/keroro军曹!宇宙警察poyon.jpg
 img1/ke-ta!白浜初香.jpg
 img1/Little Busters!枣铃.jpg
+img1/Little_Busters!枣铃.jpg
 img1/LoveLive!艾玛·维尔德.jpg
 img1/LoveLive!东条希.jpg
 img1/LoveLive!渡边曜.jpg
@@ -1948,6 +1947,7 @@ img1/Vtuber!神楽Mea.png
 img1/Vtuber!诗织·诺薇拉.png
 img1/Vtuber!时雨羽衣.jpg
 img1/Vtuber!石神望.jpg
+img1/Vtuber!水宫枢.jpg
 img1/Vtuber!鹈饲沙树.jpg
 img1/Vtuber!天宫心.jpg
 img1/Vtuber!天宫心.webp
@@ -1998,6 +1998,21 @@ img1/Vtuber!まいたけCh.jpg
 img1/お徳用!Ringo-chan.jpg
 img1/ナナブンノニジュウニ!泷川美羽.jpg
 img1/ひなビタ♪!芽兔咩呜.jpg
+img2/四月是你的谎言!泽部椿.jpg
+img2/虽然是公会柜台小姐，但是因为讨厌加班所以要去单挑BOSS!阿莉娜·克洛瓦.webp
+img2/太空丹迪!哈妮.jpg
+img2/特利迦奥特曼!卡尔蜜拉.jpg
+img2/天才麻将少女!福路美穗子.png
+img2/天才麻将少女!宫永咲.jpg
+img2/天才麻将少女!宫永咲.png
+img2/天才麻将少女!宫永照.png
+img2/天才麻将少女!天江衣.png
+img2/天才麻将少女!新子憧.png
+img2/天才麻将少女!原村和.png
+img2/天才麻将少女!园城寺怜.png
+img2/天才麻将少女!竹井久.png
+img2/天才王子的赤字国家重生术!妮妮姆·拉雷.jpg
+img2/天降之物!阿斯特蕾亚.jpg
 img2/天降之物!妮姆芙.jpg
 img2/天降之物!伊卡洛斯.webp
 img2/天籁人偶!灰樱.png
@@ -2016,6 +2031,10 @@ img2/天体的秩序!诺艾尔.jpg
 img2/天元突破红莲螺岩!尼娅·铁佩林.jpg
 img2/天元突破红莲螺岩!尼娅·铁佩林.png
 img2/天元突破!优子.jpg
+img2/天朝铁道少女!川崎镜.jpg
+img2/天朝铁道少女!梁凌薇.jpg
+img2/天朝铁道少女!邵若燕.jpg
+img2/天朝铁道少女!西园寺铃.jpg
 img2/铁拳!幸运克洛伊.jpg
 img2/童话般的你开始了恋爱猛攻!冬川花璃.jpg
 img2/偷星九月天!九月.jpg
@@ -2227,6 +2246,7 @@ img2/夏日口袋!野村美希.jpg
 img2/夏日重现!波韬.jpg
 img2/夏日重现!小舟潮.jpg
 img2/贤惠幼妻仙狐小姐!仙狐小姐.jpg
+img2/线上游戏的老婆不可能是女生!玉置亚子.jpg
 img2/陷入爱河的蜂谷君是女仆!蜂谷希咲.jpg
 img2/相逢在明月映照的彼岸!仓桥圣衣良.png
 img2/相逢在明月映照的彼岸!岬栞菜.png
@@ -2462,10 +2482,13 @@ img2/原神!阿蕾奇诺.jpg
 img2/原神!安柏.jpeg
 img2/原神!安柏.jpg
 img2/原神!安娜丝塔夏·费奥多罗夫娜·雪奈茨娜娅.jpg
+img2/原神!奥黛塔.png
 img2/原神!八重神子.jpg
 img2/原神!芭芭拉.jpeg
 img2/原神!芭芭拉.jpg
 img2/原神!迪奥娜.png
+img2/原神!珐露珊.jpg
+img2/原神!菲谢尔·冯·露弗施洛斯·那菲多特.jpg
 img2/原神!芙宁娜.jpg
 img2/原神!甘雨.jpeg
 img2/原神!甘雨.jpg
@@ -2478,6 +2501,7 @@ img2/原神!可莉.jpeg
 img2/原神!可莉.png
 img2/原神!刻晴.jpg
 img2/原神!刻晴.png
+img2/原神!莱依拉.jpg
 img2/原神!雷电将军.jpeg
 img2/原神!雷电将军.jpg
 img2/原神!丽莎.jpeg
@@ -2487,6 +2511,7 @@ img2/原神!玛拉妮.jpg
 img2/原神!玛薇卡.jpg
 img2/原神!纳西妲.jpeg
 img2/原神!妮露.jpg
+img2/原神!尼可.jpg
 img2/原神!诺艾尔.jpeg
 img2/原神!诺艾尔.jpg
 img2/原神!派蒙.jpg
@@ -2512,6 +2537,7 @@ img2/原神!夜兰.png
 img2/原神!荧.jpg
 img2/原神!荧.png
 img2/原神!优菈.jpg
+img2/原神!云堇.jpg
 img2/缘结甘神家!甘神夕奈.jpg
 img2/缘结甘神家!甘神夜重.jpg
 img2/缘结甘神家!甘神朝姬.jpg
@@ -2621,6 +2647,7 @@ img2/终将成为你!小糸侑.jpg
 img2/终将成为你!佐伯沙弥香.jpg
 img2/终结的炽天使!克鲁鲁·采佩西.jpg
 img2/终结的炽天使!柊筱娅.png
+img2/重返未来1999!37.jpg
 img2/重启咲良田!春埼美空.png
 img2/重启咲良田!相麻堇.jpg
 img2/咒术回战!禅院真希.jpg
@@ -2638,6 +2665,8 @@ img2/紫云寺家的孩子们!紫云寺琴乃.jpg
 img2/租借女友!更科瑠夏.jpeg
 img2/租借女友!水原千鹤.png
 img2/最弱技能 果实大师!艾拉·劳伦斯.png
+img2/最弱无败神装机龙!莉姿夏尔蒂·亚提司玛特.png
+img2/最弱无败神装机龙!赛莉丝缇雅·兰格莉思.jpg
 img2/最终幻想!爱丽丝·盖恩斯巴勒.jpg
 img2/最终幻想!蒂法·洛克哈特.jpg
 img2/最终幻想!梅茵菲娜.png

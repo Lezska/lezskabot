@@ -1,78 +1,75 @@
 #!/bin/bash
-# /root/lezskabot/cleanup.sh
-# 定期清理 QQ 机器人栈的日志和临时文件
-# 挂 cron: 0 4 * * * /root/lezskabot/cleanup.sh
-#
-# 清理项:
-#   [1] LLOneBot logs (mtime > 7d)
-#   [2] LLOneBot temp (全清, 启动时会重建)
-#   [3] AstrBot data/temp (全清, 运行时重建)
-#   [4] systemd journal vacuum 200M + apt cache clean
-# 不清理:
-#   - Koishi (没单独 logs 文件)
-#   - cards/ (用户图库, 必保留)
-#   - puppeteer / .cache/ms-playwright (使用频率高)
-#   - AstrBot/data/dist (WebUI build artifacts, 不能删!)
-#   - AstrBot/data/plugins (插件代码, 不能删)
+# Daily cleanup for the QQ bot stack. Scheduled by root's crontab at 04:00.
 
 set -uo pipefail
 
-# 防重入锁 (mkdir 原子)
 LOCKDIR=/var/lock/lezskabot-cleanup
+LOG=/root/lezskabot/cleanup.log
+QQ_ROOT=/root/.config/QQ
+LLONE_LOG=/root/lezskabot/llone/bin/llbot/data/logs
+LLONE_TEMP=/root/lezskabot/llone/bin/llbot/data/temp
+ASTR_DATA=/root/lezskabot/AstrBot/data
+KOISHI_ARCHIVE=/root/lezskabot/koishi/koishi-app/data/random-answer/extraction-archive
+CHROME_METRICS=/root/.config/google-chrome/BrowserMetrics
+
 if ! mkdir "$LOCKDIR" 2>/dev/null; then
-    echo "[$(date '+%F %T')] another instance running, exit" >&2
+    echo "[$(date '+%F %T')] another cleanup is already running" >&2
     exit 0
 fi
 trap 'rmdir "$LOCKDIR"' EXIT
 
-LOG=/root/lezskabot/cleanup.log
-LLONE_LOG=/root/lezskabot/llone/bin/llbot/data/logs
-LLONE_TEMP=/root/lezskabot/llone/bin/llbot/data/temp
-ASTR_TEMP=/root/lezskabot/AstrBot/data/temp
-
-reclaimed=0
 say() { echo "[$(date '+%F %T')] $*" | tee -a "$LOG"; }
+used_kb() { df --output=used / | tail -n 1 | tr -d ' '; }
 
-# [1] LLOneBot logs 删 mtime > 7d
-say "[1/4] LLOneBot logs > 7d"
-size=$(find "$LLONE_LOG" -name "llbot-*.log" -type f -mtime +7 -printf "%s\n" 2>/dev/null | awk '{s+=$1} END {print s+0}')
-size=${size:-0}
-find "$LLONE_LOG" -name "llbot-*.log" -type f -mtime +7 -delete 2>/dev/null
-say "  reclaimed $(awk "BEGIN{printf \"%.1f\", $size/1024/1024}") MB"
-reclaimed=$((reclaimed + size))
+before_kb=$(used_kb)
+say "cleanup started"
 
-# [2] LLOneBot temp 全清
-say "[2/4] LLOneBot temp"
+# LLOneBot runtime files. Three days of logs are enough for diagnostics.
+find "$LLONE_LOG" -type f -name 'llbot-*.log' -mtime +3 -delete 2>/dev/null || true
 if [ -d "$LLONE_TEMP" ]; then
-    size=$(du -sb "$LLONE_TEMP" 2>/dev/null | awk '{print $1}')
-    size=${size:-0}
-    find "$LLONE_TEMP" -mindepth 1 -delete 2>/dev/null
-    say "  reclaimed $(awk "BEGIN{printf \"%.1f\", $size/1024/1024}") MB"
-    reclaimed=$((reclaimed + size))
+    find "$LLONE_TEMP" -mindepth 1 -delete 2>/dev/null || true
 else
     mkdir -p "$LLONE_TEMP"
-    say "  temp dir missing, recreated"
 fi
 
-# [3] AstrBot data/temp 全清 (注意: 不碰 dist/, 不碰 plugins/)
-say "[3/4] AstrBot data/temp"
-if [ -d "$ASTR_TEMP" ]; then
-    size=$(du -sb "$ASTR_TEMP" 2>/dev/null | awk '{print $1}')
-    size=${size:-0}
-    find "$ASTR_TEMP" -mindepth 1 -delete 2>/dev/null
-    say "  reclaimed $(awk "BEGIN{printf \"%.1f\", $size/1024/1024}") MB"
-    reclaimed=$((reclaimed + size))
+# QQ/NTQQ is the main source of disk growth. Keep databases and login state.
+if [ -d "$QQ_ROOT" ]; then
+    find "$QQ_ROOT" -type f -path '*/nt_data/log/*' -mtime +7 -delete 2>/dev/null || true
+    find "$QQ_ROOT" -type f \( \
+        -path '*/nt_data/Pic/*' -o \
+        -path '*/nt_data/Ptt/*' -o \
+        -path '*/nt_data/Video/*' \
+    \) -mtime +14 -delete 2>/dev/null || true
+fi
+
+# AstrBot temporary downloads and generated images.
+if [ -d "$ASTR_DATA/temp" ]; then
+    find "$ASTR_DATA/temp" -mindepth 1 -delete 2>/dev/null || true
 else
-    mkdir -p "$ASTR_TEMP"
-    say "  temp dir missing, recreated"
+    mkdir -p "$ASTR_DATA/temp"
 fi
+find "$ASTR_DATA/tmp" -type f -mtime +3 -delete 2>/dev/null || true
+find "$ASTR_DATA/plugin_data/unknown/cache/background_images_tmp" \
+    -type f -mtime +3 -delete 2>/dev/null || true
 
-# [4] 系统级
-say "[4/4] journal vacuum 200M + apt clean"
-journalctl --vacuum-size=200M >/dev/null 2>&1 || true
+# Keep one month of extraction snapshots. The SQLite word store is untouched.
+find "$KOISHI_ARCHIVE" -type f -mtime +30 -delete 2>/dev/null || true
+
+# Chromium metrics are disposable; Playwright browser binaries are retained.
+find "$CHROME_METRICS" -type f -delete 2>/dev/null || true
+
+# Bound ad-hoc restart logs without unlinking files held by running processes.
+find /tmp -maxdepth 1 -type f -name '*_restart.log' -size +20M \
+    -exec truncate -s 0 {} + 2>/dev/null || true
+
+journalctl --vacuum-time=7d --vacuum-size=200M >/dev/null 2>&1 || true
 apt-get clean >/dev/null 2>&1 || true
-say "  done"
 
-say "TOTAL reclaimed: $(awk "BEGIN{printf \"%.1f\", $reclaimed/1024/1024}") MB"
+after_kb=$(used_kb)
+reclaimed_kb=$((before_kb - after_kb))
+if (( reclaimed_kb < 0 )); then
+    reclaimed_kb=0
+fi
+say "cleanup finished; reclaimed $((reclaimed_kb / 1024)) MiB"
 df -h / | tee -a "$LOG"
 say "---"

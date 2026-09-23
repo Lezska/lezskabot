@@ -1,4 +1,5 @@
 {
-  "lastExtractionTs": 1784625484291,
-  "intervalMin": 120
+  "lastExtractionTs": 1787285940949,
+  "intervalMin": 60,
+  "autoEnabled": true
 }

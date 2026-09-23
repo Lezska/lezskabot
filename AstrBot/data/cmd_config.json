@@ -83,7 +83,7 @@
       "proxy": "",
       "custom_headers": {
         "User-Agent": "claude-code/0.1.0",
-        "Authorization": "Bearer sk-cp-gWIBWshiVjgE9xNsddem3OpkKaDtt7_H7D2oAGP6AOAINAFrA2YkLXoc4H-3jiGlUftOZRPgvTdvToGgtHJF5cIFfBf-OXttuqqzjAPhnctpYDqUsJpWovk"
+        "Authorization": "Bearer sk-cp-HMUFNWzAUUr_AaKPGD-NRa-vIrbs9fHWBsyu9bY0Gw4GZKS9qHWEr4Uo2Si_-4uf6wJSSrbU8EjwcgcmWQMTzHzLI3K3M__vdhlMF1OCpvdUYds5olLMdAk"
       },
       "anth_thinking_config": {
         "type": "",
@@ -177,7 +177,7 @@
     },
     {
       "id": "minimax-token-plan/MiniMax-M3",
-      "enable": true,
+      "enable": false,
       "provider_source_id": "minimax-token-plan",
       "model": "MiniMax-M3",
       "modalities": [
@@ -189,7 +189,7 @@
     },
     {
       "id": "minimax-token-plan/MiniMax-M2.7-highspeed",
-      "enable": true,
+      "enable": false,
       "provider_source_id": "minimax-token-plan",
       "model": "MiniMax-M2.7-highspeed",
       "modalities": [
@@ -210,11 +210,24 @@
       ],
       "custom_extra_body": {},
       "max_context_tokens": 1000000
+    },
+    {
+      "id": "siliconflow/Qwen/Qwen3-8B",
+      "enable": true,
+      "provider_source_id": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "modalities": [
+        "text",
+        "tool_use"
+      ],
+      "custom_extra_body": {},
+      "max_context_tokens": 131000,
+      "reasoning": true
     }
   ],
   "provider_settings": {
     "enable": true,
-    "default_provider_id": "minimax-token-plan/MiniMax-M3",
+    "default_provider_id": "siliconflow/Qwen/Qwen3-8B",
     "fallback_chat_models": [
       "deepseek_1/Kimi-K2-Instruct",
       "deepseek_1/Qwen3-235B-A22B-2507"
@@ -382,7 +395,7 @@
     "trust_proxy_headers": false,
     "auth_rate_limit": {
       "enable": true,
-      "average_interval": 1.0,
+      "average_interval": 1,
       "max_burst": 3
     },
     "totp": {

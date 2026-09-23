@@ -1,0 +1,31 @@
+{
+  "schema_version": 3,
+  "session_key": "835264633",
+  "sent": [
+    {
+      "quote_id": "q_1788059212588_5e0e1581",
+      "fingerprint": "2b1ee073a024895ed28b06cf06342aa9afdf2897cfca7d432553659c529bb3fc",
+      "sent_at": 1788059235.0139098
+    },
+    {
+      "quote_id": "q_1788059212588_5e0e1581",
+      "fingerprint": "2b1ee073a024895ed28b06cf06342aa9afdf2897cfca7d432553659c529bb3fc",
+      "sent_at": 1788132685.4886177
+    },
+    {
+      "quote_id": "q_1788059212588_5e0e1581",
+      "fingerprint": "2b1ee073a024895ed28b06cf06342aa9afdf2897cfca7d432553659c529bb3fc",
+      "sent_at": 1788307085.3360014
+    },
+    {
+      "quote_id": "q_1788059212588_5e0e1581",
+      "fingerprint": "2b1ee073a024895ed28b06cf06342aa9afdf2897cfca7d432553659c529bb3fc",
+      "sent_at": 1788773532.2015975
+    },
+    {
+      "quote_id": "q_1788059212588_5e0e1581",
+      "fingerprint": "2b1ee073a024895ed28b06cf06342aa9afdf2897cfca7d432553659c529bb3fc",
+      "sent_at": 1789530763.5238452
+    }
+  ]
+}
