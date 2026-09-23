@@ -12,7 +12,7 @@ QQ bot stack + 状态备份/迁移仓库。
 | Koishi | `koishi/koishi-app/` | 辅助 bot 框架（`random-answer` / `sticker-maker` / 漂流瓶等插件） | `koishi/koishi-app/data/.../restart_koishi.py`（不在 repo，见下） |
 | LLOneBot | `llone/` | QQ 协议客户端，给 AstrBot/Koishi 提供 onebot 兼容协议 | `llone/start.sh` |
 | OneBotFilter | `onebotfilter/` | 反向代理 / 消息过滤器 | `onebotfilter/OneBotFilter-v1.3.1-linux-amd64` |
-| Haruki Client | `haruki-client-2.2.2-linux-x64/` | 另一个 onebot 客户端（备用） | 直接运行 `haruki-client` |
+| Haruki Client | `haruki/` | 另一个 onebot 客户端（备用） | `cd haruki && ./haruki-client` |
 
 支持脚本：
 
@@ -21,8 +21,7 @@ QQ bot stack + 状态备份/迁移仓库。
 | `install_deps.sh` | 装系统依赖（Chrome / Python3.12 / npm / git / git-lfs） |
 | `build.sh` | 重建 AstrBot / LLOne / pjskcards（假定 deps 已装） |
 | `cleanup.sh` | 每日清理 LLOne logs / temp、AstrBot temp（挂 cron `0 4 * * *`） |
-| `restart_astr.sh` | 重启 AstrBot（screen 会话 `astr`） |
-| `clean_astr.sh` | 杀全部用户 Python 进程后重启 AstrBot（硬复位） |
+| `restart_astr.sh` | 重启 AstrBot（重建 screen 会话 `astr`） |
 | `clean_llone.sh` | 清 LLOneBot temp + logs（手动用） |
 | `push_to_github.sh` | 一次性 LFS-aware 初始化推送脚本（**新机器首次推送到新仓库用**） |
 
@@ -35,7 +34,7 @@ QQ bot stack + 状态备份/迁移仓库。
 - `koishi/`（除 `node_modules/` 外：插件源码、词库、抽取器归档、配置、字体）
 - `llone/bin/llbot/data/*.json`（LLOneBot 三个老账号配置 + email config）
 - `onebotfilter/OneBotFilter-v1.3.1-linux-amd64`（二进制）+ `config.yaml`
-- `haruki-client-2.2.2-linux-x64/`（二进制 + 配置）
+- `haruki/`（Haruki 二进制 + 配置）
 - `LLBot-CLI-linux-x64.zip`（LFS，LLOne 安装包）
 - `.gitignore` / `.gitattributes`（LFS 规则）
 - `backup-archives/`（历史 backup commit 的导出版本）
@@ -104,7 +103,7 @@ cd /root/lezskabot
 # 7. 启动各服务
 screen -dmS llone bash -c "cd /root/lezskabot/llone && bash start.sh"
 # 等 LLOneBot 起来（看屏幕输出，或浏览器开 127.0.0.1:3080 看 webui）
-screen -dmS astr bash restart_astr.sh
+bash restart_astr.sh
 screen -dmS koishi bash -c "cd /root/lezskabot/koishi/koishi-app && python3 /tmp/restart_koishi.py"
 
 # 8. 配 cleanup.sh cron（每天凌晨 4 点）
@@ -112,7 +111,7 @@ screen -dmS koishi bash -c "cd /root/lezskabot/koishi/koishi-app && python3 /tmp
 
 # 9. onebotfilter / haruki（可选）
 # onebotfilter: 改 config.yaml 里 AstrBot/Koishi 的端口，./OneBotFilter-v1.3.1-linux-amd64 启动
-# haruki-client: 直接 ./haruki-client-2.2.2-linux-x64/haruki-client
+# haruki-client: 直接 cd haruki && ./haruki-client
 ```
 
 ### 启动后验证
